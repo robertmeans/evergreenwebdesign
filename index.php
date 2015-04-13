@@ -1,6 +1,5 @@
 <?php require_once('_includes/popup-contactform.php'); ?>
 <!DOCTYPE html>
-<!-- Thursday, April 9th 2015 at 9:40 AM Pacific Time - If you're the man I just spoke with in Oregon, PLEASE transfer me your domain and the Karma Gods will forever shine brilliant greatness down upon you! ...or something like that. -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
