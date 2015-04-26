@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Robert Means Website Development Evergreen, Colorado</title>
+  <title>Evergreen Web Design - Website Development Evergreen, Colorado</title>
   <link rel="icon" type="image/ico" href="_images/favicon.ico">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -74,14 +74,14 @@
       </script>
     </h3>
 
-    <p><span id="time"></span> on a <span id="day"></span> is the perfect time to <a class="hmpg-contact" href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");'>contact</a> Bob and discover how pain free your website project can be.</p>
-    <p>With options to suit your vision, budget and deadline, let me help solve your online needs.</p>
+    <p><span id="time"></span> on a <span id="day"></span> is the perfect time to <a class="hmpg-contact" href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");'>contact</a> EWG and discover how pain free your website project can be.</p>
+    <p>With options to suit your vision, budget and deadline, let us help solve your online needs.</p>
 
   </div>
 
   <article id="nameScene">
-    <div id="my-name">
-      <h1>Robert Means</h1>
+    <div id="EWG">
+      <h1>Evergreen Web Design</h1>
       <div class="website-solutions-badge">
         <h2>Website Solutions</h2>
         <h4>Evergreen, Colorado</h4>
