@@ -349,6 +349,7 @@ li.active a, li.active a:hover {
     // box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
     background:#fff;
     font-size: 1.1em;
+    padding-right: 15px;
     p {
     	padding: 0px 35px;
     }
@@ -364,7 +365,6 @@ li.active a, li.active a:hover {
 .tab-intro-p {
 	margin-left: 15px;
 }
-
 ul.past-projects { 
     margin: 0px 0px 15px 35px;
     padding: 0; 
@@ -375,6 +375,10 @@ ul.past-projects {
     line-height: 1.5em;
 	}
 }
+
+// #addSites01 {
+	// width: 100%;
+// }
 .column {
 	-webkit-column-count: 2;
     -moz-column-count: 2;
@@ -412,7 +416,7 @@ ul.past-projects {
 // 		margin: 0;
 // 	}
 // }
-ul#list {
+ul.list {
 	display: inline-block;
 	margin: 0px;
 	padding: 2%;

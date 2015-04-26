@@ -98,9 +98,11 @@
 	}	
 }
 .tab-content {
-    font-size: 1em;
+    // font-size: 1em;
+    padding-right: 0;
 	p {
 		line-height: 1.5em;
+		padding: 0px 20px;
 	}
 }
 .tab-links li {
@@ -117,6 +119,14 @@
 
 .tab-links a {
     padding: 9px 8px;
+}
+#addSites01 h2 {
+	margin: 10px 0px 10px 15px;
+	color: #757575;
+	line-height: 1em;
+}
+.moresites {
+	width: auto;
 }
 .project-col {
 	position: relative;
@@ -142,7 +152,6 @@
 // 	background: url(../_images/mobile_link_menu_mo.png) no-repeat 0px 0px;	
 // }
 --- end original nav */
-
 a.mobile_menu {
 	z-index: 1003;
 	display: block;
@@ -268,6 +277,7 @@ a.mobile_menu.selected {
 	margin-bottom: -1px;
 }
 nav {
+	margin-top: -10px;
 	// background: rgba(255,255,255,.3);
 
 	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0.22) 100%);
@@ -390,6 +400,13 @@ footer {
 
 } // end (max-width: 600px) closing tag
 
+
+
+
+
+
+
+
 @media screen and (max-width: 560px){
 .tab-links li {
     .pad {
@@ -472,11 +489,21 @@ footer {
 
 
 
+@media screen and (max-width: 400px){
+ul.staticsites li:last-child {
+	padding: 40px 80px -50px 80px;
+	border-radius: 50%;
+	max-height: 325px;
+}
+
+} // end (max-width: 400px) closing tag
+
+
 
 @media screen and (max-width: 365px){
 #my-name {
 	top: 58%;	
-	}
+}
 .mobile-gone {
 	display: none;
 }
@@ -490,6 +517,14 @@ h2.mobile {
 	color: #757575;
 	margin: 20px 0px 0px 15px;
 
+}
+ul.staticsites li:last-child {
+	padding: 30px 80px -50px 80px;
+	border-radius: 50%;
+	max-height: 275px;
+	p {
+		margin-top: 40%;
+	}
 }
 footer {
 	width: 92%;

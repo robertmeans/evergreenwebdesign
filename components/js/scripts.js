@@ -1411,7 +1411,7 @@ $(function(){
 
     var $window = $(window);
   var scrollTime = .1;
-  var scrollDistance = 280;
+  var scrollDistance = 100;
 
   $window.on("mousewheel DOMMouseScroll", function(event){
 
@@ -1478,7 +1478,7 @@ window.addEventListener('resize', function(){ // on window resize
 $(document).ready(function() { // see waaaay down for closing doc.ready fun()
 var maxHeight = 0;
 
-$('ul#list li').each(function() {
+$('ul.list li').each(function() {
    maxHeight = $(this).height() > maxHeight ? $(this).height() : maxHeight;
 }).height(maxHeight);
 
@@ -1505,7 +1505,6 @@ $('.tab.active').show();
     });
 
 // end tabbed content
-
 
 
 // begin - accordion (development)
@@ -1587,9 +1586,35 @@ $(window).on('scroll', function () {
 
 
 
+// $(document).ready(function(){
 
+// $('#addSites01').hide();
+ 
+//     $("#hide").on('click', function() {
+//         $(this).text('something');
+//       }, function() {
+//         $(this).text('hello');
+//       }).on('click', function(){
+//         $("#addSites01").slideToggle(400);
+//       });
 
-
+// }); 
+// -----------------------------------
+$(document).ready(function(){
+$("#addSites01").hide(); 
+$("button#toggleMoreSites").click(function(){
+    $(this).toggleClass("active").next().slideToggle(400);
+    
+    if ($.trim($(this).text()) === 'Hide additional sites') {
+        $(this).text('Show more websites');
+    } else {
+        $(this).text('Hide additional sites');        
+    }
+    return false; 
+  }).on('click', function(){
+         $("#addSites01").slideToggle(400);
+       });
+});
 //display time and day as text
 // function display_c(){
 // var refresh=1000; // Refresh rate in milli seconds
@@ -1764,7 +1789,7 @@ if (!isTouch) {
 
 
 // begin - animate navigation down from top
-/*
+
 $(document).ready(function() {
   setTimeout(function() {
     $('#mainNav').animate({
@@ -1772,7 +1797,7 @@ $(document).ready(function() {
     },1200, "easeOutBounce")
   }, 1000);
 });
-*/
+
 //temporary until finished developing...
 /*
 $(document).ready(function() {
@@ -1811,10 +1836,10 @@ $(document).ready(function(){
     var newNavHeight = $('nav div').height();
     
     if(navHeight == 0){
-      $('nav').animate({'height':newNavHeight+'px'},500);
+      $('nav').animate({'height':newNavHeight+'px', 'margin-top':'0'},500);
       $(this).addClass('selected');
     } else {
-      $('nav').animate({'height':'0px'},500);
+      $('nav').animate({'height':'0px', 'margin-top':'-10px'},500);
       $(this).removeClass('selected');
     }
   });
@@ -1827,7 +1852,7 @@ $(document).ready(function(){
       // $('nav').animate({'height':newNavHeight+'px'},500);
       // $(this).addClass('selected');
     
-      $('nav').animate({'height':'0px'},500);
+      $('nav').animate({'height':'0px', 'margin-top': '-10px'},500);
       $('a.mobile_menu').removeClass('selected');
     }
   });
@@ -1860,16 +1885,19 @@ function checkBrowserSize(){
 
 function loadNav(){ 
 if(windowSize == 'large') {
-  $('nav').css('height','auto');  
+  $('nav').css('height','auto');
+  $('nav').css('margin-top','0px');  
 }
 if(windowSize == 'small') {
   if(actualSize <= 583){
     
     if(isIE){
-      $('nav').css('height','0px'); 
+      $('nav').css('height','0px');
+      $('nav').css('margin-top','-10px'); 
       // $('nav').css('height','auto');
       } else {
         $('nav').css('height','0px');
+        $('nav').css('margin-top','-10px');
         } 
   }
   $('a.mobile_menu').removeClass('selected');

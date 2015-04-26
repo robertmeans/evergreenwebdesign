@@ -139,7 +139,7 @@
         <p>With Internet traffic shifting towards mobile phone use, you can't afford to have an online presence without a strong mobile interface.</p>
         <p>I utilize the latest specifications in HTML5, CSS3 and jQuery with a focus on viewport-independent, fluid design so you can rest assured your your site looks great and functions flawlessly no matter how your visitors get there.</p>
 
-<ul id="list" class="cf">
+    <ul class="list moresites cf">
       <li>
         <a href="http://www.mbeachlegal.com" target="_blank"><img src="_images/mbeachlegal-website.jpg" alt="Matthew Beach ESQ, LLC"></a>
         <h3>Matthew Beach ESQ, LLC</h3>
@@ -175,15 +175,56 @@
         <p>This is a browser utility I created using PHP &amp; mySQL that should revolutionize the world! ...Or at least be incredibly useful.</p>
         
       </li>     
-    </ul>
+    </ul><!-- .list .moresites .cf -->
 
-    </div>
+    <div class="centerDisplay">
+    <button id="toggleMoreSites">Show more websites</button>
+    </div><!-- .centerDisplay -->
+
+    <div id="addSites01">
+      <h2>Static Website Samples</h2>
+        <p>The sites below reflect an era before fluid/responsive design was a thing. While these examples do not play well with mobile devices you can still appreciate the attention to detail reflected in each unique design and content management.</p>
+
+    <ul class="list moresites staticsites cf">
+      <li>
+        <a href="http://www.robertmeans.com/fhl" target="_blank"><img src="_images/fhl-website.jpg" alt="Forest Heights Lodge"></a>
+        <h3>Forest Heights Lodge</h3>
+        <p>Lots of custom features stiched flawlessly into a custom design.</p>
+      </li>
+      <li>
+        <a href="http://www.robertmeans.com/theburn2012" target="_blank"><img src="_images/theburn2012-website.jpg" alt="The Burn Mountain Bike Time Trial"></a>
+        <h3>The Burn MTB TT</h3>
+        <p>Bike race that I Directed in 2010 &amp 2012</p>
+      </li>
+      <li>
+        <a href="http://www.robertmeans.com/acts" target="_blank"><img src="_images/acts-church-website.jpg" alt="Acts Church Website"></a>
+        <h3>Acts Church</h3>
+        <p>Cover image was a composite of several images provided by customer.</p>
+        
+      </li>
+      <li>
+        <a href="http://www.satillainc.com" target="_blank"><img src="_images/satilla-website.jpg" alt="Satilla, Inc"></a>
+        <h3>Satilla, Inc.</h3>
+        <p>Construction management company.</p>
+      </li>
+      <li>
+        <a href="http://www.bennmediation.com" target="_blank"><img src="_images/bennmediation-website.jpg" alt="Benn Mediation"></a>
+        <h3>Benn Mediation</h3>
+        <p>Family law attorney practicing in Denver.</p>
+      </li>
+      <li>
+        <p>I do a lot more than websites. Got a project? Just ask!</p>
+      </li>
+    </ul><!-- .list .moresites .cf -->
+    </div><!-- #addSites01 -->
+
+    </div><!-- #tab2 .tab .cf --><!-- Websites tab -->
 
     <div id="tab4" class="tab cf"><!-- $? tab -->
       <p>As a freelance Web Developer I work for chump change and I have more solutions than you have problems. Please feel free to do us both a favor and abuse this opportunity!</p>
-    </div>
+    </div><!-- #tab4 .tab cf -->
 
-  </div>
+  </div><!-- .tab-content -->
 
   </div><!-- .tabs -->
 
