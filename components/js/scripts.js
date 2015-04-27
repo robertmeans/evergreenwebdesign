@@ -1789,7 +1789,7 @@ if (!isTouch) {
 
 
 // begin - animate navigation down from top
-
+/*
 $(document).ready(function() {
   setTimeout(function() {
     $('#mainNav').animate({
@@ -1797,17 +1797,17 @@ $(document).ready(function() {
     },1200, "easeOutBounce")
   }, 1000);
 });
-
+*/
 //temporary until finished developing...
-/*
+
 $(document).ready(function() {
   setTimeout(function() {
     $('#mainNav').animate({
       "top": 0+'px'
-    },100) // how long animation will take
-  }, 100); // how long after page loads b4 animation starts
+    },200) // how long animation will take
+  }, 1000); // how long after page loads b4 animation starts
 });
-*/
+
 // end - animate navigation down from top
 
 
