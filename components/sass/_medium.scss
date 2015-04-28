@@ -110,9 +110,14 @@
 	width: 100%;
 	position: relative;
 }
-#EWG {
+#EWD {
 	h1 {
 		font-size: 3.5em;
+
+		-webkit-transition: font-size 1.75s ease;
+		-moz-transition: font-size 1.75s ease;
+		-o-transition: font-size 1.75s ease;
+		transition: font-size 1.75s ease;
 	}
 }
 #name {

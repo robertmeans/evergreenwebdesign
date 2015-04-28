@@ -177,7 +177,7 @@
 	width: 100%;
 	position: relative;
 }
-#EWG {
+#EWD {
 	position: relative;
 	width: 100%;
 	display: inline-block;
@@ -186,10 +186,15 @@
 	h1 {
 		font-family: 'Exo 2', Helvetica, Arial, sans-serif;
 		font-size: 4em;
+
+		-webkit-transition: font-size 1.75s ease;
+		-moz-transition: font-size 1.75s ease;
+		-o-transition: font-size 1.75s ease;
+		transition: font-size 1.75s ease;
 		font-weight: 800;
 		text-transform: capitalize;
 		color: #fff;
-		text-shadow: -2px 3px 6px rgba(0, 0, 0, 0.5);
+		text-shadow: -2px 3px 6px rgba(0, 0, 0, 0.5);	
 	} 	
 }
 .website-solutions-badge {
@@ -256,7 +261,8 @@
 	-webkit-transition: height .2s ease;
 	-moz-transition: height .2s ease;
 	-o-transition: height .2s ease;
-	transition: height .2s ease;	
+	transition: height .2s ease;
+	
 	&:hover {
 		background-color: #505050;
 		color: #fff;
@@ -307,6 +313,9 @@ h2.mobile {
     .pad {
 	padding: 0px 15px;
 	}
+}
+.gone {
+	display: none;
 }
 .mobile-gone {
 	display: inline-block;

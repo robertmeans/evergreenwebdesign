@@ -74,14 +74,14 @@
       </script>
     </h3>
 
-    <p><span id="time"></span> on a <span id="day"></span> is the perfect time to <a class="hmpg-contact" href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");'>contact</a> EWG and discover how pain free your website project can be.</p>
-    <p>With options to suit your vision, budget and deadline, let us help solve your online needs.</p>
+    <p><span id="time"></span> on a <span id="day"></span> is the perfect time to <a class="hmpg-contact" href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");'>contact</a> Evergreen Web Design and discover how pain free your website project can be.</p>
+    <p>With options to suit your vision, budget and deadline, the solution to your online needs is right here.</p>
 
   </div>
 
   <article id="nameScene">
-    <div id="EWG">
-      <h1>Evergreen Web Design</h1>
+    <div id="EWD">
+      <h1>Evergreen Web<br class="gone"> Design</h1>
       <div class="website-solutions-badge">
         <h2>Website Solutions</h2>
         <h4>Evergreen, Colorado</h4>
@@ -107,7 +107,7 @@
 
         <div id="tab1" class="tab active cf"><!-- Overview tab -->
           <h2 class="mobile">Overview</h2>
-            <p>At the risk of limiting my services to websites I should point out that Website Solutions loosly translates to any computer related task you can't do, don't have time to do or don't want to do.</p>
+            <p>At the risk of limiting the available services to websites it should be noted that Website Solutions loosly translates to any computer related task you can't do, don't have time to do or don't want to do.</p>
             <p>Past projects, aside from website concept, design &amp; development include:</p>
             <div class="project-col">
               <ul class="past-projects">
@@ -121,7 +121,7 @@
               </div>
 
               <div class="project-col">
-              <ul class="past-projects">
+              <ul class="past-projects second-column">
                 <li>Automating data entry tasks</li>
                 <li>Designing restaurant menus</li>
                 <li>Technical support</li>
@@ -137,7 +137,7 @@
       <h2 class="mobile">Websites</h2>
         <p>A custom website can help rediscover your business image in the Internet marketplace.</p>
         <p>With Internet traffic shifting towards mobile phone use, you can't afford to have an online presence without a strong mobile interface.</p>
-        <p>I utilize the latest specifications in HTML5, CSS3 and jQuery with a focus on viewport-independent, fluid design so you can rest assured your your site looks great and functions flawlessly no matter how your visitors get there.</p>
+        <p>Utilizing the latest specifications in HTML5, CSS3 and jQuery with a focus on viewport-independent, fluid design, you can rest assured your your site looks great and functions flawlessly no matter how your visitors get there.</p>
 
     <ul class="list moresites cf">
       <li>
