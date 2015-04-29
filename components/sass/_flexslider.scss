@@ -253,7 +253,7 @@ html[xmlns] .slides {
 }
 #process_slider .slide_text {
   font-size: 17px;
-  color: #91a4af;
+  color: #ececec;
   line-height: 42px;
 }
 #process_slider .slide_text {
@@ -382,7 +382,7 @@ html[xmlns] .slides {
 #process_slider .slide_title {
   font-size: 25px;
   font-family: 'Minion W01 It', 'Palatino Linotype', serif;
-  color: #757575;
+  color: #e05815;
   margin: 0 0 28px;
   font-size: 36px;
 }
@@ -394,14 +394,14 @@ html[xmlns] .slides {
 }
 #process_slider .slide_text {
   font-size: 17px;
-  color: #757575;
+  color: #ececec;
   line-height: 2em;
 }
 .slides {
   // bkg for entire content area. use this
   // so the length of background, regardless
   // of amount of content, remains the same.
-  background: rgba(255, 255, 255, .9);
+  background: rgba(0, 0, 0, .7);
 }
 #process_slider .flex-control-thumbs img.flex-active {
   // border radius for icons

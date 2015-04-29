@@ -240,7 +240,7 @@
         <div class="slide_content">
           <div class="slide_title">Blueprint</div>
           <div class="slide_text">
-            I research user expectations and target common use cases, developing a clear sitemap and user flow for intuitive engagement within your custom design.
+            We'll research user expectations and target common use cases, developing a clear sitemap and user flow for intuitive engagement within your custom design.
           </div>
         </div><!-- /slide_content -->
       </li>
@@ -249,8 +249,7 @@
         <div class="slide_content">
           <div class="slide_title">Design <span class="plus">+</span>  Create</div>
           <div class="slide_text">
-            During this phase, I focus on brand experience, content engagement and creative expression through custom design. I
-            work with clients to create an end result that both sides will be proud of.
+            During this phase, we focus on brand experience, content engagement and creative expression through custom design working closely with clients to create an end result that both sides will be proud of.
 
           </div>
         </div><!-- /slide_content -->
@@ -260,7 +259,7 @@
         <div class="slide_content">
           <div class="slide_title">Develop <span class="plus">+</span>  Deploy</div>
           <div class="slide_text">
-            Using the most appropriate technologies and interactive elements, I build standards-compliant, cross-platform websites and apps that are a pixel-perfect match to the design phase mockups. 
+            Using the most appropriate technologies and interactive elements, We build standards-compliant, cross-platform websites and apps that are a pixel-perfect match to the design phase mockups. 
           </div>
         </div><!-- /slide_content -->
       </li>

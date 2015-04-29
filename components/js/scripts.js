@@ -1941,12 +1941,12 @@ setTimeout(showScrollDownSprite, 13500);
 
 // Or, to start a slideshow, just pass in an array of images
 $("#div-three").backstretch([
-"_images/mt-harvard.jpg",
-"_images/firewood-stacked.jpg",
-"_images/bike.jpg",
-"_images/colorado-flag.gif"    
+"_images/flex-01.jpg",
+"_images/flex-02.jpg",
+"_images/flex-03.jpg",
+//"_images/flex-04.jpg"    
 ], {duration: 4000,
-  fade: 3500});
+  fade: 4000});
 // end backstretch -----------------
 
 // load flexslider
