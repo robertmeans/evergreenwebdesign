@@ -417,7 +417,10 @@ footer {
 		cursor: pointer;
 	}
 } 
-
+#contactus .short_explanation {
+   font-family : Arial, sans-serif;
+   font-size: .8em;
+}
 
 } // end (max-width: 600px) closing tag
 
@@ -519,7 +522,6 @@ ul.staticsites li:last-child {
 	border-radius: 50%;
 	max-height: 325px;
 }
-
 } // end (max-width: 400px) closing tag
 
 
