@@ -213,7 +213,7 @@
         <p>Family law attorney practicing in Denver.</p>
       </li>
       <li>
-        <p>I do a lot more than websites. Got a project? Just ask!</p>
+        <p>Services include a lot more than just websites. Got a project? Just ask!</p>
       </li>
     </ul><!-- .list .moresites .cf -->
     </div><!-- #addSites01 -->
