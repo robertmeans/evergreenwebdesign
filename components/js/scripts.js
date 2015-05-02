@@ -1615,6 +1615,18 @@ $("button#toggleMoreSites").click(function(){
          $("#addSites01").slideToggle(400);
        });
 });
+
+
+
+$(document).ready(function(){
+  $(".click").click(function(){
+    
+    var target = $(this).parent().children(".expand");
+    $(target).slideToggle();
+  });
+});
+
+
 //display time and day as text
 // function display_c(){
 // var refresh=1000; // Refresh rate in milli seconds

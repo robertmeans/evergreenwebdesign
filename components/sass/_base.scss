@@ -1,5 +1,7 @@
 @import url("http://fonts.googleapis.com/css?family=Exo+2:200,400,600,800|Ubuntu:700");
-
+html {
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+}
 body {
 	// height: 3200px;
 	font-size: 16px;
@@ -173,6 +175,106 @@ button#toggleMoreSites {
 		// to do to turn off outline
 	}
 }
+
+
+// #SEO {
+// 	height: auto;
+// }
+// #container {width:500px; margin:10px;}
+// #container h4{
+//     background-color:#FAF9F0;
+//     padding:20px;
+//     box-shadow: 0px 0px 5px #ccc;
+//     position: relative;
+//     float: left;
+// }
+
+// #container h4:hover{cursor:pointer;}
+
+.container {
+	border-top: 1px solid #ccc;
+	position: relative;
+	float: left;
+	width: 90%;
+	margin: 40px 5% 10px 5%;
+}
+.container2 {
+	border-top: 1px solid #ccc;
+	position: relative;
+	float: left;
+	width: 90%;
+	margin: 0px 5% 30px 5%;
+}
+
+div.expand {
+	width: 100%;
+    color: #757575;
+    background-color:#EDECDF;
+    display: none;
+    position: relative;
+    float: left;
+    clear: both;
+    margin-bottom: 40px;
+    // padding: 0 20px 20px 20px;
+    // z-index:-4;
+}
+h4.click {
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	float: right;
+	margin-right: 50px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	background: #757575;
+	color: #fff;
+	line-height: 1em;
+	padding: 5px 10px;
+	&:hover {
+		background: #e0e0e0;
+		color: #757575;
+	}
+}
+.click2 {
+	padding-top: 0px;
+}
+
+
+
+
+
+
+
+button#toggleSEO {
+	line-height: 1em;
+	background-color: #ccc;
+	color: #363636;
+	padding: 10px 20px;
+	border: 1px solid #757575;
+	border-radius: 12px;
+	webkit-border-radius: 12px;
+	moz-border-radius: 12px;
+	-webkit-transition: background-color .75s ease;
+	-moz-transition: background-color .75s ease;
+	-o-transition: background-color .75s ease;
+	-ms-transition: background-color .75s ease;
+	transition: background-color .75s ease;	
+	&:hover {
+		background-color: #1f5588;
+		color: #fff;
+	}
+	&:active, &:focus {
+		outline: 0;
+		outline-style: 0;
+		// mobile ios - this is what you have
+		// to do to turn off outline
+	}
+}
+
+
+
+
+
 #scrollDownSprite {
 	display: none;
 	border: none;

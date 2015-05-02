@@ -6,6 +6,7 @@
   <title>Evergreen Web Design - Website Development Evergreen, Colorado</title>
   <link rel="icon" type="image/ico" href="_images/favicon.ico">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="description" content="Evergreen Web Design provides website concept, design, development and SEO services featuring current specifications within a responsive framework.">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="_scripts/coolclock-breakpoints.js?<?php echo time(); ?>"></script>
   <link rel="stylesheet" href="_css/style.css?<?php echo time(); ?>">
@@ -99,7 +100,12 @@
       <ul class="tab-links">
           <li class="active"><a href="#tab1" class="static"><i class="fa fa-eye"></i> <span class="mobile-gone">Overview</span></a></li>
           <li><a href="#tab2" class="static"><i class="fa fa-desktop desktop-only"></i> <span class="mobile-gone">Websites</span></a></li>
-          <li><a href="#tab4" class="static"><span class="pad">$ ?</span></a></li>
+
+          <li class="wp-tab">
+          <!-- large screen logo and text -->
+          <a href="#tab4" class="static wp-img-mo safari-only"><span class="pad mobile-gone"><img src="_images/wordpress-logo.png" border="0" width="106" height="23"><img src="_images/wordpress-logo_mo.png" border="0" width="106" height="23"></span><!-- small screen - logo only -->
+          <span class="pad wp-logo-gone"><img src="_images/wp-logo.png" border="0" width="24" height="23"><img src="_images/wp-logo_mo.png" border="0" width="24" height="23"></span></a>
+          </li>
           <!-- <li><a href="#tab4" class="static">Tab 4</a></li> -->
       </ul> 
 
@@ -131,7 +137,28 @@
               </ul>
               </div>
 
-        </div>
+
+              <div class="container">
+                <h4 class="click">SEO Strategies</h4>
+                <div class="expand">
+                  <p>this is some information that you couldn't see before.</p>
+                  <p>this is more...</p>
+                  <p>still more - </p>
+                </div><!-- .expand !-->
+              </div><!-- #container -->
+
+
+              <div class="container2">
+                <h4 class="click click2">Pricing</h4> 
+                <div class="expand">
+                  <p>talkin' about pricing all up in here</p>
+                  <p>information with stuff and things</p>
+                  <p>now you're informed</p>
+                </div><!-- .expand !-->
+              </div><!-- #container -->
+
+
+        </div><!-- #tab1 .tab .active .cf -->
 
       <div id="tab2" class="tab cf"><!-- Websites tab -->
       <h2 class="mobile">Websites</h2>

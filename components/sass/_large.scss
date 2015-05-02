@@ -300,20 +300,85 @@ h2.mobile {
     content:'';
 }
 .tab-links { // .tab-links = ul only class
-	margin-bottom: -1px;
+	// margin-bottom: -1px;
 	padding: 0px;
 }
 .tab-links li {
-    margin:0px 5px;
-    float:left;
-    list-style:none;
+    margin: 0px 5px -1px 5px;
+    float: left;
+    list-style: none;
     .fa {
     	margin-right: 10px;
     }
-    .pad {
-	padding: 0px 15px;
-	}
 }
+li.wp-tab a {
+	padding: 5px 15px 3px 15px;
+}
+// target Safari exclusively --
+_::-moz-svg-foreign-content, :root li.wp-tab a {
+	padding: 5px 15px 4px 15px;
+}
+// Safari has some 1px problem on the 
+// bottom that this addresses
+
+
+
+.wp-img-mo img:last-child {
+	display:none
+}
+.wp-img-mo:hover img:first-child {
+	display:none
+}
+.wp-img-mo:hover img:last-child {
+	display:inline-block
+}
+li.active .wp-img-mo img:last-child {
+	display: none;
+}
+li.active .wp-img-mo img:first-child {
+	display: inline-block;
+}
+
+.tab-links a {
+    padding: 9px 15px;
+    display: inline-block;
+    border-radius: 3px 3px 0px 0px;
+    background: #ececec;
+    font-size: 1em;
+    font-weight: 600;
+    color: #4c4c4c;
+    border: 1px solid #ccc;
+    transition: all linear 0.15s;
+    text-decoration: none;
+}
+.tab-links a:hover {
+    background: #435162;
+    color: #fff;
+    text-decoration: none;
+} 
+li.active a, li.active a:hover {
+    background: #fff;
+    color: #4c4c4c;
+    border-bottom: 1px solid white;
+    cursor: default;
+}
+
+
+
+
+.no-touch.tab-links a:hover {
+    background: #ececec;
+    color: #fff;
+    text-decoration: none;
+}
+.no-touch li.active a, li.active a:hover {
+    background: #fff;
+    color: #4c4c4c;
+    border-bottom: 1px solid white;
+    cursor: default;
+}
+
+
 .gone {
 	display: none;
 }
@@ -324,28 +389,8 @@ h2.mobile {
 .large-screen-gone {
 	display: none;
 }
-.tab-links a {
-    padding:9px 15px;
-    display:inline-block;
-    border-radius:3px 3px 0px 0px;
-    background:#ececec;
-    font-size: 1em;
-    font-weight:600;
-    color:#4c4c4c;
-    border: 1px solid #ccc;
-    transition:all linear 0.15s;
-    text-decoration: none;
-}
-.tab-links a:hover {
-    background:#435162;
-    color: #fff;
-    text-decoration:none;
-} 
-li.active a, li.active a:hover {
-    background: #fff;
-    color: #4c4c4c;
-    border-bottom: 1px solid white;
-    cursor: default;
+.wp-logo-gone {
+	display: none;
 }
 /*----- Content of Tabs -----*/
 .tab-content {
