@@ -6,6 +6,7 @@
   <title>Evergreen Web Design - Website Development Evergreen, Colorado</title>
   <link rel="icon" type="image/ico" href="_images/favicon.ico">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="description" content="Evergreen Web Design provides website concept, design, development and SEO services featuring current specifications within a responsive framework.">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="_scripts/coolclock-breakpoints.js?<?php echo time(); ?>"></script>
   <link rel="stylesheet" href="_css/style.css?<?php echo time(); ?>">
