@@ -41,7 +41,7 @@
 // tabs - services - websites - video
 	// z-index: 5;
 	height: auto;
-	min-height: 880px;
+	min-height: 680px;
 	padding-bottom: 100px;
 	background: #6d94e1 url(../_images/symphony.png) repeat fixed center;
 	// background-size: cover;
@@ -54,40 +54,34 @@
 // 	background-position: center center;
 // }
 #div-three {
-// colorado flag
-	// z-index: 1111;
-	height: 1000px;
-	// background-image: url(../_images/colorado-flag.gif) no-repeat center center fixed;
+	height: auto;
+	min-height: 700px;
+
+	// padding-top for some reason prevents
+	// the page from scrolling to the top
+	// of the .about-content
+	padding-top: 10px;
+
+	// background: #6d94e1 url(../_images/colorado-flag.gif) top center no-repeat fixed;
 
   	// -webkit-background-size: cover;
   	// -moz-background-size: cover;
   	// -o-background-size: cover;
   	// background-size: cover;
-
-
 	.scene-content {
 		max-width: 200px;
 		margin: 0 auto;
 		top: 40%;
-		// left: 10px;
-		// float: right;
 	}
-
-
 }
 #div-four {
-// me on bike
-	height: 400px;
-	background-image: url(../_images/bike.jpg);
-	// background-size: cover;
-	// -webkit-background-size: cover;
-    // -moz-background-size: cover;
-    // -o-background-size: cover;
+// colorado flag
+	height: 1000px;
 	.scene-content {
-		// max-width: 500px;
-		// margin: 10% 0 0 10%;
-		// float: left;
-	}	
+		max-width: 200px;
+		margin: 0 auto;
+		top: 40%;
+	}
 }
 #div-five {
 // Mt Harvard with kids
@@ -287,6 +281,15 @@
     .tab-links {
     	margin-top: 90px;
     }
+}
+#tab4 {
+	h2 {
+		font-size: 1.5em;
+		font-weight: bold;
+		color: #757575;
+		display: inline-block;
+		margin: 1.5em 0 1em 35px;
+	}
 }
 
 /*----- Tab Links -----*/
@@ -544,6 +547,90 @@ ul.list {
 	float: left;
 	width: 50%;
 }
+
+
+.about {
+	line-height: 1.5em;
+    width: 90%;
+    max-width: 1115px;
+    border: 1px solid #ccc;
+    margin: 90px auto;
+    padding: 20px 0px;
+    display: block;	
+    background: rgba(255,255,255,.9);
+    border-radius: 3px;
+	moz-border-radius: 3px;
+	webkit-border-radius: 3px;
+	o-border-radius: 3px;
+    h1 {
+    	font-size: 2.8em;
+    	font-weight: bold;
+    	color: #e05815;
+    	display: block;
+    	margin: 50px 10% 30px 10%;
+    	padding-bottom: 10px;
+    	border-bottom: 1px solid #435162;
+    }
+}
+.about-content {
+	position: relative;
+	margin: 40px 10% 10px 10%;
+	float: left;
+	clear: both;
+	padding-bottom: 20px;
+	border-bottom: 1px dotted #ccc;
+	h3 {
+		font-size: 1.6em;
+		font-weight: bold;
+	}
+	h2 {
+		font-size: 1em;
+		font-weight: bold;
+		color: #757575;
+	}
+	a.about-contact {
+		position: absolute;
+		bottom: 10px;
+		right: 10px;
+		text-decoration: none;
+		color: #65659a;
+		&:hover {
+			text-decoration: underline;
+			color: #65659a;
+		}
+	}	
+}
+.about-btm {
+	border-bottom: none;
+}
+.about-profile-img {
+	width: 20%;
+	max-width: 250px;
+	float: left;
+	img {
+		width: 100%;
+		border: 1px solid #757575;
+		border-radius: 50%;
+		moz-border-radius: 50%;
+		webkit-border-radius: 50% ;
+		o-border-radius: 50%;
+	}
+}
+.about-profile {
+	width: 70%;
+	float: left;
+	margin-left: 10%;
+}
+.about-gone {
+	display: inline-block;
+}
+
+
+
+
+
+
+
 .scene-content {
 	background: rgba(255, 255, 255, 0.8);
 	padding: 40px;

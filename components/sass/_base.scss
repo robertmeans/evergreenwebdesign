@@ -176,6 +176,17 @@ button#toggleMoreSites {
 	}
 }
 
+.tab-links a:hover {
+    background: #435162;
+    color: #fff;
+    text-decoration: none;
+} 
+li.active a, li.active a:hover {
+    background: #fff;
+    color: #4c4c4c;
+    border-bottom: 1px solid white;
+    cursor: default;
+}
 
 // #SEO {
 // 	height: auto;
@@ -203,54 +214,26 @@ button#toggleMoreSites {
 	position: relative;
 	float: left;
 	width: 90%;
-	margin: 0px 5% 30px 5%;
+	margin: 40px 5% 50px 5%;
 }
 
 div.expand {
 	width: 100%;
     color: #757575;
+    border-bottom: 1px solid #ccc;
     background-color:#EDECDF;
     display: none;
     position: relative;
     float: left;
     clear: both;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
+    padding-bottom: 50px;
     // padding: 0 20px 20px 20px;
     // z-index:-4;
+    p:first-child {
+    	margin-top: 50px;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.tab-links a:hover {
-    background: #435162;
-    color: #fff;
-    text-decoration: none;
-} 
-li.active a, li.active a:hover {
-    background: #fff;
-    color: #4c4c4c;
-    border-bottom: 1px solid white;
-    cursor: default;
-}
-
-
-
 
 a.click {
 	display: inline-block;
@@ -259,7 +242,8 @@ a.click {
 	float: right;
 	margin-right: 50px;
 	margin-top: 0px;
-	margin-bottom: 20px;
+	margin-bottom: -30px;
+	z-index: 999;
 	background: #757575;
 	color: #fff;
 	line-height: 1em;
@@ -282,10 +266,6 @@ a.click {
 		// to do to turn off outline
 	}
 }
-
-
-
-
 
 #scrollDownSprite {
 	display: none;

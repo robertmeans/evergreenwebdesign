@@ -2014,7 +2014,7 @@ setTimeout(showScrollDownSprite, 13500);
 // $("#div-three").backstretch("_images/colorado-flag.gif");
 
 // Or, to start a slideshow, just pass in an array of images
-$("#div-three").backstretch([
+$("#div-four").backstretch([
 "_images/flex-01.jpg",
 "_images/flex-02.jpg",
 "_images/flex-03.jpg",

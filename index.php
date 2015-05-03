@@ -98,67 +98,61 @@
 <section id="div-two">
   <div class="tabs">
       <ul class="tab-links">
-          <li class="active"><a href="#tab1" class="static"><i class="fa fa-eye"></i> <span class="mobile-gone">Overview</span></a></li>
-          <li><a href="#tab2" class="static"><i class="fa fa-desktop desktop-only"></i> <span class="mobile-gone">Websites</span></a></li>
+        <li class="active"><a href="#tab1" class="static"><i class="fa fa-eye"></i> <span class="mobile-gone">Overview</span></a></li>
+        <li><a href="#tab2" class="static"><i class="fa fa-desktop desktop-only"></i> <span class="mobile-gone">Websites</span></a></li>
 
-          <li class="wp-tab">
-          <!-- large screen logo and text -->
-          <a href="#tab4" class="static wp-img-mo safari-only"><span class="pad mobile-gone"><img src="_images/wordpress-logo.png" border="0" width="106" height="23"><img src="_images/wordpress-logo_mo.png" border="0" width="106" height="23"></span><!-- small screen - logo only -->
-          <span class="pad wp-logo-gone"><img src="_images/wp-logo.png" border="0" width="24" height="23"><img src="_images/wp-logo_mo.png" border="0" width="24" height="23"></span></a>
-          </li>
-          <!-- <li><a href="#tab4" class="static">Tab 4</a></li> -->
+        <li class="wp-tab">
+        <!-- large screen logo and text -->
+        <a href="#tab4" class="static wp-img-mo safari-only"><span class="pad mobile-gone"><img src="_images/wordpress-logo.png" border="0" width="106" height="23"><img src="_images/wordpress-logo_mo.png" border="0" width="106" height="23"></span><!-- small screen - logo only -->
+        <span class="pad wp-logo-gone"><img src="_images/wp-logo.png" border="0" width="24" height="23"><img src="_images/wp-logo_mo.png" border="0" width="24" height="23"></span></a>
+        </li>
+        <!-- <li><a href="#tab4" class="static">Tab 4</a></li> -->
       </ul> 
 
   <div class="tab-content">
 
-        <div id="tab1" class="tab active cf"><!-- Overview tab -->
-          <h2 class="mobile">Overview</h2>
-            <p>At the risk of limiting the available services to websites it should be noted that Website Solutions loosly translates to any computer related task you can't do, don't have time to do or don't want to do.</p>
-            <p>Past projects, aside from website concept, design &amp; development include:</p>
-            <div class="project-col">
-              <ul class="past-projects">
-                <li>Editing video testimony for court trial</li>
-                <li>Editing audio testimony</li>
-                <li>Illustrations</li>
-                <li>Scanning and cataloging</li>
-                <li>Creating banner ads</li>
-                <li>Designing &amp; authoring technical instructions</li>
-              </ul>
-              </div>
+    <div id="tab1" class="tab active cf"><!-- Overview tab -->
+      <h2 class="mobile">Overview</h2>
+        <p>At the risk of limiting the available services to websites it should be noted that Website Solutions loosly translates to any computer related task you can't do, don't have time to do or don't want to do.</p>
+        <p>Past projects, aside from website concept, design &amp; development include:</p>
+        <div class="project-col">
+          <ul class="past-projects">
+            <li>Editing video testimony for court trial</li>
+            <li>Editing audio testimony</li>
+            <li>Illustrations</li>
+            <li>Scanning and cataloging</li>
+            <li>Creating banner ads</li>
+            <li>Designing &amp; authoring technical instructions</li>
+          </ul>
+          </div>
 
-              <div class="project-col">
-              <ul class="past-projects second-column">
-                <li>Automating data entry tasks</li>
-                <li>Designing restaurant menus</li>
-                <li>Technical support</li>
-                <li>Developing online shopping cart</li>
-                <li>Preparing newsletters</li>
-                <li>Photographing &amp; cataloging inventory</li>
-              </ul>
-              </div>
+          <div class="project-col">
+          <ul class="past-projects second-column">
+            <li>Automating data entry tasks</li>
+            <li>Designing restaurant menus</li>
+            <li>Technical support</li>
+            <li>Developing online shopping cart</li>
+            <li>Preparing newsletters</li>
+            <li>Photographing &amp; cataloging inventory</li>
+          </ul>
+          </div>
 
+          <div class="container">
+            <a href="#" class="click no-default" ontouchend="this.onclick=fix">SEO Strategies</a>
+            <div class="expand">
+              <p>Your Search Engine Optimization stragety starts with the big 3 social networking giants and continues all the way into the code of your website.</p>
+            </div><!-- .expand !-->
+          </div><!-- #container -->
 
-              <div class="container">
-                <a href="#" class="click no-default" ontouchend="this.onclick=fix">SEO Strategies</a>
-                <div class="expand">
-                  <p>this is some information that you couldn't see before.</p>
-                  <p>this is more...</p>
-                  <p>still more - </p>
-                </div><!-- .expand !-->
-              </div><!-- #container -->
+          <div class="container2">
+             <a href="#" class="click no-default" ontouchend="this.onclick=fix">Pricing</a>
+            <div class="expand">
+              <p>Pricing options are available to suit virtually every budget and project. Let's discuss your idea and outline a plan that works for you!</p>
+              <p>To quote pricing without knowing the details of a project is sort of like quoting the price of a bicycle without knowing what kind.</p>
+            </div><!-- .expand !-->
+          </div><!-- #container -->
 
-
-              <div class="container2">
-                <a href="#" class="click no-default" ontouchend="this.onclick=fix">Pricing</a> 
-                <div class="expand">
-                  <p>talkin' about pricing all up in here</p>
-                  <p>information with stuff and things</p>
-                  <p>now you're informed</p>
-                </div><!-- .expand !-->
-              </div><!-- #container -->
-
-
-        </div><!-- #tab1 .tab .active .cf -->
+      </div><!-- #tab1 .tab .active .cf -->
 
       <div id="tab2" class="tab cf"><!-- Websites tab -->
       <h2 class="mobile">Websites</h2>
@@ -176,31 +170,26 @@
         <a href="http://www.evergreensigns.com" target="_blank"><img src="_images/evergreen-signs-website.jpg" alt="Evergreen Signs Website"></a>
         <h3>Evergreen Signs</h3>
         <p>Advertising in various mediums. With a mobile-optimized website they are now reaching more customers than ever.</p>
-        
       </li>
       <li>
         <a href="http://www.evergreenwildernessguides.com" target="_blank"><img src="_images/evergreen-wilderness-guides-website.jpg" alt="Evergreen Wilderness Guides"></a>
         <h3>Evergreen Wilderness Guides</h3>
         <p>Outdoor instruction with courses ranging from rock climbing to mountain biking to survival skills.</p>
-        
       </li>
       <li>
         <a href="http://www.wildflowerevergreen.com" target="_blank"><img src="_images/wildflower-website.jpg" alt="Wildflower Café"></a>
         <h3>The Wildflower Café</h3>
         <p>Located in historic downtown Evergreen, Colorado with a menu that brings folks in from miles around.</p>
-        
       </li> 
       <li>
         <a href="http://www.colt-green.com" target="_blank"><img src="_images/colt-green-website.jpg" alt="Colt Green Construction"></a>
         <h3>Colt Green Construction</h3>
         <p>Construction and project management company, Jacksonville, Florida</p>
-        
       </li> 
       <li>
         <a href="http://www.myscreenscene.com" target="_blank"><img src="_images/myscreenscene-website.jpg" alt="MyScreenScene.com"></a>
         <h3>MyScreenScene</h3>
-        <p>This is a browser utility I created using PHP &amp; mySQL that should revolutionize the world! ...Or at least be incredibly useful.</p>
-        
+        <p>This is a browser utility I created using PHP &amp; mySQL that should revolutionize the world! ...Or at least be incredibly useful.</p> 
       </li>     
     </ul><!-- .list .moresites .cf -->
 
@@ -227,7 +216,6 @@
         <a href="http://www.robertmeans.com/acts" target="_blank"><img src="_images/acts-church-website.jpg" alt="Acts Church Website"></a>
         <h3>Acts Church</h3>
         <p>Cover image was a composite of several images provided by customer.</p>
-        
       </li>
       <li>
         <a href="http://www.satillainc.com" target="_blank"><img src="_images/satilla-website.jpg" alt="Satilla, Inc"></a>
@@ -248,16 +236,74 @@
     </div><!-- #tab2 .tab .cf --><!-- Websites tab -->
 
     <div id="tab4" class="tab cf"><!-- $? tab -->
-      <p>As a freelance Web Developer I work for chump change and I have more solutions than you have problems. Please feel free to do us both a favor and abuse this opportunity!</p>
+      <h2>Why WordPress?</h2>
+      <p>WordPress is the newest option available to customers and one that is exciting to provide. WordPress is an open source framework originally intended as a blogging platform but that can be tailored to your specific tastes while harnessing the incredible power and stability of thousands of lines of code engineered by the brightest folks in the industry. It's kind of like someone giving you a Ferrari engine - now, who are you going to hire to build you a car around that engine?</p>
     </div><!-- #tab4 .tab cf -->
 
   </div><!-- .tab-content -->
-
   </div><!-- .tabs -->
 
 </section><!-- #div-two -->
 
-<article id="div-three"><!-- begin .backstretch -->
+<article id="div-three">
+  <div class="about cf">
+
+    <h1>Meet the Team</h1>
+    <div class="about-content">
+      <div class="about-profile-img">
+        <img src="_images/Robert-Means-Developer.png" border="0">
+      </div>
+      <div class="about-profile">
+      <h3>Robert Means <span class="about-gone">-</span> <br class="large-screen-gone">Developer</h3>
+      <!-- <h2>PHP, HTML5, CSS3, jQuery, Javascript</h2> -->
+        <p>I have been developing websites since the '90's with a passion for integrating complex features within custom designs.</p>
+        <p>The skills I bring to your project include PHP, HTML5, CSS3, jQuery and Javascript. A strong command of these languages is the very foundation of a solid product and one that you can feel confident will display across multiple browsers and devices in a consistent, reliable manner.</p>
+
+        <p><a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="about-contact">Contact Robert</a></p>
+      </div>
+    </div><!-- .about-content -->
+
+    <div class="about-content">
+      <div class="about-profile-img">
+        <img src="_images/Bobby-Means-Designer.jpg" border="0">
+      </div>
+      <div class="about-profile">
+      <h3>Bobby Means <span class="about-gone">-</span> <br class="large-screen-gone">Designer</h3>
+      <!-- <h2>Photoshop, Illustrator, Premiere</h2> -->
+        <p>Basking in the RGB color spectrum and designing unique, beautiful websites has been a joy of mine since my first Windows 95 computer when the GUI interface was originally introduced.</p>
+
+        <p><a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="about-contact">Contact Bobby</a></p>
+      </div>
+    </div><!-- .about-content -->      
+
+    <div class="about-content">
+      <div class="about-profile-img">
+        <img src="_images/Bob-Means-Sales.jpg" border="0">
+      </div>
+      <div class="about-profile">
+      <h3>Bob Means <span class="about-gone">-</span> <br class="large-screen-gone">Sales &amp; Support</h3>
+        <p>My mission is to understand your goals and vision and convey that to Bobby, our designer. He's a bit of a flake sometimes as designers can be so you'll want someone focused and persistent to keep him on task. Together we can outline a plan that works for you.</p>
+
+        <p><a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="about-contact">Contact Bob</a></p>
+      </div>
+    </div><!-- .about-content -->
+
+    <div class="about-content about-btm">
+      <div class="about-profile-img">
+        <img src="_images/Rob-Means-Accounting.jpg" border="0">
+      </div>
+      <div class="about-profile">
+      <h3>Rob Means <span class="about-gone">-</span> <br class="large-screen-gone">Internetual Webanaut</h3>
+        <p>Don't let any of the others fool you - I keep this circus in line and am a pillar of resolute and steadfast integrity overseeing the entire operation and ensuring every last detail is maintained throughout your project.</p>
+
+        <p><a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="about-contact">Contact Rob</a></p>
+      </div>
+    </div><!-- .about-content -->        
+
+  </div><!-- .about -->
+</article><!-- #div-three -->
+
+<article id="div-four"><!-- begin .backstretch -->
 <div class="row text-center">
 
   <div id="process_slider" class="flexslider_process">
@@ -265,7 +311,7 @@
       
       <li data-thumb="_images/step-01.png">
         <div class="slide_content">
-          <div class="slide_title">Blueprint</div>
+          <div class="slide_title">Create a Blueprint</div>
           <div class="slide_text">
             We'll research user expectations and target common use cases, developing a clear sitemap and user flow for intuitive engagement within your custom design.
           </div>
@@ -303,7 +349,7 @@
       
       <li data-thumb="_images/step-05.png">
         <div class="slide_content">
-          <div class="slide_title">Brainstorm Ideas</div>
+          <div class="slide_title">Let's Brainstorm Ideas!</div>
           <div class="slide_text">
            Each project begins by identifying objectives and tastes in order to customize an interactive experience tailored to your specific needs.
           </div>

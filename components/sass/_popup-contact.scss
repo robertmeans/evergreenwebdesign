@@ -38,6 +38,7 @@ border-radius: 10px;
    font-family : Arial, sans-serif;
    color: #757575;
    font-size:0.8em;
+   line-height: 1.5em;
    // font-weight: bold;
 }
 
@@ -77,6 +78,7 @@ border-radius: 10px;
    width:100px;
    height:30px;
    padding-left:0px;
+   margin-top: 8px;
    margin-bottom: 15px;
 }
 
@@ -107,6 +109,7 @@ border-radius: 10px;
 {
    font-family: Verdana, Arial, sans-serif; 
    font-size: 0.7em;
+   line-height: 1em;
    color: #900;
    background-color : #ffff00;
 }
@@ -145,8 +148,8 @@ border-radius: 10px;
 }
 #fg_formContainer
 {
-   height:450px;
-   width:385px;
+   height: auto;
+   width: 385px;
    background: rgba(255,255,255,.85);
 
 

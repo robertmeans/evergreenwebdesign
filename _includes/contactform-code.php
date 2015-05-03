@@ -8,7 +8,7 @@
         <div id="fg_box_Close"><a href="javascript:fg_hideform('fg_formContainer','fg_backgroundpopup');"><i class="fa fa-times-circle"></i></a></div>
     </div>
 
-    <div id="fg_form_InnerContainer">
+    <div id="fg_form_InnerContainer" class="cf">
     <form id='contactus' action='javascript:fg_submit_form()' method='post' accept-charset='UTF-8'>
 
     <input type='hidden' name='submitted' id='submitted' value='1'/>

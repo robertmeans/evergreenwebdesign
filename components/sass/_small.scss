@@ -156,6 +156,35 @@ ul.second-column {
 	margin-top: -.9em;
 }
 
+.about {
+	h1 {
+		font-size: 2.2em;
+		margin: 30px 10% 30px 10%;
+	}
+}
+.about-content {
+	margin: 25px 5% 10px 5%;
+	h3 {
+		text-align: center;
+	}
+	a.about-contact {
+		right: 20px;
+	}
+}
+.about-profile-img {
+	width: 100%;
+	max-width: 150px;
+	float: none;
+	margin: 0 auto;
+}
+.about-profile {
+	width: 80%;
+	float: none;
+	margin: 0 auto;
+}
+.about-gone {
+	display: none;
+}
 
 /* --- end original nav */
 a.mobile_menu {
@@ -357,8 +386,8 @@ nav ul li a {
 }
 #fg_formContainer
 {
-   height:450px;
-   width:250px;
+   height: auto;
+   width: 250px;
    // left: 0;
 }
 #contactus input[type="text"]
@@ -378,9 +407,9 @@ nav ul li a {
 }
 #contactus input[type="submit"]
 {
-   width:80px;
-   height:30px;
-   padding-left:0px;
+   width: 80px;
+   height: 30px;
+   padding-left: 0px;
    margin-bottom: 15px;
 }
 footer {
@@ -510,6 +539,11 @@ ul.staticsites li:last-child {
 	padding: 40px 80px -50px 80px;
 	border-radius: 50%;
 	max-height: 325px;
+}
+.about {
+	h1 {
+		font-size: 2em;
+	}
 }
 } // end (max-width: 400px) closing tag
 
