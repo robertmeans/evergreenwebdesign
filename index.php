@@ -139,7 +139,7 @@
 
 
               <div class="container">
-                <h4 class="click">SEO Strategies</h4>
+                <a href="#" class="click no-default" ontouchend="this.onclick=fix">SEO Strategies</a>
                 <div class="expand">
                   <p>this is some information that you couldn't see before.</p>
                   <p>this is more...</p>
@@ -149,7 +149,7 @@
 
 
               <div class="container2">
-                <h4 class="click click2">Pricing</h4> 
+                <a href="#" class="click no-default" ontouchend="this.onclick=fix">Pricing</a> 
                 <div class="expand">
                   <p>talkin' about pricing all up in here</p>
                   <p>information with stuff and things</p>

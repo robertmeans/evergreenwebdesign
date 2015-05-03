@@ -1792,8 +1792,6 @@ if (!isTouch) {
         $('a[href$="#div-four"]').addClass('active-nav');
     }
   });
-
-
 }); //function
 
 
@@ -1915,6 +1913,70 @@ if(windowSize == 'small') {
   $('a.mobile_menu').removeClass('selected');
 }   
 }
+
+
+
+
+//
+// to handle ios hover problem where you have to tap twice to get past
+// the hover state...
+// solution found at:
+// http://www.prowebdesign.ro/how-to-deal-with-hover-on-touch-screen-devices/
+//
+jQuery(document).ready(function($) {    
+//make filters hover behavior switch to tap/clcik on touch screens  
+if (!$('html').hasClass('no-touch')) { 
+//Execute code only on a touch screen device         
+//Show #filter1 drop-down and hide #filter2 drop-down if it was open        
+$('#filter1').bind('touchstart', function(e) {          
+$("#filter1 ul.children").toggle();             
+$("#filter2 ul.children").css('display','none');            
+e.stopPropagation(); 
+//Make all touch events stop at the #filter1 container element         
+});         
+//Show #filter2 drop-down and hide #filter1 drop-down if it was open        
+$('#filter2').bind('touchstart', function(e) {          
+$("#filter2 ul.children").toggle();            
+$("#filter1 ul.children").css('display','none');           
+e.stopPropagation(); 
+//Make all touch events stop at the #filter2 container element         
+});         
+$(document).bind('touchstart', function(e) {                
+$(".filters ul.children").fadeOut(300); 
+//Close filters drop-downs if user taps ANYWHERE in the page        
+});         
+$('.filters ul.children').bind('touchstart', function(event){               
+event.stopPropagation(); 
+//Make all touch events stop at the #filter1 ul.children container element         
+});         
+$(".filters ul.children a").click(function () {               
+$(".filters ul.children").fadeOut(300); 
+//Close filters drop-downs if user taps on any link in drop-down      
+});     
+} 
+});
+
+//
+// to handle default behavior of a href="#" from jumping to top of page
+// 
+$('a.no-default').click(function(e)
+{
+    // Special stuff to do when this link is clicked...
+
+    // Cancel the default action
+    e.preventDefault();
+});
+
+// to handle ios from sticking on the hover state
+function fix()
+{
+    var el = this;
+    var par = el.parentNode;
+    var next = el.nextSibling;
+    par.removeChild(el);
+    setTimeout(function() {par.insertBefore(el, next);}, 0)
+}
+
 
 
 

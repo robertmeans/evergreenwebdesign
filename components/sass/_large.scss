@@ -365,6 +365,11 @@ li.active a, li.active a:hover {
 
 
 
+/*
+// had this to handle ios hover problem
+// but solved it with jQuery instead
+// see: if (!$('html').hasClass('no-touch')) {
+// in scripts.js
 
 .no-touch.tab-links a:hover {
     background: #ececec;
@@ -377,7 +382,7 @@ li.active a, li.active a:hover {
     border-bottom: 1px solid white;
     cursor: default;
 }
-
+*/
 
 .gone {
 	display: none;
