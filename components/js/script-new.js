@@ -1920,7 +1920,7 @@ if(windowSize == 'small') {
 
 
 
-/*  ---- getthishere -----------
+
 //
 // to handle ios hover problem where you have to tap twice to get past
 // the hover state...
@@ -1959,7 +1959,6 @@ $(".filters ul.children").fadeOut(300);
 });     
 } 
 });
-------------------------------- */
 
 //
 // to handle default behavior of a href="#" from jumping to top of page
