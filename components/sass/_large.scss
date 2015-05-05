@@ -283,15 +283,6 @@
     	margin-top: 90px;
     }
 }
-#tab3 {
-	h2 {
-		font-size: 1.1em;
-		font-weight: bold;
-		color: #757575;
-		display: inline-block;
-		margin: 50px 0px 20px 35px;
-	}
-}
 
 .tab-content p.social-network-icons {
 	position: absolute;
@@ -498,7 +489,7 @@ li.active a, li.active a:hover {
 .tab-content {
 	font-family: Calibri, Arial, sans-serif;
     // padding: 15px;
-    padding: 15px 0px;
+    padding: 3em 0px;
     border-radius:3px;
     border: 1px solid #ccc;
     // box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
@@ -508,6 +499,7 @@ li.active a, li.active a:hover {
     p {
     	padding: 0px 35px;
     }
+
 }
 // .tab {
 //     display:none;

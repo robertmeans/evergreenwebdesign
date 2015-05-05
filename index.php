@@ -100,20 +100,7 @@
       <ul class="tab-links">
           <li class="active"><a href="#tab1" class="static"><i class="fa fa-eye"></i> <span class="mobile-gone">Overview</span></a></li>
           <li><a href="#tab2" class="static"><i class="fa fa-desktop desktop-only"></i> <span class="mobile-gone">Websites</span></a></li>
-
-
-
-
-
-
-
           <li><a href="#tab3" class="static"><i class="fa fa-wordpress desktop-only"></i> <span class="mobile-gone">WordPress</span></a></li>
-
-
-
-
-
-          <!-- <li><a href="#tab4" class="static">Tab 4</a></li> -->
       </ul> 
 
   <div class="tab-content">
@@ -259,7 +246,8 @@
     </div><!-- #tab2 .tab .cf --><!-- Websites tab -->
 
     <div id="tab3" class="tab cf"><!-- $? tab -->
-      <p>As a freelance Web Developer I work for chump change and I have more solutions than you have problems. Please feel free to do us both a favor and abuse this opportunity!</p>
+      <h2 class="mobile"><i class="fa fa-wordpress"></i> WordPress</h2>
+      <p>WordPress is the newest option available to customers and one that is exciting to provide. WordPress is an open source framework originally designed as a blogging platform but that can be tailored to your specific tastes while harnessing the incredible power and stability of thousands of lines of code engineered by the brightest folks in the industry. It's kind of like someone giving you a Ferrari engine - now, who are you going to hire to build you a car around that engine?</p>
     </div><!-- #tab3 .tab cf -->
 
   </div><!-- .tab-content -->
