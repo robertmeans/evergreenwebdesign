@@ -124,14 +124,14 @@
 	}
 }
 .tab-links li {
-    margin: 0px 2px;
+    margin: 0px 2px -1px 2px;
     float: left;
     list-style: none;
     .fa {
     	margin: 0px 10px;
     }
     .pad {
-	padding: 0px 15px;
+	padding: 0px 10px;
 	}
 }
 
@@ -156,23 +156,37 @@ ul.second-column {
 	margin-top: -.9em;
 }
 
-/* original mobile nav ---
-// mobile navigation
-// a.mobile_menu {
-// 	z-index: 1003;
-// 	display: block;
-// 	width: 38px;
-// 	height: 43px;	
-// 	background: url(../_images/mobile_link_menu.png) no-repeat 0px 0px;
-// 	position: fixed; 
-// 	top: 10px; 
-// 	right: 10px;
-// 	cursor: pointer;
-// }
-// a.mobile_menu.selected {
-// 	background: url(../_images/mobile_link_menu_mo.png) no-repeat 0px 0px;	
-// }
---- end original nav */
+.about {
+	h1 {
+		font-size: 2.2em;
+		margin: 30px 10% 30px 10%;
+	}
+}
+.about-content {
+	margin: 25px 5% 10px 5%;
+	h3 {
+		text-align: center;
+	}
+	a.about-contact {
+		right: 20px;
+	}
+}
+.about-profile-img {
+	width: 100%;
+	max-width: 150px;
+	float: none;
+	margin: 0 auto;
+}
+.about-profile {
+	width: 80%;
+	float: none;
+	margin: 0 auto;
+}
+.about-gone {
+	display: none;
+}
+
+/* --- end original nav */
 a.mobile_menu {
 	z-index: 1003;
 	display: block;
@@ -372,8 +386,8 @@ nav ul li a {
 }
 #fg_formContainer
 {
-   height:450px;
-   width:250px;
+   height: auto;
+   width: 250px;
    // left: 0;
 }
 #contactus input[type="text"]
@@ -393,9 +407,9 @@ nav ul li a {
 }
 #contactus input[type="submit"]
 {
-   width:80px;
-   height:30px;
-   padding-left:0px;
+   width: 80px;
+   height: 30px;
+   padding-left: 0px;
    margin-bottom: 15px;
 }
 footer {
@@ -426,24 +440,26 @@ footer {
 
 
 
-@media screen and (max-width: 500px){
-.gone {
-	display: inline-block;
-}
-}
-
-
-
 @media screen and (max-width: 560px){
-.tab-links li {
-    .pad {
-	padding: 0px 10px;
-	}
+
+li.wp-tab a {
+	padding: 5px 8px 3px 8px;
 }
+// target Safari exclusively --
+_::-moz-svg-foreign-content, :root li.wp-tab a {
+	padding: 5px 10px 4px 10px;
+}
+// Safari has some 1px problem on the 
+// bottom that this addresses
+
+
 .mobile-gone {
 	display: none;
 }
 .large-screen-gone {
+	display: inline-block;
+}
+.wp-logo-gone {
 	display: inline-block;
 }
 h2.mobile {
@@ -452,7 +468,11 @@ h2.mobile {
 	font-weight: bold;
 	color: #757575;
 	margin: 20px 0px 0px 15px;
-
+}
+#tab4 {
+	h2 {
+		margin: 20px 0px 0px 15px;
+	}
 }
 footer {
 	width: 92%;
@@ -475,16 +495,18 @@ footer {
 }
 } // end (max-width: 560px) closing tag
 
+
+@media screen and (max-width: 500px){
+.gone {
+	display: inline-block;
+	}
+}
+
+
 @media screen and (max-width: 485px){
 #my-name {
 	top: 55%;	
 	}
-.mobile-gone {
-	display: none;
-}
-.large-screen-gone {
-	display: inline-block;
-}
 h2.mobile {
 	display: inline-block;
 	font-size: 1.1em;
@@ -522,6 +544,11 @@ ul.staticsites li:last-child {
 	border-radius: 50%;
 	max-height: 325px;
 }
+.about {
+	h1 {
+		font-size: 2em;
+	}
+}
 } // end (max-width: 400px) closing tag
 
 
@@ -529,12 +556,6 @@ ul.staticsites li:last-child {
 @media screen and (max-width: 365px){
 #my-name {
 	top: 58%;	
-}
-.mobile-gone {
-	display: none;
-}
-.large-screen-gone {
-	display: inline-block;
 }
 h2.mobile {
 	display: inline-block;
@@ -545,8 +566,6 @@ h2.mobile {
 
 }
 ul.staticsites li:last-child {
-	padding: 30px 80px -50px 80px;
-	border-radius: 50%;
 	max-height: 275px;
 	p {
 		margin-top: 40%;
@@ -604,12 +623,6 @@ footer {
 		line-height: 1.2em;	
 	}	
 }
-.mobile-gone {
-	display: none;
-}
-.large-screen-gone {
-	display: inline-block;
-}
 h2.mobile {
 	display: inline-block;
 	font-size: 1.1em;
@@ -618,23 +631,5 @@ h2.mobile {
 	margin: 20px 0px 0px 15px;
 
 }
-footer {
-	width: 92%;
-	background: #2d2d2d;
-	color: #fff;
-	height: 200px;
-	margin: 0;
-	padding: 10% 8% 0 0;
-	.tel, .tel:visited {
-		font-size: 1.4em;
-		color: #fff;
-		text-decoration: none;
-		cursor: pointer;
-	}
-	.tel, .tel:focus {
-		font-size: 1.4em;
-		color: #fff;
-		cursor: pointer;
-	}
-}
+
 } // closing (max-width: 355px)

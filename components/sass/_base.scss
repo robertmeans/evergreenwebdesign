@@ -1,5 +1,7 @@
 @import url("http://fonts.googleapis.com/css?family=Exo+2:200,400,600,800|Ubuntu:700");
-
+html {
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+}
 body {
 	// height: 3200px;
 	font-size: 16px;
@@ -173,6 +175,106 @@ button#toggleMoreSites {
 		// to do to turn off outline
 	}
 }
+
+.tab-links a:hover {
+    background: #435162;
+    color: #fff;
+    text-decoration: none;
+} 
+li.active a, li.active a:hover {
+    background: #fff;
+    color: #4c4c4c;
+    border-bottom: 1px solid white;
+    cursor: default;
+}
+
+// #SEO {
+// 	height: auto;
+// }
+// #container {width:500px; margin:10px;}
+// #container h4{
+//     background-color:#FAF9F0;
+//     padding:20px;
+//     box-shadow: 0px 0px 5px #ccc;
+//     position: relative;
+//     float: left;
+// }
+
+// #container h4:hover{cursor:pointer;}
+#tab1 div a i.fa {
+	margin-right: 10px;
+}
+.container {
+	border-top: 1px solid #ccc;
+	position: relative;
+	float: left;
+	width: 90%;
+	margin: 40px 5% 10px 5%;
+}
+
+.container2 {
+	border-top: 1px solid #ccc;
+	position: relative;
+	float: left;
+	width: 90%;
+	margin: 40px 5% 50px 5%;
+}
+
+div.expand {
+	width: 100%;
+    color: #757575;
+    border-bottom: 1px solid #ccc;
+    background-color:#EDECDF;
+    display: none;
+    position: relative;
+    float: left;
+    clear: both;
+    margin-bottom: 0px;
+    padding-bottom: 50px;
+    // padding: 0 20px 20px 20px;
+    // z-index:-4;
+    p:first-child {
+    	margin-top: 50px;
+    }
+}
+div.expand p.seo-strategies {
+	margin-top: 80px;
+}
+a.click {
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	float: right;
+	margin-right: 50px;
+	margin-top: 0px;
+	margin-bottom: -30px;
+	z-index: 999;
+	background: #757575;
+	border-right: 1px solid #bebebe;
+	border-bottom: 1px solid #bebebe;
+	border-left: 1px solid #bebebe;
+	color: #fff;
+	line-height: 1em;
+	padding: 5px 15px;
+	text-decoration: none;
+	-webkit-transition: background-color .3s ease;
+	-moz-transition: background-color .3s ease;
+	-o-transition: background-color .3s ease;
+	-ms-transition: background-color .3s ease;
+	transition: background-color .3s ease;
+	&:hover {
+		background: #e0e0e0;
+		color: #757575;
+		text-decoration: none;
+	}
+	&:active, &:focus {
+		outline: 0;
+		outline-style: 0;
+		// mobile ios - this is what you have
+		// to do to turn off outline
+	}
+}
+
 #scrollDownSprite {
 	display: none;
 	border: none;
