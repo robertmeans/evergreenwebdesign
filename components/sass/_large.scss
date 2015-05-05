@@ -282,14 +282,107 @@
     	margin-top: 90px;
     }
 }
-#tab4 {
+#tab3 {
 	h2 {
-		font-size: 1.5em;
+		font-size: 1.1em;
 		font-weight: bold;
 		color: #757575;
 		display: inline-block;
-		margin: 1.5em 0 1em 35px;
+		margin: 50px 0px 20px 35px;
 	}
+}
+
+.tab-content p.social-network-icons {
+	position: absolute;
+	margin-top: 3px;
+	margin-left: 5px;
+	padding-left: 0;
+	z-index: 2;
+	vertical-align: top;
+	img {
+			margin: 0px 5px 0px 0px;
+	}
+}
+
+.facebook-square {
+	// color: #dd4b39;
+	// font-size: 2em;
+	border-radius: 50%;
+	-webkit-animation: in .2s 2 linear;
+	-moz-animation: in .2s 2 linear;
+	-ms-animation: in .2s 2 linear;
+	animation: in .2s 2 linear;
+	&:hover {
+		-webkit-animation: out .2s 2 linear;
+		-moz-animation: out .2s 2 linear;
+		-ms-animation: out .2s 2 linear;
+		animation: out .2s 2 linear;
+
+	}
+}
+.twitter-square {
+	// color: #dd4b39;
+	// font-size: 2em;
+	border-radius: 50%;
+	-webkit-animation: in .2s 2 linear;
+	-moz-animation: in .2s 2 linear;
+	-ms-animation: in .2s 2 linear;
+	animation: in .2s 2 linear;
+	&:hover {
+		-webkit-animation: out .2s 2 linear;
+		-moz-animation: out .2s 2 linear;
+		-ms-animation: out .2s 2 linear;
+		animation: out .2s 2 linear;
+
+	}
+}
+.google-plus-square {
+	// color: #dd4b39;
+	// font-size: 2em;
+	border-radius: 50%;
+	-webkit-animation: in .2s 2 linear;
+	-moz-animation: in .2s 2 linear;
+	-ms-animation: in .2s 2 linear;
+	animation: in .2s 2 linear;
+	&:hover {
+		-webkit-animation: out .2s 2 linear;
+		-moz-animation: out .2s 2 linear;
+		-ms-animation: out .2s 2 linear;
+		animation: out .2s 2 linear;
+
+	}
+}
+@keyframes in {
+    0%   { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+}
+@keyframes out {
+    from   { transform: rotate(0deg); }
+    to { transform: rotate(360deg);}
+}
+@-webkit-keyframes in {
+    0%   { -webkit-transform: rotate(360deg); }
+    100% { -webkit-transform: rotate(0deg); }
+}
+@-webkit-keyframes out {
+    from   { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes in {
+    0%   { -moz-transform: rotate(360deg); }
+    100% { -moz-transform: rotate(0deg); }
+}
+@-moz-keyframes out {
+    from   { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg);}
+}
+@-ms-keyframes in {
+    0%   { -ms-transform: rotate(360deg); }
+    100% { -ms-transform: rotate(0deg); }
+}
+@-ms-keyframes out {
+    from   { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg);}
 }
 
 /*----- Tab Links -----*/
@@ -403,7 +496,6 @@ li.active a, li.active a:hover {
 /*----- Content of Tabs -----*/
 .tab-content {
 	font-family: Calibri, Arial, sans-serif;
-
     // padding: 15px;
     padding: 15px 0px;
     border-radius:3px;
@@ -480,7 +572,7 @@ ul.past-projects {
 // }
 ul.list {
 	display: inline-block;
-	margin: 0px;
+	// margin: 0px;
 	padding: 2%;
 	li {
 		float: left;
@@ -602,6 +694,7 @@ ul.list {
 }
 .about-btm {
 	border-bottom: none;
+	margin-bottom: 60px;
 }
 .about-profile-img {
 	width: 20%;

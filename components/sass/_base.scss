@@ -201,7 +201,9 @@ li.active a, li.active a:hover {
 // }
 
 // #container h4:hover{cursor:pointer;}
-
+#tab1 div a i.fa {
+	margin-right: 10px;
+}
 .container {
 	border-top: 1px solid #ccc;
 	position: relative;
@@ -209,6 +211,7 @@ li.active a, li.active a:hover {
 	width: 90%;
 	margin: 40px 5% 10px 5%;
 }
+
 .container2 {
 	border-top: 1px solid #ccc;
 	position: relative;
@@ -234,7 +237,9 @@ div.expand {
     	margin-top: 50px;
     }
 }
-
+div.expand p.seo-strategies {
+	margin-top: 80px;
+}
 a.click {
 	display: inline-block;
 	position: relative;
@@ -245,9 +250,12 @@ a.click {
 	margin-bottom: -30px;
 	z-index: 999;
 	background: #757575;
+	border-right: 1px solid #bebebe;
+	border-bottom: 1px solid #bebebe;
+	border-left: 1px solid #bebebe;
 	color: #fff;
 	line-height: 1em;
-	padding: 5px 10px;
+	padding: 5px 15px;
 	text-decoration: none;
 	-webkit-transition: background-color .3s ease;
 	-moz-transition: background-color .3s ease;

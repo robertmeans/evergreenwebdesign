@@ -1626,6 +1626,10 @@ $(document).ready(function(){
   });
 });
 
+$('#tab1 div a').click(function(){
+    $(this).find('i').toggleClass('fa-angle-down fa-angle-up')
+});
+
 
 //display time and day as text
 // function display_c(){
