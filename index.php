@@ -100,7 +100,19 @@
       <ul class="tab-links">
           <li class="active"><a href="#tab1" class="static"><i class="fa fa-eye"></i> <span class="mobile-gone">Overview</span></a></li>
           <li><a href="#tab2" class="static"><i class="fa fa-desktop desktop-only"></i> <span class="mobile-gone">Websites</span></a></li>
-          <li><a href="#tab4" class="static"><span class="pad">$ ?</span></a></li>
+
+
+
+
+
+
+
+          <li><a href="#tab3" class="static"><i class="fa fa-wordpress desktop-only"></i> <span class="mobile-gone">WordPress</span></a></li>
+
+
+
+
+
           <!-- <li><a href="#tab4" class="static">Tab 4</a></li> -->
       </ul> 
 
@@ -132,7 +144,32 @@
               </ul>
               </div>
 
-        </div>
+
+          <div class="container">
+            <p class="social-network-icons"><a href="https://www.facebook.com/evergreenwebdesign01" target="_blank"><img class="facebook-square" src="_images/facebook-icon.jpg" border="0" width="33px" height="33px"></a> <a href="https://twitter.com/EWDLLC" target="_blank"><img class="twitter-square" src="_images/twitter-icon.jpg" border="0" width="33px" height="33px"></a> <a href="https://plus.google.com/+Evergreenwebdesignllc" target="_blank"><img class="google-plus-square" src="_images/google-plus-icon.jpg" border="0" width="33px" height="33px"></a> <br class="large-screen-gone">please share</p>
+            
+
+            <a href="#" class="click no-default" ontouchend="this.onclick=fix"><i class="fa fa-angle-down"></i> SEO Strategies</a>
+
+
+            <div class="expand">
+              <p class="seo-strategies">Your Search Engine Optimization stragety starts with the big 3 social networking giants and continues all the way into the code of your website. Together we'll saturate the essence of your online presence with keywords to drive your </p>
+            </div><!-- .expand !-->
+          </div><!-- #container -->
+
+          <div class="container2">
+             <a href="#" class="click no-default" ontouchend="this.onclick=fix"><i class="fa fa-angle-down"></i> Pricing</a>
+            <div class="expand">
+              <p>Pricing options are available to suit virtually every budget and project. Let's discuss your idea and outline a plan that works for you.</p>
+              <p>To quote pricing without knowing the details of a project is sort of like quoting the price of a bicycle without knowing what bicycle.</p>
+            </div><!-- .expand !-->
+          </div><!-- #container2 -->
+
+
+
+
+
+        </div><!-- #tab1 .tab .active .cf -->
 
       <div id="tab2" class="tab cf"><!-- Websites tab -->
       <h2 class="mobile">Websites</h2>
@@ -221,9 +258,9 @@
 
     </div><!-- #tab2 .tab .cf --><!-- Websites tab -->
 
-    <div id="tab4" class="tab cf"><!-- $? tab -->
+    <div id="tab3" class="tab cf"><!-- $? tab -->
       <p>As a freelance Web Developer I work for chump change and I have more solutions than you have problems. Please feel free to do us both a favor and abuse this opportunity!</p>
-    </div><!-- #tab4 .tab cf -->
+    </div><!-- #tab3 .tab cf -->
 
   </div><!-- .tab-content -->
 
@@ -231,7 +268,66 @@
 
 </section><!-- #div-two -->
 
-<article id="div-three"><!-- begin .backstretch -->
+<article id="div-three">
+  <div class="about cf">
+
+    <h1>Meet the Team</h1>
+    <div class="about-content">
+      <div class="about-profile-img">
+        <img src="_images/Robert-Means-Developer.png" border="0">
+      </div>
+      <div class="about-profile">
+      <h3>Robert Means<span class="about-gone">,</span> <br class="large-screen-gone">Developer</h3>
+      <!-- <h2>PHP, HTML5, CSS3, jQuery, Javascript</h2> -->
+        <p>I have been developing websites since the '90's with a passion for integrating complex features within custom designs.</p>
+        <p>The skills I bring to your project include PHP, HTML5, CSS3, jQuery and Javascript. A strong command of these languages is the very foundation of a solid product and one that you can feel confident will display across multiple browsers and devices in a consistent, reliable manner.</p>
+
+        <p><a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="about-contact">Contact Robert</a></p>
+      </div>
+    </div><!-- .about-content -->
+
+    <div class="about-content">
+      <div class="about-profile-img">
+        <img src="_images/Bobby-Means-Designer.jpg" border="0">
+      </div>
+      <div class="about-profile">
+      <h3>Bobby Means<span class="about-gone">,</span> <br class="large-screen-gone">Designer</h3>
+      <!-- <h2>Photoshop, Illustrator, Premiere</h2> -->
+        <p>Basking in the RGB color spectrum and designing unique, beautiful websites has been a joy of mine since my first Windows 95 computer when the GUI interface was originally introduced.</p>
+        <p>I wield Photoshop like a samuri ninja and Illustrator like a middleweight contender. ...I'm working on that.</p>
+
+        <p><a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="about-contact">Contact Bobby</a></p>
+      </div>
+    </div><!-- .about-content -->      
+
+    <div class="about-content">
+      <div class="about-profile-img">
+        <img src="_images/Bob-Means-Sales.jpg" border="0">
+      </div>
+      <div class="about-profile">
+      <h3>Bob Means<span class="about-gone">,</span> <br class="large-screen-gone">Sales &amp; Support</h3>
+        <p>My mission is to understand your goals and vision and convey that to Bobby, our designer. He's a bit of a flake sometimes as designers can be so you'll want someone focused and persistent to keep him on task. Together we can outline a plan that works for you.</p>
+
+        <p><a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="about-contact">Contact Bob</a></p>
+      </div>
+    </div><!-- .about-content -->
+
+    <div class="about-content about-btm">
+      <div class="about-profile-img">
+        <img src="_images/Rob-Means-Accounting.jpg" border="0">
+      </div>
+      <div class="about-profile">
+      <h3>Rob Means<span class="about-gone">,</span> <br class="large-screen-gone">Internetual Webanaut</h3>
+        <p>Don't let any of the others here fool you - I keep this circus in order and am The pillar of resolute and steadfast integrity overseeing the entire operation and ensuring every last detail is maintained to immaculate perfection.</p>
+
+        <p><a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="about-contact">Contact Rob</a></p>
+      </div>
+    </div><!-- .about-content -->        
+
+  </div><!-- .about -->
+</article><!-- #div-three -->
+
+<article id="div-four"><!-- begin .backstretch -->
 <div class="row text-center">
 
   <div id="process_slider" class="flexslider_process">
@@ -239,7 +335,7 @@
       
       <li data-thumb="_images/step-01.png">
         <div class="slide_content">
-          <div class="slide_title">Blueprint</div>
+          <div class="slide_title">Create a Blueprint</div>
           <div class="slide_text">
             We'll research user expectations and target common use cases, developing a clear sitemap and user flow for intuitive engagement within your custom design.
           </div>
@@ -277,7 +373,7 @@
       
       <li data-thumb="_images/step-05.png">
         <div class="slide_content">
-          <div class="slide_title">Brainstorm Ideas</div>
+          <div class="slide_title">Let's Brainstorm Ideas!</div>
           <div class="slide_text">
            Each project begins by identifying objectives and tastes in order to customize an interactive experience tailored to your specific needs.
           </div>
@@ -288,7 +384,7 @@
   </div><!-- #process_slider .flexslider_process -->
 
 </div> <!-- #row .text-center -->
-</article><!-- #div-three -->
+</article><!-- #div-four -->
 
 </div><!-- #wrapper -->
 <?php include "_includes/footer.php" ?>

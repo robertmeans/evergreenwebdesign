@@ -1485,7 +1485,12 @@ $('ul.list li').each(function() {
 
 
 // brilliant bit of code acquired from Stackoverflow
-// on 04.07.15 that fixes this dang tab business!  
+// on 04.07.15 that fixes this dang tab business!
+// so that it is not handled in css where you'd have to
+// set display: none; and the resizing of the website
+// containers does not play well when things are 'none;'.
+// this just hides the content until the anchor tag is
+// clicked and then it adds the .active class to that one.
 $('.tab').hide();
 $('.tab.active').show();
 // just stare at it for a while...
@@ -1615,6 +1620,50 @@ $("button#toggleMoreSites").click(function(){
          $("#addSites01").slideToggle(400);
        });
 });
+
+
+
+
+/* ---------------- getthishere ------------ */
+
+$(document).ready(function(){
+  $(".click").click(function(){
+    
+    var target = $(this).parent().children(".expand");
+    $(target).slideToggle();
+  });
+});
+
+$('#tab1 div a').click(function(){
+    $(this).find('i').toggleClass('fa-angle-down fa-angle-up')
+});
+
+
+// stop page from jumping to top when anchor is set to "#"
+$('a.no-default').click(function(e)
+{
+    // Special stuff to do when this link is clicked...
+
+    // Cancel the default action
+    e.preventDefault();
+});
+
+
+// to handle ios from sticking on the hover state
+function fix()
+{
+    var el = this;
+    var par = el.parentNode;
+    var next = el.nextSibling;
+    par.removeChild(el);
+    setTimeout(function() {par.insertBefore(el, next);}, 0)
+}
+
+
+/* ---------------- getthishere ------------ */
+
+
+
 //display time and day as text
 // function display_c(){
 // var refresh=1000; // Refresh rate in milli seconds
@@ -1940,7 +1989,7 @@ setTimeout(showScrollDownSprite, 13500);
 // $("#div-three").backstretch("_images/colorado-flag.gif");
 
 // Or, to start a slideshow, just pass in an array of images
-$("#div-three").backstretch([
+$("#div-four").backstretch([
 "_images/flex-01.jpg",
 "_images/flex-02.jpg",
 "_images/flex-03.jpg",
