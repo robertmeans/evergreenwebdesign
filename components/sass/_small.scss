@@ -22,6 +22,9 @@
 	height: auto;
 	min-height: 480px;
 }
+#div-four {
+	height: 800px;
+}
 #clockScene {
 	// z-index: 100;
 	height: 250px;
@@ -154,8 +157,23 @@
 }
 ul.second-column {
 	margin-top: -.9em;
+	margin-bottom: 3em;
 }
-
+.tab-content p.social-network-icons {
+	margin: -45px 0 3px 0;
+}
+a.click {
+	display: block;
+	margin: 0px auto -30px auto;
+	padding: 15px;
+	float: none;
+}
+div.expand p.seo-strategies {
+	margin-top: 50px;
+}
+.container2 {
+	margin: 30px 5% 50px 5%;
+}
 .about {
 	h1 {
 		font-size: 2.2em;
@@ -413,22 +431,11 @@ nav ul li a {
    margin-bottom: 15px;
 }
 footer {
-	width: 92%;
-	background: #2d2d2d;
-	color: #fff;
-	height: 200px;
-	margin: 0;
-	padding: 10% 8% 0 0;
-	.tel, .tel:visited {
-		font-size: 1.4em;
-		color: #fff;
-		text-decoration: none;
-		cursor: pointer;
-	}
-	.tel, .tel:focus {
-		font-size: 1.4em;
-		color: #fff;
-		cursor: pointer;
+	text-align: center;
+	padding: 0;
+	#footer-info {
+		float: none;
+		margin: 2em auto 0 auto;
 	}
 } 
 #contactus .short_explanation {
@@ -474,29 +481,13 @@ h2.mobile {
 		margin: 20px 0px 0px 15px;
 	}
 }
-footer {
-	width: 92%;
-	background: #2d2d2d;
-	color: #fff;
-	height: 200px;
-	margin: 0;
-	padding: 10% 8% 0 0;
-	.tel, .tel:visited {
-		font-size: 1.4em;
-		color: #fff;
-		text-decoration: none;
-		cursor: pointer;
-	}
-	.tel, .tel:focus {
-		font-size: 1.4em;
-		color: #fff;
-		cursor: pointer;
-	}
-}
 } // end (max-width: 560px) closing tag
 
 
 @media screen and (max-width: 500px){
+#div-four {
+	height: 700px;
+}
 .gone {
 	display: inline-block;
 	}
@@ -514,25 +505,6 @@ h2.mobile {
 	color: #757575;
 	margin: 20px 0px 0px 15px;
 
-}
-footer {
-	width: 92%;
-	background: #2d2d2d;
-	color: #fff;
-	height: 200px;
-	margin: 0;
-	padding: 10% 8% 0 0;
-	.tel, .tel:visited {
-		font-size: 1.4em;
-		color: #fff;
-		text-decoration: none;
-		cursor: pointer;
-	}
-	.tel, .tel:focus {
-		font-size: 1.4em;
-		color: #fff;
-		cursor: pointer;
-	}
 }
 } // end (max-width: 485px) closing tag
 
@@ -569,25 +541,6 @@ ul.staticsites li:last-child {
 	max-height: 275px;
 	p {
 		margin-top: 40%;
-	}
-}
-footer {
-	width: 92%;
-	background: #2d2d2d;
-	color: #fff;
-	height: 200px;
-	margin: 0;
-	padding: 10% 8% 0 0;
-	.tel, .tel:visited {
-		font-size: 1.4em;
-		color: #fff;
-		text-decoration: none;
-		cursor: pointer;
-	}
-	.tel, .tel:focus {
-		font-size: 1.4em;
-		color: #fff;
-		cursor: pointer;
 	}
 }
 } // end (max-width: 365px) closing tag

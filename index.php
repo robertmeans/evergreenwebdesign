@@ -133,7 +133,7 @@
 
 
           <div class="container">
-            <p class="social-network-icons"><a href="https://www.facebook.com/evergreenwebdesign01" target="_blank"><img class="facebook-square" src="_images/facebook-icon.jpg" border="0" width="33px" height="33px"></a> <a href="https://twitter.com/EWDLLC" target="_blank"><img class="twitter-square" src="_images/twitter-icon.jpg" border="0" width="33px" height="33px"></a> <a href="https://plus.google.com/+Evergreenwebdesignllc" target="_blank"><img class="google-plus-square" src="_images/google-plus-icon.jpg" border="0" width="33px" height="33px"></a> <br class="large-screen-gone">please share</p>
+            <p class="social-network-icons"><a href="https://www.facebook.com/evergreenwebdesign01" target="_blank"><img class="facebook-square" src="_images/facebook-icon.jpg" border="0" width="33px" height="33px"></a> <a href="https://twitter.com/EWDLLC" target="_blank"><img class="twitter-square" src="_images/twitter-icon.jpg" border="0" width="33px" height="33px"></a> <a href="https://plus.google.com/+Evergreenwebdesignllc" target="_blank"><img class="google-plus-square" src="_images/google-plus-icon.jpg" border="0" width="33px" height="33px"></a> please share</p>
             
 
             <a href="#" class="click no-default" ontouchend="this.onclick=fix"><i class="fa fa-angle-down"></i> SEO Strategies</a>

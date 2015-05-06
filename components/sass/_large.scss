@@ -77,7 +77,7 @@
 
 #div-four {
 // colorado flag
-	height: 1000px;
+	height: 800px;
 	.scene-content {
 		max-width: 200px;
 		margin: 0 auto;
@@ -736,30 +736,27 @@ ul.list {
 	  }
 }
 footer {
-	width: 92%;
+	width: 100%;
+	position: relative;
 	background: #2d2d2d;
 	color: #fff;
-	height: 200px;
-	margin: 0;
-	padding: 5% 8% 0 0;
-	p {
-		position: relative;
-		display: block;
+	height: 220px;
+	padding: 3em 8% 0 0;
+	box-sizing: border-box;
+	#footer-info {
+		display: inline-block;
 		float: right;
-		clear: both;
+		padding: 2em;
+		border: 1px solid #565656;	
+	}
+	p {
 		margin: .2em 0;
 	}
-	i {
+	i.fa {
 		font-size: 1.2em;
 		padding-right: 1em;
 	}
-	.tel, .tel:visited {
-		font-size: 1.4em;
-		color: #fff;
-		text-decoration: none;
-		cursor: text;
-	}
-	.tel, .tel:focus {
+	.tel, .tel:visited, .tel:focus {
 		font-size: 1.4em;
 		color: #fff;
 		text-decoration: none;

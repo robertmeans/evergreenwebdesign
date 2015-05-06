@@ -311,19 +311,11 @@ html[xmlns] .slides {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 // ------- begin custom -------------------
+#process_slider {
+  min-height: 590px;
+  padding-top: 100px;
+}
 #process_slider .flex-control-thumbs li {
   display: block;
   float: left;
@@ -355,7 +347,7 @@ html[xmlns] .slides {
 #process_slider .flex-control-thumbs {
   display: block;
   height: auto;
-  margin: 0 auto;
+  margin: 60px auto 0 auto;
   overflow: hidden;
   position: absolute;
   // how far down from top of div to
@@ -369,7 +361,7 @@ html[xmlns] .slides {
 }
 .row {
   // this is the content section
-  padding-top: 22%;
+  padding-top: 300px;
 }
 #process_slider .slide_content {
   // background color for content section.
@@ -406,9 +398,9 @@ html[xmlns] .slides {
 #process_slider .flex-control-thumbs img.flex-active {
   // border radius for icons
   background-color: #FFF;
-  -webkit-border-radius: 70px;
-  -moz-border-radius: 70px;
-  border-radius: 70px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -443,6 +435,53 @@ max-width: 90px;
 
 @media screen and (max-width: 500px) {
 #process_slider .flex-control-thumbs img {
-max-width: 50px;
+max-width: 70px;
+}
+#process_slider {
+  min-height: 390px;
+  padding-top: 100px;
+}
+#process_slider .slide_text {
+  line-height: 1.5em;
+}
+#process_slider .slide_content {
+  padding: 3% 15%;
+}
+#process_slider .flex-control-thumbs {
+  margin: 60px auto 0 auto;
+  overflow: hidden;
+  position: absolute;
+  // how far down from top of div to
+  // put png images?
+  top: 10%;
+  left: 0;
+  bottom: auto;
+  width: 100%; //
+  // background: rgba(0, 0, 0, 0.3);
+  // padding: 10px 0px;
+}
+.row {
+  // this is the content section
+  padding-top: 200px;
+}
+}
+@media screen and (max-width: 400px) {
+#process_slider .flex-control-thumbs img {
+max-width: 60px;
+}
+#process_slider {
+  padding-top: 80px;
+}
+#process_slider .flex-control-thumbs {
+  top: 50px;
+  left: 0;
+  bottom: auto;
+  width: 100%; //
+  // background: rgba(0, 0, 0, 0.3);
+  // padding: 10px 0px;
+}
+.row {
+  // this is the content section
+  padding-top: 130px;
 }
 }
