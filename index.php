@@ -308,7 +308,7 @@
   </div><!-- .about -->
 </article><!-- #div-three -->
 
-<section id="div-four"><!-- begin .backstretch -->
+<div id="div-four"><!-- begin .backstretch -->
 <div class="row text-center">
 
   <div id="process_slider" class="flexslider_process">
@@ -365,7 +365,7 @@
   </div><!-- #process_slider .flexslider_process -->
 
 </div> <!-- #row .text-center -->
-</section><!-- #div-four -->
+</div><!-- #div-four -->
 
 </div><!-- #wrapper -->
 <?php include "_includes/footer.php" ?>
