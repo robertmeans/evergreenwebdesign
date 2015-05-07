@@ -81,7 +81,7 @@
 
   <article id="nameScene">
     <div id="EWD">
-      <h1>Evergreen Web<br class="gone"> Design</h1>
+      <span class="title-text">Evergreen Web<br class="gone"> Design</span>
       <div class="website-solutions-badge">
         <h2>Website Solutions</h2>
         <h4>Evergreen, Colorado</h4>
@@ -133,7 +133,7 @@
           <div class="container">
             <p class="social-network-icons"><a href="https://www.facebook.com/evergreenwebdesign01" target="_blank"><img class="facebook-square" src="_images/facebook-icon.jpg" alt="Facebook"></a> <a href="https://twitter.com/EWDLLC" target="_blank"><img class="twitter-square" src="_images/twitter-icon.jpg" alt="Twitter"></a> <a href="https://plus.google.com/+Evergreenwebdesignllc" target="_blank"><img class="google-plus-square" src="_images/google-plus-icon.jpg" alt="Google+"></a> please share</p>
             
-            <a href="#" class="click no-default" ontouchend="this.onclick=fix"><i class="fa fa-angle-down"></i> SEO Strategies</a>
+            <a href="#" class="click no-default"><i class="fa fa-angle-down"></i> SEO Strategies</a>
 
             <div class="expand">
               <p class="seo-strategies">Your Search Engine Optimization stragety starts with the big 3 social networking giants and continues all the way into the code of your website.</p>
@@ -143,7 +143,7 @@
           </div><!-- #container -->
 
           <div class="container2">
-             <a href="#" class="click no-default" ontouchend="this.onclick=fix"><i class="fa fa-angle-down"></i> Pricing</a>
+             <a href="#" class="click no-default"><i class="fa fa-angle-down"></i> Pricing</a>
             <div class="expand">
               <p>Pricing options are available to suit virtually every budget and project. Let's discuss your idea and outline a plan that works for you.</p>
             </div><!-- .expand !-->

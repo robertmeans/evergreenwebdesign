@@ -1628,8 +1628,6 @@ $("button#toggleMoreSites").click(function(){
 
 
 
-/* ---------------- getthishere ------------ */
-
 $(document).ready(function(){
   $(".click").click(function(){
     
@@ -1644,6 +1642,7 @@ $('#tab1 div a').click(function(){
 
 
 // stop page from jumping to top when anchor is set to "#"
+// currently in use with SEO Strategies and Pricing links.
 $('a.no-default').click(function(e)
 {
     // Special stuff to do when this link is clicked...
@@ -1654,6 +1653,12 @@ $('a.no-default').click(function(e)
 
 
 // to handle ios from sticking on the hover state
+// had to remove this because it was conflicting
+// with the html5 validator.
+// html code included:
+// <a href="#" class="xyz" ontouchend="this.onclick=fix">
+// "ontouchend" does not fly with html5
+/*
 function fix()
 {
     var el = this;
@@ -1662,9 +1667,8 @@ function fix()
     par.removeChild(el);
     setTimeout(function() {par.insertBefore(el, next);}, 0)
 }
+*/
 
-
-/* ---------------- getthishere ------------ */
 
 
 

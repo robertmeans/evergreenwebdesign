@@ -285,7 +285,12 @@ a.click {
 		// to do to turn off outline
 	}
 }
-
+html.touch a.click {
+	&:hover {
+		background: #757575;
+		color: #fff;
+	}
+}
 #scrollDownSprite {
 	display: none;
 	border: none;

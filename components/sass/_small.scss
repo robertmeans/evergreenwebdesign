@@ -1,6 +1,6 @@
 @media screen and (max-width: 720px){
 #EWD {
-	h1 {
+	.title-text {
 		font-size: 2.5em;
 
 		-webkit-transition: font-size 1.75s ease;
@@ -90,7 +90,7 @@
 	position: relative;
 	margin: -15px auto;
 	text-align: center;
-	h1 {
+	.title-text {
 		font-family: 'Exo 2', Helvetica, Arial, sans-serif;
 		font-size: 2.45em;
 
