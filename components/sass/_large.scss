@@ -292,7 +292,10 @@
 	z-index: 2;
 	vertical-align: top;
 	img {
-			margin: 0px 5px 0px 0px;
+		margin: 0px 5px 0px 0px;
+		max-width: 33px;
+		max-height: 33px;
+		border: none;
 	}
 }
 
@@ -662,7 +665,7 @@ ul.list {
 	margin: 40px 10% 10px 10%;
 	float: left;
 	clear: both;
-	padding-bottom: 20px;
+	padding-bottom: 1.5em;
 	border-bottom: 1px dotted #ccc;
 	h3 {
 		font-size: 1.6em;
@@ -673,18 +676,21 @@ ul.list {
 		font-weight: bold;
 		color: #757575;
 	}
-	a.about-contact {
-		position: absolute;
-		bottom: 10px;
-		right: 10px;
-		text-decoration: none;
-		color: #65659a;
-		&:hover {
-			text-decoration: underline;
-			color: #65659a;
-		}
-	}	
+	p.mail {
+		display: inline-block;
+		position: relative;
+		float: right;
+	}
 }
+a.about-contact {
+text-decoration: none;
+color: #65659a;
+	&:hover {
+	text-decoration: underline;
+	color: #65659a;
+	}
+}
+
 .about-btm {
 	border-bottom: none;
 	margin-bottom: 60px;

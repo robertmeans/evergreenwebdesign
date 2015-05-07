@@ -16,6 +16,17 @@ p {
 	line-height: 1.2em;
 	margin: 1em 0;
 }
+em {
+	color: #2e2e2e;
+	font-style: italic;
+}
+a.txt-a {
+	color: #0000ff;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
 // ul, ol {
 // 	margin: 1em 0;
 // }

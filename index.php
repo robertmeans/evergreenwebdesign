@@ -9,22 +9,21 @@
   <meta name="description" content="Evergreen Web Design provides website concept, design, development and SEO services featuring current specifications within a responsive framework.">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="_scripts/coolclock-breakpoints.js?<?php echo time(); ?>"></script>
-  <link rel="stylesheet" href="_css/style.css?<?php echo time(); ?>">
   <script src="_scripts/modernizr.js?<?php echo time(); ?>"></script> 
+  <link rel="stylesheet" href="_css/style.css?<?php echo time(); ?>">
 
 <!-- Google Analytics code -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-38678515-1', 'auto');
-  ga('send', 'pageview');
+    ga('create', 'UA-38678515-1', 'auto');
+    ga('send', 'pageview');
 
-</script>
+  </script>
 <!-- end Google Analytics code -->
-
 </head>
 
 <body onload="javascript:fg_hideform('fg_formContainer','fg_backgroundpopup');">
@@ -131,16 +130,15 @@
               </ul>
               </div>
 
-
           <div class="container">
-            <p class="social-network-icons"><a href="https://www.facebook.com/evergreenwebdesign01" target="_blank"><img class="facebook-square" src="_images/facebook-icon.jpg" border="0" width="33px" height="33px"></a> <a href="https://twitter.com/EWDLLC" target="_blank"><img class="twitter-square" src="_images/twitter-icon.jpg" border="0" width="33px" height="33px"></a> <a href="https://plus.google.com/+Evergreenwebdesignllc" target="_blank"><img class="google-plus-square" src="_images/google-plus-icon.jpg" border="0" width="33px" height="33px"></a> please share</p>
+            <p class="social-network-icons"><a href="https://www.facebook.com/evergreenwebdesign01" target="_blank"><img class="facebook-square" src="_images/facebook-icon.jpg" alt="Facebook"></a> <a href="https://twitter.com/EWDLLC" target="_blank"><img class="twitter-square" src="_images/twitter-icon.jpg" alt="Twitter"></a> <a href="https://plus.google.com/+Evergreenwebdesignllc" target="_blank"><img class="google-plus-square" src="_images/google-plus-icon.jpg" alt="Google+"></a> please share</p>
             
-
             <a href="#" class="click no-default" ontouchend="this.onclick=fix"><i class="fa fa-angle-down"></i> SEO Strategies</a>
 
-
             <div class="expand">
-              <p class="seo-strategies">Your Search Engine Optimization stragety starts with the big 3 social networking giants and continues all the way into the code of your website. Together we'll saturate the essence of your online presence with keywords to drive your </p>
+              <p class="seo-strategies">Your Search Engine Optimization stragety starts with the big 3 social networking giants and continues all the way into the code of your website.</p>
+              <p>Gone are the days when you could just plop a few keywords into a meta tag in the code of your website and let the search engines do the rest. Today the algorithms search engines use to index your site into their database rely on a number of facets pertaining to your website address and they all ignore the keyword meta tag.</p>
+              <p>The playing field has changed and if you're not keeping up, you're quickly getting left beind. It's an aggressive campaign that needs to be viewed through the perspective of a long term endeavor and not a quick fix. Evergreen Web Design will draft a course for your business in order to navigate an efficient strategy best suited to draw attention to <em>your</em> site.</p>
             </div><!-- .expand !-->
           </div><!-- #container -->
 
@@ -148,20 +146,15 @@
              <a href="#" class="click no-default" ontouchend="this.onclick=fix"><i class="fa fa-angle-down"></i> Pricing</a>
             <div class="expand">
               <p>Pricing options are available to suit virtually every budget and project. Let's discuss your idea and outline a plan that works for you.</p>
-              <p>To quote pricing without knowing the details of a project is sort of like quoting the price of a bicycle without knowing what bicycle.</p>
             </div><!-- .expand !-->
           </div><!-- #container2 -->
-
-
-
-
 
         </div><!-- #tab1 .tab .active .cf -->
 
       <div id="tab2" class="tab cf"><!-- Websites tab -->
       <h2 class="mobile">Websites</h2>
         <p>A custom website can help rediscover your business image in the Internet marketplace.</p>
-        <p>With Internet traffic shifting towards mobile phone use, you can't afford to have an online presence without a strong mobile interface.</p>
+        <p>With Internet traffic <a class="txt-a" href="http://techcrunch.com/2014/08/21/majority-of-digital-media-consumption-now-takes-place-in-mobile-apps/" target="_blank">more heavily consumed</a> through cell phones, you can't afford to have an online presence without a strong mobile interface.</p>
         <p>Utilizing the latest specifications in HTML5, CSS3 and jQuery with a focus on viewport-independent, fluid design, you can rest assured your your site looks great and functions flawlessly no matter how your visitors get there.</p>
 
     <ul class="list moresites cf">
@@ -219,7 +212,7 @@
       <li>
         <a href="http://www.robertmeans.com/theburn2012" target="_blank"><img src="_images/theburn2012-website.jpg" alt="The Burn Mountain Bike Time Trial"></a>
         <h3>The Burn MTB TT</h3>
-        <p>Bike race that I Directed in 2010 &amp 2012</p>
+        <p>Bike race that I Directed in 2010 &amp; 2012</p>
       </li>
       <li>
         <a href="http://www.robertmeans.com/acts" target="_blank"><img src="_images/acts-church-website.jpg" alt="Acts Church Website"></a>
@@ -262,7 +255,7 @@
     <h1>Meet the Team</h1>
     <div class="about-content">
       <div class="about-profile-img">
-        <img src="_images/Robert-Means-Developer.png" border="0">
+        <img src="_images/Robert-Means-Developer.png" alt="Robert Means">
       </div>
       <div class="about-profile">
       <h3>Robert Means<span class="about-gone">,</span> <br class="large-screen-gone">Developer</h3>
@@ -270,52 +263,52 @@
         <p>I have been developing websites since the '90's with a passion for integrating complex features within custom designs.</p>
         <p>The skills I bring to your project include PHP, HTML5, CSS3, jQuery and Javascript. A strong command of these languages is the very foundation of a solid product and one that you can feel confident will display across multiple browsers and devices in a consistent, reliable manner.</p>
 
-        <p><a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="about-contact">Contact Robert</a></p>
+        <p class="mail"><i class="fa fa-envelope-o"></i> <a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="about-contact">Contact Robert</a></p>
       </div>
     </div><!-- .about-content -->
 
     <div class="about-content">
       <div class="about-profile-img">
-        <img src="_images/Bobby-Means-Designer.jpg" border="0">
+        <img src="_images/Bobby-Means-Designer.jpg" alt="Bobby Means">
       </div>
       <div class="about-profile">
       <h3>Bobby Means<span class="about-gone">,</span> <br class="large-screen-gone">Designer</h3>
       <!-- <h2>Photoshop, Illustrator, Premiere</h2> -->
-        <p>Basking in the RGB color spectrum and designing unique, beautiful websites has been a joy of mine since my first Windows 95 computer when the GUI interface was originally introduced.</p>
+        <p>Basking in the RGB color spectrum and designing unique, beautiful websites has been a joy of mine since my first Windows 95 computer shortly after the GUI went mainstream.</p>
         <p>I wield Photoshop like a samuri ninja and Illustrator like a middleweight contender. ...I'm working on that.</p>
 
-        <p><a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="about-contact">Contact Bobby</a></p>
+        <p class="mail"><i class="fa fa-envelope-o"></i> <a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="about-contact">Contact Bobby</a></p>
       </div>
     </div><!-- .about-content -->      
 
     <div class="about-content">
       <div class="about-profile-img">
-        <img src="_images/Bob-Means-Sales.jpg" border="0">
+        <img src="_images/Bob-Means-Sales.jpg" alt="Bob Means">
       </div>
       <div class="about-profile">
       <h3>Bob Means<span class="about-gone">,</span> <br class="large-screen-gone">Sales &amp; Support</h3>
         <p>My mission is to understand your goals and vision and convey that to Bobby, our designer. He's a bit of a flake sometimes as designers can be so you'll want someone focused and persistent to keep him on task. Together we can outline a plan that works for you.</p>
 
-        <p><a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="about-contact">Contact Bob</a></p>
+        <p class="mail"><i class="fa fa-envelope-o"></i> <a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="about-contact">Contact Bob</a></p>
       </div>
     </div><!-- .about-content -->
 
     <div class="about-content about-btm">
       <div class="about-profile-img">
-        <img src="_images/Rob-Means-Accounting.jpg" border="0">
+        <img src="_images/Rob-Means-Accounting.jpg" alt="Rob Means">
       </div>
       <div class="about-profile">
       <h3>Rob Means<span class="about-gone">,</span> <br class="large-screen-gone">Internetual Webanaut</h3>
         <p>Don't let any of the others here fool you - I keep this circus in order and am The pillar of resolute and steadfast integrity overseeing the entire operation and ensuring every last detail is maintained to immaculate perfection.</p>
 
-        <p><a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="about-contact">Contact Rob</a></p>
+        <p class="mail"><i class="fa fa-envelope-o"></i> <a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="about-contact">Contact Rob</a></p>
       </div>
     </div><!-- .about-content -->        
 
   </div><!-- .about -->
 </article><!-- #div-three -->
 
-<article id="div-four"><!-- begin .backstretch -->
+<section id="div-four"><!-- begin .backstretch -->
 <div class="row text-center">
 
   <div id="process_slider" class="flexslider_process">
@@ -372,7 +365,7 @@
   </div><!-- #process_slider .flexslider_process -->
 
 </div> <!-- #row .text-center -->
-</article><!-- #div-four -->
+</section><!-- #div-four -->
 
 </div><!-- #wrapper -->
 <?php include "_includes/footer.php" ?>

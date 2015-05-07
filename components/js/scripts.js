@@ -1465,10 +1465,14 @@ window.addEventListener('scroll', function(){ // on page scroll
   requestAnimationFrame(parallaxthis) // call parallaxthis() on next available screen repaint
 }, false)
 
-window.addEventListener('resize', function(){ // on window resize
-  var scrollamount = (scrolltop / (scrollheight-windowheight)) * 100 // get amount scrolled (in %)
-  fish.style.left = -100 + scrollamount + '%'
-}, false)
+
+// this was triggering an error so I've commented it out. 
+// was used for a horizontal parallax that's not getting used
+// anyway.
+// window.addEventListener('resize', function(){ // on window resize
+//   var scrollamount = (scrolltop / (scrollheight-windowheight)) * 100 // get amount scrolled (in %)
+//   fish.style.left = -100 + scrollamount + '%'
+// }, false)
 
 // end - parallax
 
@@ -1724,9 +1728,11 @@ $(function() {
   // Create ScrollMagic Scenes
 
   // pin navigation
-  var pin = new ScrollScene({
-    triggerElement: "#mainNav",
-  }).setPin("#mainNav").addTo(controller);
+  // not sure what this was doing but was causing an error
+  // so I commented it out to see if it matters...
+  // var pin = new ScrollScene({
+  //   triggerElement: "#mainNav",
+  // }).setPin("#mainNav").addTo(controller);
 
 
 //pin rooms ---------------
