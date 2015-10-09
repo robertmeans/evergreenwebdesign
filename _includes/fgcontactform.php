@@ -175,7 +175,7 @@ class FGContactForm
 
         $this->mailer->CharSet = 'utf-8';
         
-        $this->mailer->Subject = "RobertMeans.com contact from $this->name";
+        $this->mailer->Subject = "Evergreen Web Design - Website Contact from $this->name";
 
         $this->mailer->From = $this->GetFromAddress();
 

@@ -180,7 +180,7 @@
 	margin: -45px auto 0px auto;
 	.title-text {
 		font-family: 'Exo 2', Helvetica, Arial, sans-serif;
-		font-size: 4em;
+		font-size: 4.5em;
 
 		-webkit-transition: font-size 1.75s ease;
 		-moz-transition: font-size 1.75s ease;
@@ -529,17 +529,6 @@ ul.past-projects {
     column-gap: 40px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 ul.list {
 	display: inline-block;
 	padding: 2%;
@@ -565,10 +554,10 @@ ul.list {
 			-webkit-box-sizing: border-box;
   			-moz-box-sizing: border-box;
   			box-sizing: border-box;
-  			-webkit-transition: all .5s ease;
-			-moz-transition: all .5s ease;
-			-o-transition: all .5s ease;
-			transition: all .5s ease;
+  			-webkit-transition: all .25s ease;
+			-moz-transition: all .25s ease;
+			-o-transition: all .25s ease;
+			transition: all .25s ease;
   			&:hover {
   				-webkit-transform: scale(1.05);
 				-moz-transform: scale(1.05);
@@ -597,20 +586,6 @@ ul.list {
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .project-col {
 	position: relative;
 	float: left;
@@ -742,6 +717,14 @@ footer {
 		float: right;
 		padding: 2em;
 		border: 1px solid #565656;	
+		p.copyright a {
+			color: inherit;
+			text-decoration: none;
+			&:hover {
+				color: inherit;
+				text-decoration: none;
+			}
+		}
 	}
 	p {
 		margin: .2em 0;

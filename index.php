@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Evergreen Web Design - Website Development Evergreen, Colorado</title>
   <link rel="icon" type="image/ico" href="_images/favicon.ico">
+  <link rel="image_src" href="http://www.evergreenwebdesign.com/_images/thumbnails/EWD-thumb-01.png" />
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta name="description" content="Evergreen Web Design provides website concept, design, development and SEO services featuring current specifications within a responsive framework.">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -158,41 +159,43 @@
         <p>Utilizing the latest specifications in HTML5, CSS3 and jQuery with a focus on viewport-independent, fluid design, you can rest assured your your site looks great and functions flawlessly no matter how your visitors get there.</p>
 
     <ul class="list moresites cf">
+
+      <li>
+        <a href="http://www.rookiesevergreen.com" target="_blank"><img src="_images/rookiesevergreen-website.jpg" alt="Rookies - Batting Cages Evergreen, Colorado"></a>
+        <h3>Rookies</h3>
+        <p>Evergreen, Colorado's premiere batting cages with online managed booking system.</p>
+      </li>
+      <li>
+        <a href="http://www.evergreensigns.com" target="_blank"><img src="_images/evergreen-signs-website.jpg" alt="Evergreen Signs Website"></a>
+        <h3>Evergreen Signs</h3>
+        <p>Advertising in various mediums. With a mobile-optimized website they are now reaching more customers than ever.</p>
+      </li>
+      <li>
+        <a href="http://www.wildflowerevergreen.com" target="_blank"><img src="_images/wildflower-website.jpg" alt="Wildflower Café"></a>
+        <h3>The Wildflower Café</h3>
+        <p>Located in historic downtown Evergreen, Colorado with a menu that brings folks in from miles around.</p>
+      </li> 
       <li>
         <a href="http://www.mbeachlegal.com" target="_blank"><img src="_images/mbeachlegal-website.jpg" alt="Matthew Beach ESQ, LLC"></a>
         <h3>Matthew Beach ESQ, LLC</h3>
         <p>Trial attorney practicing along the Front Range of Colorado.</p>
       </li>
       <li>
-        <a href="http://www.evergreensigns.com" target="_blank"><img src="_images/evergreen-signs-website.jpg" alt="Evergreen Signs Website"></a>
-        <h3>Evergreen Signs</h3>
-        <p>Advertising in various mediums. With a mobile-optimized website they are now reaching more customers than ever.</p>
-        
-      </li>
+        <a href="http://www.myscreenscene.com" target="_blank"><img src="_images/myscreenscene-website.jpg" alt="MyScreenScene.com"></a>
+        <h3>MyScreenScene</h3>
+        <p>This is a browser utility I created using PHP &amp; mySQL that should revolutionize the world! ...Or at least be incredibly useful.</p>
+      </li>      
       <li>
         <a href="http://www.evergreenwildernessguides.com" target="_blank"><img src="_images/evergreen-wilderness-guides-website.jpg" alt="Evergreen Wilderness Guides"></a>
         <h3>Evergreen Wilderness Guides</h3>
         <p>Outdoor instruction with courses ranging from rock climbing to mountain biking to survival skills.</p>
-        
       </li>
-      <li>
-        <a href="http://www.wildflowerevergreen.com" target="_blank"><img src="_images/wildflower-website.jpg" alt="Wildflower Café"></a>
-        <h3>The Wildflower Café</h3>
-        <p>Located in historic downtown Evergreen, Colorado with a menu that brings folks in from miles around.</p>
-        
-      </li> 
       <li>
         <a href="http://www.colt-green.com" target="_blank"><img src="_images/colt-green-website.jpg" alt="Colt Green Construction"></a>
         <h3>Colt Green Construction</h3>
         <p>Construction and project management company, Jacksonville, Florida</p>
-        
       </li> 
-      <li>
-        <a href="http://www.myscreenscene.com" target="_blank"><img src="_images/myscreenscene-website.jpg" alt="MyScreenScene.com"></a>
-        <h3>MyScreenScene</h3>
-        <p>This is a browser utility I created using PHP &amp; mySQL that should revolutionize the world! ...Or at least be incredibly useful.</p>
-        
-      </li>     
+     
     </ul><!-- .list .moresites .cf -->
 
     <div class="centerDisplay">
@@ -226,7 +229,7 @@
         <p>Construction management company.</p>
       </li>
       <li>
-        <a href="http://www.bennmediation.com" target="_blank"><img src="_images/bennmediation-website.jpg" alt="Benn Mediation"></a>
+        <a href="http://www.evergreenwebdesign.com/offline-sites/bennmediation" target="_blank"><img src="_images/bennmediation-website.jpg" alt="Benn Mediation"></a>
         <h3>Benn Mediation</h3>
         <p>Family law attorney practicing in Denver.</p>
       </li>
@@ -299,7 +302,7 @@
       </div>
       <div class="about-profile">
       <h3>Rob Means<span class="about-gone">,</span> <br class="large-screen-gone">Internetual Webanaut</h3>
-        <p>Don't let any of the others here fool you - I keep this circus in order and am The pillar of resolute and steadfast integrity overseeing the entire operation and ensuring every last detail is maintained to immaculate perfection.</p>
+        <p>Don't let any of the others here fool you - I keep this circus in order and am The Pillar of resolute and steadfast integrity overseeing the entire operation and ensuring every last detail is maintained to immaculate perfection.</p>
 
         <p class="mail"><a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="env"><i class="fa fa-envelope-o"></i></a> <a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="about-contact">Contact Rob</a></p>
       </div>
