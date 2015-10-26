@@ -111,8 +111,9 @@
             <p>Past projects, aside from website concept, design &amp; development include:</p>
             <div class="project-col">
               <ul class="past-projects">
-                <li>Editing video testimony for court trial</li>
-                <li>Editing audio testimony</li>
+                <li>WordPress recovery &amp migration</li>
+                <li>Automating data entry tasks</li>
+                <li>Technical support</li>
                 <li>Illustrations</li>
                 <li>Scanning and cataloging</li>
                 <li>Creating banner ads</li>
@@ -122,9 +123,10 @@
 
               <div class="project-col">
               <ul class="past-projects second-column">
-                <li>Automating data entry tasks</li>
+                <li>Updates/Modifications to existing websites</li>
+                <li>Editing video testimony for court trial</li>
+                <li>Editing audio testimony</li>
                 <li>Designing restaurant menus</li>
-                <li>Technical support</li>
                 <li>Developing online shopping cart</li>
                 <li>Preparing newsletters</li>
                 <li>Photographing &amp; cataloging inventory</li>
@@ -191,7 +193,7 @@
         <p>Outdoor instruction with courses ranging from rock climbing to mountain biking to survival skills.</p>
       </li>
       <li>
-        <a href="http://www.colt-green.com" target="_blank"><img src="_images/colt-green-website.jpg" alt="Colt Green Construction"></a>
+        <a href="http://www.evergreenwebdesign.com/offline-sites/colt-green" target="_blank"><img src="_images/colt-green-website.jpg" alt="Colt Green Construction"></a>
         <h3>Colt Green Construction</h3>
         <p>Construction and project management company, Jacksonville, Florida</p>
       </li> 
@@ -208,17 +210,17 @@
 
     <ul class="list moresites staticsites cf">
       <li>
-        <a href="http://www.robertmeans.com/fhl" target="_blank"><img src="_images/fhl-website.jpg" alt="Forest Heights Lodge"></a>
+        <a href="http://www.evergreenwebdesign.com/offline-sites/fhl" target="_blank"><img src="_images/fhl-website.jpg" alt="Forest Heights Lodge"></a>
         <h3>Forest Heights Lodge</h3>
         <p>Lots of custom features stiched flawlessly into a custom design.</p>
       </li>
       <li>
-        <a href="http://www.robertmeans.com/theburn2012" target="_blank"><img src="_images/theburn2012-website.jpg" alt="The Burn Mountain Bike Time Trial"></a>
+        <a href="http://www.evergreenwebdesign.com/offline-sites/theburn2012" target="_blank"><img src="_images/theburn2012-website.jpg" alt="The Burn Mountain Bike Time Trial"></a>
         <h3>The Burn MTB TT</h3>
         <p>Bike race that I Directed in 2010 &amp; 2012</p>
       </li>
       <li>
-        <a href="http://www.robertmeans.com/acts" target="_blank"><img src="_images/acts-church-website.jpg" alt="Acts Church Website"></a>
+        <a href="http://www.evergreenwebdesign.com/offline-sites/acts" target="_blank"><img src="_images/acts-church-website.jpg" alt="Acts Church Website"></a>
         <h3>Acts Church</h3>
         <p>Cover image was a composite of several images provided by customer.</p>
         
