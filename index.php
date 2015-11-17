@@ -226,7 +226,7 @@
         
       </li>
       <li>
-        <a href="http://www.satillainc.com" target="_blank"><img src="_images/satilla-website.jpg" alt="Satilla, Inc"></a>
+        <a href="http://www.evergreenwebdesign.com/offline-sites/satillainc" target="_blank"><img src="_images/satilla-website.jpg" alt="Satilla, Inc"></a>
         <h3>Satilla, Inc.</h3>
         <p>Construction management company.</p>
       </li>
