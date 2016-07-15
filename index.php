@@ -14,16 +14,16 @@
   <link rel="stylesheet" href="_css/style.css?<?php echo time(); ?>">
 
 <!-- Google Analytics code -->
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-38678515-1', 'auto');
-    ga('send', 'pageview');
+  ga('create', 'UA-80245426-1', 'auto');
+  ga('send', 'pageview');
 
-  </script>
+</script>
 <!-- end Google Analytics code -->
 </head>
 
@@ -75,8 +75,8 @@
       </script>
     </h3>
 
-    <p><span id="time"></span> on a <span id="day"></span> is the perfect time to <a class="hmpg-contact" href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");'>contact</a> Evergreen Web Design and discover how pain free your website project can be.</p>
-    <p>With options to suit your vision, budget and deadline, the solution to your online needs is right here.</p>
+    <p><span id="time"></span> on a <span id="day"></span> is the perfect time to <a class="hmpg-contact" href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");'>contact Evergreen Web Design</a> and discover how pain free your website project can be.</p>
+    <p>With options to suit your vision, budget and deadline, let's tailor a solution for you right now!</p>
 
   </div>
 
@@ -107,8 +107,8 @@
 
         <div id="tab1" class="tab active cf"><!-- Overview tab -->
           <h2 class="mobile">Overview</h2>
-            <p>At the risk of limiting the available services to websites it should be noted that Website Solutions loosly translates to any computer related task you can't do, don't have time to do or don't want to do.</p>
-            <p>Past projects, aside from website concept, design &amp; development include:</p>
+            <p>At the risk of limiting the available services to Evergreen, Colorado Webmaster designing and building only websites it should be noted that &quot;Website Solutions&quot; loosly translates to any computer related task you can't do, don't have time to do or don't want to do.</p>
+            <p>Past projects, aside from Evergreen, Colorado Webmaster providing website concept, design &amp; development include:</p>
             <div class="project-col">
               <ul class="past-projects">
                 <li>WordPress recovery &amp migration</li>
@@ -163,6 +163,16 @@
     <ul class="list moresites cf">
 
       <li>
+        <a href="http://www.evergreentaphouse.com" target="_blank"><img src="_images/evergreen-tap-house-website.jpg" alt="Evergren Tap House"></a>
+        <h3>Evergreen Tap House</h3>
+        <p>Full-featured WordPress website with robust array of customized options.</p>
+      </li>
+      <li>
+        <a href="http://www.fosterfamilydental.com" target="_blank"><img src="_images/foster-family-dental-website.jpg" alt="Foster Family Dental"></a>
+        <h3>Foster Family Dental</h3>
+        <p>Custom design with mobile first priority. Website adapts flawlessly to any viewport.</p>
+      </li>
+      <li>
         <a href="http://www.rookiesevergreen.com" target="_blank"><img src="_images/rookiesevergreen-website.jpg" alt="Rookies - Batting Cages Evergreen, Colorado"></a>
         <h3>Rookies</h3>
         <p>Evergreen, Colorado's premiere batting cages with online managed booking system.</p>
@@ -185,7 +195,7 @@
       <li>
         <a href="http://www.myscreenscene.com" target="_blank"><img src="_images/myscreenscene-website.jpg" alt="MyScreenScene.com"></a>
         <h3>MyScreenScene</h3>
-        <p>This is a browser utility I created using PHP &amp; mySQL that should revolutionize the world! ...Or at least be incredibly useful.</p>
+        <p>An incredibly useful browser utility built in PHP &amp; mySQL.</p>
       </li>      
       <li>
         <a href="http://www.evergreenwildernessguides.com" target="_blank"><img src="_images/evergreen-wilderness-guides-website.jpg" alt="Evergreen Wilderness Guides"></a>

@@ -29,7 +29,7 @@ CoolClock.config = {
 		// There are more skins in moreskins.js
 		// Try making your own skin by copy/pasting one of these and tweaking it
 			Tes2: {
-			outerBorder:      { lineWidth: 1, radius: 99, color: "#272727", alpha: 1 }, // stroke
+			outerBorder:      { lineWidth: 1, radius: 99, color: "#fff", alpha: 1 }, // stroke
 			smallIndicator:   { lineWidth: 1, startAt: 10, endAt: 50 , color: "#1C304A", alpha: .8 }, // seconds
 
 			largeIndicator:   { lineWidth: 7, radius: 3.5, startAt: 65, endAt: 70, color: "#fff", alpha: .5 }, // hours

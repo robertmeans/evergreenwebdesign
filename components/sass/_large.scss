@@ -136,9 +136,9 @@
 	box-sizing: border-box;
 	margin: 10% auto 0 auto;
 	width: 750px;
-	border: 1px solid #000;
+	border: 1px solid #fff;
 	height: 326px;
-	background: rgba(0, 0, 0, .2);
+	background: rgba(31, 60, 95, .5);
 	color: #fff;
 	padding: 20px;
 	border-radius: 10px;
@@ -154,15 +154,16 @@
 		line-height: 1em;
 		color: #fff;
 		font-size: 1.5em;
-		margin: 8% 0 1em 20px;
+		margin: 3.5% 0 1em 20px;
 	}
 	p {
 		margin-left: 400px;
+		// text-shadow: -1px 1px 30px #0e3e7f;
 	}
 }
 .hmpg-contact {
 	color: #fff;
-	text-decoration: none;
+	text-decoration: underline;
 	&:hover {
 		color: #fff;
 		text-decoration: none;
