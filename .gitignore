@@ -1,4 +1,8 @@
-node_modules
+*.sass-cache*
+node_modules/
+.gitattributes
 sftp-config.json
+new_client_setup.docx
 _video
-.sass-cache
+_notes
+Thumbs.db
