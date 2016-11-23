@@ -1,6 +1,14 @@
 <?php require_once('_includes/popup-contactform.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
+<!-- 
+  Author:       Robert Means
+                Evergreen Web Design
+  Contact:      robert@evergreenwebdesign.com
+                (720) 319.8316
+  Last Update:  November, 23, 2016
+  Comments:     You look very nice today! :)
+-->
 <head>
   <meta charset="UTF-8">
   <title>Evergreen Web Design - Website Development Evergreen, Colorado</title>
@@ -49,33 +57,21 @@
 </nav>
 
 <div id="bg-div-one">
-  <img src="_images/sky.jpg" alt="blue sky">
+  <span id="greeting_bkg"></span>
+  <noscript><img src="_images/sky.jpg" alt="blue sky"></noscript>
 </div>
 <section id="div-one">
 
 <div id="clockScene">
-  <div class="text-box cf">
-  <canvas id="clockid" class="CoolClock"></canvas>
+  <div id="text-box" class="text-box-default cf">
+  <canvas id="clockid" class="CoolClock clockid-default"></canvas>
   
   <h3>
-    <script>
-      var greeting = new Date()
-      var hours = greeting.getHours()
-      
-      if (hours >= 5 && hours <= 11) //5a - 11a
-      document.write('Good morning,')
-      else if (hours >= 12 && hours <= 16) //noon - 4p
-      document.write('Good afternoon,')
-    else if (hours >= 17 && hours <= 18) //5p - 6p
-      document.write('Good (late) afternoon,')
-      else if (hours >= 19 && hours <= 23) //7p - 11p
-      document.write('Good evening,')
-      else //12a - 4a
-      document.write('You sure are up late.')
-      </script>
+    <span id="greeting"></span>
+      <noscript>Hello,</noscript>
     </h3>
 
-    <p><span id="time"></span> on a <span id="day"></span> is the perfect time to <a class="hmpg-contact" href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");'>contact Evergreen Web Design</a> and discover how pain free your website project can be.</p>
+    <p><span id="now"></span><noscript>Now</noscript> is the perfect time to <a class="hmpg-contact" href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");'>contact Evergreen Web Design</a> and discover how pain free your website project can be.</p>
     <p>With options to suit your vision, budget and deadline, let's tailor a solution for you right now!</p>
 
   </div>
@@ -83,7 +79,7 @@
   <article id="nameScene">
     <div id="EWD">
       <span class="title-text">Evergreen Web<br class="gone"> Design</span>
-      <div class="website-solutions-badge">
+      <div id="website-solutions-badge" class="website-solutions-badge-default">
         <h2>Website Solutions</h2>
         <h4>Evergreen, Colorado</h4>
         </div>
