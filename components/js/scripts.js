@@ -2024,3 +2024,10 @@ $('.flexslider_process').flexslider({
   controlNav: "thumbnails"
 });
 });
+
+
+
+// --------- playing 11.01.16
+// var salutation = document.getElementsByTagName("h3");
+// salutation[0].innerHTML = "Whaddup?!";
+
