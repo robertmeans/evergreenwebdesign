@@ -1701,27 +1701,63 @@ if (hours >= 5 && hours <= 10) { //5a - 10a
 } else if (hours >= 11 && hours <= 16) { //11a - 4p
   document.getElementById("greeting").innerHTML = ('Good afternoon,');
   document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/day-sky-01.jpg" alt="blue sky">');
+  // this one has default styles
 
 } else if (hours >= 17 && hours <= 18) { //5p - 6p
   document.getElementById("greeting").innerHTML = ('Good (late) afternoon,');
   document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/mountain-sunset.jpg" alt="sunrise">');
+  document.getElementById("clockid").className = "CoolClock afternoon-clock";
+  document.getElementById("text-box").className = "afternoon-text-box cf";
+  document.getElementById("website-solutions-badge").className = "afternoon-website-solutions-badge";
 
 } else if (hours >= 19 && hours <= 23) { //7p - 11p
   document.getElementById("greeting").innerHTML = ('Good evening,');
   document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/night.jpg" alt="sunrise">');
+  document.getElementById("clockid").className = "CoolClock evening-clock";
+  document.getElementById("text-box").className = "evening-text-box cf";
+  document.getElementById("website-solutions-badge").className = "evening-website-solutions-badge";
+
 
 } else { //12a - 4a
   document.getElementById("greeting").innerHTML = ('You sure are up late.');
   document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/late-night.jpg" alt="sunrise">');
+  document.getElementById("clockid").className = "CoolClock late-night-clock";
+  document.getElementById("text-box").className = "late-night-text-box cf";
+  document.getElementById("website-solutions-badge").className = "late-night-website-solutions-badge";
 }
 
 
-// Development override
+// --------------------        Development override         ------------------------------------------------- //
   // document.getElementById("greeting").innerHTML = ('Good morning,');
   // document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/sunrise.jpg" alt="sunrise">');
   // document.getElementById("clockid").className = "CoolClock morning-clock";
   // document.getElementById("text-box").className = "morning-text-box cf";
   // document.getElementById("website-solutions-badge").className = "morning-website-solutions-badge";
+
+  // document.getElementById("greeting").innerHTML = ('Good afternoon,');
+  // document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/day-sky-01.jpg" alt="blue sky">'); 
+  // /* Dont copy the 3 classes below to paste above. This is run by the defaults that are already in place */
+  // document.getElementById("clockid").className = "CoolClock clockid-default";
+  // document.getElementById("text-box").className = "text-box-default cf";
+  // document.getElementById("website-solutions-badge").className = "website-solutions-badge-default";
+  
+  // document.getElementById("greeting").innerHTML = ('Good (late) afternoon,');
+  // document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/mountain-sunset.jpg" alt="sunrise">');
+  // document.getElementById("clockid").className = "CoolClock afternoon-clock";
+  // document.getElementById("text-box").className = "afternoon-text-box cf";
+  // document.getElementById("website-solutions-badge").className = "afternoon-website-solutions-badge"; 
+
+  // document.getElementById("greeting").innerHTML = ('Good evening,');
+  // document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/night.jpg" alt="sunrise">');
+  // document.getElementById("clockid").className = "CoolClock evening-clock";
+  // document.getElementById("text-box").className = "evening-text-box cf";
+  // document.getElementById("website-solutions-badge").className = "evening-website-solutions-badge"; 
+  
+  // document.getElementById("greeting").innerHTML = ('You sure are up late.');
+  // document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/late-night.jpg" alt="sunrise">');
+  // document.getElementById("clockid").className = "CoolClock late-night-clock";
+  // document.getElementById("text-box").className = "late-night-text-box cf";
+  // document.getElementById("website-solutions-badge").className = "late-night-website-solutions-badge";    
 
 
 

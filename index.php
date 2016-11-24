@@ -71,7 +71,7 @@
       <noscript>Hello,</noscript>
     </h3>
 
-    <p><span id="now"></span><noscript>Now</noscript> is the perfect time to <a class="hmpg-contact" href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");'>contact Evergreen Web Design</a> and discover how pain free your website project can be.</p>
+    <p><span id="now"></span><noscript>Now</noscript> is the perfect time to <a class="hmpg-contact" href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");'>contact Evergreen Web Design</a> and consult a professional about your online goals.</p>
     <p>With options to suit your vision, budget and deadline, let's tailor a solution for you right now!</p>
 
   </div>
