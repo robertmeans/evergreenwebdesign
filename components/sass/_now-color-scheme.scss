@@ -235,7 +235,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000bac', end
 }
 @media screen and (max-width: 600px) {
 	.late-night-text-box {
-		background: rgba(233,132,14,.6);	
+		// background: rgba(10,33,113,.6);	
+background: rgba(10,32,113,0.58);
+background: -moz-linear-gradient(top, rgba(10,32,113,0.58) 0%, rgba(110,87,116,0.58) 55%, rgba(10,32,113,0.58) 99%, rgba(10,32,113,0.58) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(10,32,113,0.58)), color-stop(55%, rgba(110,87,116,0.58)), color-stop(99%, rgba(10,32,113,0.58)), color-stop(100%, rgba(10,32,113,0.58)));
+background: -webkit-linear-gradient(top, rgba(10,32,113,0.58) 0%, rgba(110,87,116,0.58) 55%, rgba(10,32,113,0.58) 99%, rgba(10,32,113,0.58) 100%);
+background: -o-linear-gradient(top, rgba(10,32,113,0.58) 0%, rgba(110,87,116,0.58) 55%, rgba(10,32,113,0.58) 99%, rgba(10,32,113,0.58) 100%);
+background: -ms-linear-gradient(top, rgba(10,32,113,0.58) 0%, rgba(110,87,116,0.58) 55%, rgba(10,32,113,0.58) 99%, rgba(10,32,113,0.58) 100%);
+background: linear-gradient(to bottom, rgba(10,32,113,0.58) 0%, rgba(110,87,116,0.58) 55%, rgba(10,32,113,0.58) 99%, rgba(10,32,113,0.58) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2071', endColorstr='#0a2071', GradientType=0 );
 	}
 }
 

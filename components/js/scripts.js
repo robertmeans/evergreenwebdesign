@@ -1687,77 +1687,105 @@ var today = days[d.getDay()];
 document.getElementById("now").innerHTML = nowTime + " on a " + today;
 }
 
-// Greeting at top of page
-var greeting = new Date()
-var hours = greeting.getHours()
-
-if (hours >= 5 && hours <= 10) { //5a - 10a
-  document.getElementById("greeting").innerHTML = ('Good morning,');
-  document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/sunrise.jpg" alt="sunrise">');
-  document.getElementById("clockid").className = "CoolClock morning-clock";
-  document.getElementById("text-box").className = "morning-text-box cf";
-  document.getElementById("website-solutions-badge").className = "morning-website-solutions-badge";
-
-} else if (hours >= 11 && hours <= 16) { //11a - 4p
-  document.getElementById("greeting").innerHTML = ('Good afternoon,');
-  document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/day-sky-01.jpg" alt="blue sky">');
-  // this one has default styles
-
-} else if (hours >= 17 && hours <= 18) { //5p - 6p
-  document.getElementById("greeting").innerHTML = ('Good (late) afternoon,');
-  document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/mountain-sunset.jpg" alt="sunrise">');
-  document.getElementById("clockid").className = "CoolClock afternoon-clock";
-  document.getElementById("text-box").className = "afternoon-text-box cf";
-  document.getElementById("website-solutions-badge").className = "afternoon-website-solutions-badge";
-
-} else if (hours >= 19 && hours <= 23) { //7p - 11p
-  document.getElementById("greeting").innerHTML = ('Good evening,');
-  document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/night.jpg" alt="sunrise">');
-  document.getElementById("clockid").className = "CoolClock evening-clock";
-  document.getElementById("text-box").className = "evening-text-box cf";
-  document.getElementById("website-solutions-badge").className = "evening-website-solutions-badge";
 
 
-} else { //12a - 4a
-  document.getElementById("greeting").innerHTML = ('You sure are up late.');
-  document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/late-night.jpg" alt="sunrise">');
-  document.getElementById("clockid").className = "CoolClock late-night-clock";
-  document.getElementById("text-box").className = "late-night-text-box cf";
-  document.getElementById("website-solutions-badge").className = "late-night-website-solutions-badge";
+// Start Greeting & Background
+function upEarly() {
+    document.getElementById("greeting").innerHTML = ('You sure are up early.');
+    document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/late-night.jpg" alt="sunrise">');
+    document.getElementById("clockid").className = "CoolClock late-night-clock";
+    document.getElementById("text-box").className = "late-night-text-box cf";
+    document.getElementById("website-solutions-badge").className = "late-night-website-solutions-badge"; 
+}
+function goodMorning() {
+    document.getElementById("greeting").innerHTML = ('Good morning,');
+    document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/sunrise.jpg" alt="sunrise">');
+    document.getElementById("clockid").className = "CoolClock morning-clock";
+    document.getElementById("text-box").className = "morning-text-box cf";
+    document.getElementById("website-solutions-badge").className = "morning-website-solutions-badge"; 
+}
+function goodAfternoon() {
+    document.getElementById("greeting").innerHTML = ('Good afternoon,');
+    document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/day-sky-01.jpg" alt="blue sky">');
+    // this one has default styles 
+}
+function goodLateAfternoon() {
+    document.getElementById("greeting").innerHTML = ('Good (late) afternoon,');
+    document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/mountain-sunset.jpg" alt="sunrise">');
+    document.getElementById("clockid").className = "CoolClock afternoon-clock";
+    document.getElementById("text-box").className = "afternoon-text-box cf";
+    document.getElementById("website-solutions-badge").className = "afternoon-website-solutions-badge";  
+}
+function goodEvening() {
+    document.getElementById("greeting").innerHTML = ('Good evening,');
+    document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/night.jpg" alt="sunrise">');
+    document.getElementById("clockid").className = "CoolClock evening-clock";
+    document.getElementById("text-box").className = "evening-text-box cf";
+    document.getElementById("website-solutions-badge").className = "evening-website-solutions-badge"; 
+}
+function upLate() {
+    document.getElementById("greeting").innerHTML = ('You sure are up late.');
+    document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/late-night.jpg" alt="sunrise">');
+    document.getElementById("clockid").className = "CoolClock late-night-clock";
+    document.getElementById("text-box").className = "late-night-text-box cf";
+    document.getElementById("website-solutions-badge").className = "late-night-website-solutions-badge";  
+}
+var d = new Date();
+var months = new Array();
+months[0] = "January";
+months[1] = "February";
+months[2] = "March";
+months[3] = "April";
+months[4] = "May";
+months[5] = "June";
+months[6] = "July";
+months[7] = "August";
+months[8] = "September";
+months[9] = "October";
+months[10] = "November";
+months[11] = "December";
+
+var month = months[d.getMonth()];
+var hours = d.getHours();
+var minutes = d.getMinutes();
+var time = hours + ":" + minutes;
+
+if (month == "November") {
+  if      (time >= '4:31'   && time <= '5:59')  {   upEarly();            }  // 4:31 - 6:59 
+  else if (time >= '6:00'  && time <= '10:29')  {   goodMorning();        }  // 11a - 4:29p
+  else if (time >= '11:30'  && time <= '16:29') {   goodAfternoon();      }  // 11a - 4:29p
+  else if (time >= '16:30'  && time <= '18:00') {   goodLateAfternoon();  }  // 4:30p - 6p 
+  else if (time >= '18:01'  && time <= '23:00') {   goodEvening();        }  // 7p - 11p 
+  else {                                            upLate();             }  // 12a - 4:30a
+
+} else if (month == "December" || "January" || "February" || "March" || "April" || "May") {  // Mar - May
+  if      (time >= '4:31'   && time <= '6:59')  {   upEarly();            }  // 4:31 - 6:59 
+  else if (time >= '7:00'  && time <= '10:29')  {   goodMorning();        }  // 11a - 4:29p
+  else if (time >= '11:30'  && time <= '16:29') {   goodAfternoon();      }  // 11a - 4:29p
+  else if (time >= '16:30'  && time <= '18:00') {   goodLateAfternoon();  }  // 4:30p - 6p 
+  else if (time >= '18:01'  && time <= '23:00') {   goodEvening();        }  // 7p - 11p 
+  else {                                            upLate();             }  // 12a - 4:30a
+
+} else if (month == "June" || "July" || "August") {                         // June - Aug
+  if      (time >= '4:31'   && time <= '6:59')  {   upEarly();            }  // 4:31 - 6:59 
+  else if (time >= '7:00'  && time <= '10:29')  {   goodMorning();        }  // 11a - 4:29p
+  else if (time >= '11:30'  && time <= '16:29') {   goodAfternoon();      }  // 11a - 4:29p
+  else if (time >= '16:30'  && time <= '18:00') {   goodLateAfternoon();  }  // 4:30p - 6p 
+  else if (time >= '18:01'  && time <= '23:00') {   goodEvening();        }  // 7p - 11p 
+  else {                                            upLate();             }  // 12a - 4:30a
+
+} else if (month == "September" || "October") {                             // Sept - Oct
+  if      (time >= '4:31'   && time <= '6:59')  {   upEarly();            }  // 4:31 - 6:59 
+  else if (time >= '7:00'  && time <= '10:29')  {   goodMorning();        }  // 11a - 4:29p
+  else if (time >= '11:30'  && time <= '16:29') {   goodAfternoon();      }  // 11a - 4:29p
+  else if (time >= '16:30'  && time <= '18:00') {   goodLateAfternoon();  }  // 4:30p - 6p 
+  else if (time >= '18:01'  && time <= '23:00') {   goodEvening();        }  // 7p - 11p 
+  else {                                            upLate();             }  // 12a - 4:30a
 }
 
 
 // --------------------        Development override         ------------------------------------------------- //
-  // document.getElementById("greeting").innerHTML = ('Good morning,');
-  // document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/sunrise.jpg" alt="sunrise">');
-  // document.getElementById("clockid").className = "CoolClock morning-clock";
-  // document.getElementById("text-box").className = "morning-text-box cf";
-  // document.getElementById("website-solutions-badge").className = "morning-website-solutions-badge";
-
-  // document.getElementById("greeting").innerHTML = ('Good afternoon,');
-  // document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/day-sky-01.jpg" alt="blue sky">'); 
-  // /* Dont copy the 3 classes below to paste above. This is run by the defaults that are already in place */
-  // document.getElementById("clockid").className = "CoolClock clockid-default";
-  // document.getElementById("text-box").className = "text-box-default cf";
-  // document.getElementById("website-solutions-badge").className = "website-solutions-badge-default";
-  
-  // document.getElementById("greeting").innerHTML = ('Good (late) afternoon,');
-  // document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/mountain-sunset.jpg" alt="sunrise">');
-  // document.getElementById("clockid").className = "CoolClock afternoon-clock";
-  // document.getElementById("text-box").className = "afternoon-text-box cf";
-  // document.getElementById("website-solutions-badge").className = "afternoon-website-solutions-badge"; 
-
-  // document.getElementById("greeting").innerHTML = ('Good evening,');
-  // document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/night.jpg" alt="sunrise">');
-  // document.getElementById("clockid").className = "CoolClock evening-clock";
-  // document.getElementById("text-box").className = "evening-text-box cf";
-  // document.getElementById("website-solutions-badge").className = "evening-website-solutions-badge"; 
-  
-  // document.getElementById("greeting").innerHTML = ('You sure are up late.');
-  // document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/late-night.jpg" alt="sunrise">');
-  // document.getElementById("clockid").className = "CoolClock late-night-clock";
-  // document.getElementById("text-box").className = "late-night-text-box cf";
-  // document.getElementById("website-solutions-badge").className = "late-night-website-solutions-badge";    
+   
 
 
 
