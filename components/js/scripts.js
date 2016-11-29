@@ -1730,6 +1730,12 @@ function upLate() {
     document.getElementById("text-box").className = "late-night-text-box cf";
     document.getElementById("website-solutions-badge").className = "late-night-website-solutions-badge";  
 }
+function defaultGreeting() {
+    document.getElementById("greeting").innerHTML = ('Welcome,');
+    document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/day-sky-01.jpg" alt="blue sky">');
+    // this one has default styles 
+}
+
 var d = new Date();
 var months = new Array();
 months[0] = "January";
@@ -1746,45 +1752,119 @@ months[10] = "November";
 months[11] = "December";
 
 var month = months[d.getMonth()];
+var day = d.getDate();
 var hours = d.getHours();
 var minutes = d.getMinutes();
-var time = hours + ":" + minutes;
 
-if (month == "November") {
-  if      (time >= '4:31'   && time <= '5:59')  {   upEarly();            }  // 4:31 - 6:59 
-  else if (time >= '6:00'  && time <= '10:29')  {   goodMorning();        }  // 11a - 4:29p
-  else if (time >= '11:30'  && time <= '16:29') {   goodAfternoon();      }  // 11a - 4:29p
-  else if (time >= '16:30'  && time <= '18:00') {   goodLateAfternoon();  }  // 4:30p - 6p 
-  else if (time >= '18:01'  && time <= '23:00') {   goodEvening();        }  // 7p - 11p 
-  else {                                            upLate();             }  // 12a - 4:30a
+function pad(z) { return (z < 10) ? ("0" + z) : z; }
+var hours = pad(hours);
+var minutes = pad(minutes);
 
-} else if (month == "December" || "January" || "February" || "March" || "April" || "May") {  // Mar - May
-  if      (time >= '4:31'   && time <= '6:59')  {   upEarly();            }  // 4:31 - 6:59 
-  else if (time >= '7:00'  && time <= '10:29')  {   goodMorning();        }  // 11a - 4:29p
-  else if (time >= '11:30'  && time <= '16:29') {   goodAfternoon();      }  // 11a - 4:29p
-  else if (time >= '16:30'  && time <= '18:00') {   goodLateAfternoon();  }  // 4:30p - 6p 
-  else if (time >= '18:01'  && time <= '23:00') {   goodEvening();        }  // 7p - 11p 
-  else {                                            upLate();             }  // 12a - 4:30a
+var time = "" + hours + minutes;
+window.alert("month = " + month + "\nday = " + day + "\ntime = " + time);
 
-} else if (month == "June" || "July" || "August") {                         // June - Aug
-  if      (time >= '4:31'   && time <= '6:59')  {   upEarly();            }  // 4:31 - 6:59 
-  else if (time >= '7:00'  && time <= '10:29')  {   goodMorning();        }  // 11a - 4:29p
-  else if (time >= '11:30'  && time <= '16:29') {   goodAfternoon();      }  // 11a - 4:29p
-  else if (time >= '16:30'  && time <= '18:00') {   goodLateAfternoon();  }  // 4:30p - 6p 
-  else if (time >= '18:01'  && time <= '23:00') {   goodEvening();        }  // 7p - 11p 
-  else {                                            upLate();             }  // 12a - 4:30a
-
-} else if (month == "September" || "October") {                             // Sept - Oct
-  if      (time >= '4:31'   && time <= '6:59')  {   upEarly();            }  // 4:31 - 6:59 
-  else if (time >= '7:00'  && time <= '10:29')  {   goodMorning();        }  // 11a - 4:29p
-  else if (time >= '11:30'  && time <= '16:29') {   goodAfternoon();      }  // 11a - 4:29p
-  else if (time >= '16:30'  && time <= '18:00') {   goodLateAfternoon();  }  // 4:30p - 6p 
-  else if (time >= '18:01'  && time <= '23:00') {   goodEvening();        }  // 7p - 11p 
-  else {                                            upLate();             }  // 12a - 4:30a
+if        (month == "January") {                                   // January
+  if      (time >= 400  && time <= 530 ) { upEarly();           }  // 04:00 - 05:30 
+  else if (time >= 531  && time <= 1059) { goodMorning();       }  // 05:31 - 10:59
+  else if (time >= 1100 && time <= 1640) { goodAfternoon();     }  // 11:00 - 16:40
+  else if (time >= 1641 && time <= 1859) { goodLateAfternoon(); }  // 16:41 - 18:59
+  else if (time >= 1900 && time <= 2330) { goodEvening();       }  // 19:00 - 23:30 
+                                    else { upLate();            }  // 23:31 - 03:59  
+} 
+if        (month == "February") {                                  // February
+  if      (time >= 400  && time <= 530 ) { upEarly();           }  // 04:00 - 05:30 
+  else if (time >= 531  && time <= 1059) { goodMorning();       }  // 05:31 - 10:59
+  else if (time >= 1100 && time <= 1640) { goodAfternoon();     }  // 11:00 - 16:40
+  else if (time >= 1641 && time <= 1859) { goodLateAfternoon(); }  // 16:41 - 18:59
+  else if (time >= 1900 && time <= 2330) { goodEvening();       }  // 19:00 - 23:30 
+                                    else { upLate();            }  // 23:31 - 03:59 
+} 
+if        (month == "March") {                                     // March
+  if      (time >= 400  && time <= 530 ) { upEarly();           }  // 04:00 - 05:30 
+  else if (time >= 531  && time <= 1059) { goodMorning();       }  // 05:31 - 10:59
+  else if (time >= 1100 && time <= 1640) { goodAfternoon();     }  // 11:00 - 16:40
+  else if (time >= 1641 && time <= 1859) { goodLateAfternoon(); }  // 16:41 - 18:59
+  else if (time >= 1900 && time <= 2330) { goodEvening();       }  // 19:00 - 23:30 
+                                    else { upLate();            }  // 23:31 - 03:59 
+} 
+if        (month == "April") {                                     // April
+  if      (time >= 400  && time <= 530 ) { upEarly();           }  // 04:00 - 05:30 
+  else if (time >= 531  && time <= 1059) { goodMorning();       }  // 05:31 - 10:59
+  else if (time >= 1100 && time <= 1640) { goodAfternoon();     }  // 11:00 - 16:40
+  else if (time >= 1641 && time <= 1859) { goodLateAfternoon(); }  // 16:41 - 18:59
+  else if (time >= 1900 && time <= 2330) { goodEvening();       }  // 19:00 - 23:30 
+                                    else { upLate();            }  // 23:31 - 03:59
+} 
+if        (month == "May") {                                       // May
+  if      (time >= 400  && time <= 530 ) { upEarly();           }  // 04:00 - 05:30 
+  else if (time >= 531  && time <= 1059) { goodMorning();       }  // 05:31 - 10:59
+  else if (time >= 1100 && time <= 1640) { goodAfternoon();     }  // 11:00 - 16:40
+  else if (time >= 1641 && time <= 1859) { goodLateAfternoon(); }  // 16:41 - 18:59
+  else if (time >= 1900 && time <= 2330) { goodEvening();       }  // 19:00 - 23:30 
+                                    else { upLate();            }  // 23:31 - 03:59
+} 
+if        (month == "June") {                                      // June
+  if      (time >= 400  && time <= 530 ) { upEarly();           }  // 04:00 - 05:30 
+  else if (time >= 531  && time <= 1059) { goodMorning();       }  // 05:31 - 10:59
+  else if (time >= 1100 && time <= 1640) { goodAfternoon();     }  // 11:00 - 16:40
+  else if (time >= 1641 && time <= 1859) { goodLateAfternoon(); }  // 16:41 - 18:59
+  else if (time >= 1900 && time <= 2330) { goodEvening();       }  // 19:00 - 23:30 
+                                    else { upLate();            }  // 23:31 - 03:59
+} 
+if        (month == "July") {                                      // July
+  if      (time >= 400  && time <= 530 ) { upEarly();           }  // 04:00 - 05:30 
+  else if (time >= 531  && time <= 1059) { goodMorning();       }  // 05:31 - 10:59
+  else if (time >= 1100 && time <= 1640) { goodAfternoon();     }  // 11:00 - 16:40
+  else if (time >= 1641 && time <= 1859) { goodLateAfternoon(); }  // 16:41 - 18:59
+  else if (time >= 1900 && time <= 2330) { goodEvening();       }  // 19:00 - 23:30 
+                                    else { upLate();            }  // 23:31 - 03:59
+} 
+if        (month == "August") {                                    // August
+  if      (time >= 400  && time <= 530 ) { upEarly();           }  // 04:00 - 05:30 
+  else if (time >= 531  && time <= 1059) { goodMorning();       }  // 05:31 - 10:59
+  else if (time >= 1100 && time <= 1640) { goodAfternoon();     }  // 11:00 - 16:40
+  else if (time >= 1641 && time <= 1859) { goodLateAfternoon(); }  // 16:41 - 18:59
+  else if (time >= 1900 && time <= 2330) { goodEvening();       }  // 19:00 - 23:30 
+                                    else { upLate();            }  // 23:31 - 03:59
+} 
+if        (month == "September") {                                 // September
+  if      (time >= 400  && time <= 530 ) { upEarly();           }  // 04:00 - 05:30 
+  else if (time >= 531  && time <= 1059) { goodMorning();       }  // 05:31 - 10:59
+  else if (time >= 1100 && time <= 1640) { goodAfternoon();     }  // 11:00 - 16:40
+  else if (time >= 1641 && time <= 1859) { goodLateAfternoon(); }  // 16:41 - 18:59
+  else if (time >= 1900 && time <= 2330) { goodEvening();       }  // 19:00 - 23:30 
+                                    else { upLate();            }  // 23:31 - 03:59
+} 
+if        (month == "October") {                                   // October
+  if      (time >= 400  && time <= 530 ) { upEarly();           }  // 04:00 - 05:30 
+  else if (time >= 531  && time <= 1059) { goodMorning();       }  // 05:31 - 10:59
+  else if (time >= 1100 && time <= 1640) { goodAfternoon();     }  // 11:00 - 16:40
+  else if (time >= 1641 && time <= 1859) { goodLateAfternoon(); }  // 16:41 - 18:59
+  else if (time >= 1900 && time <= 2330) { goodEvening();       }  // 19:00 - 23:30 
+                                    else { upLate();            }  // 23:31 - 03:59
+} 
+if        (month == "November") {                                  // November
+  if      (time >= 400  && time <= 530 ) { upEarly();           }  // 04:00 - 05:30 
+  else if (time >= 531  && time <= 1059) { goodMorning();       }  // 05:31 - 10:59
+  else if (time >= 1100 && time <= 1609) { goodAfternoon();     }  // 11:00 - 16:09
+  else if (time >= 1610 && time <= 1859) { goodLateAfternoon(); }  // 16:10 - 18:59
+  else if (time >= 1900 && time <= 2330) { goodEvening();       }  // 19:00 - 23:30 
+                                    else { upLate();            }  // 23:31 - 03:59
+} 
+if        (month == "December") {                                  // December
+  if      (time >= 400  && time <= 530 ) { upEarly();           }  // 04:00 - 05:30 
+  else if (time >= 531  && time <= 1059) { goodMorning();       }  // 05:31 - 10:59
+  else if (time >= 1100 && time <= 1640) { goodAfternoon();     }  // 11:00 - 16:40
+  else if (time >= 1641 && time <= 1859) { goodLateAfternoon(); }  // 16:41 - 18:59
+  else if (time >= 1900 && time <= 2330) { goodEvening();       }  // 19:00 - 23:30 
+                                    else { upLate();            }  // 23:31 - 03:59
 }
+                                                                        
 
 
-// --------------------        Development override         ------------------------------------------------- //
+
+
+// --------------------  End Greeting & Background  ---------------------------------- //
    
 
 
