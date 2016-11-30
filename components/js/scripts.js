@@ -1691,11 +1691,18 @@ document.getElementById("now").innerHTML = nowTime + " on a " + today;
 
 // Start Greeting & Background
 function upEarly() {
-    document.getElementById("greeting").innerHTML = ('You sure are up early.');
-    document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/late-night.jpg" alt="sunrise">');
+    document.getElementById("greeting").innerHTML = ('Good morning Early Bird,');
+    document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/up-early-01.jpg" alt="early sky">');
     document.getElementById("clockid").className = "CoolClock late-night-clock";
     document.getElementById("text-box").className = "late-night-text-box cf";
     document.getElementById("website-solutions-badge").className = "late-night-website-solutions-badge"; 
+}
+function preMorning() {
+    document.getElementById("greeting").innerHTML = ('Good morning,');
+    document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/pre-morning.jpg" alt="lavender field sunrise">');
+    document.getElementById("clockid").className = "CoolClock pre-morning-clock";
+    document.getElementById("text-box").className = "pre-morning-text-box cf";
+    document.getElementById("website-solutions-badge").className = "pre-morning-website-solutions-badge"; 
 }
 function goodMorning() {
     document.getElementById("greeting").innerHTML = ('Good morning,');
@@ -1704,13 +1711,20 @@ function goodMorning() {
     document.getElementById("text-box").className = "morning-text-box cf";
     document.getElementById("website-solutions-badge").className = "morning-website-solutions-badge"; 
 }
+function goodLateMorning() {
+    document.getElementById("greeting").innerHTML = ('Good morning,');
+    document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/good-late-morning.jpg" alt="sunrise">');
+    document.getElementById("clockid").className = "CoolClock late-morning-clock";
+    document.getElementById("text-box").className = "late-morning-text-box cf";
+    document.getElementById("website-solutions-badge").className = "late-morning-website-solutions-badge"; 
+}
 function goodAfternoon() {
     document.getElementById("greeting").innerHTML = ('Good afternoon,');
     document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/day-sky-01.jpg" alt="blue sky">');
     // this one has default styles 
 }
 function goodLateAfternoon() {
-    document.getElementById("greeting").innerHTML = ('Good (late) afternoon,');
+    document.getElementById("greeting").innerHTML = ('Good afternoon,');
     document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/mountain-sunset.jpg" alt="sunrise">');
     document.getElementById("clockid").className = "CoolClock afternoon-clock";
     document.getElementById("text-box").className = "afternoon-text-box cf";
@@ -1724,11 +1738,19 @@ function goodEvening() {
     document.getElementById("website-solutions-badge").className = "evening-website-solutions-badge"; 
 }
 function upLate() {
-    document.getElementById("greeting").innerHTML = ('You sure are up late.');
+    document.getElementById("greeting").innerHTML = ('It&acute;s never too late!');
     document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/late-night.jpg" alt="sunrise">');
     document.getElementById("clockid").className = "CoolClock late-night-clock";
     document.getElementById("text-box").className = "late-night-text-box cf";
     document.getElementById("website-solutions-badge").className = "late-night-website-solutions-badge";  
+}
+function insomniacs() {
+    document.getElementById("greeting").innerHTML = ('Insomniacs Unite!');
+    document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/insomniacs.jpg" alt="sunrise">');
+    document.getElementById("greeting_bkg").className = "insomniac-background";
+    document.getElementById("clockid").className = "CoolClock insomniac-clock";
+    document.getElementById("text-box").className = "insomniac-text-box cf";
+    document.getElementById("website-solutions-badge").className = "insomniac-website-solutions-badge";  
 }
 function defaultGreeting() {
     document.getElementById("greeting").innerHTML = ('Welcome,');
@@ -1761,7 +1783,18 @@ var hours = pad(hours);
 var minutes = pad(minutes);
 
 var time = "" + hours + minutes;
-window.alert("month = " + month + "\nday = " + day + "\ntime = " + time);
+// window.alert("month = " + month + "\nday = " + day + "\ntime = " + time);
+
+// Development override -------
+// upEarly();
+// preMorning();
+// goodMorning();
+// goodLateMorning();
+// goodAfternoon();
+// goodLateAfternoon();
+// goodEvening();
+// upLate();
+// insomniacs();
 
 if        (month == "January") {                                   // January
   if      (time >= 400  && time <= 530 ) { upEarly();           }  // 04:00 - 05:30 
@@ -1844,12 +1877,14 @@ if        (month == "October") {                                   // October
                                     else { upLate();            }  // 23:31 - 03:59
 } 
 if        (month == "November") {                                  // November
-  if      (time >= 400  && time <= 530 ) { upEarly();           }  // 04:00 - 05:30 
-  else if (time >= 531  && time <= 1059) { goodMorning();       }  // 05:31 - 10:59
-  else if (time >= 1100 && time <= 1609) { goodAfternoon();     }  // 11:00 - 16:09
-  else if (time >= 1610 && time <= 1859) { goodLateAfternoon(); }  // 16:10 - 18:59
-  else if (time >= 1900 && time <= 2330) { goodEvening();       }  // 19:00 - 23:30 
-                                    else { upLate();            }  // 23:31 - 03:59
+  if      (time >= 0500 && time <= 0654) { upEarly();           }  // 05:00 - 06:54 
+  else if (time >= 0655 && time <= 0800) { goodMorning();       }  // 06:55 - 08:00
+  else if (time >= 0801 && time <= 1030) { goodLateMorning();   }  // 08:01 - 10:30
+  else if (time >= 1031 && time <= 1559) { goodAfternoon();     }  // 10:31 - 15:59
+  else if (time >= 1600 && time <= 1715) { goodLateAfternoon(); }  // 16:00 - 17:15
+  else if (time >= 1716 && time <= 2200) { goodEvening();       }  // 17:16 - 22:00 
+  else if (time >= 2201 || time <= 0144) { upLate();            }  // 22:01 - 01:44
+                                    else { insomniacs();        }  // 01:45 - 04:59
 } 
 if        (month == "December") {                                  // December
   if      (time >= 400  && time <= 530 ) { upEarly();           }  // 04:00 - 05:30 
@@ -1861,7 +1896,23 @@ if        (month == "December") {                                  // December
 }
                                                                         
 
+// switch (month == "November") {
+//   case (time >= 0400 && time <= 0530) : upEarly(); break;
+//   case (time >= 0531 && time <= 1059) : goodMorning(); break;
+//   case (time >= 1100 && time <= 1609) : goodAfternoon(); break;
+//   case (time >= 1610 && time <= 1859) : goodLateAfternoon(); break;
+//   case (time >= 1900 && time <= 2330) : goodEvening(); break;
+//   default: upLate();
+// }
 
+// switch (month == "December") {
+//   case (time >= 0400 && time <= 0530) : upEarly(); break;
+//   case (time >= 0531 && time <= 1059) : goodMorning(); break;
+//   case (time >= 1100 && time <= 1609) : goodAfternoon(); break;
+//   case (time >= 1610 && time <= 1859) : goodLateAfternoon(); break;
+//   case (time >= 1900 && time <= 2330) : goodEvening(); break;
+//   default: upLate();
+// } 
 
 
 // --------------------  End Greeting & Background  ---------------------------------- //
