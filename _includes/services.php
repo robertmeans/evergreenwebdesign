@@ -10,29 +10,26 @@
 
         <div id="tab1" class="tab active cf"><!-- Overview tab -->
           <h2 class="mobile">Overview</h2>
-            <p>At the risk of limiting the available services to Evergreen, Colorado Webmaster designing and building only websites it should be noted that &quot;Website Solutions&quot; loosly translates to any computer related task you can't do, don't have time to do or don't want to do.</p>
-            <p>Past projects, aside from Evergreen, Colorado Webmaster providing website concept, design &amp; development include:</p>
+            <p>Located in beautiful Evergreen, Colorado Evergreen Web Design is a full-service Internet marketing firm offering custom solutions to virtually any Web-related project. We've partnered with some of the biggest names in the industry in order to bring you the most competitive rates available from domain registration to hosting to website concept, design and development.</p>
+
+            <p>Products &amp; services include:</p>
             <div class="project-col">
               <ul class="past-projects">
-                <li>WordPress recovery &amp migration</li>
-                <li>Automating data entry tasks</li>
-                <li>Technical support</li>
-                <li>Illustrations</li>
-                <li>Scanning and cataloging</li>
-                <li>Creating banner ads</li>
-                <li>Designing &amp; authoring technical instructions</li>
+                <li>Website Development</li>
+                <li>Domain Registration</li>
+                <li>Hosting</li>
+                <li>SSL Certificates</li>
+                <li>Email</li>
               </ul>
               </div>
 
               <div class="project-col">
               <ul class="past-projects second-column">
-                <li>Updates/Modifications to existing websites</li>
-                <li>Editing video testimony for court trial</li>
-                <li>Editing audio testimony</li>
-                <li>Designing restaurant menus</li>
-                <li>Developing online shopping cart</li>
-                <li>Preparing newsletters</li>
-                <li>Photographing &amp; cataloging inventory</li>
+                <li>SEO Services</li>
+                <li>Social Media Campaigns</li>
+                <li>Updates/Modifications to Existing Websites</li>
+                <li>WordPress Recovery &amp; Migration</li>
+                <li>Custom Solutions</li>
               </ul>
               </div>
 
@@ -158,7 +155,17 @@
 
     <div id="tab3" class="tab cf"><!-- $? tab -->
       <h2 class="mobile"><i class="fa fa-wordpress"></i> WordPress</h2>
-      <p>WordPress is the newest option available to customers and one that is exciting to provide. WordPress is an open source framework originally designed as a blogging platform but that can be tailored to your specific tastes while harnessing the incredible power and stability of thousands of lines of code engineered by the brightest folks in the industry. It's kind of like someone giving you a Ferrari engine - now, who are you going to hire to build you a car around that engine?</p>
+      <p>WordPress powers <a class="txt-a" href="https://www.inkthemes.com/why-use-wordpress/" target="_blank">25% of all sites</a> across the web. In the realm of Content Management Systems, WordPress accounts for over 65% of the global market. It features an easy to use interface, built in search engine compatiblity, it's secure and there are virtually endless options to customize. This is the solution both novice and professional turn to most often.</p>
+
+      <p>Evergreen Web Design can harness the power of this framework for you
+
+      designed from the ground up to attract the most attention.
+
+       and deliver a product you can trust will always compete at the highest level.  
+
+      with the latest specifications
+
+      that is designed for .... and performance.</p>
     </div><!-- #tab3 .tab cf -->
 
   </div><!-- .tab-content -->

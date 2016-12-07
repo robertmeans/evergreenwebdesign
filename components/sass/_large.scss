@@ -132,14 +132,8 @@
 	}
 }
 .text-box-default {
-	background: rgba(255,255,0,0);
-	background: -moz-linear-gradient(left, rgba(255,255,0,0) 0%, rgba(255,255,0,0.07) 9%, rgba(255,255,255,0.22) 28%, rgba(4,94,184,0.78) 100%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,0,0)), color-stop(9%, rgba(255,255,0,0.07)), color-stop(28%, rgba(255,255,255,0.22)), color-stop(100%, rgba(4,94,184,0.78)));
-	background: -webkit-linear-gradient(left, rgba(255,255,0,0) 0%, rgba(255,255,0,0.07) 9%, rgba(255,255,255,0.22) 28%, rgba(4,94,184,0.78) 100%);
-	background: -o-linear-gradient(left, rgba(255,255,0,0) 0%, rgba(255,255,0,0.07) 9%, rgba(255,255,255,0.22) 28%, rgba(4,94,184,0.78) 100%);
-	background: -ms-linear-gradient(left, rgba(255,255,0,0) 0%, rgba(255,255,0,0.07) 9%, rgba(255,255,255,0.22) 28%, rgba(4,94,184,0.78) 100%);
-	background: linear-gradient(to right, rgba(255,255,0,0) 0%, rgba(255,255,0,0.07) 9%, rgba(255,255,255,0.22) 28%, rgba(4,94,184,0.78) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff00', endColorstr='#045eb8', GradientType=1 );
+// see _now-color-scheme.scss
+// .text-box-default
 }
 @media screen and (max-width: 600px) {
 	.text-box-default {
@@ -160,14 +154,8 @@
 	display: block;
 }
 .clockid-default {
-background: rgba(28,84,168,0.8);
-background: -moz-radial-gradient(center, ellipse cover, rgba(28,84,168,0.8) 0%, rgba(28,84,168,0.81) 0%, rgba(26,106,163,0.88) 25%, rgba(26,108,163,0.83) 27%, rgba(15,87,135,0) 60%);
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(28,84,168,0.8)), color-stop(0%, rgba(28,84,168,0.81)), color-stop(25%, rgba(26,106,163,0.88)), color-stop(27%, rgba(26,108,163,0.83)), color-stop(60%, rgba(15,87,135,0)));
-background: -webkit-radial-gradient(center, ellipse cover, rgba(28,84,168,0.8) 0%, rgba(28,84,168,0.81) 0%, rgba(26,106,163,0.88) 25%, rgba(26,108,163,0.83) 27%, rgba(15,87,135,0) 60%);
-background: -o-radial-gradient(center, ellipse cover, rgba(28,84,168,0.8) 0%, rgba(28,84,168,0.81) 0%, rgba(26,106,163,0.88) 25%, rgba(26,108,163,0.83) 27%, rgba(15,87,135,0) 60%);
-background: -ms-radial-gradient(center, ellipse cover, rgba(28,84,168,0.8) 0%, rgba(28,84,168,0.81) 0%, rgba(26,106,163,0.88) 25%, rgba(26,108,163,0.83) 27%, rgba(15,87,135,0) 60%);
-background: radial-gradient(ellipse at center, rgba(28,84,168,0.8) 0%, rgba(28,84,168,0.81) 0%, rgba(26,106,163,0.88) 25%, rgba(26,108,163,0.83) 27%, rgba(15,87,135,0) 60%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c54a8', endColorstr='#0f5787', GradientType=1 );
+// see _now-color-scheme.scss
+// clockid-default
 }
 
 #website-solutions-badge {
@@ -190,14 +178,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c54a8', end
 	}
 }
 .website-solutions-badge-default {
-background: rgba(17,111,173,0.83);
-background: -moz-linear-gradient(top, rgba(17,111,173,0.83) 0%, rgba(29,104,155,0.6) 67%, rgba(34,102,148,0.29) 92%, rgba(34,102,148,0.19) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(17,111,173,0.83)), color-stop(67%, rgba(29,104,155,0.6)), color-stop(92%, rgba(34,102,148,0.29)), color-stop(100%, rgba(34,102,148,0.19)));
-background: -webkit-linear-gradient(top, rgba(17,111,173,0.83) 0%, rgba(29,104,155,0.6) 67%, rgba(34,102,148,0.29) 92%, rgba(34,102,148,0.19) 100%);
-background: -o-linear-gradient(top, rgba(17,111,173,0.83) 0%, rgba(29,104,155,0.6) 67%, rgba(34,102,148,0.29) 92%, rgba(34,102,148,0.19) 100%);
-background: -ms-linear-gradient(top, rgba(17,111,173,0.83) 0%, rgba(29,104,155,0.6) 67%, rgba(34,102,148,0.29) 92%, rgba(34,102,148,0.19) 100%);
-background: linear-gradient(to bottom, rgba(17,111,173,0.83) 0%, rgba(29,104,155,0.6) 67%, rgba(34,102,148,0.29) 92%, rgba(34,102,148,0.19) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#116fad', endColorstr='#226694', GradientType=0 );
+// see _now-color-scheme.scss
+// .website-solutions-badge-default
 }
 
 .hmpg-contact {
@@ -749,6 +731,7 @@ footer {
 	}
 	.tel, .tel:visited, .tel:focus {
 		font-size: 1.4em;
+		letter-spacing: 1.5px;
 		color: #fff;
 		text-decoration: none;
 		cursor: text;

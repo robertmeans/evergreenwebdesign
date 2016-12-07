@@ -1722,6 +1722,9 @@ function goodAfternoon() {
     document.getElementById("greeting").innerHTML = ('Good afternoon,');
     document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/day-sky-01.jpg" alt="blue sky">');
     // this one has default styles 
+    document.getElementById("clockid").className = "CoolClock clockid-default";
+    document.getElementById("text-box").className = "text-box-default cf";
+    document.getElementById("website-solutions-badge").className = "website-solutions-badge-default";
 }
 function goodLateAfternoon() {
     document.getElementById("greeting").innerHTML = ('Good afternoon,');
@@ -1952,8 +1955,8 @@ if        (month == "December") {                                  // December [
   else if (time >= 0559 && time <= 0649) { preMorning();        }  // 05:59 - 06:49 lavender field
   else if (time >= 0650 && time <= 0740) { goodMorning();       }  // 06:50 - 07:40 orange sunrise (sunrise: 07:03|07:22)
   else if (time >= 0741 && time <= 1030) { goodLateMorning();   }  // 07:41 - 10:30 snow tracks
-  else if (time >= 1031 && time <= 1619) { goodAfternoon();     }  // 10:31 - 16:19 sun sky
-  else if (time >= 1620 && time <= 1715) { goodLateAfternoon(); }  // 16:20 - 17:15 mountain sunset (sunset: 04:38|16:46)
+  else if (time >= 1031 && time <= 1605) { goodAfternoon();     }  // 10:31 - 16:19 sun sky
+  else if (time >= 1606 && time <= 1715) { goodLateAfternoon(); }  // 16:20 - 17:15 mountain sunset (sunset: 04:38|16:46)
   else if (time >= 1716 && time <= 2200) { goodEvening();       }  // 17:16 - 22:00 mountain moon
   else if (time >= 2201 || time <= 0144) { upLate();            }  // 22:01 - 01:44 universe 
                                     else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
