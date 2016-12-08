@@ -1782,7 +1782,7 @@ var hours = d.getHours();
 var minutes = d.getMinutes();
 
 function pad(z) { return (z < 10) ? ("0" + z) : z; }
-var hours = pad(hours);
+// var hours = pad(hours); // no need to pad hours - leading zero on hour screws things up
 var minutes = pad(minutes);
 
 var time = "" + hours + minutes;
@@ -1802,163 +1802,163 @@ var time = "" + hours + minutes;
 // http://www.sunrisesunset.com/usa/Colorado/Evergreen.asp - sunrise/sunset calendar
 
 if        (month == "January") {                                   // January [done]
-  if      (time >= 0500 && time <= 0559) { upEarly();           }  // 05:00 - 05:59 vector - sillouhette sunburst 
-  else if (time >= 0600 && time <= 0654) { preMorning();        }  // 06:00 - 06:54 lavender field
-  else if (time >= 0655 && time <= 0745) { goodMorning();       }  // 06:55 - 07:45 orange sunrise (sunrise: 07:22|07:10)
-  else if (time >= 0746 && time <= 1030) { goodLateMorning();   }  // 07:46 - 10:30 snow tracks
+  if      (time >= 500 && time <=  559 ) { upEarly();           }  // 05:00 - 05:59 vector - sillouhette sunburst 
+  else if (time >= 600 && time <=  654 ) { preMorning();        }  // 06:00 - 06:54 lavender field
+  else if (time >= 655 && time <=  745 ) { goodMorning();       }  // 06:55 - 07:45 orange sunrise (sunrise: 07:22|07:10)
+  else if (time >= 746 && time <=  1030) { goodLateMorning();   }  // 07:46 - 10:30 snow tracks
   else if (time >= 1031 && time <= 1635) { goodAfternoon();     }  // 10:31 - 16:35 sun sky
   else if (time >= 1636 && time <= 1745) { goodLateAfternoon(); }  // 16:36 - 17:45 mountain sunset (sunset: 16:47|17:19)
   else if (time >= 1746 && time <= 2200) { goodEvening();       }  // 17:46 - 22:00 mountain moon
-  else if (time >= 2201 || time <= 0144) { upLate();            }  // 22:01 - 01:44 universe 
+  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe 
                                     else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
 } 
 if        (month == "February") {                                  // February [done]
-  if      (time >= 0500 && time <= 0559) { upEarly();           }  // 05:00 - 05:59 vector - sillouhette sunburst 
-  else if (time >= 0600 && time <= 0657) { preMorning();        }  // 06:00 - 06:57 lavender field
-  else if (time >= 0658 && time <= 0735) { goodMorning();       }  // 06:58 - 07:35 orange sunrise (sunrise: 07:09|06:36)
-  else if (time >= 0736 && time <= 1030) { goodLateMorning();   }  // 07:36 - 10:30 snow tracks
+  if      (time >= 500 && time <=  559 ) { upEarly();           }  // 05:00 - 05:59 vector - sillouhette sunburst 
+  else if (time >= 600 && time <=  657 ) { preMorning();        }  // 06:00 - 06:57 lavender field
+  else if (time >= 658 && time <=  735 ) { goodMorning();       }  // 06:58 - 07:35 orange sunrise (sunrise: 07:09|06:36)
+  else if (time >= 736 && time <=  1030) { goodLateMorning();   }  // 07:36 - 10:30 snow tracks
   else if (time >= 1031 && time <= 1709) { goodAfternoon();     }  // 10:31 - 17:09 sun sky
   else if (time >= 1710 && time <= 1810) { goodLateAfternoon(); }  // 17:10 - 18:10 mountain sunset (sunset: 17:21|17:52)
   else if (time >= 1811 && time <= 2200) { goodEvening();       }  // 18:11 - 22:00 mountain moon
-  else if (time >= 2201 || time <= 0144) { upLate();            }  // 22:01 - 01:44 universe 
+  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe 
                                     else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
 } 
 
 
 if        (month == "March" && day <= 11) {                        // March 12, 2017 (DST) [done]
-  if      (time >= 0500 && time <= 0555) { upEarly();           }  // 05:00 - 05:55 vector - sillouhette sunburst 
-  else if (time >= 0556 && time <= 0619) { preMorning();        }  // 05:56 - 06:19 lavender field
-  else if (time >= 0620 && time <= 0715) { goodMorning();       }  // 06:20 - 07:15 orange sunrise (sunrise: 06:35 on 03.01.17)
-  else if (time >= 0716 && time <= 1100) { goodLateMorning();   }  // 07:16 - 11:00 snow tracks    (     ^^: 06:19 on 03.11.17)
+  if      (time >= 500 && time <=  555 ) { upEarly();           }  // 05:00 - 05:55 vector - sillouhette sunburst 
+  else if (time >= 556 && time <=  619 ) { preMorning();        }  // 05:56 - 06:19 lavender field
+  else if (time >= 620 && time <=  715 ) { goodMorning();       }  // 06:20 - 07:15 orange sunrise (sunrise: 06:35 on 03.01.17)
+  else if (time >= 716 && time <=  1100) { goodLateMorning();   }  // 07:16 - 11:00 snow tracks    (     ^^: 06:19 on 03.11.17)
   else if (time >= 1101 && time <= 1740) { goodAfternoon();     }  // 11:01 - 17:40 sun sky
   else if (time >= 1741 && time <= 1841) { goodLateAfternoon(); }  // 17:41 - 18:41 mountain sunset (sunset: 17:53 on 03.01.17)
   else if (time >= 1842 && time <= 2200) { goodEvening();       }  // 18:42 - 22:00 mountain moon   (    ^^: 18:03 on 03.11.17)
-  else if (time >= 2201 || time <= 0144) { upLate();            }  // 22:01 - 01:44 universe 
+  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe 
                                     else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
 } else {
-  if      (time >= 0500 && time <= 0555) { upEarly();           }  // 05:00 - 05:55 vector - sillouhette sunburst 
-  else if (time >= 0556 && time <= 0620) { preMorning();        }  // 05:56 - 06:20 lavender field
-  else if (time >= 0621 && time <= 0740) { goodMorning();       }  // 06:21 - 07:40 orange sunrise (sunrise: 07:18 on 03.12.17)
-  else if (time >= 0741 && time <= 1100) { goodLateMorning();   }  // 07:41 - 11:00 snow tracks    (     ^^: 06:48 on 03.31.17)
+  if      (time >= 500 && time <=  555 ) { upEarly();           }  // 05:00 - 05:55 vector - sillouhette sunburst 
+  else if (time >= 556 && time <=  620 ) { preMorning();        }  // 05:56 - 06:20 lavender field
+  else if (time >= 621 && time <=  740 ) { goodMorning();       }  // 06:21 - 07:40 orange sunrise (sunrise: 07:18 on 03.12.17)
+  else if (time >= 741 && time <=  1100) { goodLateMorning();   }  // 07:41 - 11:00 snow tracks    (     ^^: 06:48 on 03.31.17)
   else if (time >= 1101 && time <= 1850) { goodAfternoon();     }  // 11:01 - 18:50 sun sky
   else if (time >= 1851 && time <= 2000) { goodLateAfternoon(); }  // 18:51 - 20:00 mountain sunset (sunset: 19:04 on 03.12.17)
   else if (time >= 2001 && time <= 2200) { goodEvening();       }  // 20:01 - 22:00 mountain moon   (    ^^: 19:24 on 03.31.17)
-  else if (time >= 2201 || time <= 0144) { upLate();            }  // 22:01 - 01:44 universe 
+  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe 
                                     else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
 }
 
 
 if        (month == "April") {                                     // April [done]
-  if      (time >= 0500 && time <= 0545) { upEarly();           }  // 05:00 - 05:45 vector - sillouhette sunburst 
-  else if (time >= 0546 && time <= 0600) { preMorning();        }  // 05:46 - 06:00 lavender field
-  else if (time >= 0601 && time <= 0700) { goodMorning();       }  // 06:01 - 07:00 orange sunrise (sunrise: 06:46|06:04)
-  else if (time >= 0701 && time <= 1030) { goodLateMorning();   }  // 07:01 - 10:30 snow tracks
+  if      (time >= 500 && time <=  545 ) { upEarly();           }  // 05:00 - 05:45 vector - sillouhette sunburst 
+  else if (time >= 546 && time <=  600 ) { preMorning();        }  // 05:46 - 06:00 lavender field
+  else if (time >= 601 && time <=  700 ) { goodMorning();       }  // 06:01 - 07:00 orange sunrise (sunrise: 06:46|06:04)
+  else if (time >= 701 && time <=  1030) { goodLateMorning();   }  // 07:01 - 10:30 snow tracks
   else if (time >= 1031 && time <= 1904) { goodAfternoon();     }  // 10:31 - 19:04 sun sky
   else if (time >= 1905 && time <= 2005) { goodLateAfternoon(); }  // 19:05 - 20:05 mountain sunset (sunset: 19:25|19:54)
   else if (time >= 2006 && time <= 2200) { goodEvening();       }  // 20:06 - 22:00 mountain moon
-  else if (time >= 2201 || time <= 0144) { upLate();            }  // 22:01 - 01:44 universe 
+  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe 
                                     else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
 } 
 if        (month == "May") {                                       // May [done]
-  if      (time >= 0430 && time <= 0459) { upEarly();           }  // 04:30 - 04:59 vector - sillouhette sunburst 
-  else if (time >= 0500 && time <= 0519) { preMorning();        }  // 05:00 - 05:19 lavender field
-  else if (time >= 0520 && time <= 0615) { goodMorning();       }  // 05:20 - 06:15 orange sunrise (sunrise: 06:02|05:36)
-  else if (time >= 0616 && time <= 1030) { goodLateMorning();   }  // 06:16 - 10:30 snow tracks
+  if      (time >= 430 && time <=  459 ) { upEarly();           }  // 04:30 - 04:59 vector - sillouhette sunburst 
+  else if (time >= 500 && time <=  519 ) { preMorning();        }  // 05:00 - 05:19 lavender field
+  else if (time >= 520 && time <=  615 ) { goodMorning();       }  // 05:20 - 06:15 orange sunrise (sunrise: 06:02|05:36)
+  else if (time >= 616 && time <=  1030) { goodLateMorning();   }  // 06:16 - 10:30 snow tracks
   else if (time >= 1031 && time <= 1939) { goodAfternoon();     }  // 10:31 - 19:39 sun sky
   else if (time >= 1940 && time <= 2050) { goodLateAfternoon(); }  // 19:40 - 20:50 mountain sunset (sunset: 19:55|20:22)
   else if (time >= 2051 && time <= 2200) { goodEvening();       }  // 20:51 - 22:00 mountain moon
-  else if (time >= 2201 || time <= 0144) { upLate();            }  // 22:01 - 01:44 universe 
+  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe 
                                     else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
 } 
 if        (month == "June") {                                      // June [done]
-  if      (time >= 0430 && time <= 0459) { upEarly();           }  // 04:30 - 04:59 vector - sillouhette sunburst 
-  else if (time >= 0500 && time <= 0522) { preMorning();        }  // 05:00 - 05:22 lavender field
-  else if (time >= 0523 && time <= 0555) { goodMorning();       }  // 05:23 - 05:55 orange sunrise (sunrise: 05:36|05:37)
-  else if (time >= 0556 && time <= 1030) { goodLateMorning();   }  // 05:56 - 10:30 snow tracks
+  if      (time >= 430 && time <=  459 ) { upEarly();           }  // 04:30 - 04:59 vector - sillouhette sunburst 
+  else if (time >= 500 && time <=  522 ) { preMorning();        }  // 05:00 - 05:22 lavender field
+  else if (time >= 523 && time <=  555 ) { goodMorning();       }  // 05:23 - 05:55 orange sunrise (sunrise: 05:36|05:37)
+  else if (time >= 556 && time <=  1030) { goodLateMorning();   }  // 05:56 - 10:30 snow tracks
   else if (time >= 1031 && time <= 2001) { goodAfternoon();     }  // 10:31 - 20:01 sun sky
   else if (time >= 2002 && time <= 2055) { goodLateAfternoon(); }  // 20:02 - 20:55 mountain sunset (sunset: 20:23|20:33)
   else if (time >= 2056 && time <= 2300) { goodEvening();       }  // 20:56 - 23:00 mountain moon
-  else if (time >= 2301 || time <= 0144) { upLate();            }  // 23:01 - 01:44 universe 
+  else if (time >= 2301 || time <= 144 ) { upLate();            }  // 23:01 - 01:44 universe 
                                     else { insomniacs();        }  // 01:45 - 04:29 universe imposing clock
 } 
 if        (month == "July") {                                      // July [done]
-  if      (time >= 0430 && time <= 0459) { upEarly();           }  // 04:30 - 04:59 vector - sillouhette sunburst 
-  else if (time >= 0500 && time <= 0511) { preMorning();        }  // 05:00 - 05:11 lavender field
-  else if (time >= 0512 && time <= 0620) { goodMorning();       }  // 05:12 - 06:20 orange sunrise (sunrise: 05:37|06:00)
-  else if (time >= 0621 && time <= 1030) { goodLateMorning();   }  // 06:21 - 10:30 snow tracks
+  if      (time >= 430 && time <=  459 ) { upEarly();           }  // 04:30 - 04:59 vector - sillouhette sunburst 
+  else if (time >= 500 && time <=  511 ) { preMorning();        }  // 05:00 - 05:11 lavender field
+  else if (time >= 512 && time <=  620 ) { goodMorning();       }  // 05:12 - 06:20 orange sunrise (sunrise: 05:37|06:00)
+  else if (time >= 621 && time <=  1030) { goodLateMorning();   }  // 06:21 - 10:30 snow tracks
   else if (time >= 1031 && time <= 2000) { goodAfternoon();     }  // 10:31 - 20:00 sun sky
   else if (time >= 2001 && time <= 2101) { goodLateAfternoon(); }  // 20:01 - 21:01 mountain sunset (sunset: 20:37|20:16)
   else if (time >= 2102 && time <= 2300) { goodEvening();       }  // 21:02 - 23:00 mountain moon
-  else if (time >= 2301 || time <= 0144) { upLate();            }  // 23:01 - 01:44 universe 
+  else if (time >= 2301 || time <= 144 ) { upLate();            }  // 23:01 - 01:44 universe 
                                     else { insomniacs();        }  // 01:45 - 04:29 universe imposing clock
 } 
 if        (month == "August") {                                    // August [done]
-  if      (time >= 0430 && time <= 0501) { upEarly();           }  // 04:30 - 05:01 vector - sillouhette sunburst 
-  else if (time >= 0502 && time <= 0549) { preMorning();        }  // 05:02 - 05:49 lavender field
-  else if (time >= 0550 && time <= 0650) { goodMorning();       }  // 05:50 - 06:50 orange sunrise (sunrise: 05:50 - 06:50)
-  else if (time >= 0651 && time <= 1030) { goodLateMorning();   }  // 06:51 - 10:30 snow tracks
+  if      (time >= 430 && time <=  501 ) { upEarly();           }  // 04:30 - 05:01 vector - sillouhette sunburst 
+  else if (time >= 502 && time <=  549 ) { preMorning();        }  // 05:02 - 05:49 lavender field
+  else if (time >= 550 && time <=  650 ) { goodMorning();       }  // 05:50 - 06:50 orange sunrise (sunrise: 05:50 - 06:50)
+  else if (time >= 651 && time <=  1030) { goodLateMorning();   }  // 06:51 - 10:30 snow tracks
   else if (time >= 1031 && time <= 1919) { goodAfternoon();     }  // 10:31 - 19:19 sun sky
   else if (time >= 1920 && time <= 2030) { goodLateAfternoon(); }  // 19:20 - 20:30 mountain sunset (sunset: 19:20 - 20:30)
   else if (time >= 2031 && time <= 2200) { goodEvening();       }  // 20:31 - 22:00 mountain moon
-  else if (time >= 2201 || time <= 0144) { upLate();            }  // 22:01 - 01:44 universe 
+  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe 
                                     else { insomniacs();        }  // 01:45 - 04:29 universe imposing clock
 } 
 if        (month == "September") {                                 // September [done]
-  if      (time >= 0440 && time <= 0549) { upEarly();           }  // 04:40 - 05:49 vector - sillouhette sunburst 
-  else if (time >= 0550 && time <= 0609) { preMorning();        }  // 05:50 - 06:09 lavender field
-  else if (time >= 0610 && time <= 0710) { goodMorning();       }  // 06:10 - 07:10 orange sunrise (sunrise: 06:10|07:10)
-  else if (time >= 0711 && time <= 1030) { goodLateMorning();   }  // 07:11 - 10:30 snow tracks
+  if      (time >= 440 && time <=  549 ) { upEarly();           }  // 04:40 - 05:49 vector - sillouhette sunburst 
+  else if (time >= 550 && time <=  609 ) { preMorning();        }  // 05:50 - 06:09 lavender field
+  else if (time >= 610 && time <=  710 ) { goodMorning();       }  // 06:10 - 07:10 orange sunrise (sunrise: 06:10|07:10)
+  else if (time >= 711 && time <=  1030) { goodLateMorning();   }  // 07:11 - 10:30 snow tracks
   else if (time >= 1031 && time <= 1824) { goodAfternoon();     }  // 10:31 - 18:24 sun sky
   else if (time >= 1825 && time <= 1945) { goodLateAfternoon(); }  // 18:25 - 19:45 mountain sunset (sunset: 06:25|07:45)
   else if (time >= 1946 && time <= 2200) { goodEvening();       }  // 19:46 - 22:00 mountain moon
-  else if (time >= 2201 || time <= 0144) { upLate();            }  // 22:01 - 01:44 universe 
+  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe 
                                     else { insomniacs();        }  // 01:45 - 04:39 universe imposing clock
 } 
 if        (month == "October") {                                   // October [done]
-  if      (time >= 0450 && time <= 0546) { upEarly();           }  // 04:50 - 05:46 vector - sillouhette sunburst 
-  else if (time >= 0547 && time <= 0629) { preMorning();        }  // 05:47 - 06:29 lavender field
-  else if (time >= 0630 && time <= 0745) { goodMorning();       }  // 06:30 - 07:45 orange sunrise (sunrise: 06:57|07:28)
-  else if (time >= 0746 && time <= 1030) { goodLateMorning();   }  // 07:46 - 10:30 snow tracks
+  if      (time >= 450 && time <=  546 ) { upEarly();           }  // 04:50 - 05:46 vector - sillouhette sunburst 
+  else if (time >= 547 && time <=  629 ) { preMorning();        }  // 05:47 - 06:29 lavender field
+  else if (time >= 630 && time <=  745 ) { goodMorning();       }  // 06:30 - 07:45 orange sunrise (sunrise: 06:57|07:28)
+  else if (time >= 746 && time <=  1030) { goodLateMorning();   }  // 07:46 - 10:30 snow tracks
   else if (time >= 1031 && time <= 1749) { goodAfternoon();     }  // 10:31 - 17:49 sun sky
   else if (time >= 1750 && time <= 1905) { goodLateAfternoon(); }  // 17:50 - 19:05 mountain sunset (sunset: 18:45|18:02)
   else if (time >= 1906 && time <= 2200) { goodEvening();       }  // 19:06 - 22:00 mountain moon
-  else if (time >= 2201 || time <= 0144) { upLate();            }  // 22:01 - 01:44 universe 
+  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe 
                                     else { insomniacs();        }  // 01:45 - 04:49 universe imposing clock
 } 
 
 
 if        (month == "November" && day <= 4) {                      // November 5, 2017 (DST) [done]
-  if      (time >= 0500 && time <= 0600) { upEarly();           }  // 05:00 - 06:00 vector - sillouhette sunburst 
-  else if (time >= 0601 && time <= 0715) { preMorning();        }  // 06:01 - 07:15 lavender field
-  else if (time >= 0716 && time <= 0845) { goodMorning();       }  // 07:16 - 08:45 orange sunrise (sunrise: 07:30 on 11.01.17)
-  else if (time >= 0846 && time <= 1100) { goodLateMorning();   }  // 08:46 - 11:00 snow tracks    (     ^^: 07:33 on 11.04.17)
+  if      (time >= 500 && time <=  600 ) { upEarly();           }  // 05:00 - 06:00 vector - sillouhette sunburst 
+  else if (time >= 601 && time <=  715 ) { preMorning();        }  // 06:01 - 07:15 lavender field
+  else if (time >= 716 && time <=  845 ) { goodMorning();       }  // 07:16 - 08:45 orange sunrise (sunrise: 07:30 on 11.01.17)
+  else if (time >= 846 && time <=  1100) { goodLateMorning();   }  // 08:46 - 11:00 snow tracks    (     ^^: 07:33 on 11.04.17)
   else if (time >= 1101 && time <= 1740) { goodAfternoon();     }  // 11:01 - 17:40 sun sky
   else if (time >= 1741 && time <= 1841) { goodLateAfternoon(); }  // 17:41 - 18:41 mountain sunset (sunset: 18:00 on 11.01.17)
   else if (time >= 1842 && time <= 2200) { goodEvening();       }  // 18:42 - 22:00 mountain moon   (    ^^: 17:57 on 11.04.17)
-  else if (time >= 2201 || time <= 0144) { upLate();            }  // 22:01 - 01:44 universe 
+  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe 
                                     else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
 } else {
-  if      (time >= 0500 && time <= 0600) { upEarly();           }  // 05:00 - 06:00 vector - sillouhette sunburst 
-  else if (time >= 0601 && time <= 0628) { preMorning();        }  // 06:01 - 06:28 lavender field
-  else if (time >= 0629 && time <= 0805) { goodMorning();       }  // 06:29 - 08:05 orange sunrise (sunrise: 06:34 on 11.05.17)
-  else if (time >= 0806 && time <= 1100) { goodLateMorning();   }  // 08:06 - 11:00 snow tracks    (     ^^: 07:02 on 11.30.17)
+  if      (time >= 500 && time <=  600 ) { upEarly();           }  // 05:00 - 06:00 vector - sillouhette sunburst 
+  else if (time >= 601 && time <=  628 ) { preMorning();        }  // 06:01 - 06:28 lavender field
+  else if (time >= 629 && time <=  805 ) { goodMorning();       }  // 06:29 - 08:05 orange sunrise (sunrise: 06:34 on 11.05.17)
+  else if (time >= 806 && time <=  1100) { goodLateMorning();   }  // 08:06 - 11:00 snow tracks    (     ^^: 07:02 on 11.30.17)
   else if (time >= 1101 && time <= 1559) { goodAfternoon();     }  // 11:01 - 15:59 sun sky
   else if (time >= 1600 && time <= 1715) { goodLateAfternoon(); }  // 16:00 - 17:15 mountain sunset (sunset: 16:56 on 11.05.17)
   else if (time >= 1716 && time <= 2200) { goodEvening();       }  // 17:16 - 22:00 mountain moon   (    ^^: 16:38 on 11.30.17)
-  else if (time >= 2201 || time <= 0144) { upLate();            }  // 22:01 - 01:44 universe 
+  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe 
                                     else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock  
 } 
 
 
 if        (month == "December") {                                  // December [done]
-  if      (time >= 0500 && time <= 0558) { upEarly();           }  // 05:00 - 05:58 vector - sillouhette sunburst 
-  else if (time >= 0559 && time <= 0649) { preMorning();        }  // 05:59 - 06:49 lavender field
-  else if (time >= 0650 && time <= 0740) { goodMorning();       }  // 06:50 - 07:40 orange sunrise (sunrise: 07:03|07:22)
-  else if (time >= 0741 && time <= 1030) { goodLateMorning();   }  // 07:41 - 10:30 snow tracks
+  if      (time >= 500 && time <=  558 ) { upEarly();           }  // 05:00 - 05:58 vector - sillouhette sunburst 
+  else if (time >= 559 && time <=  705 ) { preMorning();        }  // 05:59 - 07:05 lavender field
+  else if (time >= 706 && time <=  750 ) { goodMorning();       }  // 07:06 - 07:50 orange sunrise (sunrise: 07:03|07:22)
+  else if (time >= 751 && time <=  1030) { goodLateMorning();   }  // 07:581 - 10:30 snow tracks
   else if (time >= 1031 && time <= 1605) { goodAfternoon();     }  // 10:31 - 16:19 sun sky
   else if (time >= 1606 && time <= 1715) { goodLateAfternoon(); }  // 16:20 - 17:15 mountain sunset (sunset: 04:38|16:46)
   else if (time >= 1716 && time <= 2200) { goodEvening();       }  // 17:16 - 22:00 mountain moon
-  else if (time >= 2201 || time <= 0144) { upLate();            }  // 22:01 - 01:44 universe 
+  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe 
                                     else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
 } 
 

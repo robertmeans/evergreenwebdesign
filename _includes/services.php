@@ -16,22 +16,24 @@
             <div class="project-col">
               <ul class="past-projects">
                 <li>Website Development</li>
-                <li>Domain Registration</li>
-                <li>Hosting</li>
-                <li>SSL Certificates</li>
-                <li>Email</li>
+                <li>SEO Services</li>
+                <li>Social Media Campaigns</li>
+                <li>WordPress Recovery &amp; Migration</li>
+                <li>Custom Solutions</li>
               </ul>
               </div>
 
               <div class="project-col">
               <ul class="past-projects second-column">
-                <li>SEO Services</li>
-                <li>Social Media Campaigns</li>
-                <li>Updates/Modifications to Existing Websites</li>
-                <li>WordPress Recovery &amp; Migration</li>
-                <li>Custom Solutions</li>
+                <li>Domain Registration<span class="reseller">*</span></li>
+                <li>Hosting<span class="reseller">*</span></li>
+                <li>SSL Certificates<span class="reseller">*</span></li>
+                <li>Email<span class="reseller">*</span></li>
+                <li>24/7/365 Support<span class="reseller">*</span></li>
               </ul>
               </div>
+
+              <p><span class="reseller">*</span> Evergreen Web Design is an authorized GoDaddy Reseller. You can buy GoDaddy products through us for less. Exact same products, same support, same dependability, less money.</p>
 
           <div class="container">
             <p class="social-network-icons"><a href="https://www.facebook.com/evergreenwebdesign01" target="_blank"><img class="facebook-square" src="_images/facebook-icon.jpg" alt="Facebook"></a> <a href="https://twitter.com/EWDLLC" target="_blank"><img class="twitter-square" src="_images/twitter-icon.jpg" alt="Twitter"></a> <a href="https://plus.google.com/+Evergreenwebdesignllc" target="_blank"><img class="google-plus-square" src="_images/google-plus-icon.jpg" alt="Google+"></a> please share</p>
@@ -49,6 +51,8 @@
              <a href="#" class="click no-default"><i class="fa fa-angle-down"></i> Pricing</a>
             <div class="expand">
               <p>Pricing options are available to suit virtually every budget and project. Let's discuss your idea and outline a plan that works for you.</p>
+
+              <p>Pricing for specific products can be found through our <a href="#">sales portal</a>.</p>
             </div><!-- .expand !-->
           </div><!-- #container2 -->
 
@@ -157,7 +161,7 @@
       <h2 class="mobile"><i class="fa fa-wordpress"></i> WordPress</h2>
       <p>WordPress powers <a class="txt-a" href="https://www.inkthemes.com/why-use-wordpress/" target="_blank">25% of all sites</a> across the web. In the realm of Content Management Systems, WordPress accounts for over 65% of the global market. It features an easy to use interface, built in search engine compatiblity, it's secure and there are virtually endless options to customize. This is the solution both novice and professional turn to most often.</p>
 
-      <p>Evergreen Web Design can harness the power of this framework for you
+      <p>Evergreen Web Design can harness the power of this framework for you.
 
       designed from the ground up to attract the most attention.
 
