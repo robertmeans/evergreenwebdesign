@@ -4,13 +4,13 @@
           <li class="active"><a href="#tab1" class="static"><i class="fa fa-eye"></i> <span class="mobile-gone">Overview</span></a></li>
           <li><a href="#tab2" class="static"><i class="fa fa-desktop desktop-only"></i> <span class="mobile-gone">Websites</span></a></li>
           <li><a href="#tab3" class="static"><i class="fa fa-wordpress desktop-only"></i> <span class="mobile-gone">WordPress</span></a></li>
-      </ul> 
+      </ul>
 
   <div class="tab-content">
 
         <div id="tab1" class="tab active cf"><!-- Overview tab -->
           <h2 class="mobile">Overview</h2>
-            <p>Located in beautiful Evergreen, Colorado Evergreen Web Design is a full-service Internet marketing firm offering custom solutions to virtually any Web-related project. We've partnered with some of the biggest names in the industry in order to bring you the most competitive rates available from domain registration to hosting to website concept, design and development.</p>
+            <p>Located in beautiful Evergreen, Colorado Evergreen Web Design is a full-service Internet marketing firm offering custom solutions to virtually any Web related project. We've partnered with some of the biggest names in the industry in order to bring you the most competitive rates available from domain registration to hosting to website concept, design and development.</p>
 
             <p>Products &amp; services include:</p>
             <div class="project-col">
@@ -37,7 +37,7 @@
 
           <div class="container">
             <p class="social-network-icons"><a href="https://www.facebook.com/evergreenwebdesign01" target="_blank"><img class="facebook-square" src="_images/facebook-icon.jpg" alt="Facebook"></a> <a href="https://twitter.com/EWDLLC" target="_blank"><img class="twitter-square" src="_images/twitter-icon.jpg" alt="Twitter"></a> <a href="https://plus.google.com/+Evergreenwebdesignllc" target="_blank"><img class="google-plus-square" src="_images/google-plus-icon.jpg" alt="Google+"></a> please share</p>
-            
+
             <a href="#" class="click no-default"><i class="fa fa-angle-down"></i> SEO Strategies</a>
 
             <div class="expand">
@@ -52,7 +52,7 @@
             <div class="expand">
               <p>Pricing options are available to suit virtually every budget and project. Let's discuss your idea and outline a plan that works for you.</p>
 
-              <p>Pricing for specific products can be found through our <a href="#">sales portal</a>.</p>
+              <p>Discounted pricing for domain names, hosting, etc. can be found through our <a href="#">GoDaddy Reseller portal</a>.</p>
             </div><!-- .expand !-->
           </div><!-- #container2 -->
 
@@ -61,7 +61,7 @@
       <div id="tab2" class="tab cf"><!-- Websites tab -->
       <h2 class="mobile">Websites</h2>
         <p>A custom website can help rediscover your business image in the Internet marketplace.</p>
-        <p>With Internet traffic <a class="txt-a" href="http://techcrunch.com/2014/08/21/majority-of-digital-media-consumption-now-takes-place-in-mobile-apps/" target="_blank">more heavily consumed</a> through cell phones, you can't afford to have an online presence without a strong mobile interface.</p>
+        <p>Mobile devices now account for <a class="txt-a" href="http://techcrunch.com/2014/08/21/majority-of-digital-media-consumption-now-takes-place-in-mobile-apps/" target="_blank">more Internet traffic</a> than desktop computers. You can't afford to have an online presence without a strong mobile interface. If you're customers have to zoom, pinch and pan in order to navigate your website it quickly becomes an ineffective, cumbersome experience.</p>
         <p>Utilizing the latest specifications in HTML5, CSS3 and jQuery with a focus on viewport-independent, fluid design, you can rest assured your your site looks great and functions flawlessly no matter how your visitors get there.</p>
 
     <ul class="list moresites cf">
@@ -90,7 +90,7 @@
         <a href="http://www.wildflowerevergreen.com" target="_blank"><img src="_images/wildflower-website.jpg" alt="Wildflower Café"></a>
         <h3>The Wildflower Café</h3>
         <p>Located in historic downtown Evergreen, Colorado with a menu that brings folks in from miles around.</p>
-      </li> 
+      </li>
       <li>
         <a href="http://www.mbeachlegal.com" target="_blank"><img src="_images/mbeachlegal-website.jpg" alt="Matthew Beach ESQ, LLC"></a>
         <h3>Matthew Beach ESQ, LLC</h3>
@@ -100,7 +100,7 @@
         <a href="http://www.myscreenscene.com" target="_blank"><img src="_images/myscreenscene-website.jpg" alt="MyScreenScene.com"></a>
         <h3>MyScreenScene</h3>
         <p>An incredibly useful browser utility built in PHP &amp; mySQL.</p>
-      </li>      
+      </li>
       <li>
         <a href="http://www.evergreenwildernessguides.com" target="_blank"><img src="_images/evergreen-wilderness-guides-website.jpg" alt="Evergreen Wilderness Guides"></a>
         <h3>Evergreen Wilderness Guides</h3>
@@ -110,8 +110,8 @@
         <a href="http://www.evergreenwebdesign.com/offline-sites/colt-green" target="_blank"><img src="_images/colt-green-website.jpg" alt="Colt Green Construction"></a>
         <h3>Colt Green Construction</h3>
         <p>Construction and project management company, Jacksonville, Florida</p>
-      </li> 
-     
+      </li>
+
     </ul><!-- .list .moresites .cf -->
 
     <div class="centerDisplay">
@@ -137,7 +137,7 @@
         <a href="http://www.evergreenwebdesign.com/offline-sites/acts" target="_blank"><img src="_images/acts-church-website.jpg" alt="Acts Church Website"></a>
         <h3>Acts Church</h3>
         <p>Cover image was a composite of several images provided by customer.</p>
-        
+
       </li>
       <li>
         <a href="http://www.evergreenwebdesign.com/offline-sites/satillainc" target="_blank"><img src="_images/satilla-website.jpg" alt="Satilla, Inc"></a>
@@ -161,15 +161,7 @@
       <h2 class="mobile"><i class="fa fa-wordpress"></i> WordPress</h2>
       <p>WordPress powers <a class="txt-a" href="https://www.inkthemes.com/why-use-wordpress/" target="_blank">25% of all sites</a> across the web. In the realm of Content Management Systems, WordPress accounts for over 65% of the global market. It features an easy to use interface, built in search engine compatiblity, it's secure and there are virtually endless options to customize. This is the solution both novice and professional turn to most often.</p>
 
-      <p>Evergreen Web Design can harness the power of this framework for you.
-
-      designed from the ground up to attract the most attention.
-
-       and deliver a product you can trust will always compete at the highest level.  
-
-      with the latest specifications
-
-      that is designed for .... and performance.</p>
+      <p>Evergreen Web Design can harness the power of this framework for you. The result is a website that can be managed in-house without the need to hire a Webmaster everytime you need an update.</p>
     </div><!-- #tab3 .tab cf -->
 
   </div><!-- .tab-content -->

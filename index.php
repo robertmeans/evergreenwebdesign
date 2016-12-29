@@ -1,7 +1,7 @@
 <?php require_once('_includes/popup-contactform.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
-<!-- 
+<!--
   Author:       Robert Means
                 Evergreen Web Design
   Contact:      robert@evergreenwebdesign.com
@@ -15,10 +15,10 @@
   <link rel="icon" type="image/ico" href="_images/favicon.ico">
   <link rel="image_src" href="http://www.evergreenwebdesign.com/_images/thumbnails/EWD-thumb-01.png" />
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta name="description" content="Evergreen Web Design provides website concept, design, development and SEO services featuring current specifications within a responsive framework.">
+  <meta name="description" content="Evergreen Web Design is a full-service Internet marketing firm offering custom solutions to virtually any Web-related project.">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="_scripts/coolclock-breakpoints.js?<?php echo time(); ?>"></script>
-  <script src="_scripts/modernizr.js?<?php echo time(); ?>"></script> 
+  <script src="_scripts/modernizr.js?<?php echo time(); ?>"></script>
   <link rel="stylesheet" href="_css/style.css?<?php echo time(); ?>">
 
 <!-- Google Analytics code -->
@@ -65,14 +65,14 @@
 <div id="clockScene">
   <div id="text-box" class="text-box-default cf">
   <canvas id="clockid" class="CoolClock clockid-default"></canvas>
-  
+
   <h3>
     <span id="greeting"></span>
       <noscript>Hello,</noscript>
     </h3>
 
     <p><span id="now"></span><noscript>Now</noscript> is the perfect time to <a class="hmpg-contact" href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");'>contact Evergreen Web Design</a> and consult a professional about your online goals.</p>
-    <p>With options to suit your vision, budget and deadline, let's tailor a solution for you right now!</p>
+    <p>With options to suit your vision, budget and deadline, we can start a tailored solution for you right now!</p>
 
   </div>
 
@@ -87,7 +87,7 @@
     </div><!-- name -->
   </article>
 
-</div><!-- #clockScene --> 
+</div><!-- #clockScene -->
 </section><!-- #div-one -->
 </header>
 

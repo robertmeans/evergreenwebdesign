@@ -9,33 +9,33 @@
  * to offer multiple easing options
  *
  * TERMS OF USE - jQuery Easing
- * 
- * Open source under the BSD License. 
- * 
+ *
+ * Open source under the BSD License.
+ *
  * Copyright Â© 2008 George McGinley Smith
  * All rights reserved.
- * 
- * Redistribution and use in source and binary forms, with or without modification, 
+ *
+ * Redistribution and use in source and binary forms, with or without modification,
  * are permitted provided that the following conditions are met:
- * 
- * Redistributions of source code must retain the above copyright notice, this list of 
+ *
+ * Redistributions of source code must retain the above copyright notice, this list of
  * conditions and the following disclaimer.
- * Redistributions in binary form must reproduce the above copyright notice, this list 
- * of conditions and the following disclaimer in the documentation and/or other materials 
+ * Redistributions in binary form must reproduce the above copyright notice, this list
+ * of conditions and the following disclaimer in the documentation and/or other materials
  * provided with the distribution.
- * 
- * Neither the name of the author nor the names of contributors may be used to endorse 
+ *
+ * Neither the name of the author nor the names of contributors may be used to endorse
  * or promote products derived from this software without specific prior written permission.
- * 
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY 
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
  * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
  * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
  *  COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
  *  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
- *  GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED 
+ *  GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED
  * AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
- *  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED 
- * OF THE POSSIBILITY OF SUCH DAMAGE. 
+ *  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+ * OF THE POSSIBILITY OF SUCH DAMAGE.
  *
 */
 
@@ -151,7 +151,7 @@ jQuery.extend( jQuery.easing,
     return c*((t=t/d-1)*t*((s+1)*t + s) + 1) + b;
   },
   easeInOutBack: function (x, t, b, c, d, s) {
-    if (s == undefined) s = 1.70158; 
+    if (s == undefined) s = 1.70158;
     if ((t/=d/2) < 1) return c/2*(t*t*(((s*=(1.525))+1)*t - s)) + b;
     return c/2*((t-=2)*t*(((s*=(1.525))+1)*t + s) + 2) + b;
   },
@@ -178,38 +178,38 @@ jQuery.extend( jQuery.easing,
 /*
  *
  * TERMS OF USE - EASING EQUATIONS
- * 
- * Open source under the BSD License. 
- * 
+ *
+ * Open source under the BSD License.
+ *
  * Copyright Â© 2001 Robert Penner
  * All rights reserved.
- * 
- * Redistribution and use in source and binary forms, with or without modification, 
+ *
+ * Redistribution and use in source and binary forms, with or without modification,
  * are permitted provided that the following conditions are met:
- * 
- * Redistributions of source code must retain the above copyright notice, this list of 
+ *
+ * Redistributions of source code must retain the above copyright notice, this list of
  * conditions and the following disclaimer.
- * Redistributions in binary form must reproduce the above copyright notice, this list 
- * of conditions and the following disclaimer in the documentation and/or other materials 
+ * Redistributions in binary form must reproduce the above copyright notice, this list
+ * of conditions and the following disclaimer in the documentation and/or other materials
  * provided with the distribution.
- * 
- * Neither the name of the author nor the names of contributors may be used to endorse 
+ *
+ * Neither the name of the author nor the names of contributors may be used to endorse
  * or promote products derived from this software without specific prior written permission.
- * 
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY 
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
  * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
  * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
  *  COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
  *  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
- *  GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED 
+ *  GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED
  * AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
- *  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED 
- * OF THE POSSIBILITY OF SUCH DAMAGE. 
+ *  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+ * OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  */
 // end - jquery.easing.1.3.js
 
-// begin flexslider 
+// begin flexslider
 /*
  * jQuery FlexSlider v2.2.2
  * Copyright 2012 WooThemes
@@ -1358,13 +1358,13 @@ jQuery.extend( jQuery.easing,
  * VERSION: 1.13.1
  * DATE: 2014-07-19
  * UPDATES AND DOCS AT: http://www.greensock.com
- * 
+ *
  * Includes all of the following: TweenLite, TweenMax, TimelineLite, TimelineMax, EasePack, CSSPlugin, RoundPropsPlugin, BezierPlugin, AttrPlugin, DirectionalRotationPlugin
  *
  * @license Copyright (c) 2008-2014, GreenSock. All rights reserved.
  * This work is subject to the terms at http://www.greensock.com/terms_of_use.html or for
  * Club GreenSock members, the software agreement that was issued with your membership.
- * 
+ *
  * @author: Jack Doyle, jack@greensock.com
  **/
 var _gsScope="undefined"!=typeof module&&module.exports&&"undefined"!=typeof global?global:this||window;(_gsScope._gsQueue||(_gsScope._gsQueue=[])).push(function(){"use strict";_gsScope._gsDefine("TweenMax",["core.Animation","core.SimpleTimeline","TweenLite"],function(t,e,i){var s=function(t){var e,i=[],s=t.length;for(e=0;e!==s;i.push(t[e++]));return i},r=function(t,e,s){i.call(this,t,e,s),this._cycle=0,this._yoyo=this.vars.yoyo===!0,this._repeat=this.vars.repeat||0,this._repeatDelay=this.vars.repeatDelay||0,this._dirty=!0,this.render=r.prototype.render},n=1e-10,a=i._internals,o=a.isSelector,h=a.isArray,l=r.prototype=i.to({},.1,{}),_=[];r.version="1.13.1",l.constructor=r,l.kill()._gc=!1,r.killTweensOf=r.killDelayedCallsTo=i.killTweensOf,r.getTweensOf=i.getTweensOf,r.lagSmoothing=i.lagSmoothing,r.ticker=i.ticker,r.render=i.render,l.invalidate=function(){return this._yoyo=this.vars.yoyo===!0,this._repeat=this.vars.repeat||0,this._repeatDelay=this.vars.repeatDelay||0,this._uncache(!0),i.prototype.invalidate.call(this)},l.updateTo=function(t,e){var s,r=this.ratio;e&&this._startTime<this._timeline._time&&(this._startTime=this._timeline._time,this._uncache(!1),this._gc?this._enabled(!0,!1):this._timeline.insert(this,this._startTime-this._delay));for(s in t)this.vars[s]=t[s];if(this._initted)if(e)this._initted=!1;else if(this._gc&&this._enabled(!0,!1),this._notifyPluginsOfEnabled&&this._firstPT&&i._onPluginEvent("_onDisable",this),this._time/this._duration>.998){var n=this._time;this.render(0,!0,!1),this._initted=!1,this.render(n,!0,!1)}else if(this._time>0){this._initted=!1,this._init();for(var a,o=1/(1-r),h=this._firstPT;h;)a=h.s+h.c,h.c*=o,h.s=a-h.c,h=h._next}return this},l.render=function(t,e,i){this._initted||0===this._duration&&this.vars.repeat&&this.invalidate();var s,r,o,h,l,u,p,c,f=this._dirty?this.totalDuration():this._totalDuration,m=this._time,d=this._totalTime,g=this._cycle,v=this._duration,y=this._rawPrevTime;if(t>=f?(this._totalTime=f,this._cycle=this._repeat,this._yoyo&&0!==(1&this._cycle)?(this._time=0,this.ratio=this._ease._calcEnd?this._ease.getRatio(0):0):(this._time=v,this.ratio=this._ease._calcEnd?this._ease.getRatio(1):1),this._reversed||(s=!0,r="onComplete"),0===v&&(this._initted||!this.vars.lazy||i)&&(this._startTime===this._timeline._duration&&(t=0),(0===t||0>y||y===n)&&y!==t&&(i=!0,y>n&&(r="onReverseComplete")),this._rawPrevTime=c=!e||t||y===t?t:n)):1e-7>t?(this._totalTime=this._time=this._cycle=0,this.ratio=this._ease._calcEnd?this._ease.getRatio(0):0,(0!==d||0===v&&y>0&&y!==n)&&(r="onReverseComplete",s=this._reversed),0>t?(this._active=!1,0===v&&(this._initted||!this.vars.lazy||i)&&(y>=0&&(i=!0),this._rawPrevTime=c=!e||t||y===t?t:n)):this._initted||(i=!0)):(this._totalTime=this._time=t,0!==this._repeat&&(h=v+this._repeatDelay,this._cycle=this._totalTime/h>>0,0!==this._cycle&&this._cycle===this._totalTime/h&&this._cycle--,this._time=this._totalTime-this._cycle*h,this._yoyo&&0!==(1&this._cycle)&&(this._time=v-this._time),this._time>v?this._time=v:0>this._time&&(this._time=0)),this._easeType?(l=this._time/v,u=this._easeType,p=this._easePower,(1===u||3===u&&l>=.5)&&(l=1-l),3===u&&(l*=2),1===p?l*=l:2===p?l*=l*l:3===p?l*=l*l*l:4===p&&(l*=l*l*l*l),this.ratio=1===u?1-l:2===u?l:.5>this._time/v?l/2:1-l/2):this.ratio=this._ease.getRatio(this._time/v)),m===this._time&&!i&&g===this._cycle)return d!==this._totalTime&&this._onUpdate&&(e||this._onUpdate.apply(this.vars.onUpdateScope||this,this.vars.onUpdateParams||_)),void 0;if(!this._initted){if(this._init(),!this._initted||this._gc)return;if(!i&&this._firstPT&&(this.vars.lazy!==!1&&this._duration||this.vars.lazy&&!this._duration))return this._time=m,this._totalTime=d,this._rawPrevTime=y,this._cycle=g,a.lazyTweens.push(this),this._lazy=t,void 0;this._time&&!s?this.ratio=this._ease.getRatio(this._time/v):s&&this._ease._calcEnd&&(this.ratio=this._ease.getRatio(0===this._time?0:1))}for(this._lazy!==!1&&(this._lazy=!1),this._active||!this._paused&&this._time!==m&&t>=0&&(this._active=!0),0===d&&(2===this._initted&&t>0&&this._init(),this._startAt&&(t>=0?this._startAt.render(t,e,i):r||(r="_dummyGS")),this.vars.onStart&&(0!==this._totalTime||0===v)&&(e||this.vars.onStart.apply(this.vars.onStartScope||this,this.vars.onStartParams||_))),o=this._firstPT;o;)o.f?o.t[o.p](o.c*this.ratio+o.s):o.t[o.p]=o.c*this.ratio+o.s,o=o._next;this._onUpdate&&(0>t&&this._startAt&&this._startTime&&this._startAt.render(t,e,i),e||(this._totalTime!==d||s)&&this._onUpdate.apply(this.vars.onUpdateScope||this,this.vars.onUpdateParams||_)),this._cycle!==g&&(e||this._gc||this.vars.onRepeat&&this.vars.onRepeat.apply(this.vars.onRepeatScope||this,this.vars.onRepeatParams||_)),r&&(!this._gc||i)&&(0>t&&this._startAt&&!this._onUpdate&&this._startTime&&this._startAt.render(t,e,i),s&&(this._timeline.autoRemoveChildren&&this._enabled(!1,!1),this._active=!1),!e&&this.vars[r]&&this.vars[r].apply(this.vars[r+"Scope"]||this,this.vars[r+"Params"]||_),0===v&&this._rawPrevTime===n&&c!==n&&(this._rawPrevTime=0))},r.to=function(t,e,i){return new r(t,e,i)},r.from=function(t,e,i){return i.runBackwards=!0,i.immediateRender=0!=i.immediateRender,new r(t,e,i)},r.fromTo=function(t,e,i,s){return s.startAt=i,s.immediateRender=0!=s.immediateRender&&0!=i.immediateRender,new r(t,e,s)},r.staggerTo=r.allTo=function(t,e,n,a,l,u,p){a=a||0;var c,f,m,d,g=n.delay||0,v=[],y=function(){n.onComplete&&n.onComplete.apply(n.onCompleteScope||this,arguments),l.apply(p||this,u||_)};for(h(t)||("string"==typeof t&&(t=i.selector(t)||t),o(t)&&(t=s(t))),c=t.length,m=0;c>m;m++){f={};for(d in n)f[d]=n[d];f.delay=g,m===c-1&&l&&(f.onComplete=y),v[m]=new r(t[m],e,f),g+=a}return v},r.staggerFrom=r.allFrom=function(t,e,i,s,n,a,o){return i.runBackwards=!0,i.immediateRender=0!=i.immediateRender,r.staggerTo(t,e,i,s,n,a,o)},r.staggerFromTo=r.allFromTo=function(t,e,i,s,n,a,o,h){return s.startAt=i,s.immediateRender=0!=s.immediateRender&&0!=i.immediateRender,r.staggerTo(t,e,s,n,a,o,h)},r.delayedCall=function(t,e,i,s,n){return new r(e,0,{delay:t,onComplete:e,onCompleteParams:i,onCompleteScope:s,onReverseComplete:e,onReverseCompleteParams:i,onReverseCompleteScope:s,immediateRender:!1,useFrames:n,overwrite:0})},r.set=function(t,e){return new r(t,0,e)},r.isTweening=function(t){return i.getTweensOf(t,!0).length>0};var u=function(t,e){for(var s=[],r=0,n=t._first;n;)n instanceof i?s[r++]=n:(e&&(s[r++]=n),s=s.concat(u(n,e)),r=s.length),n=n._next;return s},p=r.getAllTweens=function(e){return u(t._rootTimeline,e).concat(u(t._rootFramesTimeline,e))};r.killAll=function(t,i,s,r){null==i&&(i=!0),null==s&&(s=!0);var n,a,o,h=p(0!=r),l=h.length,_=i&&s&&r;for(o=0;l>o;o++)a=h[o],(_||a instanceof e||(n=a.target===a.vars.onComplete)&&s||i&&!n)&&(t?a.totalTime(a._reversed?0:a.totalDuration()):a._enabled(!1,!1))},r.killChildTweensOf=function(t,e){if(null!=t){var n,l,_,u,p,c=a.tweenLookup;if("string"==typeof t&&(t=i.selector(t)||t),o(t)&&(t=s(t)),h(t))for(u=t.length;--u>-1;)r.killChildTweensOf(t[u],e);else{n=[];for(_ in c)for(l=c[_].target.parentNode;l;)l===t&&(n=n.concat(c[_].tweens)),l=l.parentNode;for(p=n.length,u=0;p>u;u++)e&&n[u].totalTime(n[u].totalDuration()),n[u]._enabled(!1,!1)}}};var c=function(t,i,s,r){i=i!==!1,s=s!==!1,r=r!==!1;for(var n,a,o=p(r),h=i&&s&&r,l=o.length;--l>-1;)a=o[l],(h||a instanceof e||(n=a.target===a.vars.onComplete)&&s||i&&!n)&&a.paused(t)};return r.pauseAll=function(t,e,i){c(!0,t,e,i)},r.resumeAll=function(t,e,i){c(!1,t,e,i)},r.globalTimeScale=function(e){var s=t._rootTimeline,r=i.ticker.time;return arguments.length?(e=e||n,s._startTime=r-(r-s._startTime)*s._timeScale/e,s=t._rootFramesTimeline,r=i.ticker.frame,s._startTime=r-(r-s._startTime)*s._timeScale/e,s._timeScale=t._rootTimeline._timeScale=e,e):s._timeScale},l.progress=function(t){return arguments.length?this.totalTime(this.duration()*(this._yoyo&&0!==(1&this._cycle)?1-t:t)+this._cycle*(this._duration+this._repeatDelay),!1):this._time/this.duration()},l.totalProgress=function(t){return arguments.length?this.totalTime(this.totalDuration()*t,!1):this._totalTime/this.totalDuration()},l.time=function(t,e){return arguments.length?(this._dirty&&this.totalDuration(),t>this._duration&&(t=this._duration),this._yoyo&&0!==(1&this._cycle)?t=this._duration-t+this._cycle*(this._duration+this._repeatDelay):0!==this._repeat&&(t+=this._cycle*(this._duration+this._repeatDelay)),this.totalTime(t,e)):this._time},l.duration=function(e){return arguments.length?t.prototype.duration.call(this,e):this._duration},l.totalDuration=function(t){return arguments.length?-1===this._repeat?this:this.duration((t-this._repeat*this._repeatDelay)/(this._repeat+1)):(this._dirty&&(this._totalDuration=-1===this._repeat?999999999999:this._duration*(this._repeat+1)+this._repeatDelay*this._repeat,this._dirty=!1),this._totalDuration)},l.repeat=function(t){return arguments.length?(this._repeat=t,this._uncache(!0)):this._repeat},l.repeatDelay=function(t){return arguments.length?(this._repeatDelay=t,this._uncache(!0)):this._repeatDelay},l.yoyo=function(t){return arguments.length?(this._yoyo=t,this):this._yoyo},r},!0),_gsScope._gsDefine("TimelineLite",["core.Animation","core.SimpleTimeline","TweenLite"],function(t,e,i){var s=function(t){e.call(this,t),this._labels={},this.autoRemoveChildren=this.vars.autoRemoveChildren===!0,this.smoothChildTiming=this.vars.smoothChildTiming===!0,this._sortChildren=!0,this._onUpdate=this.vars.onUpdate;var i,s,r=this.vars;for(s in r)i=r[s],o(i)&&-1!==i.join("").indexOf("{self}")&&(r[s]=this._swapSelfInParams(i));o(r.tweens)&&this.add(r.tweens,0,r.align,r.stagger)},r=1e-10,n=i._internals,a=n.isSelector,o=n.isArray,h=n.lazyTweens,l=n.lazyRender,_=[],u=_gsScope._gsDefine.globals,p=function(t){var e,i={};for(e in t)i[e]=t[e];return i},c=function(t,e,i,s){t._timeline.pause(t._startTime),e&&e.apply(s||t._timeline,i||_)},f=function(t){var e,i=[],s=t.length;for(e=0;e!==s;i.push(t[e++]));return i},m=s.prototype=new e;return s.version="1.13.1",m.constructor=s,m.kill()._gc=!1,m.to=function(t,e,s,r){var n=s.repeat&&u.TweenMax||i;return e?this.add(new n(t,e,s),r):this.set(t,s,r)},m.from=function(t,e,s,r){return this.add((s.repeat&&u.TweenMax||i).from(t,e,s),r)},m.fromTo=function(t,e,s,r,n){var a=r.repeat&&u.TweenMax||i;return e?this.add(a.fromTo(t,e,s,r),n):this.set(t,r,n)},m.staggerTo=function(t,e,r,n,o,h,l,_){var u,c=new s({onComplete:h,onCompleteParams:l,onCompleteScope:_,smoothChildTiming:this.smoothChildTiming});for("string"==typeof t&&(t=i.selector(t)||t),a(t)&&(t=f(t)),n=n||0,u=0;t.length>u;u++)r.startAt&&(r.startAt=p(r.startAt)),c.to(t[u],e,p(r),u*n);return this.add(c,o)},m.staggerFrom=function(t,e,i,s,r,n,a,o){return i.immediateRender=0!=i.immediateRender,i.runBackwards=!0,this.staggerTo(t,e,i,s,r,n,a,o)},m.staggerFromTo=function(t,e,i,s,r,n,a,o,h){return s.startAt=i,s.immediateRender=0!=s.immediateRender&&0!=i.immediateRender,this.staggerTo(t,e,s,r,n,a,o,h)},m.call=function(t,e,s,r){return this.add(i.delayedCall(0,t,e,s),r)},m.set=function(t,e,s){return s=this._parseTimeOrLabel(s,0,!0),null==e.immediateRender&&(e.immediateRender=s===this._time&&!this._paused),this.add(new i(t,0,e),s)},s.exportRoot=function(t,e){t=t||{},null==t.smoothChildTiming&&(t.smoothChildTiming=!0);var r,n,a=new s(t),o=a._timeline;for(null==e&&(e=!0),o._remove(a,!0),a._startTime=0,a._rawPrevTime=a._time=a._totalTime=o._time,r=o._first;r;)n=r._next,e&&r instanceof i&&r.target===r.vars.onComplete||a.add(r,r._startTime-r._delay),r=n;return o.add(a,0),a},m.add=function(r,n,a,h){var l,_,u,p,c,f;if("number"!=typeof n&&(n=this._parseTimeOrLabel(n,0,!0,r)),!(r instanceof t)){if(r instanceof Array||r&&r.push&&o(r)){for(a=a||"normal",h=h||0,l=n,_=r.length,u=0;_>u;u++)o(p=r[u])&&(p=new s({tweens:p})),this.add(p,l),"string"!=typeof p&&"function"!=typeof p&&("sequence"===a?l=p._startTime+p.totalDuration()/p._timeScale:"start"===a&&(p._startTime-=p.delay())),l+=h;return this._uncache(!0)}if("string"==typeof r)return this.addLabel(r,n);if("function"!=typeof r)throw"Cannot add "+r+" into the timeline; it is not a tween, timeline, function, or string.";r=i.delayedCall(0,r)}if(e.prototype.add.call(this,r,n),(this._gc||this._time===this._duration)&&!this._paused&&this._duration<this.duration())for(c=this,f=c.rawTime()>r._startTime;c._timeline;)f&&c._timeline.smoothChildTiming?c.totalTime(c._totalTime,!0):c._gc&&c._enabled(!0,!1),c=c._timeline;return this},m.remove=function(e){if(e instanceof t)return this._remove(e,!1);if(e instanceof Array||e&&e.push&&o(e)){for(var i=e.length;--i>-1;)this.remove(e[i]);return this}return"string"==typeof e?this.removeLabel(e):this.kill(null,e)},m._remove=function(t,i){e.prototype._remove.call(this,t,i);var s=this._last;return s?this._time>s._startTime+s._totalDuration/s._timeScale&&(this._time=this.duration(),this._totalTime=this._totalDuration):this._time=this._totalTime=this._duration=this._totalDuration=0,this},m.append=function(t,e){return this.add(t,this._parseTimeOrLabel(null,e,!0,t))},m.insert=m.insertMultiple=function(t,e,i,s){return this.add(t,e||0,i,s)},m.appendMultiple=function(t,e,i,s){return this.add(t,this._parseTimeOrLabel(null,e,!0,t),i,s)},m.addLabel=function(t,e){return this._labels[t]=this._parseTimeOrLabel(e),this},m.addPause=function(t,e,i,s){return this.call(c,["{self}",e,i,s],this,t)},m.removeLabel=function(t){return delete this._labels[t],this},m.getLabelTime=function(t){return null!=this._labels[t]?this._labels[t]:-1},m._parseTimeOrLabel=function(e,i,s,r){var n;if(r instanceof t&&r.timeline===this)this.remove(r);else if(r&&(r instanceof Array||r.push&&o(r)))for(n=r.length;--n>-1;)r[n]instanceof t&&r[n].timeline===this&&this.remove(r[n]);if("string"==typeof i)return this._parseTimeOrLabel(i,s&&"number"==typeof e&&null==this._labels[i]?e-this.duration():0,s);if(i=i||0,"string"!=typeof e||!isNaN(e)&&null==this._labels[e])null==e&&(e=this.duration());else{if(n=e.indexOf("="),-1===n)return null==this._labels[e]?s?this._labels[e]=this.duration()+i:i:this._labels[e]+i;i=parseInt(e.charAt(n-1)+"1",10)*Number(e.substr(n+1)),e=n>1?this._parseTimeOrLabel(e.substr(0,n-1),0,s):this.duration()}return Number(e)+i},m.seek=function(t,e){return this.totalTime("number"==typeof t?t:this._parseTimeOrLabel(t),e!==!1)},m.stop=function(){return this.paused(!0)},m.gotoAndPlay=function(t,e){return this.play(t,e)},m.gotoAndStop=function(t,e){return this.pause(t,e)},m.render=function(t,e,i){this._gc&&this._enabled(!0,!1);var s,n,a,o,u,p=this._dirty?this.totalDuration():this._totalDuration,c=this._time,f=this._startTime,m=this._timeScale,d=this._paused;if(t>=p?(this._totalTime=this._time=p,this._reversed||this._hasPausedChild()||(n=!0,o="onComplete",0===this._duration&&(0===t||0>this._rawPrevTime||this._rawPrevTime===r)&&this._rawPrevTime!==t&&this._first&&(u=!0,this._rawPrevTime>r&&(o="onReverseComplete"))),this._rawPrevTime=this._duration||!e||t||this._rawPrevTime===t?t:r,t=p+1e-4):1e-7>t?(this._totalTime=this._time=0,(0!==c||0===this._duration&&this._rawPrevTime!==r&&(this._rawPrevTime>0||0>t&&this._rawPrevTime>=0))&&(o="onReverseComplete",n=this._reversed),0>t?(this._active=!1,this._rawPrevTime>=0&&this._first&&(u=!0),this._rawPrevTime=t):(this._rawPrevTime=this._duration||!e||t||this._rawPrevTime===t?t:r,t=0,this._initted||(u=!0))):this._totalTime=this._time=this._rawPrevTime=t,this._time!==c&&this._first||i||u){if(this._initted||(this._initted=!0),this._active||!this._paused&&this._time!==c&&t>0&&(this._active=!0),0===c&&this.vars.onStart&&0!==this._time&&(e||this.vars.onStart.apply(this.vars.onStartScope||this,this.vars.onStartParams||_)),this._time>=c)for(s=this._first;s&&(a=s._next,!this._paused||d);)(s._active||s._startTime<=this._time&&!s._paused&&!s._gc)&&(s._reversed?s.render((s._dirty?s.totalDuration():s._totalDuration)-(t-s._startTime)*s._timeScale,e,i):s.render((t-s._startTime)*s._timeScale,e,i)),s=a;else for(s=this._last;s&&(a=s._prev,!this._paused||d);)(s._active||c>=s._startTime&&!s._paused&&!s._gc)&&(s._reversed?s.render((s._dirty?s.totalDuration():s._totalDuration)-(t-s._startTime)*s._timeScale,e,i):s.render((t-s._startTime)*s._timeScale,e,i)),s=a;this._onUpdate&&(e||(h.length&&l(),this._onUpdate.apply(this.vars.onUpdateScope||this,this.vars.onUpdateParams||_))),o&&(this._gc||(f===this._startTime||m!==this._timeScale)&&(0===this._time||p>=this.totalDuration())&&(n&&(h.length&&l(),this._timeline.autoRemoveChildren&&this._enabled(!1,!1),this._active=!1),!e&&this.vars[o]&&this.vars[o].apply(this.vars[o+"Scope"]||this,this.vars[o+"Params"]||_)))}},m._hasPausedChild=function(){for(var t=this._first;t;){if(t._paused||t instanceof s&&t._hasPausedChild())return!0;t=t._next}return!1},m.getChildren=function(t,e,s,r){r=r||-9999999999;for(var n=[],a=this._first,o=0;a;)r>a._startTime||(a instanceof i?e!==!1&&(n[o++]=a):(s!==!1&&(n[o++]=a),t!==!1&&(n=n.concat(a.getChildren(!0,e,s)),o=n.length))),a=a._next;return n},m.getTweensOf=function(t,e){var s,r,n=this._gc,a=[],o=0;for(n&&this._enabled(!0,!0),s=i.getTweensOf(t),r=s.length;--r>-1;)(s[r].timeline===this||e&&this._contains(s[r]))&&(a[o++]=s[r]);return n&&this._enabled(!1,!0),a},m._contains=function(t){for(var e=t.timeline;e;){if(e===this)return!0;e=e.timeline}return!1},m.shiftChildren=function(t,e,i){i=i||0;for(var s,r=this._first,n=this._labels;r;)r._startTime>=i&&(r._startTime+=t),r=r._next;if(e)for(s in n)n[s]>=i&&(n[s]+=t);return this._uncache(!0)},m._kill=function(t,e){if(!t&&!e)return this._enabled(!1,!1);for(var i=e?this.getTweensOf(e):this.getChildren(!0,!0,!1),s=i.length,r=!1;--s>-1;)i[s]._kill(t,e)&&(r=!0);return r},m.clear=function(t){var e=this.getChildren(!1,!0,!0),i=e.length;for(this._time=this._totalTime=0;--i>-1;)e[i]._enabled(!1,!1);return t!==!1&&(this._labels={}),this._uncache(!0)},m.invalidate=function(){for(var t=this._first;t;)t.invalidate(),t=t._next;return this},m._enabled=function(t,i){if(t===this._gc)for(var s=this._first;s;)s._enabled(t,!0),s=s._next;return e.prototype._enabled.call(this,t,i)},m.duration=function(t){return arguments.length?(0!==this.duration()&&0!==t&&this.timeScale(this._duration/t),this):(this._dirty&&this.totalDuration(),this._duration)},m.totalDuration=function(t){if(!arguments.length){if(this._dirty){for(var e,i,s=0,r=this._last,n=999999999999;r;)e=r._prev,r._dirty&&r.totalDuration(),r._startTime>n&&this._sortChildren&&!r._paused?this.add(r,r._startTime-r._delay):n=r._startTime,0>r._startTime&&!r._paused&&(s-=r._startTime,this._timeline.smoothChildTiming&&(this._startTime+=r._startTime/this._timeScale),this.shiftChildren(-r._startTime,!1,-9999999999),n=0),i=r._startTime+r._totalDuration/r._timeScale,i>s&&(s=i),r=e;this._duration=this._totalDuration=s,this._dirty=!1}return this._totalDuration}return 0!==this.totalDuration()&&0!==t&&this.timeScale(this._totalDuration/t),this},m.usesFrames=function(){for(var e=this._timeline;e._timeline;)e=e._timeline;return e===t._rootFramesTimeline},m.rawTime=function(){return this._paused?this._totalTime:(this._timeline.rawTime()-this._startTime)*this._timeScale},s},!0),_gsScope._gsDefine("TimelineMax",["TimelineLite","TweenLite","easing.Ease"],function(t,e,i){var s=function(e){t.call(this,e),this._repeat=this.vars.repeat||0,this._repeatDelay=this.vars.repeatDelay||0,this._cycle=0,this._yoyo=this.vars.yoyo===!0,this._dirty=!0},r=1e-10,n=[],a=e._internals,o=a.lazyTweens,h=a.lazyRender,l=new i(null,null,1,0),_=s.prototype=new t;return _.constructor=s,_.kill()._gc=!1,s.version="1.13.1",_.invalidate=function(){return this._yoyo=this.vars.yoyo===!0,this._repeat=this.vars.repeat||0,this._repeatDelay=this.vars.repeatDelay||0,this._uncache(!0),t.prototype.invalidate.call(this)},_.addCallback=function(t,i,s,r){return this.add(e.delayedCall(0,t,s,r),i)},_.removeCallback=function(t,e){if(t)if(null==e)this._kill(null,t);else for(var i=this.getTweensOf(t,!1),s=i.length,r=this._parseTimeOrLabel(e);--s>-1;)i[s]._startTime===r&&i[s]._enabled(!1,!1);return this},_.tweenTo=function(t,i){i=i||{};var s,r,a,o={ease:l,overwrite:i.delay?2:1,useFrames:this.usesFrames(),immediateRender:!1};for(r in i)o[r]=i[r];return o.time=this._parseTimeOrLabel(t),s=Math.abs(Number(o.time)-this._time)/this._timeScale||.001,a=new e(this,s,o),o.onStart=function(){a.target.paused(!0),a.vars.time!==a.target.time()&&s===a.duration()&&a.duration(Math.abs(a.vars.time-a.target.time())/a.target._timeScale),i.onStart&&i.onStart.apply(i.onStartScope||a,i.onStartParams||n)},a},_.tweenFromTo=function(t,e,i){i=i||{},t=this._parseTimeOrLabel(t),i.startAt={onComplete:this.seek,onCompleteParams:[t],onCompleteScope:this},i.immediateRender=i.immediateRender!==!1;var s=this.tweenTo(e,i);return s.duration(Math.abs(s.vars.time-t)/this._timeScale||.001)},_.render=function(t,e,i){this._gc&&this._enabled(!0,!1);var s,a,l,_,u,p,c=this._dirty?this.totalDuration():this._totalDuration,f=this._duration,m=this._time,d=this._totalTime,g=this._startTime,v=this._timeScale,y=this._rawPrevTime,T=this._paused,w=this._cycle;if(t>=c?(this._locked||(this._totalTime=c,this._cycle=this._repeat),this._reversed||this._hasPausedChild()||(a=!0,_="onComplete",0===this._duration&&(0===t||0>y||y===r)&&y!==t&&this._first&&(u=!0,y>r&&(_="onReverseComplete"))),this._rawPrevTime=this._duration||!e||t||this._rawPrevTime===t?t:r,this._yoyo&&0!==(1&this._cycle)?this._time=t=0:(this._time=f,t=f+1e-4)):1e-7>t?(this._locked||(this._totalTime=this._cycle=0),this._time=0,(0!==m||0===f&&y!==r&&(y>0||0>t&&y>=0)&&!this._locked)&&(_="onReverseComplete",a=this._reversed),0>t?(this._active=!1,y>=0&&this._first&&(u=!0),this._rawPrevTime=t):(this._rawPrevTime=f||!e||t||this._rawPrevTime===t?t:r,t=0,this._initted||(u=!0))):(0===f&&0>y&&(u=!0),this._time=this._rawPrevTime=t,this._locked||(this._totalTime=t,0!==this._repeat&&(p=f+this._repeatDelay,this._cycle=this._totalTime/p>>0,0!==this._cycle&&this._cycle===this._totalTime/p&&this._cycle--,this._time=this._totalTime-this._cycle*p,this._yoyo&&0!==(1&this._cycle)&&(this._time=f-this._time),this._time>f?(this._time=f,t=f+1e-4):0>this._time?this._time=t=0:t=this._time))),this._cycle!==w&&!this._locked){var x=this._yoyo&&0!==(1&w),b=x===(this._yoyo&&0!==(1&this._cycle)),P=this._totalTime,S=this._cycle,k=this._rawPrevTime,R=this._time;if(this._totalTime=w*f,w>this._cycle?x=!x:this._totalTime+=f,this._time=m,this._rawPrevTime=0===f?y-1e-4:y,this._cycle=w,this._locked=!0,m=x?0:f,this.render(m,e,0===f),e||this._gc||this.vars.onRepeat&&this.vars.onRepeat.apply(this.vars.onRepeatScope||this,this.vars.onRepeatParams||n),b&&(m=x?f+1e-4:-1e-4,this.render(m,!0,!1)),this._locked=!1,this._paused&&!T)return;this._time=R,this._totalTime=P,this._cycle=S,this._rawPrevTime=k}if(!(this._time!==m&&this._first||i||u))return d!==this._totalTime&&this._onUpdate&&(e||this._onUpdate.apply(this.vars.onUpdateScope||this,this.vars.onUpdateParams||n)),void 0;if(this._initted||(this._initted=!0),this._active||!this._paused&&this._totalTime!==d&&t>0&&(this._active=!0),0===d&&this.vars.onStart&&0!==this._totalTime&&(e||this.vars.onStart.apply(this.vars.onStartScope||this,this.vars.onStartParams||n)),this._time>=m)for(s=this._first;s&&(l=s._next,!this._paused||T);)(s._active||s._startTime<=this._time&&!s._paused&&!s._gc)&&(s._reversed?s.render((s._dirty?s.totalDuration():s._totalDuration)-(t-s._startTime)*s._timeScale,e,i):s.render((t-s._startTime)*s._timeScale,e,i)),s=l;else for(s=this._last;s&&(l=s._prev,!this._paused||T);)(s._active||m>=s._startTime&&!s._paused&&!s._gc)&&(s._reversed?s.render((s._dirty?s.totalDuration():s._totalDuration)-(t-s._startTime)*s._timeScale,e,i):s.render((t-s._startTime)*s._timeScale,e,i)),s=l;this._onUpdate&&(e||(o.length&&h(),this._onUpdate.apply(this.vars.onUpdateScope||this,this.vars.onUpdateParams||n))),_&&(this._locked||this._gc||(g===this._startTime||v!==this._timeScale)&&(0===this._time||c>=this.totalDuration())&&(a&&(o.length&&h(),this._timeline.autoRemoveChildren&&this._enabled(!1,!1),this._active=!1),!e&&this.vars[_]&&this.vars[_].apply(this.vars[_+"Scope"]||this,this.vars[_+"Params"]||n)))},_.getActive=function(t,e,i){null==t&&(t=!0),null==e&&(e=!0),null==i&&(i=!1);var s,r,n=[],a=this.getChildren(t,e,i),o=0,h=a.length;for(s=0;h>s;s++)r=a[s],r.isActive()&&(n[o++]=r);return n},_.getLabelAfter=function(t){t||0!==t&&(t=this._time);var e,i=this.getLabelsArray(),s=i.length;for(e=0;s>e;e++)if(i[e].time>t)return i[e].name;return null},_.getLabelBefore=function(t){null==t&&(t=this._time);for(var e=this.getLabelsArray(),i=e.length;--i>-1;)if(t>e[i].time)return e[i].name;return null},_.getLabelsArray=function(){var t,e=[],i=0;for(t in this._labels)e[i++]={time:this._labels[t],name:t};return e.sort(function(t,e){return t.time-e.time}),e},_.progress=function(t){return arguments.length?this.totalTime(this.duration()*(this._yoyo&&0!==(1&this._cycle)?1-t:t)+this._cycle*(this._duration+this._repeatDelay),!1):this._time/this.duration()},_.totalProgress=function(t){return arguments.length?this.totalTime(this.totalDuration()*t,!1):this._totalTime/this.totalDuration()},_.totalDuration=function(e){return arguments.length?-1===this._repeat?this:this.duration((e-this._repeat*this._repeatDelay)/(this._repeat+1)):(this._dirty&&(t.prototype.totalDuration.call(this),this._totalDuration=-1===this._repeat?999999999999:this._duration*(this._repeat+1)+this._repeatDelay*this._repeat),this._totalDuration)},_.time=function(t,e){return arguments.length?(this._dirty&&this.totalDuration(),t>this._duration&&(t=this._duration),this._yoyo&&0!==(1&this._cycle)?t=this._duration-t+this._cycle*(this._duration+this._repeatDelay):0!==this._repeat&&(t+=this._cycle*(this._duration+this._repeatDelay)),this.totalTime(t,e)):this._time},_.repeat=function(t){return arguments.length?(this._repeat=t,this._uncache(!0)):this._repeat},_.repeatDelay=function(t){return arguments.length?(this._repeatDelay=t,this._uncache(!0)):this._repeatDelay},_.yoyo=function(t){return arguments.length?(this._yoyo=t,this):this._yoyo},_.currentLabel=function(t){return arguments.length?this.seek(t,!0):this.getLabelBefore(this._time+1e-8)},s},!0),function(){var t=180/Math.PI,e=[],i=[],s=[],r={},n=function(t,e,i,s){this.a=t,this.b=e,this.c=i,this.d=s,this.da=s-t,this.ca=i-t,this.ba=e-t},a=",x,y,z,left,top,right,bottom,marginTop,marginLeft,marginRight,marginBottom,paddingLeft,paddingTop,paddingRight,paddingBottom,backgroundPosition,backgroundPosition_y,",o=function(t,e,i,s){var r={a:t},n={},a={},o={c:s},h=(t+e)/2,l=(e+i)/2,_=(i+s)/2,u=(h+l)/2,p=(l+_)/2,c=(p-u)/8;return r.b=h+(t-h)/4,n.b=u+c,r.c=n.a=(r.b+n.b)/2,n.c=a.a=(u+p)/2,a.b=p-c,o.b=_+(s-_)/4,a.c=o.a=(a.b+o.b)/2,[r,n,a,o]},h=function(t,r,n,a,h){var l,_,u,p,c,f,m,d,g,v,y,T,w,x=t.length-1,b=0,P=t[0].a;for(l=0;x>l;l++)c=t[b],_=c.a,u=c.d,p=t[b+1].d,h?(y=e[l],T=i[l],w=.25*(T+y)*r/(a?.5:s[l]||.5),f=u-(u-_)*(a?.5*r:0!==y?w/y:0),m=u+(p-u)*(a?.5*r:0!==T?w/T:0),d=u-(f+((m-f)*(3*y/(y+T)+.5)/4||0))):(f=u-.5*(u-_)*r,m=u+.5*(p-u)*r,d=u-(f+m)/2),f+=d,m+=d,c.c=g=f,c.b=0!==l?P:P=c.a+.6*(c.c-c.a),c.da=u-_,c.ca=g-_,c.ba=P-_,n?(v=o(_,P,g,u),t.splice(b,1,v[0],v[1],v[2],v[3]),b+=4):b++,P=m;c=t[b],c.b=P,c.c=P+.4*(c.d-P),c.da=c.d-c.a,c.ca=c.c-c.a,c.ba=P-c.a,n&&(v=o(c.a,P,c.c,c.d),t.splice(b,1,v[0],v[1],v[2],v[3]))},l=function(t,s,r,a){var o,h,l,_,u,p,c=[];if(a)for(t=[a].concat(t),h=t.length;--h>-1;)"string"==typeof(p=t[h][s])&&"="===p.charAt(1)&&(t[h][s]=a[s]+Number(p.charAt(0)+p.substr(2)));if(o=t.length-2,0>o)return c[0]=new n(t[0][s],0,0,t[-1>o?0:1][s]),c;for(h=0;o>h;h++)l=t[h][s],_=t[h+1][s],c[h]=new n(l,0,0,_),r&&(u=t[h+2][s],e[h]=(e[h]||0)+(_-l)*(_-l),i[h]=(i[h]||0)+(u-_)*(u-_));return c[h]=new n(t[h][s],0,0,t[h+1][s]),c},_=function(t,n,o,_,u,p){var c,f,m,d,g,v,y,T,w={},x=[],b=p||t[0];u="string"==typeof u?","+u+",":a,null==n&&(n=1);for(f in t[0])x.push(f);if(t.length>1){for(T=t[t.length-1],y=!0,c=x.length;--c>-1;)if(f=x[c],Math.abs(b[f]-T[f])>.05){y=!1;break}y&&(t=t.concat(),p&&t.unshift(p),t.push(t[1]),p=t[t.length-3])}for(e.length=i.length=s.length=0,c=x.length;--c>-1;)f=x[c],r[f]=-1!==u.indexOf(","+f+","),w[f]=l(t,f,r[f],p);for(c=e.length;--c>-1;)e[c]=Math.sqrt(e[c]),i[c]=Math.sqrt(i[c]);if(!_){for(c=x.length;--c>-1;)if(r[f])for(m=w[x[c]],v=m.length-1,d=0;v>d;d++)g=m[d+1].da/i[d]+m[d].da/e[d],s[d]=(s[d]||0)+g*g;for(c=s.length;--c>-1;)s[c]=Math.sqrt(s[c])}for(c=x.length,d=o?4:1;--c>-1;)f=x[c],m=w[f],h(m,n,o,_,r[f]),y&&(m.splice(0,d),m.splice(m.length-d,d));return w},u=function(t,e,i){e=e||"soft";var s,r,a,o,h,l,_,u,p,c,f,m={},d="cubic"===e?3:2,g="soft"===e,v=[];if(g&&i&&(t=[i].concat(t)),null==t||d+1>t.length)throw"invalid Bezier data";for(p in t[0])v.push(p);for(l=v.length;--l>-1;){for(p=v[l],m[p]=h=[],c=0,u=t.length,_=0;u>_;_++)s=null==i?t[_][p]:"string"==typeof(f=t[_][p])&&"="===f.charAt(1)?i[p]+Number(f.charAt(0)+f.substr(2)):Number(f),g&&_>1&&u-1>_&&(h[c++]=(s+h[c-2])/2),h[c++]=s;for(u=c-d+1,c=0,_=0;u>_;_+=d)s=h[_],r=h[_+1],a=h[_+2],o=2===d?0:h[_+3],h[c++]=f=3===d?new n(s,r,a,o):new n(s,(2*r+s)/3,(2*r+a)/3,a);h.length=c}return m},p=function(t,e,i){for(var s,r,n,a,o,h,l,_,u,p,c,f=1/i,m=t.length;--m>-1;)for(p=t[m],n=p.a,a=p.d-n,o=p.c-n,h=p.b-n,s=r=0,_=1;i>=_;_++)l=f*_,u=1-l,s=r-(r=(l*l*a+3*u*(l*o+u*h))*l),c=m*i+_-1,e[c]=(e[c]||0)+s*s},c=function(t,e){e=e>>0||6;var i,s,r,n,a=[],o=[],h=0,l=0,_=e-1,u=[],c=[];for(i in t)p(t[i],a,e);for(r=a.length,s=0;r>s;s++)h+=Math.sqrt(a[s]),n=s%e,c[n]=h,n===_&&(l+=h,n=s/e>>0,u[n]=c,o[n]=l,h=0,c=[]);return{length:l,lengths:o,segments:u}},f=_gsScope._gsDefine.plugin({propName:"bezier",priority:-1,version:"1.3.3",API:2,global:!0,init:function(t,e,i){this._target=t,e instanceof Array&&(e={values:e}),this._func={},this._round={},this._props=[],this._timeRes=null==e.timeResolution?6:parseInt(e.timeResolution,10);var s,r,n,a,o,h=e.values||[],l={},p=h[0],f=e.autoRotate||i.vars.orientToBezier;this._autoRotate=f?f instanceof Array?f:[["x","y","rotation",f===!0?0:Number(f)||0]]:null;for(s in p)this._props.push(s);for(n=this._props.length;--n>-1;)s=this._props[n],this._overwriteProps.push(s),r=this._func[s]="function"==typeof t[s],l[s]=r?t[s.indexOf("set")||"function"!=typeof t["get"+s.substr(3)]?s:"get"+s.substr(3)]():parseFloat(t[s]),o||l[s]!==h[0][s]&&(o=l);if(this._beziers="cubic"!==e.type&&"quadratic"!==e.type&&"soft"!==e.type?_(h,isNaN(e.curviness)?1:e.curviness,!1,"thruBasic"===e.type,e.correlate,o):u(h,e.type,l),this._segCount=this._beziers[s].length,this._timeRes){var m=c(this._beziers,this._timeRes);this._length=m.length,this._lengths=m.lengths,this._segments=m.segments,this._l1=this._li=this._s1=this._si=0,this._l2=this._lengths[0],this._curSeg=this._segments[0],this._s2=this._curSeg[0],this._prec=1/this._curSeg.length}if(f=this._autoRotate)for(this._initialRotations=[],f[0]instanceof Array||(this._autoRotate=f=[f]),n=f.length;--n>-1;){for(a=0;3>a;a++)s=f[n][a],this._func[s]="function"==typeof t[s]?t[s.indexOf("set")||"function"!=typeof t["get"+s.substr(3)]?s:"get"+s.substr(3)]:!1;s=f[n][2],this._initialRotations[n]=this._func[s]?this._func[s].call(this._target):this._target[s]}return this._startRatio=i.vars.runBackwards?1:0,!0},set:function(e){var i,s,r,n,a,o,h,l,_,u,p=this._segCount,c=this._func,f=this._target,m=e!==this._startRatio;if(this._timeRes){if(_=this._lengths,u=this._curSeg,e*=this._length,r=this._li,e>this._l2&&p-1>r){for(l=p-1;l>r&&e>=(this._l2=_[++r]););this._l1=_[r-1],this._li=r,this._curSeg=u=this._segments[r],this._s2=u[this._s1=this._si=0]}else if(this._l1>e&&r>0){for(;r>0&&(this._l1=_[--r])>=e;);0===r&&this._l1>e?this._l1=0:r++,this._l2=_[r],this._li=r,this._curSeg=u=this._segments[r],this._s1=u[(this._si=u.length-1)-1]||0,this._s2=u[this._si]}if(i=r,e-=this._l1,r=this._si,e>this._s2&&u.length-1>r){for(l=u.length-1;l>r&&e>=(this._s2=u[++r]););this._s1=u[r-1],this._si=r}else if(this._s1>e&&r>0){for(;r>0&&(this._s1=u[--r])>=e;);0===r&&this._s1>e?this._s1=0:r++,this._s2=u[r],this._si=r}o=(r+(e-this._s1)/(this._s2-this._s1))*this._prec}else i=0>e?0:e>=1?p-1:p*e>>0,o=(e-i*(1/p))*p;for(s=1-o,r=this._props.length;--r>-1;)n=this._props[r],a=this._beziers[n][i],h=(o*o*a.da+3*s*(o*a.ca+s*a.ba))*o+a.a,this._round[n]&&(h=Math.round(h)),c[n]?f[n](h):f[n]=h;if(this._autoRotate){var d,g,v,y,T,w,x,b=this._autoRotate;
@@ -1382,7 +1382,7 @@ return null!=s&&(a="number"==typeof s||"="!==s.charAt(1)?Number(s)-i:parseInt(s.
  * @license Copyright (c) 2008-2015, GreenSock. All rights reserved.
  * This work is subject to the terms at http://greensock.com/standard-license or for
  * Club GreenSock members, the software agreement that was issued with your membership.
- * 
+ *
  * @author: Jack Doyle, jack@greensock.com
  **/
 var _gsScope="undefined"!=typeof module&&module.exports&&"undefined"!=typeof global?global:this||window;(_gsScope._gsQueue||(_gsScope._gsQueue=[])).push(function(){"use strict";var t=document.documentElement,e=window,i=function(i,r){var s="x"===r?"Width":"Height",n="scroll"+s,a="client"+s,o=document.body;return i===e||i===t||i===o?Math.max(t[n],o[n])-(e["inner"+s]||t[a]||o[a]):i[n]-i["offset"+s]},r=_gsScope._gsDefine.plugin({propName:"scrollTo",API:2,version:"1.7.5",init:function(t,r,s){return this._wdw=t===e,this._target=t,this._tween=s,"object"!=typeof r&&(r={y:r}),this.vars=r,this._autoKill=r.autoKill!==!1,this.x=this.xPrev=this.getX(),this.y=this.yPrev=this.getY(),null!=r.x?(this._addTween(this,"x",this.x,"max"===r.x?i(t,"x"):r.x,"scrollTo_x",!0),this._overwriteProps.push("scrollTo_x")):this.skipX=!0,null!=r.y?(this._addTween(this,"y",this.y,"max"===r.y?i(t,"y"):r.y,"scrollTo_y",!0),this._overwriteProps.push("scrollTo_y")):this.skipY=!0,!0},set:function(t){this._super.setRatio.call(this,t);var r=this._wdw||!this.skipX?this.getX():this.xPrev,s=this._wdw||!this.skipY?this.getY():this.yPrev,n=s-this.yPrev,a=r-this.xPrev;this._autoKill&&(!this.skipX&&(a>7||-7>a)&&i(this._target,"x")>r&&(this.skipX=!0),!this.skipY&&(n>7||-7>n)&&i(this._target,"y")>s&&(this.skipY=!0),this.skipX&&this.skipY&&(this._tween.kill(),this.vars.onAutoKill&&this.vars.onAutoKill.apply(this.vars.onAutoKillScope||this._tween,this.vars.onAutoKillParams||[]))),this._wdw?e.scrollTo(this.skipX?r:this.x,this.skipY?s:this.y):(this.skipY||(this._target.scrollTop=this.y),this.skipX||(this._target.scrollLeft=this.x)),this.xPrev=this.x,this.yPrev=this.y}}),s=r.prototype;r.max=i,s.getX=function(){return this._wdw?null!=e.pageXOffset?e.pageXOffset:null!=t.scrollLeft?t.scrollLeft:document.body.scrollLeft:this._target.scrollLeft},s.getY=function(){return this._wdw?null!=e.pageYOffset?e.pageYOffset:null!=t.scrollTop?t.scrollTop:document.body.scrollTop:this._target.scrollTop},s._kill=function(t){return t.scrollTo_x&&(this.skipX=!0),t.scrollTo_y&&(this.skipY=!0),this._super._kill.call(this,t)}}),_gsScope._gsDefine&&_gsScope._gsQueue.pop()();
@@ -1407,7 +1407,7 @@ var _gsScope="undefined"!=typeof module&&module.exports&&"undefined"!=typeof glo
 
 
 // begin - smooth scrolling for everyone!
-$(function(){ 
+$(function(){
 
     var $window = $(window);
   var scrollTime = .1;
@@ -1415,7 +1415,7 @@ $(function(){
 
   $window.on("mousewheel DOMMouseScroll", function(event){
 
-    event.preventDefault(); 
+    event.preventDefault();
 
     var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
     var scrollTop = $window.scrollTop();
@@ -1424,7 +1424,7 @@ $(function(){
     TweenMax.to($window, scrollTime, {
       scrollTo : { y: finalScroll, autoKill:true },
         ease: Power1.easeOut,
-        overwrite: 5          
+        overwrite: 5
       });
   });
 });
@@ -1466,7 +1466,7 @@ window.addEventListener('scroll', function(){ // on page scroll
 }, false)
 
 
-// this was triggering an error so I've commented it out. 
+// this was triggering an error so I've commented it out.
 // was used for a horizontal parallax that's not getting used
 // anyway.
 // window.addEventListener('resize', function(){ // on window resize
@@ -1503,13 +1503,13 @@ $('.tab.active').show();
 
     $('.tabs .tab-links a').on('click', function(e)  {
         var currentAttrValue = $(this).attr('href');
- 
+
         // Show/Hide Tabs
         $('.tabs ' + currentAttrValue).slideDown(400).siblings().slideUp(400);
- 
+
         // Change/remove current tab to active
         $(this).parent('li').addClass('active').siblings().removeClass('active');
- 
+
         e.preventDefault();
     });
 
@@ -1520,7 +1520,7 @@ $('.tab.active').show();
 // just for development so I can see what I'm doing...
 // see below for production code
 // ***************************************************
-/* start 
+/* start
 
 var maxHeight = 0;
 
@@ -1587,7 +1587,7 @@ $(window).on('scroll', function () {
       } else {
           btt.hide();
         }
-  }); 
+  });
 
 
 }); // closing for doc.ready fun()
@@ -1598,7 +1598,7 @@ $(window).on('scroll', function () {
 // $(document).ready(function(){
 
 // $('#addSites01').hide();
- 
+
 //     $("#hide").on('click', function() {
 //         $(this).text('something');
 //       }, function() {
@@ -1607,19 +1607,19 @@ $(window).on('scroll', function () {
 //         $("#addSites01").slideToggle(400);
 //       });
 
-// }); 
+// });
 // -----------------------------------
 $(document).ready(function(){
-$("#addSites01").hide(); 
+$("#addSites01").hide();
 $("button#toggleMoreSites").click(function(){
     $(this).toggleClass("active").next().slideToggle(400);
-    
+
     if ($.trim($(this).text()) === 'Hide additional sites') {
         $(this).text('Show more websites');
     } else {
-        $(this).text('Hide additional sites');        
+        $(this).text('Hide additional sites');
     }
-    return false; 
+    return false;
   }).on('click', function(){
          $("#addSites01").slideToggle(400);
        });
@@ -1630,7 +1630,7 @@ $("button#toggleMoreSites").click(function(){
 
 $(document).ready(function(){
   $(".click").click(function(){
-    
+
     var target = $(this).parent().children(".expand");
     $(target).slideToggle();
   });
@@ -1695,33 +1695,33 @@ function upEarly() {
     document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/up-early-01.jpg" alt="early sky">');
     document.getElementById("clockid").className = "CoolClock late-night-clock";
     document.getElementById("text-box").className = "late-night-text-box cf";
-    document.getElementById("website-solutions-badge").className = "late-night-website-solutions-badge"; 
+    document.getElementById("website-solutions-badge").className = "late-night-website-solutions-badge";
 }
 function preMorning() {
     document.getElementById("greeting").innerHTML = ('Good morning,');
     document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/pre-morning.jpg" alt="lavender field sunrise">');
     document.getElementById("clockid").className = "CoolClock pre-morning-clock";
     document.getElementById("text-box").className = "pre-morning-text-box cf";
-    document.getElementById("website-solutions-badge").className = "pre-morning-website-solutions-badge"; 
+    document.getElementById("website-solutions-badge").className = "pre-morning-website-solutions-badge";
 }
 function goodMorning() {
     document.getElementById("greeting").innerHTML = ('Good morning,');
     document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/sunrise.jpg" alt="sunrise">');
     document.getElementById("clockid").className = "CoolClock morning-clock";
     document.getElementById("text-box").className = "morning-text-box cf";
-    document.getElementById("website-solutions-badge").className = "morning-website-solutions-badge"; 
+    document.getElementById("website-solutions-badge").className = "morning-website-solutions-badge";
 }
 function goodLateMorning() {
     document.getElementById("greeting").innerHTML = ('Good morning,');
     document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/good-late-morning.jpg" alt="sunrise">');
     document.getElementById("clockid").className = "CoolClock late-morning-clock";
     document.getElementById("text-box").className = "late-morning-text-box cf";
-    document.getElementById("website-solutions-badge").className = "late-morning-website-solutions-badge"; 
+    document.getElementById("website-solutions-badge").className = "late-morning-website-solutions-badge";
 }
 function goodAfternoon() {
     document.getElementById("greeting").innerHTML = ('Good afternoon,');
     document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/day-sky-01.jpg" alt="blue sky">');
-    // this one has default styles 
+    // this one has default styles
     document.getElementById("clockid").className = "CoolClock clockid-default";
     document.getElementById("text-box").className = "text-box-default cf";
     document.getElementById("website-solutions-badge").className = "website-solutions-badge-default";
@@ -1731,21 +1731,21 @@ function goodLateAfternoon() {
     document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/mountain-sunset.jpg" alt="sunrise">');
     document.getElementById("clockid").className = "CoolClock late-afternoon-clock";
     document.getElementById("text-box").className = "late-afternoon-text-box cf";
-    document.getElementById("website-solutions-badge").className = "late-afternoon-website-solutions-badge";  
+    document.getElementById("website-solutions-badge").className = "late-afternoon-website-solutions-badge";
 }
 function goodEvening() {
     document.getElementById("greeting").innerHTML = ('Good evening,');
     document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/night.jpg" alt="sunrise">');
     document.getElementById("clockid").className = "CoolClock evening-clock";
     document.getElementById("text-box").className = "evening-text-box cf";
-    document.getElementById("website-solutions-badge").className = "evening-website-solutions-badge"; 
+    document.getElementById("website-solutions-badge").className = "evening-website-solutions-badge";
 }
 function upLate() {
     document.getElementById("greeting").innerHTML = ('It&acute;s never too late!');
     document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/late-night.jpg" alt="sunrise">');
     document.getElementById("clockid").className = "CoolClock late-night-clock";
     document.getElementById("text-box").className = "late-night-text-box cf";
-    document.getElementById("website-solutions-badge").className = "late-night-website-solutions-badge";  
+    document.getElementById("website-solutions-badge").className = "late-night-website-solutions-badge";
 }
 function insomniacs() {
     document.getElementById("greeting").innerHTML = ('Insomniacs Unite!');
@@ -1753,12 +1753,12 @@ function insomniacs() {
     document.getElementById("greeting_bkg").className = "insomniac-background";
     document.getElementById("clockid").className = "CoolClock insomniac-clock";
     document.getElementById("text-box").className = "insomniac-text-box cf";
-    document.getElementById("website-solutions-badge").className = "insomniac-website-solutions-badge";  
+    document.getElementById("website-solutions-badge").className = "insomniac-website-solutions-badge";
 }
 function defaultGreeting() {
     document.getElementById("greeting").innerHTML = ('Welcome,');
     document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/day-sky-01.jpg" alt="blue sky">');
-    // this one has default styles 
+    // this one has default styles
 }
 
 var d = new Date();
@@ -1802,169 +1802,169 @@ var time = "" + hours + minutes;
 // http://www.sunrisesunset.com/usa/Colorado/Evergreen.asp - sunrise/sunset calendar
 
 if        (month == "January") {                                   // January [done]
-  if      (time >= 500 && time <=  559 ) { upEarly();           }  // 05:00 - 05:59 vector - sillouhette sunburst 
+  if      (time >= 500 && time <=  559 ) { upEarly();           }  // 05:00 - 05:59 vector - sillouhette sunburst
   else if (time >= 600 && time <=  654 ) { preMorning();        }  // 06:00 - 06:54 lavender field
   else if (time >= 655 && time <=  745 ) { goodMorning();       }  // 06:55 - 07:45 orange sunrise (sunrise: 07:22|07:10)
   else if (time >= 746 && time <=  1030) { goodLateMorning();   }  // 07:46 - 10:30 snow tracks
   else if (time >= 1031 && time <= 1635) { goodAfternoon();     }  // 10:31 - 16:35 sun sky
   else if (time >= 1636 && time <= 1745) { goodLateAfternoon(); }  // 16:36 - 17:45 mountain sunset (sunset: 16:47|17:19)
   else if (time >= 1746 && time <= 2200) { goodEvening();       }  // 17:46 - 22:00 mountain moon
-  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe 
+  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe
                                     else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
-} 
+}
 if        (month == "February") {                                  // February [done]
-  if      (time >= 500 && time <=  559 ) { upEarly();           }  // 05:00 - 05:59 vector - sillouhette sunburst 
+  if      (time >= 500 && time <=  559 ) { upEarly();           }  // 05:00 - 05:59 vector - sillouhette sunburst
   else if (time >= 600 && time <=  657 ) { preMorning();        }  // 06:00 - 06:57 lavender field
   else if (time >= 658 && time <=  735 ) { goodMorning();       }  // 06:58 - 07:35 orange sunrise (sunrise: 07:09|06:36)
   else if (time >= 736 && time <=  1030) { goodLateMorning();   }  // 07:36 - 10:30 snow tracks
   else if (time >= 1031 && time <= 1709) { goodAfternoon();     }  // 10:31 - 17:09 sun sky
   else if (time >= 1710 && time <= 1810) { goodLateAfternoon(); }  // 17:10 - 18:10 mountain sunset (sunset: 17:21|17:52)
   else if (time >= 1811 && time <= 2200) { goodEvening();       }  // 18:11 - 22:00 mountain moon
-  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe 
+  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe
                                     else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
-} 
+}
 
 
 if        (month == "March" && day <= 11) {                        // March 12, 2017 (DST) [done]
-  if      (time >= 500 && time <=  555 ) { upEarly();           }  // 05:00 - 05:55 vector - sillouhette sunburst 
+  if      (time >= 500 && time <=  555 ) { upEarly();           }  // 05:00 - 05:55 vector - sillouhette sunburst
   else if (time >= 556 && time <=  619 ) { preMorning();        }  // 05:56 - 06:19 lavender field
   else if (time >= 620 && time <=  715 ) { goodMorning();       }  // 06:20 - 07:15 orange sunrise (sunrise: 06:35 on 03.01.17)
   else if (time >= 716 && time <=  1100) { goodLateMorning();   }  // 07:16 - 11:00 snow tracks    (     ^^: 06:19 on 03.11.17)
   else if (time >= 1101 && time <= 1740) { goodAfternoon();     }  // 11:01 - 17:40 sun sky
   else if (time >= 1741 && time <= 1841) { goodLateAfternoon(); }  // 17:41 - 18:41 mountain sunset (sunset: 17:53 on 03.01.17)
   else if (time >= 1842 && time <= 2200) { goodEvening();       }  // 18:42 - 22:00 mountain moon   (    ^^: 18:03 on 03.11.17)
-  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe 
+  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe
                                     else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
 } else {
-  if      (time >= 500 && time <=  555 ) { upEarly();           }  // 05:00 - 05:55 vector - sillouhette sunburst 
+  if      (time >= 500 && time <=  555 ) { upEarly();           }  // 05:00 - 05:55 vector - sillouhette sunburst
   else if (time >= 556 && time <=  620 ) { preMorning();        }  // 05:56 - 06:20 lavender field
   else if (time >= 621 && time <=  740 ) { goodMorning();       }  // 06:21 - 07:40 orange sunrise (sunrise: 07:18 on 03.12.17)
   else if (time >= 741 && time <=  1100) { goodLateMorning();   }  // 07:41 - 11:00 snow tracks    (     ^^: 06:48 on 03.31.17)
   else if (time >= 1101 && time <= 1850) { goodAfternoon();     }  // 11:01 - 18:50 sun sky
   else if (time >= 1851 && time <= 2000) { goodLateAfternoon(); }  // 18:51 - 20:00 mountain sunset (sunset: 19:04 on 03.12.17)
   else if (time >= 2001 && time <= 2200) { goodEvening();       }  // 20:01 - 22:00 mountain moon   (    ^^: 19:24 on 03.31.17)
-  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe 
+  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe
                                     else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
 }
 
 
 if        (month == "April") {                                     // April [done]
-  if      (time >= 500 && time <=  545 ) { upEarly();           }  // 05:00 - 05:45 vector - sillouhette sunburst 
+  if      (time >= 500 && time <=  545 ) { upEarly();           }  // 05:00 - 05:45 vector - sillouhette sunburst
   else if (time >= 546 && time <=  600 ) { preMorning();        }  // 05:46 - 06:00 lavender field
   else if (time >= 601 && time <=  700 ) { goodMorning();       }  // 06:01 - 07:00 orange sunrise (sunrise: 06:46|06:04)
   else if (time >= 701 && time <=  1030) { goodLateMorning();   }  // 07:01 - 10:30 snow tracks
   else if (time >= 1031 && time <= 1904) { goodAfternoon();     }  // 10:31 - 19:04 sun sky
   else if (time >= 1905 && time <= 2005) { goodLateAfternoon(); }  // 19:05 - 20:05 mountain sunset (sunset: 19:25|19:54)
   else if (time >= 2006 && time <= 2200) { goodEvening();       }  // 20:06 - 22:00 mountain moon
-  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe 
+  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe
                                     else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
-} 
+}
 if        (month == "May") {                                       // May [done]
-  if      (time >= 430 && time <=  459 ) { upEarly();           }  // 04:30 - 04:59 vector - sillouhette sunburst 
+  if      (time >= 430 && time <=  459 ) { upEarly();           }  // 04:30 - 04:59 vector - sillouhette sunburst
   else if (time >= 500 && time <=  519 ) { preMorning();        }  // 05:00 - 05:19 lavender field
   else if (time >= 520 && time <=  615 ) { goodMorning();       }  // 05:20 - 06:15 orange sunrise (sunrise: 06:02|05:36)
   else if (time >= 616 && time <=  1030) { goodLateMorning();   }  // 06:16 - 10:30 snow tracks
   else if (time >= 1031 && time <= 1939) { goodAfternoon();     }  // 10:31 - 19:39 sun sky
   else if (time >= 1940 && time <= 2050) { goodLateAfternoon(); }  // 19:40 - 20:50 mountain sunset (sunset: 19:55|20:22)
   else if (time >= 2051 && time <= 2200) { goodEvening();       }  // 20:51 - 22:00 mountain moon
-  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe 
+  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe
                                     else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
-} 
+}
 if        (month == "June") {                                      // June [done]
-  if      (time >= 430 && time <=  459 ) { upEarly();           }  // 04:30 - 04:59 vector - sillouhette sunburst 
+  if      (time >= 430 && time <=  459 ) { upEarly();           }  // 04:30 - 04:59 vector - sillouhette sunburst
   else if (time >= 500 && time <=  522 ) { preMorning();        }  // 05:00 - 05:22 lavender field
   else if (time >= 523 && time <=  555 ) { goodMorning();       }  // 05:23 - 05:55 orange sunrise (sunrise: 05:36|05:37)
   else if (time >= 556 && time <=  1030) { goodLateMorning();   }  // 05:56 - 10:30 snow tracks
   else if (time >= 1031 && time <= 2001) { goodAfternoon();     }  // 10:31 - 20:01 sun sky
   else if (time >= 2002 && time <= 2055) { goodLateAfternoon(); }  // 20:02 - 20:55 mountain sunset (sunset: 20:23|20:33)
   else if (time >= 2056 && time <= 2300) { goodEvening();       }  // 20:56 - 23:00 mountain moon
-  else if (time >= 2301 || time <= 144 ) { upLate();            }  // 23:01 - 01:44 universe 
+  else if (time >= 2301 || time <= 144 ) { upLate();            }  // 23:01 - 01:44 universe
                                     else { insomniacs();        }  // 01:45 - 04:29 universe imposing clock
-} 
+}
 if        (month == "July") {                                      // July [done]
-  if      (time >= 430 && time <=  459 ) { upEarly();           }  // 04:30 - 04:59 vector - sillouhette sunburst 
+  if      (time >= 430 && time <=  459 ) { upEarly();           }  // 04:30 - 04:59 vector - sillouhette sunburst
   else if (time >= 500 && time <=  511 ) { preMorning();        }  // 05:00 - 05:11 lavender field
   else if (time >= 512 && time <=  620 ) { goodMorning();       }  // 05:12 - 06:20 orange sunrise (sunrise: 05:37|06:00)
   else if (time >= 621 && time <=  1030) { goodLateMorning();   }  // 06:21 - 10:30 snow tracks
   else if (time >= 1031 && time <= 2000) { goodAfternoon();     }  // 10:31 - 20:00 sun sky
   else if (time >= 2001 && time <= 2101) { goodLateAfternoon(); }  // 20:01 - 21:01 mountain sunset (sunset: 20:37|20:16)
   else if (time >= 2102 && time <= 2300) { goodEvening();       }  // 21:02 - 23:00 mountain moon
-  else if (time >= 2301 || time <= 144 ) { upLate();            }  // 23:01 - 01:44 universe 
+  else if (time >= 2301 || time <= 144 ) { upLate();            }  // 23:01 - 01:44 universe
                                     else { insomniacs();        }  // 01:45 - 04:29 universe imposing clock
-} 
+}
 if        (month == "August") {                                    // August [done]
-  if      (time >= 430 && time <=  501 ) { upEarly();           }  // 04:30 - 05:01 vector - sillouhette sunburst 
+  if      (time >= 430 && time <=  501 ) { upEarly();           }  // 04:30 - 05:01 vector - sillouhette sunburst
   else if (time >= 502 && time <=  549 ) { preMorning();        }  // 05:02 - 05:49 lavender field
   else if (time >= 550 && time <=  650 ) { goodMorning();       }  // 05:50 - 06:50 orange sunrise (sunrise: 05:50 - 06:50)
   else if (time >= 651 && time <=  1030) { goodLateMorning();   }  // 06:51 - 10:30 snow tracks
   else if (time >= 1031 && time <= 1919) { goodAfternoon();     }  // 10:31 - 19:19 sun sky
   else if (time >= 1920 && time <= 2030) { goodLateAfternoon(); }  // 19:20 - 20:30 mountain sunset (sunset: 19:20 - 20:30)
   else if (time >= 2031 && time <= 2200) { goodEvening();       }  // 20:31 - 22:00 mountain moon
-  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe 
+  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe
                                     else { insomniacs();        }  // 01:45 - 04:29 universe imposing clock
-} 
+}
 if        (month == "September") {                                 // September [done]
-  if      (time >= 440 && time <=  549 ) { upEarly();           }  // 04:40 - 05:49 vector - sillouhette sunburst 
+  if      (time >= 440 && time <=  549 ) { upEarly();           }  // 04:40 - 05:49 vector - sillouhette sunburst
   else if (time >= 550 && time <=  609 ) { preMorning();        }  // 05:50 - 06:09 lavender field
   else if (time >= 610 && time <=  710 ) { goodMorning();       }  // 06:10 - 07:10 orange sunrise (sunrise: 06:10|07:10)
   else if (time >= 711 && time <=  1030) { goodLateMorning();   }  // 07:11 - 10:30 snow tracks
   else if (time >= 1031 && time <= 1824) { goodAfternoon();     }  // 10:31 - 18:24 sun sky
   else if (time >= 1825 && time <= 1945) { goodLateAfternoon(); }  // 18:25 - 19:45 mountain sunset (sunset: 06:25|07:45)
   else if (time >= 1946 && time <= 2200) { goodEvening();       }  // 19:46 - 22:00 mountain moon
-  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe 
+  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe
                                     else { insomniacs();        }  // 01:45 - 04:39 universe imposing clock
-} 
+}
 if        (month == "October") {                                   // October [done]
-  if      (time >= 450 && time <=  546 ) { upEarly();           }  // 04:50 - 05:46 vector - sillouhette sunburst 
+  if      (time >= 450 && time <=  546 ) { upEarly();           }  // 04:50 - 05:46 vector - sillouhette sunburst
   else if (time >= 547 && time <=  629 ) { preMorning();        }  // 05:47 - 06:29 lavender field
   else if (time >= 630 && time <=  745 ) { goodMorning();       }  // 06:30 - 07:45 orange sunrise (sunrise: 06:57|07:28)
   else if (time >= 746 && time <=  1030) { goodLateMorning();   }  // 07:46 - 10:30 snow tracks
   else if (time >= 1031 && time <= 1749) { goodAfternoon();     }  // 10:31 - 17:49 sun sky
   else if (time >= 1750 && time <= 1905) { goodLateAfternoon(); }  // 17:50 - 19:05 mountain sunset (sunset: 18:45|18:02)
   else if (time >= 1906 && time <= 2200) { goodEvening();       }  // 19:06 - 22:00 mountain moon
-  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe 
+  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe
                                     else { insomniacs();        }  // 01:45 - 04:49 universe imposing clock
-} 
+}
 
 
 if        (month == "November" && day <= 4) {                      // November 5, 2017 (DST) [done]
-  if      (time >= 500 && time <=  600 ) { upEarly();           }  // 05:00 - 06:00 vector - sillouhette sunburst 
+  if      (time >= 500 && time <=  600 ) { upEarly();           }  // 05:00 - 06:00 vector - sillouhette sunburst
   else if (time >= 601 && time <=  715 ) { preMorning();        }  // 06:01 - 07:15 lavender field
   else if (time >= 716 && time <=  845 ) { goodMorning();       }  // 07:16 - 08:45 orange sunrise (sunrise: 07:30 on 11.01.17)
   else if (time >= 846 && time <=  1100) { goodLateMorning();   }  // 08:46 - 11:00 snow tracks    (     ^^: 07:33 on 11.04.17)
   else if (time >= 1101 && time <= 1740) { goodAfternoon();     }  // 11:01 - 17:40 sun sky
   else if (time >= 1741 && time <= 1841) { goodLateAfternoon(); }  // 17:41 - 18:41 mountain sunset (sunset: 18:00 on 11.01.17)
   else if (time >= 1842 && time <= 2200) { goodEvening();       }  // 18:42 - 22:00 mountain moon   (    ^^: 17:57 on 11.04.17)
-  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe 
+  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe
                                     else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
 } else {
-  if      (time >= 500 && time <=  600 ) { upEarly();           }  // 05:00 - 06:00 vector - sillouhette sunburst 
+  if      (time >= 500 && time <=  600 ) { upEarly();           }  // 05:00 - 06:00 vector - sillouhette sunburst
   else if (time >= 601 && time <=  628 ) { preMorning();        }  // 06:01 - 06:28 lavender field
   else if (time >= 629 && time <=  805 ) { goodMorning();       }  // 06:29 - 08:05 orange sunrise (sunrise: 06:34 on 11.05.17)
   else if (time >= 806 && time <=  1100) { goodLateMorning();   }  // 08:06 - 11:00 snow tracks    (     ^^: 07:02 on 11.30.17)
   else if (time >= 1101 && time <= 1559) { goodAfternoon();     }  // 11:01 - 15:59 sun sky
   else if (time >= 1600 && time <= 1715) { goodLateAfternoon(); }  // 16:00 - 17:15 mountain sunset (sunset: 16:56 on 11.05.17)
   else if (time >= 1716 && time <= 2200) { goodEvening();       }  // 17:16 - 22:00 mountain moon   (    ^^: 16:38 on 11.30.17)
-  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe 
-                                    else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock  
-} 
+  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe
+                                    else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
+}
 
 
 if        (month == "December") {                                  // December [done]
-  if      (time >= 500 && time <=  558 ) { upEarly();           }  // 05:00 - 05:58 vector - sillouhette sunburst 
+  if      (time >= 500 && time <=  558 ) { upEarly();           }  // 05:00 - 05:58 vector - sillouhette sunburst
   else if (time >= 559 && time <=  705 ) { preMorning();        }  // 05:59 - 07:05 lavender field
   else if (time >= 706 && time <=  750 ) { goodMorning();       }  // 07:06 - 07:50 orange sunrise (sunrise: 07:03|07:22)
   else if (time >= 751 && time <=  1030) { goodLateMorning();   }  // 07:581 - 10:30 snow tracks
   else if (time >= 1031 && time <= 1605) { goodAfternoon();     }  // 10:31 - 16:19 sun sky
   else if (time >= 1606 && time <= 1715) { goodLateAfternoon(); }  // 16:20 - 17:15 mountain sunset (sunset: 04:38|16:46)
   else if (time >= 1716 && time <= 2200) { goodEvening();       }  // 17:16 - 22:00 mountain moon
-  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe 
+  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe
                                     else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
-} 
+}
 
 
 // --------------------  End Greeting & Background  ---------------------------------- //
-   
+
 
 
 
@@ -1974,12 +1974,12 @@ $(function() {
   var isTouch = 'ontouchstart' in document.documentElement;
   var wheight = $( window ).height(); //get the height of the window
 
-  $('.fullheight').css('height', wheight); //set to window tallness 
+  $('.fullheight').css('height', wheight); //set to window tallness
 
   //adjust height of .fullheight elements on window resize
   $( window ).resize(function() {
     var wheight = $( window ).height();
-    $('.fullheight').css('height', wheight); //set to window tallness 
+    $('.fullheight').css('height', wheight); //set to window tallness
   });
 
   //Set up ScrollMagic
@@ -2018,7 +2018,7 @@ $(function() {
 
 if (!isTouch) {
   var roomtween = TweenMax.staggerFromTo(
-    "#div-two .scene-content", 
+    "#div-two .scene-content",
     1, roomOrigin, roomDest );
 
   var pin = new ScrollScene({
@@ -2029,7 +2029,7 @@ if (!isTouch) {
   .setTween(roomtween).addTo(controller);
 
   var roomtween = TweenMax.staggerFromTo(
-    "#div-three .scene-content", 
+    "#div-three .scene-content",
     1, roomOrigin, roomDest );
 
   var pin = new ScrollScene({
@@ -2041,7 +2041,7 @@ if (!isTouch) {
 
 
   var roomtween = TweenMax.staggerFromTo(
-    "#div-four .content", 
+    "#div-four .content",
     1, roomOrigin, roomDest );
 
   var pin = new ScrollScene({
@@ -2068,12 +2068,12 @@ if (!isTouch) {
         return false;
       }
     }
-  }); 
+  });
 
   //highlight item on scroll
 
   $(window).scroll(function(){
-    var windowpos = $(window).scrollTop()+topoffset+150; 
+    var windowpos = $(window).scrollTop()+topoffset+150;
     // added 100 so active-nav would trigger before next div had to get to
     // top:0 but yet still allow the nav to position at top:0 when
     // navigating between divs
@@ -2143,17 +2143,17 @@ var actualSize = 0;
 var isIE = false;
 
 $(document).ready(function(){
-  
+
   if (!$.support.leadingWhitespace) { isIE = true }
-  
+
   // alert('this is working');
   checkBrowserSize();
   setInterval('checkBrowserSize()',100);
-  
+
   $('a.mobile_menu').on('click',function(){
     var navHeight = $('nav').height();
     var newNavHeight = $('nav div').height();
-    
+
     if(navHeight == 0){
       $('nav').animate({'height':newNavHeight+'px', 'margin-top':'0'},500);
       $(this).addClass('selected');
@@ -2166,11 +2166,11 @@ $(document).ready(function(){
   $('a.mobile_menu2').on('click',function(){
     var navHeight = $('nav').height();
     var newNavHeight = $('nav div').height();
-    
+
     if(navHeight != 0){
       // $('nav').animate({'height':newNavHeight+'px'},500);
       // $(this).addClass('selected');
-    
+
       $('nav').animate({'height':'0px', 'margin-top': '-10px'},500);
       $('a.mobile_menu').removeClass('selected');
     }
@@ -2179,17 +2179,17 @@ $(document).ready(function(){
 
 
 function checkBrowserSize(){
-  
+
   if(isIE){
     windowWidth = $('body').width() + 33;
     } else {
       windowWidth = window.outerWidth;
       }
-  
+
   var contentWidth = $('body').width();
   var sizeDiff = windowWidth - contentWidth;
   actualSize = windowWidth - sizeDiff;
-  
+
   if(actualSize > 583){ newWindowSize = 'large'; }
   if(actualSize <= 583){ newWindowSize = 'small'; }
   // actualSize needs to account for the scrollbar
@@ -2198,29 +2198,29 @@ function checkBrowserSize(){
   if(windowSize != newWindowSize){
     windowSize = newWindowSize;
     loadNav();
-    } 
-    
+    }
+
 }
 
-function loadNav(){ 
+function loadNav(){
 if(windowSize == 'large') {
   $('nav').css('height','auto');
-  $('nav').css('margin-top','0px');  
+  $('nav').css('margin-top','0px');
 }
 if(windowSize == 'small') {
   if(actualSize <= 583){
-    
+
     if(isIE){
       $('nav').css('height','0px');
-      $('nav').css('margin-top','-10px'); 
+      $('nav').css('margin-top','-10px');
       // $('nav').css('height','auto');
       } else {
         $('nav').css('height','0px');
         $('nav').css('margin-top','-10px');
-        } 
+        }
   }
   $('a.mobile_menu').removeClass('selected');
-}   
+}
 }
 
 
@@ -2263,7 +2263,7 @@ $("#div-four").backstretch([
 "_images/flex-01.jpg",
 "_images/flex-02.jpg",
 "_images/flex-03.jpg",
-//"_images/flex-04.jpg"    
+//"_images/flex-04.jpg"
 ], {duration: 4000,
   fade: 4000});
 // end backstretch -----------------
@@ -2280,7 +2280,7 @@ $('.flexslider').flexslider({
 });
 $('.flexslider_process').flexslider({
   animation: "slide",
-  slideshow: false, 
+  slideshow: false,
   controlNav: "thumbnails"
 });
 });
