@@ -1802,15 +1802,15 @@ var time = "" + hours + minutes;
 // http://www.sunrisesunset.com/usa/Colorado/Evergreen.asp - sunrise/sunset calendar
 
 if        (month == "January") {                                   // January [done]
-  if      (time >= 500 && time <=  559 ) { upEarly();           }  // 05:00 - 05:59 vector - sillouhette sunburst
-  else if (time >= 600 && time <=  654 ) { preMorning();        }  // 06:00 - 06:54 lavender field
-  else if (time >= 655 && time <=  745 ) { goodMorning();       }  // 06:55 - 07:45 orange sunrise (sunrise: 07:22|07:10)
-  else if (time >= 746 && time <=  1030) { goodLateMorning();   }  // 07:46 - 10:30 snow tracks
-  else if (time >= 1031 && time <= 1635) { goodAfternoon();     }  // 10:31 - 16:35 sun sky
-  else if (time >= 1636 && time <= 1745) { goodLateAfternoon(); }  // 16:36 - 17:45 mountain sunset (sunset: 16:47|17:19)
-  else if (time >= 1746 && time <= 2200) { goodEvening();       }  // 17:46 - 22:00 mountain moon
-  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe
-                                    else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
+  if      (time >= 500  && time <=  559 ) { upEarly();           }  // 05:00 - 05:59 vector - sillouhette sunburst
+  else if (time >= 600  && time <=  654 ) { preMorning();        }  // 06:00 - 06:54 lavender field
+  else if (time >= 655  && time <=  745 ) { goodMorning();       }  // 06:55 - 07:45 orange sunrise (sunrise: 07:22|07:10)
+  else if (time >= 746  && time <=  1030) { goodLateMorning();   }  // 07:46 - 10:30 snow tracks
+  else if (time >= 1031 && time <=  1633) { goodAfternoon();     }  // 10:31 - 16:35 sun sky
+  else if (time >= 1634 && time <=  1745) { goodLateAfternoon(); }  // 16:36 - 17:45 mountain sunset (sunset: 16:47|17:19)
+  else if (time >= 1746 && time <=  2200) { goodEvening();       }  // 17:46 - 22:00 mountain moon
+  else if (time >= 2201 || time <=  144 ) { upLate();            }  // 22:01 - 01:44 universe
+                                     else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
 }
 if        (month == "February") {                                  // February [done]
   if      (time >= 500 && time <=  559 ) { upEarly();           }  // 05:00 - 05:59 vector - sillouhette sunburst

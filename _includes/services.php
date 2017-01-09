@@ -33,6 +33,7 @@
               </ul>
               </div>
 
+              <p>Visit our <a href="http://store.evergreenwebdesign.com">Storefront</a> for a complete selection of all our discounted domain products. </p>
               <p><span class="reseller">*</span> Evergreen Web Design is an authorized GoDaddy Reseller. You can buy GoDaddy products through us for less. Exact same products, same support, same dependability, less money.</p>
 
           <div class="container">
@@ -52,7 +53,7 @@
             <div class="expand">
               <p>Pricing options are available to suit virtually every budget and project. Let's discuss your idea and outline a plan that works for you.</p>
 
-              <p>Discounted pricing for domain names, hosting, etc. can be found through our <a href="#">GoDaddy Reseller portal</a>.</p>
+              <p>Discounted pricing for domain names, hosting, etc. can be found through our <a href="http://store.evergreenwebdesign.com">GoDaddy Reseller portal</a>.</p>
             </div><!-- .expand !-->
           </div><!-- #container2 -->
 
