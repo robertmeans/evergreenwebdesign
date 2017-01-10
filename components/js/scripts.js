@@ -1835,7 +1835,8 @@ if        (month == "March" && day <= 11) {                        // March 12, 
   else if (time >= 1842 && time <= 2200) { goodEvening();       }  // 18:42 - 22:00 mountain moon   (    ^^: 18:03 on 03.11.17)
   else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe
                                     else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
-} else {
+}
+if        (month == "March" && day > 11) {
   if      (time >= 500 && time <=  555 ) { upEarly();           }  // 05:00 - 05:55 vector - sillouhette sunburst
   else if (time >= 556 && time <=  620 ) { preMorning();        }  // 05:56 - 06:20 lavender field
   else if (time >= 621 && time <=  740 ) { goodMorning();       }  // 06:21 - 07:40 orange sunrise (sunrise: 07:18 on 03.12.17)
@@ -1937,7 +1938,8 @@ if        (month == "November" && day <= 4) {                      // November 5
   else if (time >= 1842 && time <= 2200) { goodEvening();       }  // 18:42 - 22:00 mountain moon   (    ^^: 17:57 on 11.04.17)
   else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe
                                     else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
-} else {
+}
+if        (month == "November" && day > 4) {
   if      (time >= 500 && time <=  600 ) { upEarly();           }  // 05:00 - 06:00 vector - sillouhette sunburst
   else if (time >= 601 && time <=  628 ) { preMorning();        }  // 06:01 - 06:28 lavender field
   else if (time >= 629 && time <=  805 ) { goodMorning();       }  // 06:29 - 08:05 orange sunrise (sunrise: 06:34 on 11.05.17)
