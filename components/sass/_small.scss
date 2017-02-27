@@ -43,15 +43,6 @@
 	background-image: url(../_images/fish_small.png);
 }
 #clockid {	
-	background: rgba(208,228,247,.4);
-	background: -moz-radial-gradient(center, ellipse cover,  rgba(208,228,247,.4) 0%, rgba(115,177,231,.4) 24%, rgba(10,119,213,.4) 50%, rgba(83,159,225,.4) 79%, rgba(135,188,234,.4) 100%);
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(208,228,247,.4)), color-stop(24%,rgba(115,177,231,.4)), color-stop(50%,rgba(10,119,213,.4)), color-stop(79%,rgba(83,159,225,.4)), color-stop(100%,rgba(135,188,234,.4)));
-	background: -webkit-radial-gradient(center, ellipse cover,  rgba(208,228,247,.4) 0%,rgba(115,177,231,.4) 24%,rgba(10,119,213,.4) 50%,rgba(83,159,225,.4) 79%,rgba(135,188,234,.4) 100%);
-	background: -o-radial-gradient(center, ellipse cover,  rgba(208,228,247,.4) 0%,rgba(115,177,231,.4) 24%,rgba(10,119,213,.4) 50%,rgba(83,159,225,.4) 79%,rgba(135,188,234,.4) 100%);
-	background: -ms-radial-gradient(center, ellipse cover,  rgba(208,228,247,.4) 0%,rgba(115,177,231,.4) 24%,rgba(10,119,213,.4) 50%,rgba(83,159,225,.4) 79%,rgba(135,188,234,.4) 100%);
-	background: radial-gradient(ellipse at center,  rgba(208,228,247,.4) 0%,rgba(115,177,231,.4) 24%,rgba(10,119,213,.4) 50%,rgba(83,159,225,.4) 79%,rgba(135,188,234,.4) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=1 );
-
 	border-radius: 50%;
 	display: block;
 	float: left;
@@ -59,7 +50,7 @@
 	// position: fixed;
 	margin: -90px 0 0 -20px;
 }
-.text-box { // more styles as screen gets smaller at bottom of this media query
+#text-box { // more styles as screen gets smaller at bottom of this media query
 	position: relative;
 	font-size: 1em;
 	box-sizing: border-box;
@@ -67,7 +58,6 @@
 	border: 1px solid #fff;
 	height: auto;
 	width: 96%;
-	background: rgba(12, 37, 145, .3);
 	padding: 15px;
 
 	// -webkit-box-shadow: -8px 10px 16px 0px rgba(86,93,173,1);
@@ -561,13 +551,13 @@ ul.staticsites li:last-child {
     // -o-background-size: cover;
 
 }
-.text-box { 
+#text-box { 
 	margin: 80px auto 0px auto;
 }
 #my-name {
 	top: 50%;	
 	}
-.website-solutions-badge {
+#website-solutions-badge {
 	max-width: 150px;
 	color: #fff;
 	margin: 15px auto 0px auto;

@@ -30,7 +30,7 @@
 
     <input type='text'  class='spmhidip' name='<?php echo $formproc->GetSpamTrapInputName(); ?>' />
 
-    <div class='short_explanation'><i class="fa fa-phone-square"></i> <a class="tel" tabIndex="-1" href="tel:(720)%20319-8316">720.319.8316</a><br>
+    <div class='short_explanation'><i class="fa fa-phone-square"></i> <a class="tel" tabIndex="-1" href="tel:(720)%20504-6323">720.504.6323</a><br>
 
     <i class="fa fa-envelope-o"></i> <a href="mailto:robert@evergreenwebdesign.com">robert@evergreenwebdesign.com</a></div>
 

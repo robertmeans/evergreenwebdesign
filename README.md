@@ -1,4 +1,4 @@
-# Robert Means - Website Solutions
-### DBA - Evergreen Web Design
+# Evergreen Web Design
+### Robert Means
 New Website April 12, 2015
 Just acquired domain name over weekend

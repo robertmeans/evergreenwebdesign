@@ -32,7 +32,7 @@ CoolClock.config = {
 			outerBorder:      { lineWidth: 1, radius: 99, color: "#fff", alpha: 1 }, // stroke
 			smallIndicator:   { lineWidth: 1, startAt: 10, endAt: 50 , color: "#1C304A", alpha: .8 }, // seconds
 
-			largeIndicator:   { lineWidth: 7, radius: 3.5, startAt: 65, endAt: 70, color: "#fff", alpha: .5 }, // hours
+			largeIndicator:   { lineWidth: 7, radius: 3.5, startAt: 65, endAt: 70, color: "#fff", alpha: .7 }, // hours
 
 			hourHand:         { lineWidth: 5, startAt: -15, endAt: 60, color: "black", alpha: 0.7 }, 
 			minuteHand:       { lineWidth: 3, startAt: -25, endAt: 75, color: "black", alpha: 0.7 },
