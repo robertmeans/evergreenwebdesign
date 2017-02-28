@@ -72,7 +72,7 @@
 
 
 
-<div id="products">
+<!-- <div id="products">
   <div id="product-titles">
        <span class="ewd-product-titles">Essentials</span>
        <span class="ewd-product-titles">Websites</span>
@@ -108,11 +108,41 @@
       <span class="ewd-product-desc">HTML5, CSS3, JavaScript &apm; PHP ensure your site is running on the most current, stable platform...</span>
       <span class="ewd-product-desc">We have packages available to service any size needs from managing social campaigns across Twitter, Facebook and Google+ to writing new content and updating WordPress.</span>
   </div>
-</div><!-- #products -->
+</div> -->
 
 
 
+<div id="product-container">
+  <div class="product-box">
+    <h1 class="product-item">Essentials</h1>
+    <ul class="product-list">
+      <li>Domain Names</li>
+      <li>Hosting</li>
+      <li>SSL Certificates</li>
+    </ul>
+    <p class="product-desc">Evergreen Web Design is a Certified GoDaddy Reseller. That means we can provide the exact same servivces for less.</p>
+  </div>
 
+  <div class="product-box">
+    <h1 class="product-item">Websites</h1>
+    <ul class="product-list">
+      <li>Concept</li>
+      <li>Design</li>
+      <li>Development</li>
+    </ul>
+    <p class="product-desc">HMTL5, CSS3, JavaScript &amp; PHP ensure your site is running on the most current, stable platform and ready to manage your content within the current specifications.</p>
+  </div>    
+
+  <div class="product-box">
+    <h1 class="product-item">Campaigns</h1>
+    <ul class="product-list">
+      <li>SEO</li>
+      <li>Social Media</li>
+      <li>Content Management</li>
+    </ul>
+    <p class="product-desc">We have packages available to service any size needs from managing social campaigns across Twitter, Facebook and Google+ to writing new content and updating WordPress.</p> 
+  </div>      
+</div><!-- #product-container -->
 
 
 

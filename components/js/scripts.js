@@ -1441,7 +1441,7 @@ window.requestAnimationFrame = window.requestAnimationFrame
 || function(f){setTimeout(f, 1000/60)}
 
 var branding = document.getElementById('branding')
-var products = document.getElementById('products')
+var productContainer = document.getElementById('product-container')
 var badge = document.getElementById('badge')
 // var bubble2 = document.getElementById('bubbles2')
 // var fish = document.getElementById('fish')
@@ -1456,7 +1456,7 @@ function parallaxthis(){
 
   // next line needs amount adjusted so that it will be out of the way when the next scene is visible so the links will be accessible and not under the scene-one layer
   branding.style.top = -scrolltop * .42 + 'px' // move scene-one at .42% of scroll speed  
-  products.style.top = -scrolltop * .98 + 'px' // move scene-one at .42% of scroll speed
+  productContainer.style.top = -scrolltop * .98 + 'px' // move scene-one at .42% of scroll speed
   badge.style.top = -scrolltop * 1.4 + 'px' // move scene-one at .42% of scroll speed
 
   // bubble2.style.top = scrolltop * .38 + 'px' // move bubble2 at 50% of scroll speed
