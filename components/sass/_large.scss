@@ -1,14 +1,11 @@
-#fish {
-	left: -100%;
-	background: url(../_images/fish.png) right 90% no-repeat;
-}
+
 #bg-div-one {
 	position: fixed;
 	top: -50%;
 	left: -50%;
 	width: 200%;
 	height: 200%;
-	z-index: -1;
+	// z-index: -1;
 	img {
 		position: absolute;
 		top: 0;
@@ -20,26 +17,28 @@
 		min-height: 50%;
 	}
 }
-#div-one {
+
+#div-one-container {
 // welcome screen
 	height: 1080px;
-	// background: #6d94e1 url(../_images/sky.jpg) no-repeat center center fixed;
-
-	// background-size: cover;
-	// -webkit-background-size: cover;
-    // -moz-background-size: cover;
-    // -o-background-size: cover;
-
-    // background-attachment: fixed;
-    // -webkit-background-attachment: fixed;
-	// -moz-background-attachment: fixed;
-	// -o-background-attachment: fixed;
-
+	background: #6d94e1 url(../_images/day-sky-01.jpg) no-repeat center center fixed;
+	background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+}
+#div-one {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 #div-two {
 // tabs - services - websites - video
-	// z-index: 5;
 	height: auto;
 	min-height: 680px;
 	padding-bottom: 100px;
@@ -60,9 +59,10 @@
 	height: auto;
 	min-height: 700px;
 	padding-top: 10px;
-
-	// background: #6d94e1 url(../_images/colorado-flag.gif) top center no-repeat fixed;
-  	// background-size: cover;
+	padding-bottom: 30px;
+	background: #6d94e1 url(../_images/day-sky-01.jpg) no-repeat center center fixed;
+	background-size: cover;
+    background-attachment: fixed;
 	.scene-content {
 		max-width: 200px;
 		margin: 0 auto;
@@ -83,58 +83,166 @@
 // Mt Harvard with kids
 	height: 600px;
 	background-image: url(../_images/mt-harvard.jpg);
-	// background-size: cover;
-	// -webkit-background-size: cover;
-    // -moz-background-size: cover;
-    // -o-background-size: cover;
-	.scene-content {
-		// max-width: 400px;
-		// margin: 10% 10% 0 0;
-		// float: right;
-	}
-}
-#clockScene {
-	width: 100%;
-	height: 980px;
-	top: 0;
-	left: 0;
-
-	// commented out fixed below
-	// and it seems NOT to render
-	// when visitor is scrolled
-	// down the screen now...?
-	// position: fixed;
-	position: relative;
 }
 
-#text-box {
-	position: relative;
-	font-size: 1.1em;
-	box-sizing: border-box;
-	margin: 10% auto 0 auto;
-	width: 750px;
-	border: 1px solid #fff;
-	height: 326px;
-	color: #fff;
-	padding: 20px;
-	// border-radius: 10px;
-	h3 {
-		font-family: 'Exo 2', Ubuntu, Tahoma, Arial, sans-serif;
-		font-weight: bold;
-		line-height: 1em;
+
+div#branding {
+	display: block;
+	position: relative; // for parallax
+	z-index: 50;
+	width: 90%;
+	max-width: 1200px;
+	p.business-title {
+		font-family: 'Exo 2', Helvetica, Arial, sans-serif;
+		font-size: 3.5em;
+		line-height: 0em;
+		font-weight: 800;
 		color: #fff;
-		font-size: 1.5em;
-		margin: 3.5% 0 1em 20px;
+		text-shadow: -2px 3px 6px rgba(0,0,0,0.5);
 	}
-	p {
-		margin-left: 400px;
-		// text-shadow: -1px 1px 30px #0e3e7f;
+	img.ewd-logo {
+		z-index: 52;
+		position: absolute;
+		right: 0px;
+		top: -20px;
+	}
+	p.tagline {
+		font-family: 'Ubuntu', Helvetica, sans-serif;
+		font-weight: 700;
+		color: #4c4c4c;
+		font-size: 1.8em;
+		line-height: 0em;
+		margin-top: -10px;
 	}
 }
-.text-box-default {
-// see _now-color-scheme.scss
-// .text-box-default
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#products {
+	position: relative; // parallax
+	box-sizing: border-box;
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
 }
+#product-titles,
+#product-items,
+#product-desc {
+	display: flex;
+	// justify-content: space-between;
+	// width: 90%;
+	// max-width: 1200px;
+	// margin: 0 auto;
+	.ewd-product-titles,
+	.ewd-product-items,
+	.ewd-product-desc {
+		&:nth-child(2) {
+		margin: 0px 1%;
+	}
+	}
+}
+
+#product-titles {
+	.ewd-product-titles {
+		width: 32%;
+		padding: 15px;
+		color: #fff;
+		font-size: 2em;
+		text-align: center;
+		&:nth-child(1) { 
+			background-color: rgba(12,95,153,1); 
+			border-top: 1px solid #3dabf8;
+			border-right: 1px solid #3dabf8;
+			border-left: 1px solid #3dabf8; 
+		}
+		&:nth-child(2) { 
+			background-color: rgba(80,191,161,1); 
+			border-top: 1px solid #79f3d2;
+			border-right: 1px solid #79f3d2;
+			border-left: 1px solid #79f3d2; 
+		}
+		&:nth-child(3) { 
+			background-color: rgba(117,110,19,1); 
+			border-top: 1px solid #d6da2c;
+			border-right: 1px solid #d6da2c;
+			border-left: 1px solid #d6da2c; 
+		}
+	}
+}
+.ewd-product-items {
+	width: 30%;
+	padding: 15px;
+	background-color: rgba(0,0,0,0.6);
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	ul li {
+		display: block;
+		line-height: 1.4em;
+		margin-left: 30px;
+		font-size: 1.4em;
+		color: #fff;
+	}
+}
+.ewd-product-desc {
+	width: 30%;
+	background-color: rgba(255,255,255,0.4);
+	color: #333;
+	font-size: 1em;
+	padding: 15px;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	border-left: 1px solid #fff;
+}
+
+
+
+
+
+#badge {
+	position: relative;
+	.badge-box {
+		width: 100%;
+		display: block;
+		text-align: center;
+		margin: 20px auto 0px auto;
+		background-color: rgba(12,95,153,0.5);
+		max-width: 200px;
+		color: #fff;
+		padding: 15px 20px;
+		border: 2px solid #fff;
+		border-radius: 12px;
+		text-transform: capitalize;
+
+		h2 {
+			font-size: 1.3em;
+			line-height: 1.2em;
+			color: #fff;
+		}
+		h4 {
+			font-size: .8em;
+			line-height: 1.4em;
+		}
+	}
+}
+
+
+
 @media screen and (max-width: 600px) {
 	.text-box-default {
 		background: rgba(28,119,181,.6);
@@ -158,29 +266,7 @@
 // clockid-default
 }
 
-#website-solutions-badge {
-	max-width: 200px;
-	color: #fff;
-	margin: 25px auto 0px auto;
-	padding: 15px 20px;
-	border: 2px solid #fff;
-	border-radius: 12px;
-	text-transform: capitalize;
-	// background: rgba(0,0,0,.5);
-	h2 {
-		font-size: 1.3em;
-		line-height: 1.2em;
-		color: #fff;
-	}
-	h4 {
-		font-size: .8em;
-		line-height: 1.4em;
-	}
-}
-.website-solutions-badge-default {
-// see _now-color-scheme.scss
-// .website-solutions-badge-default
-}
+
 
 .hmpg-contact {
 	color: #fff;
@@ -190,31 +276,7 @@
 		text-decoration: none;
 	}
 }
-#nameScene {
-	width: 100%;
-	position: relative;
-}
-#EWD {
-	position: relative;
-	width: 100%;
-	display: inline-block;
-	text-align: center;
-	margin: -45px auto 0px auto;
-	.title-text {
-		// font-family: 'Prosto One', 'Exo 2', Helvetica, Arial, sans-serif;
-		font-family: 'Exo 2', Helvetica, Arial, sans-serif;
-		font-size: 4.5em;
 
-		-webkit-transition: font-size 1.75s ease;
-		-moz-transition: font-size 1.75s ease;
-		-o-transition: font-size 1.75s ease;
-		transition: font-size 1.75s ease;
-		font-weight: 800;
-		text-transform: capitalize;
-		color: #fff;
-		text-shadow: -2px 3px 6px rgba(0, 0, 0, 0.5);
-	}
-}
 
 .back-to-top {
 	display: none;

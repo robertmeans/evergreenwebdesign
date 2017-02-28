@@ -17,7 +17,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta name="description" content="Evergreen Web Design is a full-service Internet marketing firm offering custom solutions to virtually any marketing project.">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="_scripts/coolclock-breakpoints.js?<?php echo time(); ?>"></script>
+
   <script src="_scripts/modernizr.js?<?php echo time(); ?>"></script>
   <link rel="stylesheet" href="_css/style.css?<?php echo time(); ?>">
 
@@ -56,38 +56,78 @@
   </div>
 </nav>
 
-<div id="bg-div-one">
-  <span id="greeting_bkg"></span>
-  <noscript><img src="_images/sky.jpg" alt="blue sky"></noscript>
-</div>
-<section id="div-one">
 
-<div id="clockScene">
-  <div id="text-box" class="text-box-default cf">
-  <canvas id="clockid" class="CoolClock clockid-default"></canvas>
 
-  <h3>
-    <span id="greeting"></span>
-      <noscript>Hello,</noscript>
-    </h3>
+<section id="div-one-container">
 
-    <p><span id="now"></span><noscript>Now</noscript> is the perfect time to <a class="hmpg-contact" href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");'>contact Evergreen Web Design</a> and consult a professional about your online goals.</p>
-    <p>With options to suit your vision, budget and deadline, we can start a tailored solution for you right now!</p>
+<div id="div-one">
 
+<div id="branding">
+  <div id="title">
+    <p class="business-title">Evergreen Web Design<img class="ewd-logo" src="_images/Evergreen-Web-Design-Logo_bw.png" alt="Evergreen Web Design logo"></p>
+    <p class="tagline">Developing your vision for the future</p>
+  </div>
+</div><!-- #branding -->
+
+
+
+
+<div id="products">
+  <div id="product-titles">
+       <span class="ewd-product-titles">Essentials</span>
+       <span class="ewd-product-titles">Websites</span>
+       <span class="ewd-product-titles">Campaigns</span> 
   </div>
 
-  <article id="nameScene">
-    <div id="EWD">
-      <span class="title-text">Evergreen Web<br class="gone"> Design</span>
-      <div id="website-solutions-badge" class="website-solutions-badge-default">
-        <h2>Website Solutions</h2>
-        <h4>Evergreen, Colorado</h4>
-        </div>
-      <div id="scrollDownSprite"><a href="#div-two" class="no-active-nav"></a></div>
-    </div><!-- name -->
-  </article>
+  <div id="product-items">
+      <span class="ewd-product-items">
+        <ul>
+          <li>Domain Names</li>
+          <li>Hosting</li>
+          <li>SSL Certificates</li>
+        </ul>
+      </span>
+      <span class="ewd-product-items">
+        <ul>
+          <li>Concept</li>
+          <li>Design</li>
+          <li>Development</li>
+        </ul>
+      </span>
+      <span class="ewd-product-items">
+        <ul>
+          <li>SEO</li>
+          <li>Social Media</li>
+          <li>Content Management</li>
+        </ul>
+      </span>
+  </div>
 
-</div><!-- #clockScene -->
+  <div id="product-desc">
+      <span class="ewd-product-desc">Evergreen Web Design is a Certified GoDaddy Reseller We sell GoDaddy products...</span>
+      <span class="ewd-product-desc">HTML5, CSS3, JavaScript &apm; PHP ensure your site is running on the most current, stable platform...</span>
+      <span class="ewd-product-desc">We have packages available to service any size needs from managing social campaigns across Twitter, Facebook and Google+ to writing new content and updating WordPress.</span>
+  </div>
+</div><!-- #products -->
+
+
+
+
+
+
+
+
+    <div id="badge">
+      <span class="badge-box">
+        <h2>Website Solutions</h2>
+        <h4>Evergreen, Colorado</h4> 
+      </span>
+      <div id="scrollDownSprite"><a href="#div-two" class="no-active-nav"></a></div>
+    </div><!-- badge -->
+    
+
+
+</div>
 </section><!-- #div-one -->
 </header>
 

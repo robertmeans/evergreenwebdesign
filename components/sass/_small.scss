@@ -50,32 +50,12 @@
 	// position: fixed;
 	margin: -90px 0 0 -20px;
 }
-#text-box { // more styles as screen gets smaller at bottom of this media query
-	position: relative;
-	font-size: 1em;
-	box-sizing: border-box;
-	margin: 80px auto 0px auto;
-	border: 1px solid #fff;
-	height: auto;
-	width: 96%;
-	padding: 15px;
 
-	// -webkit-box-shadow: -8px 10px 16px 0px rgba(86,93,173,1);
-	// -moz-box-shadow: -8px 10px 16px 0px rgba(86,93,173,1);
-	// box-shadow: -8px 10px 16px 0px rgba(86,93,173,1);
 
-	h3 {
-		font-size: 1.1em;
-		line-height: 1em;
-		margin: 0px 0px 0px 105px;
-	}
-	p {
-		display: inline-block;
-		line-height: 1.4em;
-		float: left;
-		margin: 0.8em 0em 0em 1em;
-	}
-}
+
+
+
+
 #EWD {
 	position: relative;
 	margin: -15px auto;

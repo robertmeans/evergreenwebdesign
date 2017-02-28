@@ -2,7 +2,7 @@
  * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
  * http://cssreset.com
  */
-@import url("http://fonts.googleapis.com/css?family=Exo+2:200,400,600,800|Ubuntu:700");
+@import url("http://fonts.googleapis.com/css?family=Exo+2:200,400,600,800|Ubuntu:700|PT+Sans:400,700");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -3427,18 +3427,12 @@ html[xmlns] .slides {
     padding-top: 130px;
   }
 }
-#fish {
-  left: -100%;
-  background: url(../_images/fish.png) right 90% no-repeat;
-}
-
 #bg-div-one {
   position: fixed;
   top: -50%;
   left: -50%;
   width: 200%;
   height: 200%;
-  z-index: -1;
 }
 #bg-div-one img {
   position: absolute;
@@ -3451,8 +3445,36 @@ html[xmlns] .slides {
   min-height: 50%;
 }
 
-#div-one {
+#div-one-container {
   height: 1080px;
+  background: #6d94e1 url(../_images/day-sky-01.jpg) no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+#div-one {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  box-sizing: border-box;
 }
 
 #div-two {
@@ -3470,6 +3492,10 @@ html[xmlns] .slides {
   height: auto;
   min-height: 700px;
   padding-top: 10px;
+  padding-bottom: 30px;
+  background: #6d94e1 url(../_images/day-sky-01.jpg) no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
 }
 #div-three .scene-content {
   max-width: 200px;
@@ -3491,35 +3517,140 @@ html[xmlns] .slides {
   background-image: url(../_images/mt-harvard.jpg);
 }
 
-#clockScene {
-  width: 100%;
-  height: 980px;
-  top: 0;
-  left: 0;
+div#branding {
+  display: block;
   position: relative;
+  z-index: 50;
+  width: 90%;
+  max-width: 1200px;
+}
+div#branding p.business-title {
+  font-family: 'Exo 2', Helvetica, Arial, sans-serif;
+  font-size: 3.5em;
+  line-height: 0em;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: -2px 3px 6px rgba(0, 0, 0, 0.5);
+}
+div#branding img.ewd-logo {
+  z-index: 52;
+  position: absolute;
+  right: 0px;
+  top: -20px;
+}
+div#branding p.tagline {
+  font-family: 'Ubuntu', Helvetica, sans-serif;
+  font-weight: 700;
+  color: #4c4c4c;
+  font-size: 1.8em;
+  line-height: 0em;
+  margin-top: -10px;
 }
 
-#text-box {
+#products {
   position: relative;
-  font-size: 1.1em;
   box-sizing: border-box;
-  margin: 10% auto 0 auto;
-  width: 750px;
-  border: 1px solid #fff;
-  height: 326px;
-  color: #fff;
-  padding: 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-#text-box h3 {
-  font-family: 'Exo 2', Ubuntu, Tahoma, Arial, sans-serif;
-  font-weight: bold;
-  line-height: 1em;
-  color: #fff;
-  font-size: 1.5em;
-  margin: 3.5% 0 1em 20px;
+
+#product-titles,
+#product-items,
+#product-desc {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
-#text-box p {
-  margin-left: 400px;
+#product-titles .ewd-product-titles:nth-child(2),
+#product-titles .ewd-product-items:nth-child(2),
+#product-titles .ewd-product-desc:nth-child(2),
+#product-items .ewd-product-titles:nth-child(2),
+#product-items .ewd-product-items:nth-child(2),
+#product-items .ewd-product-desc:nth-child(2),
+#product-desc .ewd-product-titles:nth-child(2),
+#product-desc .ewd-product-items:nth-child(2),
+#product-desc .ewd-product-desc:nth-child(2) {
+  margin: 0px 1%;
+}
+
+#product-titles .ewd-product-titles {
+  width: 32%;
+  padding: 15px;
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+}
+#product-titles .ewd-product-titles:nth-child(1) {
+  background-color: #0c5f99;
+  border-top: 1px solid #3dabf8;
+  border-right: 1px solid #3dabf8;
+  border-left: 1px solid #3dabf8;
+}
+#product-titles .ewd-product-titles:nth-child(2) {
+  background-color: #50bfa1;
+  border-top: 1px solid #79f3d2;
+  border-right: 1px solid #79f3d2;
+  border-left: 1px solid #79f3d2;
+}
+#product-titles .ewd-product-titles:nth-child(3) {
+  background-color: #756e13;
+  border-top: 1px solid #d6da2c;
+  border-right: 1px solid #d6da2c;
+  border-left: 1px solid #d6da2c;
+}
+
+.ewd-product-items {
+  width: 30%;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+.ewd-product-items ul li {
+  display: block;
+  line-height: 1.4em;
+  margin-left: 30px;
+  font-size: 1.4em;
+  color: #fff;
+}
+
+.ewd-product-desc {
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #333;
+  font-size: 1em;
+  padding: 15px;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+
+#badge {
+  position: relative;
+}
+#badge .badge-box {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: 20px auto 0px auto;
+  background-color: rgba(12, 95, 153, 0.5);
+  max-width: 200px;
+  color: #fff;
+  padding: 15px 20px;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  text-transform: capitalize;
+}
+#badge .badge-box h2 {
+  font-size: 1.3em;
+  line-height: 1.2em;
+  color: #fff;
+}
+#badge .badge-box h4 {
+  font-size: .8em;
+  line-height: 1.4em;
 }
 
 @media screen and (max-width: 600px) {
@@ -3539,25 +3670,6 @@ html[xmlns] .slides {
   display: block;
 }
 
-#website-solutions-badge {
-  max-width: 200px;
-  color: #fff;
-  margin: 25px auto 0px auto;
-  padding: 15px 20px;
-  border: 2px solid #fff;
-  border-radius: 12px;
-  text-transform: capitalize;
-}
-#website-solutions-badge h2 {
-  font-size: 1.3em;
-  line-height: 1.2em;
-  color: #fff;
-}
-#website-solutions-badge h4 {
-  font-size: .8em;
-  line-height: 1.4em;
-}
-
 .hmpg-contact {
   color: #fff;
   text-decoration: underline;
@@ -3565,29 +3677,6 @@ html[xmlns] .slides {
 .hmpg-contact:hover {
   color: #fff;
   text-decoration: none;
-}
-
-#nameScene {
-  width: 100%;
-  position: relative;
-}
-
-#EWD {
-  position: relative;
-  width: 100%;
-  display: inline-block;
-  text-align: center;
-  margin: -45px auto 0px auto;
-}
-#EWD .title-text {
-  font-family: 'Exo 2', Helvetica, Arial, sans-serif;
-  font-size: 4.5em;
-  -webkit-transition: font-size 1.75s ease;
-  transition: font-size 1.75s ease;
-  font-weight: 800;
-  text-transform: capitalize;
-  color: #fff;
-  text-shadow: -2px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
 .back-to-top {
@@ -4371,28 +4460,6 @@ footer .copyright {
     float: left;
     clear: both;
     margin: -90px 0 0 -20px;
-  }
-
-  #text-box {
-    position: relative;
-    font-size: 1em;
-    box-sizing: border-box;
-    margin: 80px auto 0px auto;
-    border: 1px solid #fff;
-    height: auto;
-    width: 96%;
-    padding: 15px;
-  }
-  #text-box h3 {
-    font-size: 1.1em;
-    line-height: 1em;
-    margin: 0px 0px 0px 105px;
-  }
-  #text-box p {
-    display: inline-block;
-    line-height: 1.4em;
-    float: left;
-    margin: 0.8em 0em 0em 1em;
   }
 
   #EWD {
