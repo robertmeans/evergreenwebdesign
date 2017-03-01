@@ -5,7 +5,12 @@ ul.list {
 	padding: 2% 0px;
 	li {
 		margin-right: 0;
+		margin: 1%;
+		// padding: 0 1%;
 	}
+}
+.tab-content {
+	padding-right: 0;
 }
 
 
@@ -105,7 +110,7 @@ div#branding {
 	}
 	p.tagline {
 		font-family: 'Ubuntu', Helvetica, sans-serif;
-		font-weight: 700;
+		font-weight: 700;;
 		color: #4c4c4c;
 		font-size: 1.8em;
 		line-height: 0em;
@@ -141,7 +146,7 @@ div#branding {
 		div:nth-child(2) {
 			// margin: 0px 1%;
 			& > h1 {
-				background-color: rgba(80,191,161,1);
+				background-color: rgba(76,181,172,1);
 				border-top: 1px solid #79f3d2;
 				border-right: 1px solid #79f3d2;
 				border-left: 1px solid #79f3d2;
@@ -205,11 +210,11 @@ div#branding {
 			font-size: 1em;
 			padding: 15px;
 			margin: 0;
-			border-right: 1px solid #fff;
-			border-bottom: 1px solid #fff;
-			border-left: 1px solid #fff;
-			margin-bottom: -985px;
-			padding-bottom: 1000px;
+			border-right: 1px solid transparent;
+			border-bottom: 1px solid transparent;
+			border-left: 1px solid transparent;
+			margin-bottom: -85px;
+			padding-bottom: 100px;
 
 		}
 	}
@@ -224,12 +229,11 @@ div#branding {
 		text-align: center;
 		margin: 20px auto 0px auto;
 		background-color: rgba(12,95,153,0.5);
-		max-width: 200px;
+		max-width: 220px;
 		color: #fff;
 		padding: 15px 20px;
 		border: 2px solid #fff;
 		border-radius: 12px;
-		text-transform: capitalize;
 		transition: all .75s ease;
 		h2 {
 			font-size: 1.3em;
@@ -238,7 +242,8 @@ div#branding {
 		}
 		h4 {
 			font-size: .8em;
-			line-height: 1.4em;
+			line-height: 1em;
+			margin-top: 8px;
 		}
 	}
 }
@@ -278,7 +283,8 @@ div#branding {
 		box-sizing: border-box;
 		width: 90%;
 		margin: 0px auto;
-		// display: block;
+		flex-direction: column;
+		// flex-wrap: nowrap;
 			div:nth-child(1) > h1 {
 				background-color: rgba(12,95,153,1);
 				border-top: 1px solid #3dabf8;
@@ -305,8 +311,10 @@ div#branding {
 				border-left: 1px solid #d6da2c;
 			}	
 		.product-box {
-			// width: 90%;
-			// margin: 10px auto;
+			width: 90%;
+			max-width: 900px;
+			margin: 10px auto;
+			flex: 1 1 200px;
 			&:nth-of-type(1) {
 				// margin: 0px auto 10px auto;
 			}
@@ -332,18 +340,20 @@ div#branding {
 				li {
 					display: block;
 					line-height: 1.2em;
-					margin-left: 20px;
+					margin-left: 0px;
 				}
 			}
 			p.product-desc {
-				display: none;
+				margin-bottom: -40px;
+				padding-bottom: 60px;
+				// display: none;
 			}
 		}
 	}
 
 	#badge {
 		.badge-box {
-			max-width: 170px;
+			// max-width: 170px;
 			h2 {
 				font-size: 1.1em;
 				line-height: 1em;
@@ -354,12 +364,19 @@ div#branding {
 @media screen and (max-width: 600px) {
 	#div-one-container {
 		height: 900px;
+		.product-box {
+			flex: 1 1 110px;
+			margin: 5px auto;
+		}
 	}
 	div#branding {
 		margin-top: 0px;
 	}
 	#badge {
 		// top: 35px;
+		display: none;
+	}
+	p.product-desc {
 		display: none;
 	}
 }

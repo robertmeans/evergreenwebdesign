@@ -75,7 +75,7 @@
     <p class="business-title">Evergreen Web Design</p>
 
     <!-- <p class="tagline">Preparing your vision for the future</p> -->
-    <p class="tagline">Preparing your vision for the future</p>
+    <p class="tagline">Preparing your ideas for a bright future</p>
 
     <img class="ewd-logo" src="_images/Evergreen-Web-Design-Logo_bw.png" alt="Evergreen Web Design logo">
   </div>
@@ -89,7 +89,7 @@
       <li>Hosting</li>
       <li>SSL Certificates</li>
     </ul>
-    <p class="product-desc">Evergreen Web Design is a Certified GoDaddy Reseller. Buy through us! We can match any deals + you get GoDaddy's hardware and their renowned 24/7 customer support.</p>
+    <p class="product-desc">Evergreen Web Design is a Certified GoDaddy Reseller. Buy through us! We can match any deal + you get GoDaddy's hardware and their renowned 24/7 customer support.</p>
   </div>
 
   <div class="product-box">
@@ -99,7 +99,7 @@
       <li>Design</li>
       <li>Development</li>
     </ul>
-    <p class="product-desc">We like to think of our sites as efficient </p>
+    <p class="product-desc">Each project provides a unique opportunity to explore creative opportuinites and custom solutions. Find out how Evergreen Web Design can meet your specific online needs today!</p>
   </div>    
 
   <div class="product-box">
@@ -109,14 +109,16 @@
       <li>Social Media</li>
       <li>Content Management</li>
     </ul>
-    <p class="product-desc">SEO campaigns begin with a free report to identify top organic keywords and a website audit to root out shortfalls. Once the housecleaning is done we go to work.</p> 
+    <p class="product-desc">Competitive industries demand precision marketing efforts to compete for coveted keywords and keyphrases. We can identify opportunities and design a stratigic campaign tailored just for you.</p> 
   </div>      
 </div><!-- #product-container -->
 
     <div id="badge">
       <span class="badge-box">
-        <h2>Website Solutions</h2>
-        <h4>Evergreen, Colorado</h4> 
+        <!-- <h2>Website Solutions</h2>
+        <h4>Evergreen, Colorado</h4> --> 
+        <h2>Call: (303) WEBSITE</h2>
+        <h4>That's (303) 932-7483</h4>
       </span>
       <div id="scrollDownSprite"><a href="#div-two" class="no-active-nav"></a></div>
     </div><!-- badge -->

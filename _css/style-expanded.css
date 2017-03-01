@@ -5002,6 +5002,11 @@ ul.list {
 }
 ul.list li {
   margin-right: 0;
+  margin: 1%;
+}
+
+.tab-content {
+  padding-right: 0;
 }
 
 .video {
@@ -5145,7 +5150,7 @@ div#branding img.ewd-logo {
   border-left: 1px solid #3dabf8;
 }
 #product-container div:nth-child(2) > h1 {
-  background-color: #50bfa1;
+  background-color: #4cb5ac;
   border-top: 1px solid #79f3d2;
   border-right: 1px solid #79f3d2;
   border-left: 1px solid #79f3d2;
@@ -5207,11 +5212,11 @@ div#branding img.ewd-logo {
   font-size: 1em;
   padding: 15px;
   margin: 0;
-  border-right: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  border-left: 1px solid #fff;
-  margin-bottom: -985px;
-  padding-bottom: 1000px;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-left: 1px solid transparent;
+  margin-bottom: -85px;
+  padding-bottom: 100px;
 }
 
 #badge {
@@ -5223,12 +5228,11 @@ div#branding img.ewd-logo {
   text-align: center;
   margin: 20px auto 0px auto;
   background-color: rgba(12, 95, 153, 0.5);
-  max-width: 200px;
+  max-width: 220px;
   color: #fff;
   padding: 15px 20px;
   border: 2px solid #fff;
   border-radius: 12px;
-  text-transform: capitalize;
   -webkit-transition: all .75s ease;
           transition: all .75s ease;
 }
@@ -5239,7 +5243,8 @@ div#branding img.ewd-logo {
 }
 #badge .badge-box h4 {
   font-size: .8em;
-  line-height: 1.4em;
+  line-height: 1em;
+  margin-top: 8px;
 }
 
 @media screen and (max-width: 993px) {
@@ -5276,6 +5281,11 @@ div#branding img.ewd-logo {
     box-sizing: border-box;
     width: 90%;
     margin: 0px auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #product-container div:nth-child(1) > h1 {
     background-color: #0c5f99;
@@ -5294,6 +5304,15 @@ div#branding img.ewd-logo {
     border-top: 1px solid #d6da2c;
     border-right: 1px solid #d6da2c;
     border-left: 1px solid #d6da2c;
+  }
+  #product-container .product-box {
+    width: 90%;
+    max-width: 900px;
+    margin: 10px auto;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 200px;
+        -ms-flex: 1 1 200px;
+            flex: 1 1 200px;
   }
   #product-container .product-box h1.product-item {
     font-size: 1.2em;
@@ -5318,15 +5337,13 @@ div#branding img.ewd-logo {
   #product-container .product-box ul.product-list li {
     display: block;
     line-height: 1.2em;
-    margin-left: 20px;
+    margin-left: 0px;
   }
   #product-container .product-box p.product-desc {
-    display: none;
+    margin-bottom: -40px;
+    padding-bottom: 60px;
   }
 
-  #badge .badge-box {
-    max-width: 170px;
-  }
   #badge .badge-box h2 {
     font-size: 1.1em;
     line-height: 1em;
@@ -5336,12 +5353,23 @@ div#branding img.ewd-logo {
   #div-one-container {
     height: 900px;
   }
+  #div-one-container .product-box {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 110px;
+        -ms-flex: 1 1 110px;
+            flex: 1 1 110px;
+    margin: 5px auto;
+  }
 
   div#branding {
     margin-top: 0px;
   }
 
   #badge {
+    display: none;
+  }
+
+  p.product-desc {
     display: none;
   }
 }

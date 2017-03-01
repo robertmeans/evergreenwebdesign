@@ -10,7 +10,7 @@
       <h3>Robert Means<span class="about-gone">,</span> <br class="large-screen-gone">Developer</h3>
       <!-- <h2>PHP, HTML5, CSS3, jQuery, Javascript</h2> -->
         <p>I have been developing websites in Evergreen, Colorado since 1996 with a passion for integrating complex features within custom designs.</p>
-        <p>The skills I bring to your project include PHP5/7, HTML5, CSS3, jQuery and Javascript. A strong command of these languages is the very foundation of a solid product and one that you can feel confident will display across multiple browsers and devices in a consistent, reliable manner.</p>
+        <p>The skills I bring to your project include PHP5/7, HTML5, CSS3, jQuery and JavaScript. A strong command of these languages is the very foundation of a solid product and one that you can feel confident will display across multiple browsers and devices in a consistent, reliable manner.</p>
 
         <p class="mail"><a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="env"><i class="fa fa-envelope-o"></i></a> <a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="about-contact">Contact Robert</a></p>
       </div>
