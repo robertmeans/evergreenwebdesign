@@ -56,61 +56,30 @@
   </div>
 </nav>
 
-
-
 <section id="div-one-container">
+
+<!-- <div class="fullscreen-bg"> -->
+    <!-- <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video"> -->
+        <!-- <source src="video/big_buck_bunny.webm" type="video/webm"> -->
+        <!-- <source src="_images/sky-bkg.mp4" type="video/mp4"> -->
+        <!-- <source src="video/big_buck_bunny.ogv" type="video/ogg"> -->
+    <!-- </video> -->
+<!-- </div> -->
+
+
 
 <div id="div-one">
 
 <div id="branding">
   <div id="title">
-    <p class="business-title">Evergreen Web Design<img class="ewd-logo" src="_images/Evergreen-Web-Design-Logo_bw.png" alt="Evergreen Web Design logo"></p>
-    <p class="tagline">Developing your vision for the future</p>
+    <p class="business-title">Evergreen Web Design</p>
+
+    <!-- <p class="tagline">Preparing your vision for the future</p> -->
+    <p class="tagline">Preparing your vision for the future</p>
+
+    <img class="ewd-logo" src="_images/Evergreen-Web-Design-Logo_bw.png" alt="Evergreen Web Design logo">
   </div>
 </div><!-- #branding -->
-
-
-
-
-<!-- <div id="products">
-  <div id="product-titles">
-       <span class="ewd-product-titles">Essentials</span>
-       <span class="ewd-product-titles">Websites</span>
-       <span class="ewd-product-titles">Campaigns</span> 
-  </div>
-
-  <div id="product-items">
-      <span class="ewd-product-items">
-        <ul>
-          <li>Domain Names</li>
-          <li>Hosting</li>
-          <li>SSL Certificates</li>
-        </ul>
-      </span>
-      <span class="ewd-product-items">
-        <ul>
-          <li>Concept</li>
-          <li>Design</li>
-          <li>Development</li>
-        </ul>
-      </span>
-      <span class="ewd-product-items">
-        <ul>
-          <li>SEO</li>
-          <li>Social Media</li>
-          <li>Content Management</li>
-        </ul>
-      </span>
-  </div>
-
-  <div id="product-desc">
-      <span class="ewd-product-desc">Evergreen Web Design is a Certified GoDaddy Reseller We sell GoDaddy products...</span>
-      <span class="ewd-product-desc">HTML5, CSS3, JavaScript &apm; PHP ensure your site is running on the most current, stable platform...</span>
-      <span class="ewd-product-desc">We have packages available to service any size needs from managing social campaigns across Twitter, Facebook and Google+ to writing new content and updating WordPress.</span>
-  </div>
-</div> -->
-
-
 
 <div id="product-container">
   <div class="product-box">
@@ -120,7 +89,7 @@
       <li>Hosting</li>
       <li>SSL Certificates</li>
     </ul>
-    <p class="product-desc">Evergreen Web Design is a Certified GoDaddy Reseller. That means we can provide the exact same servivces for less.</p>
+    <p class="product-desc">Evergreen Web Design is a Certified GoDaddy Reseller. Buy through us! We can match any deals + you get GoDaddy's hardware and their renowned 24/7 customer support.</p>
   </div>
 
   <div class="product-box">
@@ -130,7 +99,7 @@
       <li>Design</li>
       <li>Development</li>
     </ul>
-    <p class="product-desc">HMTL5, CSS3, JavaScript &amp; PHP ensure your site is running on the most current, stable platform and ready to manage your content within the current specifications.</p>
+    <p class="product-desc">We like to think of our sites as efficient </p>
   </div>    
 
   <div class="product-box">
@@ -140,12 +109,9 @@
       <li>Social Media</li>
       <li>Content Management</li>
     </ul>
-    <p class="product-desc">We have packages available to service any size needs from managing social campaigns across Twitter, Facebook and Google+ to writing new content and updating WordPress.</p> 
+    <p class="product-desc">SEO campaigns begin with a free report to identify top organic keywords and a website audit to root out shortfalls. Once the housecleaning is done we go to work.</p> 
   </div>      
 </div><!-- #product-container -->
-
-
-
 
     <div id="badge">
       <span class="badge-box">
@@ -155,8 +121,6 @@
       <div id="scrollDownSprite"><a href="#div-two" class="no-active-nav"></a></div>
     </div><!-- badge -->
     
-
-
 </div>
 </section><!-- #div-one -->
 </header>
