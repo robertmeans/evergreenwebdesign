@@ -33,6 +33,28 @@ ul.list {
 	justify-content: center;
 	box-sizing: border-box;
 }
+
+
+// EWD Logo on top of nav
+#center-nav > ul > li.full-height.ewd-nav-logo.header-phone {
+	background-color: inherit;
+	border: none;	
+	z-index: 1008;
+	width: 90px;
+	padding: 0;
+	margin: 0 0 0 20px;
+}
+
+#center-nav > ul > li:nth-child(5) { 
+	& > img {
+		z-index: 1009;
+		// position: fixed;
+		width: 100%;
+		max-width: 85px;
+		margin-right: 0;
+		margin-bottom: -25px;
+	}
+}
 div#branding {
 	display: block;
 	position: relative; // for parallax
@@ -196,6 +218,13 @@ div#branding {
 			margin-top: 8px;
 		}
 	}
+}
+#seo-container {
+	height: 1080px;
+	background: #6d94e1 url('_images/seo-bkg.jpg') no-repeat center center fixed;
+	background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
 }
 @media screen and (max-width: 993px) {
 		#div-one {

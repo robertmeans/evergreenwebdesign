@@ -45,6 +45,7 @@
               <p class="seo-strategies">Your Search Engine Optimization stragety starts with the big 3 social networking giants and continues all the way into the code of your website.</p>
               <p>Gone are the days when you could just plop a few keywords into a meta tag in the code of your website and let the search engines do the rest. Today the algorithms search engines use to index your site into their database rely on a number of facets pertaining to your website address and they all ignore the keyword meta tag.</p>
               <p>The playing field has changed and if you're not keeping up, you're quickly getting left beind. It's an aggressive campaign that needs to be viewed through the perspective of a long term endeavor and not a quick fix. Evergreen Web Design will draft a course for your business in order to navigate an efficient strategy best suited to draw attention to <em>your</em> site.</p>
+              <p><a href="seo.php">Read more...</a></p>
             </div><!-- .expand !-->
           </div><!-- #container -->
 

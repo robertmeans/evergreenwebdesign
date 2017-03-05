@@ -65,7 +65,7 @@ nav {
 	margin-top: 0px;
 	z-index: 1002;
 	position: fixed;
-	overflow: hidden;
+	// overflow: hidden;
 	width: 100%;
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,.5)));
 	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,.5) 100%);
@@ -86,28 +86,31 @@ nav ul {
 	display: flex;
 	align-items: center;
 	height: 55px;
+	flex-direction: row;
 }
+
 nav ul li {
 	list-style: none;
 	// display: inline-block;
-	.full-height {
-		background-color: #1a5092;
-		// height: 55px;
-	}
+	
 	a {
 		color: #666;
 		text-transform: none;
 		text-decoration: none;
 		font-weight: normal;
 		font-size: .9em;
-		line-height: 9em;
+		// line-height: 9em;
 		overflow: hidden; 
-		display: inline-block;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
 		width: 45px;
+		height: 55px;
 		text-align: center;
 		margin-right: 10px;
 		padding: 0px 20px;
-		border-radius: 12px;
+		// border-radius: 12px;
 		transition: background-color .75s ease;
 		&:visited {
 			background-color: inherit;
@@ -123,8 +126,47 @@ nav ul li {
 
 
 
+// green phone number in nav
 #center-nav > ul > li.full-height.header-phone {
 		display: none;
+		text-transform: none;
+		text-decoration: none;
+		font-size: 1.2em;
+		margin: 0px 30px 0px 0px;
+		background-color: #3ea94a;
+		color: #fff;
+		border-radius: 0px;
+		box-sizing: border-box;
+		border-right: 1px solid #BB5118;
+		border-left: 1px solid #BB5118;
+		width: 210px;
+		height: 55px;
+		justify-content: center;
+		align-items: center;
+		padding: .4em 0;
+		p {
+			display: block;
+			// line-height: 0em;
+			color: #fff;
+			font-size: .7em;
+			margin: .4em 0 0 0;
+			letter-spacing: 2px;
+		}
+	}
+#center-nav > ul > li.full-height.header-phone > a {
+	width: auto;
+	color: #fff;
+	margin-right: 0;
+	line-height: 1em;
+	&:hover {
+		color: inherit;
+		cursor: text;
+		background-color: inherit;
+	}
+}
+
+#center-nav > ul > li.full-height.header-phone2 {
+		// display: none;
 		text-transform: none;
 		text-decoration: none;
 		font-size: 1.2em;
@@ -151,7 +193,7 @@ nav ul li {
 			letter-spacing: 2px;
 		}
 	}
-#center-nav > ul > li.full-height.header-phone > a {
+#center-nav > ul > li.full-height.header-phone2 > a {
 	width: auto;
 	color: #fff;
 	margin-right: 0;
@@ -175,12 +217,9 @@ nav ul li {
 
 
 
-
-
-
-
 .first-nav-item {
-	padding: 2em 15px;
+	// padding: 2em 15px;
+	
 	width: auto;
 	margin-left: 4px;
 }

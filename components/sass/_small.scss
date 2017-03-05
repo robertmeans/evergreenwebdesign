@@ -296,26 +296,35 @@ a.mobile_menu.selected {
 .large-screen-gone {
 	display: inline-block;
 }
-
 nav {
+	display: flex;
 	margin-top: -10px;	
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0.22)));
 	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.22) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#38ffffff',GradientType=0 );
 	border-bottom: 1px solid #999;
+	overflow: hidden;
 }
 nav ul {
 	width: 100%;
 	text-align: center;	
 	height: 62px;
+	// margin-top: -62px;
+	li {
+		overflow: hidden;
+	}
+	i.fa-times-circle {
+	padding-top: 1em;
+	line-height: 2.5em;
+	}
 }
 nav ul li a {		
 	color: #fff;;
 	text-align: center;
 	margin: 0px 2px;
-	height: 3em;
+	height: 62px;
 	line-height: 2.5em;
-	padding: 2em 12px;	
+	// padding: 2em 12px;	
 	border-radius: 0px;
 	background: rgba(0,0,0,.6);
 	&:visited {
@@ -324,11 +333,18 @@ nav ul li a {
 	&:hover {
 		color: #fff;
 		text-decoration: none;	
-		background: rgba(0,0,0,.2);		
+		background: rgba(0,0,0,.2);	
+		cursor: pointer;	
 		}
 	&:active {
 		background-color: inherit;
-		}		
+		}
+
+}
+.first-nav-item {
+	width: auto;
+	margin-left: 4px;
+	padding: 0.5em 1.5em;
 }
 .active-nav {
 	color: #fff;

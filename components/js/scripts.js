@@ -1440,9 +1440,9 @@ window.requestAnimationFrame = window.requestAnimationFrame
 || window.msRequestAnimationFrame
 || function(f){setTimeout(f, 1000/60)}
 
-var branding = document.getElementById('branding')
-var productContainer = document.getElementById('product-container')
-var badge = document.getElementById('badge')
+var branding = document.getElementById('branding');
+var productContainer = document.getElementById('product-container');
+var badge = document.getElementById('badge');
 // var bubble2 = document.getElementById('bubbles2')
 // var fish = document.getElementById('fish')
 
@@ -1455,9 +1455,9 @@ function parallaxthis(){
   var scrollamount = (scrolltop / ((scrollheight-windowheight)-1110)) * 100 // get amount scrolled (in %)
 
   // next line needs amount adjusted so that it will be out of the way when the next scene is visible so the links will be accessible and not under the scene-one layer
-  branding.style.top = -scrolltop * .0001 + 'px' // move # at x% of scroll speed  
-  productContainer.style.top = -scrolltop * .98 + 'px'
-  badge.style.top = -scrolltop * 1.5 + 'px'
+  branding.style.top = -scrolltop * .0001 + 'px'; // move # at x% of scroll speed  
+  productContainer.style.top = -scrolltop * .98 + 'px';
+  badge.style.top = -scrolltop * 1.5 + 'px';
 
 }
 
@@ -1553,6 +1553,7 @@ $(function() {
 
 var btt = $('.back-to-top');
 var phone = $('.header-phone');
+var ewdLogo = $('.header-phone');
 
 btt.on('click', function(e) {
 $('html, body').animate({
@@ -1702,18 +1703,18 @@ function fix()
 
 
 
-var myVar=setInterval(function(){myTimer()},1000);
-function myTimer() {
+// var myVar=setInterval(function(){myTimer()},1000);
+// function myTimer() {
 
-var dateWithouthSecond = new Date();
-var nowTime = dateWithouthSecond.toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'});
+// var dateWithouthSecond = new Date();
+// var nowTime = dateWithouthSecond.toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'});
 
-var d = new Date();
-var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-var today = days[d.getDay()];
+// var d = new Date();
+// var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+// var today = days[d.getDay()];
 
-document.getElementById("now").innerHTML = nowTime + " on a " + today;
-}
+// document.getElementById("now").innerHTML = nowTime + " on a " + today;
+// }
 
 
 

@@ -1,4 +1,5 @@
 <?php require_once('_includes/popup-contactform.php'); ?>
+<?php $layout_context = "homepage"; ?>
 <?php require('_includes/head.php'); ?>
 <body onload="javascript:fg_hideform('fg_formContainer','fg_backgroundpopup');">
 <div id="top-of-page"></div>
@@ -17,7 +18,6 @@
 <div id="branding">
   <div id="title">
     <p class="business-title">Evergreen Web Design</p>
-    <!-- <p class="tagline">Preparing your ideas for a bright future</p> -->
     <p class="tagline">Internet Services &amp; Marketing Solutions</p>
     <img class="ewd-logo" src="_images/Evergreen-Web-Design-Logo_bw.png" alt="Evergreen Web Design logo">
   </div>
