@@ -30,7 +30,7 @@
 	height: auto;
 	min-height: 680px;
 	padding-bottom: 100px;
-	background: #6d94e1 url(../_images/symphony.png) repeat fixed center;
+	background: #6d94e1 url(_images/symphony.png) repeat fixed center;
 	// background-size: cover;
 }
 // .fixed-bkg {
@@ -41,14 +41,14 @@
 // 	background-position: center center;
 // }
 #div-two.insomniac-background {
-	background: #6d94e1 url(../_images/insomniacs.jpg) repeat fixed center;
+	background: #6d94e1 url(_images/insomniacs.jpg) repeat fixed center;
 }
 #div-three {
 	height: auto;
 	min-height: 700px;
 	padding-top: 10px;
 	padding-bottom: 30px;
-	background: #6d94e1 url(../_images/day-sky-01.jpg) no-repeat center center fixed;
+	background: #6d94e1 url(_images/day-sky-01.jpg) no-repeat center center fixed;
 	background-size: cover;
     background-attachment: fixed;
 	.scene-content {
@@ -70,26 +70,13 @@
 #div-five {
 // Mt Harvard with kids
 	height: 600px;
-	background-image: url(../_images/mt-harvard.jpg);
+	background-image: url(_images/mt-harvard.jpg);
 }
 
 
 
 
-
-
-
-
 // all CSS for hero/splash are now in custom.scss
-
-
-
-
-
-
-
-
-
 
 
 
@@ -138,17 +125,13 @@
 	width: 30px;
 	height: 28px;
 	bottom: 0px;
-	right: 40px;
+	right: 30px;
 	text-align: center;
-	background-color: rgba(45,45,45,.6);
+	background-color: rgba(45,45,45,0.6);
 	padding: 10px 10px 0px 10px;
 	color: #fff;
 	text-decoration: none;
 
-	-webkit-border-top-left-radius: 8px;
-	-webkit-border-top-right-radius: 8px;
-	-moz-border-radius-topleft: 8px;
-	-moz-border-radius-topright: 8px;
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
 
@@ -156,18 +139,10 @@
 	border-right: 1px solid #fff;
 	border-left: 1px solid #fff;
 
-	-webkit-box-shadow: -4px 4px 3px 0px rgba(50, 50, 50, 0.44);
-	-moz-box-shadow:    -4px 4px 3px 0px rgba(50, 50, 50, 0.44);
 	box-shadow:         -4px 4px 3px 0px rgba(50, 50, 50, 0.44);
 
-	-webkit-transition: background-color .3s ease;
-	-moz-transition: background-color .3s ease;
-	-o-transition: background-color .3s ease;
 	transition: background-color .3s ease;
 
-	-webkit-transition: height .2s ease;
-	-moz-transition: height .2s ease;
-	-o-transition: height .2s ease;
 	transition: height .2s ease;
 
 	&:hover {
@@ -642,20 +617,20 @@ footer {
 			}
 		}
 	}
-	#ec-badge {
-		// float: left;
-		// margin-left: 2em;
-		.mn-widget-member-name,
-		.mn-widget-member-text {
-			display: none;
-		}
+	img.ecc {
+		width: 100%;
+		max-width: 178px;
 	}
 	p {
 		margin: .2em 0;
 	}
+	p.phone-spelled {
+		letter-spacing: 0.11em;
+		color: #919191;
+	}
 	i.fa {
 		font-size: 1.2em;
-		padding-right: 1em;
+		padding-right: 0.5em;
 	}
 	.tel, .tel:visited, .tel:focus {
 		font-size: 1.4em;

@@ -160,6 +160,7 @@
 
     <div id="tab3" class="tab cf"><!-- $? tab -->
       <h2 class="mobile"><i class="fa fa-wordpress"></i> WordPress</h2>
+      <p>Why WordPress?</p>
       <p>WordPress powers <a class="txt-a" href="https://www.inkthemes.com/why-use-wordpress/" target="_blank">25% of all sites</a> across the web. In the realm of Content Management Systems, WordPress accounts for over 65% of the global market. It features an easy to use interface, built in search engine compatiblity, it's secure and there are virtually endless options to customize. This is the solution both novice and professional turn to most often.</p>
 
       <p>Evergreen Web Design can harness the power of this framework for you. The result is a website that can be managed in-house without the need to hire a Webmaster everytime you need an update.</p>

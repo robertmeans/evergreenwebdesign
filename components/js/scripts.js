@@ -1455,12 +1455,9 @@ function parallaxthis(){
   var scrollamount = (scrolltop / ((scrollheight-windowheight)-1110)) * 100 // get amount scrolled (in %)
 
   // next line needs amount adjusted so that it will be out of the way when the next scene is visible so the links will be accessible and not under the scene-one layer
-  branding.style.top = -scrolltop * .42 + 'px' // move scene-one at .42% of scroll speed  
-  productContainer.style.top = -scrolltop * .98 + 'px' // move scene-one at .42% of scroll speed
-  badge.style.top = -scrolltop * 1.4 + 'px' // move scene-one at .42% of scroll speed
-
-  // bubble2.style.top = scrolltop * .38 + 'px' // move bubble2 at 50% of scroll speed
-  // fish.style.left = -100 + scrollamount + '%'
+  branding.style.top = -scrolltop * .0001 + 'px' // move # at x% of scroll speed  
+  productContainer.style.top = -scrolltop * .98 + 'px'
+  badge.style.top = -scrolltop * 1.5 + 'px'
 
 }
 
@@ -1555,6 +1552,7 @@ $(function() {
 
 
 var btt = $('.back-to-top');
+var phone = $('.header-phone');
 
 btt.on('click', function(e) {
 $('html, body').animate({
@@ -1581,6 +1579,7 @@ $('html, body').animate({
 $(window).on('scroll', function () {
   var self = $(this),
     height = self.height(),
+    width = self.width(),
     top = self.scrollTop();
 
     if(top > (.4 * height)) {
@@ -1590,7 +1589,33 @@ $(window).on('scroll', function () {
       } else {
           btt.hide();
         }
+
+    // make phone number appear on scroll only when
+    // window is larger than 600px. otherwise let
+    // .mobile-nav-phone-gone override
+
+    if((top > (.4 * height)) && (width > 600)) {
+
+        if (!phone.is(':visible')) {
+          phone.fadeIn(500);
+        }
+      } else {
+          phone.fadeOut(500);
+        }
+
   });
+
+
+  //   if((top > (.4 * height)) && (width > 600)) {
+  //       $( '#slide-in-phone' ).toggle( 'slide' );
+  //     } else {
+  //        $( '#slide-in-phone' ).toggle( 'slide' );
+  //       }
+
+  // });
+
+
+
 
 
 }); // closing for doc.ready fun()
@@ -1848,13 +1873,13 @@ $(document).ready(function() {
 */
 //temporary until finished developing...
 
-$(document).ready(function() {
-  setTimeout(function() {
-    $('#mainNav').animate({
-      "top": 0+'px'
-    },200) // how long animation will take
-  }, 1000); // how long after page loads b4 animation starts
-});
+// $(document).ready(function() {
+//   setTimeout(function() {
+//     $('#mainNav').animate({
+//       "top": 0+'px'
+//     },200) // how long animation will take
+//   }, 1000); // how long after page loads b4 animation starts
+// });
 
 // end - animate navigation down from top
 

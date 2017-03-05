@@ -19,7 +19,7 @@ module.exports = function(grunt) {
 		      sourcemap: 'none'
 		    },
 		    files: {
-		      '_css/style-expanded.css': 'components/sass/style.scss'
+		      'style-expanded.css': 'components/sass/style.scss'
 		    }
 		  },
 		  dist: {
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
 		  		sourcemap: 'none'
 		  	},
 		  	files: {
-		  		'_css/style.css': 'components/sass/style.scss'
+		  		'style.css': 'components/sass/style.scss'
 		  	}
 		  }
 		},
@@ -41,7 +41,7 @@ module.exports = function(grunt) {
 			multiple_files: {
 				expanded: true, 
 				flatten: true,
-				src: '_css/*.css',
+				src: '*.css',
 				dest: ''
 			}
 		},
