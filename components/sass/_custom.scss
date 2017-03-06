@@ -19,6 +19,7 @@ ul.list {
 #homepage-container {
 	height: 1080px;
 	background: #6d94e1 url('_images/day-sky-01.jpg') no-repeat center center fixed;
+	// background: #6d94e1 url('_images/seo-bkg.jpg') no-repeat center center fixed;
 	background-size: cover;
     background-attachment: fixed;
     z-index: 1;
@@ -35,26 +36,35 @@ ul.list {
 }
 
 
-// EWD Logo on top of nav
-#center-nav > ul > li.full-height.ewd-nav-logo.header-phone {
-	background-color: inherit;
-	border: none;	
-	z-index: 1008;
-	width: 90px;
-	padding: 0;
-	margin: 0 0 0 20px;
-}
 
-#center-nav > ul > li:nth-child(5) { 
-	& > img {
-		z-index: 1009;
-		// position: fixed;
-		width: 100%;
-		max-width: 85px;
-		margin-right: 0;
-		margin-bottom: -25px;
+
+
+// EWD Logo on top of nav
+#center-nav {
+	li.ewd-nav-logo {
+		display: none;
+		border: none;	
+		padding: 0;
+		margin: 0;
+		img {
+			width: 100%;
+			max-width: 90px;
+			position: fixed;
+			top: 0px;
+			z-index: 1999;
+		}
+		a {
+			width: auto;
+			&:hover {
+				background-color: inherit;
+			}
+		}
 	}
 }
+
+
+
+
 div#branding {
 	display: block;
 	position: relative; // for parallax
@@ -108,10 +118,17 @@ div#branding {
 		div:nth-child(2) {
 			// margin: 0px 1%;
 			& > h1 {
-				background-color: rgba(76,181,172,1);
+				// background-color: rgba(76,181,172,1);
+				background-color: rgba(39,133,125,1);
 				border-top: 1px solid #79f3d2;
 				border-right: 1px solid #79f3d2;
 				border-left: 1px solid #79f3d2;
+// fade across				
+// background: #0c5f99; 
+// background: -moz-linear-gradient(left, #0c5f99 0%, #0c5f99 12%, #756e13 85%, #756e13 100%); 
+// background: -webkit-linear-gradient(left, #0c5f99 0%,#0c5f99 12%,#756e13 85%,#756e13 100%); 
+// background: linear-gradient(to right, #0c5f99 0%,#0c5f99 12%,#756e13 85%,#756e13 100%); 
+// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c5f99', endColorstr='#756e13',GradientType=1 ); 
 			}
 		}
 		div:nth-child(3) > h1 {
@@ -364,7 +381,8 @@ div#branding {
 		bottom: 0;
 		left: 10px;
 		text-align: center;
-		background-color: rgba(45,45,45,0.6);
+		// background-color: rgba(45,45,45,0.6);
+		background-color: #3ea94a;
 		padding: 11px 14px;
 		color: #fff;
 		text-decoration: none;

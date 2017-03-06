@@ -1553,7 +1553,7 @@ $(function() {
 
 var btt = $('.back-to-top');
 var phone = $('.header-phone');
-var ewdLogo = $('.header-phone');
+var ewdLogo = $('.ewd-nav-logo');
 
 btt.on('click', function(e) {
 $('html, body').animate({
@@ -1575,6 +1575,7 @@ $('html, body').animate({
 
   e.preventDefault();
 });
+
 //
 
 $(window).on('scroll', function () {
@@ -1592,11 +1593,17 @@ $(window).on('scroll', function () {
         }
 
     // make phone number appear on scroll only when
-    // window is larger than 600px. otherwise let
+    // window is larger than 699px. otherwise let
     // .mobile-nav-phone-gone override
 
-    if((top > (.4 * height)) && (width > 600)) {
-
+    // the following has to be set to 18px less than
+    // where you want it to trigger to account for
+    // the scrollbar.
+                                      // did you read
+                                      // above about why   
+    if((top > (.4 * height)) && (width > 583)) {
+                                      // this is set to 
+                                      // 583?
         if (!phone.is(':visible')) {
           phone.fadeIn(500);
         }
@@ -1604,20 +1611,17 @@ $(window).on('scroll', function () {
           phone.fadeOut(500);
         }
 
+
+    if((top > (.4 * height)) && (width > 682)) {
+
+        if (!ewdLogo.is(':visible')) {
+          ewdLogo.fadeIn(500);
+        }
+      } else {
+          ewdLogo.fadeOut(500);
+        }
+
   });
-
-
-  //   if((top > (.4 * height)) && (width > 600)) {
-  //       $( '#slide-in-phone' ).toggle( 'slide' );
-  //     } else {
-  //        $( '#slide-in-phone' ).toggle( 'slide' );
-  //       }
-
-  // });
-
-
-
-
 
 }); // closing for doc.ready fun()
 

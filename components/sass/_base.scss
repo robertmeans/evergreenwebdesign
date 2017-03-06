@@ -31,18 +31,7 @@ a.txt-a {
 		text-decoration: underline;
 	}
 }
-// ul, ol {
-// 	margin: 1em 0;
-// }
-// ul li {
-// 	margin: 1em 1em 1em 4em;
-// 	list-style-type: disc;
-// }
-// ol li {
-// 	// list-style-type: decimal;
-// 	margin: 1em 1em 1em 4em;
-// 	list-style-type: decimal-leading-zero;
-// }
+
 .cf {
 	clear: both;
 	line-height: 1px;
@@ -127,83 +116,46 @@ nav ul li {
 
 
 // green phone number in nav
-#center-nav > ul > li.full-height.header-phone {
-		display: none;
-		text-transform: none;
-		text-decoration: none;
-		font-size: 1.2em;
-		margin: 0px 30px 0px 0px;
-		background-color: #3ea94a;
-		color: #fff;
-		border-radius: 0px;
-		box-sizing: border-box;
-		border-right: 1px solid #BB5118;
-		border-left: 1px solid #BB5118;
-		width: 210px;
-		height: 55px;
-		justify-content: center;
-		align-items: center;
-		padding: .4em 0;
-		p {
-			display: block;
-			// line-height: 0em;
-			color: #fff;
-			font-size: .7em;
-			margin: .4em 0 0 0;
-			letter-spacing: 2px;
-		}
-	}
-#center-nav > ul > li.full-height.header-phone > a {
-	width: auto;
+.header-phone {
+	display: none;
+	text-transform: none;
+	text-decoration: none;
+	font-size: 1.2em;
+	margin: 0px 20px 0px 0px;
+	background-color: #3ea94a;
 	color: #fff;
-	margin-right: 0;
-	line-height: 1em;
-	&:hover {
-		color: inherit;
-		cursor: text;
-		background-color: inherit;
+	border-radius: 0px;
+	box-sizing: border-box;
+	border-right: 1px solid #BB5118;
+	border-left: 1px solid #BB5118;
+	width: 210px;
+	height: 55px;
+	justify-content: center;
+	align-items: center;
+	padding: .4em 0;
+	p {
+		display: block;
+		// line-height: 0em;
+		color: #fff;
+		font-size: .7em;
+		margin: .4em 0 0 0;
+		letter-spacing: 2px;
+	}
+
+	a {
+		width: auto;
+		color: #fff;
+		margin-right: 0;
+		line-height: 1em;
+		&:hover {
+			color: inherit;
+			cursor: text;
+			background-color: inherit;
+		}
 	}
 }
 
-#center-nav > ul > li.full-height.header-phone2 {
-		// display: none;
-		text-transform: none;
-		text-decoration: none;
-		font-size: 1.2em;
-		margin: 0px 10px 0px 0px;
-		background-color: #3ea94a;
-		color: #fff;
-		border-radius: 0px;
-		box-sizing: border-box;
-		border-right: 1px solid #BB5118;
-		border-left: 1px solid #BB5118;
-		padding: 2em 0;
-		&:hover {
-			text-decoration: none;
-			color: #fff;
-			border-radius: 0px;
-			cursor: text;
-		}
-		p {
-			display: block;
-			// line-height: 0em;
-			color: #fff;
-			font-size: .7em;
-			margin: .2em 0 0 0;
-			letter-spacing: 2px;
-		}
-	}
-#center-nav > ul > li.full-height.header-phone2 > a {
-	width: auto;
-	color: #fff;
-	margin-right: 0;
-	line-height: 1em;
-	&:hover {
-		color: inherit;
-		cursor: text;
-		background-color: inherit;
-	}
-}
+
 
 
 
