@@ -25,7 +25,7 @@
 
 <div id="product-container">
   <div class="product-box">
-    <a href="#div-two" class="product-item">Essentials</a>
+    <a href="#essentials" class="product-item">Essentials</a>
     <ul class="product-list">
       <li>Domain Names</li>
       <li>Hosting</li>
@@ -67,6 +67,7 @@
 </section><!-- #div-one-container -->
 </header>
 
+<?php require ("_includes/essentials.php"); ?>
 <?php require ("_includes/services.php"); ?>
 <?php require ("_includes/about.php"); ?>
 <?php require ("_includes/backstretch.php"); ?>

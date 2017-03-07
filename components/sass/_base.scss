@@ -1202,6 +1202,81 @@ max-width: 60px;
 // see new hero layout 02.28.17 below for
 // all CSS pertaining to #div-one
 // ----------------------------------------
+#homepage-container {
+  display: flex;
+  height: 1080px;
+  // background: #6d94e1 url('_images/day-sky-01.jpg') no-repeat center center fixed;
+  background: #6d94e1 url('_images/server-cloud-bkg.jpg') no-repeat center center fixed;
+  background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+}
+#div-one {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+#essentials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #6d94e1 url('_images/seo-bkg.jpg') no-repeat top left fixed;
+  background-size: cover;
+  // padding: 100px 0px;
+  min-height: 1080px;
+  font-size: 1.1em;
+    div.essentials-conatiner {
+      display: flex;
+      width: 90%;
+      max-width: 1200px;
+      // background-color: rgba(255,255,255,1);
+      background-color: #fcfcfc;
+      padding: 20px;
+    img.dont-panic {
+      // flex: 1;
+      align-item: left;
+      width: 100%;
+      max-width: 300px;
+      margin-right: 30px;
+      border-right: 2px solid #757575;
+    }
+    .essentials-content {
+      display: flex;
+      flex-grow: 2;
+      flex-direction: column;
+      h1 {
+        align-self: center;
+        display: inline-block;
+        font-size: 2em;
+        color: #891d1d;
+        font-weight: bold;
+      }
+      p {
+        align-self: left;
+      }
+    }
+  }
+}
+
+
+
+
+
+
 
 
 #div-two {
@@ -1210,15 +1285,7 @@ max-width: 60px;
 	min-height: 680px;
 	padding-bottom: 100px;
 	background: #6d94e1 url(_images/symphony.png) repeat fixed center;
-	// background-size: cover;
 }
-// .fixed-bkg {
-// 	min-height: 100%;
-// 	background-size: cover;
-// 	background-attachment: fixed;
-// 	background-repeat: no-repeat;
-// 	background-position: center center;
-// }
 #div-two.insomniac-background {
 	background: #6d94e1 url(_images/insomniacs.jpg) repeat fixed center;
 }
@@ -1227,7 +1294,8 @@ max-width: 60px;
 	min-height: 700px;
 	padding-top: 10px;
 	padding-bottom: 30px;
-	background: #6d94e1 url(_images/day-sky-01.jpg) no-repeat center center fixed;
+	// background: #6d94e1 url(_images/day-sky-01.jpg) no-repeat center center fixed;
+  background: #6d94e1 url(_images/bike.jpg) no-repeat center center fixed;
 	background-size: cover;
     background-attachment: fixed;
 	.scene-content {
@@ -1340,7 +1408,7 @@ max-width: 60px;
 		// contained w/in this class
 	// z-index: 333;
     width: 90%;
-    max-width: 1115px;
+    max-width: 1200px;
     margin: 0px auto;
     padding: 20px 0px;
     display: block;
@@ -1665,7 +1733,7 @@ ul.list {
 .about {
 	line-height: 1.5em;
     width: 90%;
-    max-width: 1115px;
+    max-width: 1200px;
     border: 1px solid #ccc;
     margin: 90px auto;
     padding: 20px 0px;
@@ -1733,6 +1801,7 @@ a.env > i.fa {
 	float: left;
 	img {
 		width: 100%;
+    max-width: 250px;
 		border: 1px solid #757575;
 		border-radius: 50%;
 		moz-border-radius: 50%;
@@ -2666,25 +2735,6 @@ ul.list {
 
 
 
-#homepage-container {
-	display: flex;
-	height: 1080px;
-	background: #6d94e1 url('_images/day-sky-01.jpg') no-repeat center center fixed;
-	// background: #6d94e1 url('_images/seo-bkg.jpg') no-repeat center center fixed;
-	background-size: cover;
-    background-attachment: fixed;
-    z-index: 1;
-}
-#div-one {
-	display: flex;
-	flex-direction: column;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	align-items: center;
-	justify-content: center;
-	box-sizing: border-box;
-}
 
 .last-nav-item {
 	margin-right: 60px;
@@ -2734,8 +2784,9 @@ div#branding {
 	}
 	p.tagline {
 		font-family: 'Ubuntu', Helvetica, sans-serif;
-		font-weight: 700;;
-		color: #4c4c4c;
+		font-weight: 700;
+		color: #fff;
+    text-shadow: -2px 3px 5px rgba(0,0,0,0.6);
 		font-size: 1.4em;
 		line-height: 0em;
 		margin-top: -10px;
@@ -2765,6 +2816,7 @@ div#branding {
 			background-color: rgba(12,95,153,1);
 			border-top: 1px solid #3dabf8;
 			border-right: 1px solid #3dabf8;
+      border-bottom: 1px solid #4bd300;
 			border-left: 1px solid #3dabf8;
 			transition: background-color 0.75s ease, color 0.5s ease;
 			&:hover {
@@ -2776,6 +2828,7 @@ div#branding {
 				background-color: rgba(39,133,125,1);
 				border-top: 1px solid #79f3d2;
 				border-right: 1px solid #79f3d2;
+        border-bottom: 1px solid #4bd300;
 				border-left: 1px solid #79f3d2;
 				transition: background-color 0.75s ease, color 0.5s ease;
 				&:hover {
@@ -2787,6 +2840,7 @@ div#branding {
 			background-color: rgba(117,110,19,1);
 			border-top: 1px solid #d6da2c;
 			border-right: 1px solid #d6da2c;
+      border-bottom: 1px solid #4bd300;
 			border-left: 1px solid #d6da2c;
 			transition: background-color 0.75s ease, color 0.5s ease;
 			&:hover {
@@ -2849,14 +2903,15 @@ div#branding {
 			}
 		}
 		p.product-desc {
-			background-color: rgba(255,255,255,0.35);
-			color: #333;
+			background-color: rgba(0,0,0,0.8);
+			color: #fff;
 			font-size: 1em;
 			padding: 20px;
 			margin: 0;
-			border-right: 1px solid transparent;
-			border-bottom: 1px solid transparent;
-			border-left: 1px solid transparent;
+      border-top: 1px solid #266902;
+			border-right: 1px solid #fff;
+			border-bottom: 1px solid #fff;
+			border-left: 1px solid #fff;
 			padding-bottom: 20px;
 		}
 	}
@@ -2871,12 +2926,12 @@ div#branding {
 		display: block;
 		text-align: center;
 		margin: 20px auto 0px auto;
-		background-color: rgba(12,95,153,0.5);
+    color: #fff;
+		background-color: rgba(166,31,30,0.9); // red'ish
 		max-width: 300px;
-		color: #fff;
 		padding: 15px 35px;
-		border: 2px solid #fff;
-		border-radius: 12px;
+		border: 1px solid #fff;
+		border-radius: 8px;
 		transition: all .75s ease;
 		a.badge-tel {
 			text-decoration: none;
@@ -3003,8 +3058,8 @@ div#branding {
 				}
 			}
 			p.product-desc {
-				margin-bottom: -40px;
-				padding-bottom: 60px;
+				margin-bottom: 0px;
+				padding-bottom: 20px;
 				// display: none;
 			}
 		}
