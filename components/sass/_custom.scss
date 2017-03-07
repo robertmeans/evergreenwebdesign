@@ -1,3 +1,6 @@
+body {
+	display: flex;
+}
 
 ul.list {
 	display: flex;
@@ -17,6 +20,7 @@ ul.list {
 
 
 #homepage-container {
+	display: flex;
 	height: 1080px;
 	background: #6d94e1 url('_images/day-sky-01.jpg') no-repeat center center fixed;
 	// background: #6d94e1 url('_images/seo-bkg.jpg') no-repeat center center fixed;

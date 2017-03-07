@@ -3,7 +3,7 @@
 <?php require('_includes/head.php'); ?>
 <body onload="javascript:fg_hideform('fg_formContainer','fg_backgroundpopup');">
 <div id="top-of-page"></div>
-<div id="wrapper">
+
 
 <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 <a class="mobile-tel large-screen-gone" href="tel:(303)%20932-7483">Call: (303) WEB-SITE</a>
@@ -73,7 +73,6 @@
 
 
 
-</div><!-- #wrapper -->
 <?php include "_includes/footer.php" ?>
 <?php require_once('_includes/contactform-code.php'); ?>
 

@@ -4819,6 +4819,18 @@ footer .copyright {
     margin: 20px 0px 0px 15px;
   }
 }
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 ul.list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4843,6 +4855,10 @@ ul.list li {
 }
 
 #homepage-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 1080px;
   background: #6d94e1 url("_images/day-sky-01.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -4887,7 +4903,6 @@ ul.list li {
 #center-nav li.ewd-nav-logo img {
   width: 100%;
   max-width: 97px;
-  position: fixed;
   top: 0px;
   z-index: 1999;
 }
@@ -5028,6 +5043,8 @@ div#branding img.ewd-logo {
   color: #fff;
   padding: 20px 0px;
   background-color: rgba(0, 0, 0, 0.6);
+  background: url("_images/cloud-servers.jpg") no-repeat center center fixed;
+  background-attachment: fixed;
 }
 #product-container .product-box ul.product-list:nth-child(1) {
   border-right: 1px solid #3dabf8;
@@ -5160,9 +5177,9 @@ div#branding img.ewd-logo {
     max-width: 900px;
     margin: 10px auto;
     -webkit-box-flex: 1;
-    -webkit-flex: 1 1 200px;
-        -ms-flex: 1 1 200px;
-            flex: 1 1 200px;
+    -webkit-flex: 1 1;
+        -ms-flex: 1 1;
+            flex: 1 1;
   }
   #product-container .product-box h1.product-item {
     font-size: 1.2em;
@@ -5205,9 +5222,9 @@ div#branding img.ewd-logo {
   }
   #homepage-container .product-box {
     -webkit-box-flex: 1;
-    -webkit-flex: 1 1 110px;
-        -ms-flex: 1 1 110px;
-            flex: 1 1 110px;
+    -webkit-flex: 1 1;
+        -ms-flex: 1 1;
+            flex: 1 1;
     margin: 5px auto;
   }
 
@@ -5244,6 +5261,10 @@ div#branding img.ewd-logo {
     -webkit-transition: height .2s ease;
             transition: height .2s ease;
   }
+
+  .last-nav-item {
+    margin-right: 0px;
+  }
 }
 @media screen and (max-width: 500px) {
   div#branding {
@@ -5253,13 +5274,14 @@ div#branding img.ewd-logo {
   }
   div#branding p.business-title {
     font-size: 1.5em;
-    line-height: .8em;
+    line-height: 0.1;
   }
   div#branding p.tagline {
     font-size: 1em;
     line-height: 1em;
-    margin-top: -1em;
+    margin-top: 0;
     padding: 0px 8px;
+    color: #fff;
   }
   div#branding img.ewd-logo {
     display: none;
