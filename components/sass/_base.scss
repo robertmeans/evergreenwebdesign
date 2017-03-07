@@ -2700,7 +2700,7 @@ ul.list {
 		img {
 			width: 100%;
 			max-width: 97px;
-			// position: fixed;
+			position: fixed;
 			top: 0px;
 			z-index: 1999;
 			// padding-left: 60px;
@@ -2807,10 +2807,11 @@ div#branding {
 			border-left: 1px solid #d6da2c;
 		}	
 	.product-box {
-		flex: 1 1 300px;
+		flex: 1;
+    flex-flow: column;
 		margin: 1%;
 		max-width: 410px;
-		overflow: hidden;
+		// overflow: hidden;
 		a.product-item {
 			font-size: 2em;
 			color: #fff;
@@ -2831,10 +2832,10 @@ div#branding {
 			color: #fff;
 			padding: 20px 0px;
 			background-color: rgba(0,0,0,0.6);
-			background: url('_images/cloud-servers.jpg') no-repeat center center fixed; 
 
-	// background-size: cover;
-    background-attachment: fixed;
+
+			background: url('_images/circuit-board-02.jpg') no-repeat center center fixed; 
+      background-attachment: fixed;
 
 
 			&:nth-child(1) {
@@ -2851,14 +2852,12 @@ div#branding {
 			background-color: rgba(255,255,255,0.35);
 			color: #333;
 			font-size: 1em;
-			padding: 15px;
+			padding: 20px;
 			margin: 0;
 			border-right: 1px solid transparent;
 			border-bottom: 1px solid transparent;
 			border-left: 1px solid transparent;
-			margin-bottom: -85px;
-			padding-bottom: 100px;
-
+			padding-bottom: 20px;
 		}
 	}
 }
@@ -3068,6 +3067,9 @@ div#branding {
 }
 
 @media screen and (max-width: 500px) {
+  #product-container .product-box a.product-item {
+    font-size: 1.5em;
+  }
 	div#branding {
 		width: 100%;
 		min-width: 0px;

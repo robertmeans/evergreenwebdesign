@@ -4903,6 +4903,7 @@ ul.list li {
 #center-nav li.ewd-nav-logo img {
   width: 100%;
   max-width: 97px;
+  position: fixed;
   top: 0px;
   z-index: 1999;
 }
@@ -5016,12 +5017,14 @@ div#branding img.ewd-logo {
 }
 #product-container .product-box {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 300px;
-      -ms-flex: 1 1 300px;
-          flex: 1 1 300px;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
   margin: 1%;
   max-width: 410px;
-  overflow: hidden;
 }
 #product-container .product-box a.product-item {
   font-size: 2em;
@@ -5043,7 +5046,7 @@ div#branding img.ewd-logo {
   color: #fff;
   padding: 20px 0px;
   background-color: rgba(0, 0, 0, 0.6);
-  background: url("_images/cloud-servers.jpg") no-repeat center center fixed;
+  background: url("_images/circuit-board-02.jpg") no-repeat center center fixed;
   background-attachment: fixed;
 }
 #product-container .product-box ul.product-list:nth-child(1) {
@@ -5059,13 +5062,12 @@ div#branding img.ewd-logo {
   background-color: rgba(255, 255, 255, 0.35);
   color: #333;
   font-size: 1em;
-  padding: 15px;
+  padding: 20px;
   margin: 0;
   border-right: 1px solid transparent;
   border-bottom: 1px solid transparent;
   border-left: 1px solid transparent;
-  margin-bottom: -85px;
-  padding-bottom: 100px;
+  padding-bottom: 20px;
 }
 
 #badge {
@@ -5267,6 +5269,10 @@ div#branding img.ewd-logo {
   }
 }
 @media screen and (max-width: 500px) {
+  #product-container .product-box a.product-item {
+    font-size: 1.5em;
+  }
+
   div#branding {
     width: 100%;
     min-width: 0px;
