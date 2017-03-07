@@ -1,14 +1,11 @@
-#fish {
-	left: -100%;
-	background: url(../_images/fish.png) right 90% no-repeat;
-}
+
 #bg-div-one {
 	position: fixed;
 	top: -50%;
 	left: -50%;
 	width: 200%;
 	height: 200%;
-	z-index: -1;
+	// z-index: -1;
 	img {
 		position: absolute;
 		top: 0;
@@ -20,30 +17,20 @@
 		min-height: 50%;
 	}
 }
-#div-one {
-// welcome screen
-	height: 1080px;
-	// background: #6d94e1 url(../_images/sky.jpg) no-repeat center center fixed;
 
-	// background-size: cover;
-	// -webkit-background-size: cover;
-    // -moz-background-size: cover;
-    // -o-background-size: cover;
 
-    // background-attachment: fixed;
-    // -webkit-background-attachment: fixed;
-	// -moz-background-attachment: fixed;
-	// -o-background-attachment: fixed;
+// ----------------------------------------
+// see new hero layout 02.28.17 below for
+// all CSS pertaining to #div-one
+// ----------------------------------------
 
-}
 
 #div-two {
 // tabs - services - websites - video
-	// z-index: 5;
 	height: auto;
 	min-height: 680px;
 	padding-bottom: 100px;
-	background: #6d94e1 url(../_images/symphony.png) repeat fixed center;
+	background: #6d94e1 url(_images/symphony.png) repeat fixed center;
 	// background-size: cover;
 }
 // .fixed-bkg {
@@ -54,15 +41,16 @@
 // 	background-position: center center;
 // }
 #div-two.insomniac-background {
-	background: #6d94e1 url(../_images/insomniacs.jpg) repeat fixed center;
+	background: #6d94e1 url(_images/insomniacs.jpg) repeat fixed center;
 }
 #div-three {
 	height: auto;
 	min-height: 700px;
 	padding-top: 10px;
-
-	// background: #6d94e1 url(../_images/colorado-flag.gif) top center no-repeat fixed;
-  	// background-size: cover;
+	padding-bottom: 30px;
+	background: #6d94e1 url(_images/day-sky-01.jpg) no-repeat center center fixed;
+	background-size: cover;
+    background-attachment: fixed;
 	.scene-content {
 		max-width: 200px;
 		margin: 0 auto;
@@ -82,59 +70,19 @@
 #div-five {
 // Mt Harvard with kids
 	height: 600px;
-	background-image: url(../_images/mt-harvard.jpg);
-	// background-size: cover;
-	// -webkit-background-size: cover;
-    // -moz-background-size: cover;
-    // -o-background-size: cover;
-	.scene-content {
-		// max-width: 400px;
-		// margin: 10% 10% 0 0;
-		// float: right;
-	}
-}
-#clockScene {
-	width: 100%;
-	height: 980px;
-	top: 0;
-	left: 0;
-
-	// commented out fixed below
-	// and it seems NOT to render
-	// when visitor is scrolled
-	// down the screen now...?
-	// position: fixed;
-	position: relative;
+	background-image: url(_images/mt-harvard.jpg);
 }
 
-#text-box {
-	position: relative;
-	font-size: 1.1em;
-	box-sizing: border-box;
-	margin: 10% auto 0 auto;
-	width: 750px;
-	border: 1px solid #fff;
-	height: 326px;
-	color: #fff;
-	padding: 20px;
-	// border-radius: 10px;
-	h3 {
-		font-family: 'Exo 2', Ubuntu, Tahoma, Arial, sans-serif;
-		font-weight: bold;
-		line-height: 1em;
-		color: #fff;
-		font-size: 1.5em;
-		margin: 3.5% 0 1em 20px;
-	}
-	p {
-		margin-left: 400px;
-		// text-shadow: -1px 1px 30px #0e3e7f;
-	}
-}
-.text-box-default {
-// see _now-color-scheme.scss
-// .text-box-default
-}
+
+
+
+// all CSS for hero/splash are now in custom.scss
+
+
+
+
+
+
 @media screen and (max-width: 600px) {
 	.text-box-default {
 		background: rgba(28,119,181,.6);
@@ -158,29 +106,7 @@
 // clockid-default
 }
 
-#website-solutions-badge {
-	max-width: 200px;
-	color: #fff;
-	margin: 25px auto 0px auto;
-	padding: 15px 20px;
-	border: 2px solid #fff;
-	border-radius: 12px;
-	text-transform: capitalize;
-	// background: rgba(0,0,0,.5);
-	h2 {
-		font-size: 1.3em;
-		line-height: 1.2em;
-		color: #fff;
-	}
-	h4 {
-		font-size: .8em;
-		line-height: 1.4em;
-	}
-}
-.website-solutions-badge-default {
-// see _now-color-scheme.scss
-// .website-solutions-badge-default
-}
+
 
 .hmpg-contact {
 	color: #fff;
@@ -190,31 +116,7 @@
 		text-decoration: none;
 	}
 }
-#nameScene {
-	width: 100%;
-	position: relative;
-}
-#EWD {
-	position: relative;
-	width: 100%;
-	display: inline-block;
-	text-align: center;
-	margin: -45px auto 0px auto;
-	.title-text {
-		// font-family: 'Prosto One', 'Exo 2', Helvetica, Arial, sans-serif;
-		font-family: 'Exo 2', Helvetica, Arial, sans-serif;
-		font-size: 4.5em;
 
-		-webkit-transition: font-size 1.75s ease;
-		-moz-transition: font-size 1.75s ease;
-		-o-transition: font-size 1.75s ease;
-		transition: font-size 1.75s ease;
-		font-weight: 800;
-		text-transform: capitalize;
-		color: #fff;
-		text-shadow: -2px 3px 6px rgba(0, 0, 0, 0.5);
-	}
-}
 
 .back-to-top {
 	display: none;
@@ -223,17 +125,13 @@
 	width: 30px;
 	height: 28px;
 	bottom: 0px;
-	right: 40px;
+	right: 30px;
 	text-align: center;
-	background-color: rgba(45,45,45,.6);
+	background-color: rgba(45,45,45,0.6);
 	padding: 10px 10px 0px 10px;
 	color: #fff;
 	text-decoration: none;
 
-	-webkit-border-top-left-radius: 8px;
-	-webkit-border-top-right-radius: 8px;
-	-moz-border-radius-topleft: 8px;
-	-moz-border-radius-topright: 8px;
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
 
@@ -241,18 +139,10 @@
 	border-right: 1px solid #fff;
 	border-left: 1px solid #fff;
 
-	-webkit-box-shadow: -4px 4px 3px 0px rgba(50, 50, 50, 0.44);
-	-moz-box-shadow:    -4px 4px 3px 0px rgba(50, 50, 50, 0.44);
 	box-shadow:         -4px 4px 3px 0px rgba(50, 50, 50, 0.44);
 
-	-webkit-transition: background-color .3s ease;
-	-moz-transition: background-color .3s ease;
-	-o-transition: background-color .3s ease;
 	transition: background-color .3s ease;
 
-	-webkit-transition: height .2s ease;
-	-moz-transition: height .2s ease;
-	-o-transition: height .2s ease;
 	transition: height .2s ease;
 
 	&:hover {
@@ -727,20 +617,20 @@ footer {
 			}
 		}
 	}
-	#ec-badge {
-		// float: left;
-		// margin-left: 2em;
-		.mn-widget-member-name,
-		.mn-widget-member-text {
-			display: none;
-		}
+	img.ecc {
+		width: 100%;
+		max-width: 178px;
 	}
 	p {
 		margin: .2em 0;
 	}
+	p.phone-spelled {
+		letter-spacing: 0.11em;
+		color: #919191;
+	}
 	i.fa {
 		font-size: 1.2em;
-		padding-right: 1em;
+		padding-right: 0.5em;
 	}
 	.tel, .tel:visited, .tel:focus {
 		font-size: 1.4em;

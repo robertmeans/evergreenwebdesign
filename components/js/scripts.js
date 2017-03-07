@@ -1440,8 +1440,9 @@ window.requestAnimationFrame = window.requestAnimationFrame
 || window.msRequestAnimationFrame
 || function(f){setTimeout(f, 1000/60)}
 
-var nameScene = document.getElementById('nameScene')
-var clockScene = document.getElementById('clockScene')
+var branding = document.getElementById('branding');
+var productContainer = document.getElementById('product-container');
+var badge = document.getElementById('badge');
 // var bubble2 = document.getElementById('bubbles2')
 // var fish = document.getElementById('fish')
 
@@ -1454,10 +1455,9 @@ function parallaxthis(){
   var scrollamount = (scrolltop / ((scrollheight-windowheight)-1110)) * 100 // get amount scrolled (in %)
 
   // next line needs amount adjusted so that it will be out of the way when the next scene is visible so the links will be accessible and not under the scene-one layer
-  nameScene.style.top = -scrolltop * 1.2 + 'px' // move scene-one at .42% of scroll speed
-  clockScene.style.top = -scrolltop * .92 + 'px' // move scene-one at .42% of scroll speed
-  // bubble2.style.top = scrolltop * .38 + 'px' // move bubble2 at 50% of scroll speed
-  // fish.style.left = -100 + scrollamount + '%'
+  branding.style.top = -scrolltop * .0001 + 'px'; // move # at x% of scroll speed  
+  productContainer.style.top = -scrolltop * .98 + 'px';
+  badge.style.top = -scrolltop * 1.5 + 'px';
 
 }
 
@@ -1552,6 +1552,8 @@ $(function() {
 
 
 var btt = $('.back-to-top');
+var phone = $('.header-phone');
+var ewdLogo = $('.ewd-nav-logo');
 
 btt.on('click', function(e) {
 $('html, body').animate({
@@ -1573,11 +1575,13 @@ $('html, body').animate({
 
   e.preventDefault();
 });
+
 //
 
 $(window).on('scroll', function () {
   var self = $(this),
     height = self.height(),
+    width = self.width(),
     top = self.scrollTop();
 
     if(top > (.4 * height)) {
@@ -1587,8 +1591,37 @@ $(window).on('scroll', function () {
       } else {
           btt.hide();
         }
-  });
 
+    // make phone number appear on scroll only when
+    // window is larger than 699px. otherwise let
+    // .mobile-nav-phone-gone override
+
+    // the following has to be set to 18px less than
+    // where you want it to trigger to account for
+    // the scrollbar.
+                                      // did you read
+                                      // above about why   
+    if((top > (.4 * height)) && (width > 583)) {
+                                      // this is set to 
+                                      // 583?
+        if (!phone.is(':visible')) {
+          phone.fadeIn(500);
+        }
+      } else {
+          phone.fadeOut(500);
+        }
+
+
+    if((top > (.4 * height)) && (width > 682)) {
+
+        if (!ewdLogo.is(':visible')) {
+          ewdLogo.fadeIn(500);
+        }
+      } else {
+          ewdLogo.fadeOut(500);
+        }
+
+  });
 
 }); // closing for doc.ready fun()
 
@@ -1674,298 +1707,22 @@ function fix()
 
 
 
-var myVar=setInterval(function(){myTimer()},1000);
-function myTimer() {
+// var myVar=setInterval(function(){myTimer()},1000);
+// function myTimer() {
 
-var dateWithouthSecond = new Date();
-var nowTime = dateWithouthSecond.toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'});
+// var dateWithouthSecond = new Date();
+// var nowTime = dateWithouthSecond.toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'});
 
-var d = new Date();
-var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-var today = days[d.getDay()];
+// var d = new Date();
+// var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+// var today = days[d.getDay()];
 
-document.getElementById("now").innerHTML = nowTime + " on a " + today;
-}
-
-
-
-// Start Greeting & Background
-function upEarly() {
-    document.getElementById("greeting").innerHTML = ('Good morning Early Bird,');
-    document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/up-early-01.jpg" alt="early sky">');
-    document.getElementById("clockid").className = "CoolClock late-night-clock";
-    document.getElementById("text-box").className = "late-night-text-box cf";
-    document.getElementById("website-solutions-badge").className = "late-night-website-solutions-badge";
-}
-function preMorning() {
-    document.getElementById("greeting").innerHTML = ('Good morning,');
-    document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/pre-morning.jpg" alt="lavender field sunrise">');
-    document.getElementById("clockid").className = "CoolClock pre-morning-clock";
-    document.getElementById("text-box").className = "pre-morning-text-box cf";
-    document.getElementById("website-solutions-badge").className = "pre-morning-website-solutions-badge";
-}
-function goodMorning() {
-    document.getElementById("greeting").innerHTML = ('Good morning,');
-    document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/sunrise.jpg" alt="sunrise">');
-    document.getElementById("clockid").className = "CoolClock morning-clock";
-    document.getElementById("text-box").className = "morning-text-box cf";
-    document.getElementById("website-solutions-badge").className = "morning-website-solutions-badge";
-}
-function goodLateMorning() {
-    document.getElementById("greeting").innerHTML = ('Good morning,');
-    document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/good-late-morning.jpg" alt="sunrise">');
-    document.getElementById("clockid").className = "CoolClock late-morning-clock";
-    document.getElementById("text-box").className = "late-morning-text-box cf";
-    document.getElementById("website-solutions-badge").className = "late-morning-website-solutions-badge";
-}
-function goodAfternoon() {
-    document.getElementById("greeting").innerHTML = ('Good afternoon,');
-    document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/day-sky-01.jpg" alt="blue sky">');
-    // this one has default styles
-    document.getElementById("clockid").className = "CoolClock clockid-default";
-    document.getElementById("text-box").className = "text-box-default cf";
-    document.getElementById("website-solutions-badge").className = "website-solutions-badge-default";
-}
-function goodLateAfternoon() {
-    document.getElementById("greeting").innerHTML = ('Good afternoon,');
-    document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/mountain-sunset.jpg" alt="sunrise">');
-    document.getElementById("clockid").className = "CoolClock late-afternoon-clock";
-    document.getElementById("text-box").className = "late-afternoon-text-box cf";
-    document.getElementById("website-solutions-badge").className = "late-afternoon-website-solutions-badge";
-}
-function goodEvening() {
-    document.getElementById("greeting").innerHTML = ('Good evening,');
-    document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/night.jpg" alt="sunrise">');
-    document.getElementById("clockid").className = "CoolClock evening-clock";
-    document.getElementById("text-box").className = "evening-text-box cf";
-    document.getElementById("website-solutions-badge").className = "evening-website-solutions-badge";
-}
-function upLate() {
-    document.getElementById("greeting").innerHTML = ('It&acute;s never too late!');
-    document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/late-night.jpg" alt="sunrise">');
-    document.getElementById("clockid").className = "CoolClock late-night-clock";
-    document.getElementById("text-box").className = "late-night-text-box cf";
-    document.getElementById("website-solutions-badge").className = "late-night-website-solutions-badge";
-}
-function insomniacs() {
-    document.getElementById("greeting").innerHTML = ('Insomniacs Unite!');
-    document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/insomniacs.jpg" alt="sunrise">');
-    document.getElementById("greeting_bkg").className = "insomniac-background";
-    document.getElementById("clockid").className = "CoolClock insomniac-clock";
-    document.getElementById("text-box").className = "insomniac-text-box cf";
-    document.getElementById("website-solutions-badge").className = "insomniac-website-solutions-badge";
-}
-function defaultGreeting() {
-    document.getElementById("greeting").innerHTML = ('Welcome,');
-    document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/day-sky-01.jpg" alt="blue sky">');
-    // this one has default styles
-}
-
-var d = new Date();
-var months = new Array();
-months[0] = "January";
-months[1] = "February";
-months[2] = "March";
-months[3] = "April";
-months[4] = "May";
-months[5] = "June";
-months[6] = "July";
-months[7] = "August";
-months[8] = "September";
-months[9] = "October";
-months[10] = "November";
-months[11] = "December";
-
-var month = months[d.getMonth()];
-var day = d.getDate();
-var hours = d.getHours();
-var minutes = d.getMinutes();
-
-function pad(z) { return (z < 10) ? ("0" + z) : z; }
-// var hours = pad(hours); // no need to pad hours - leading zero on hour screws things up
-var minutes = pad(minutes);
-
-var time = "" + hours + minutes;
-// window.alert("month = " + month + "\nday = " + day + "\ntime = " + time);
-
-// Development override -------
-// upEarly();           // vector - sillouhette sunburst
-// preMorning();        // lavender field
-// goodMorning();       // orange sunrise
-// goodLateMorning();   // snow tracks
-// goodAfternoon();     // sun sky
-// goodLateAfternoon(); // mountain sunset
-// goodEvening();       // mountain moon
-// upLate();            // universe
-// insomniacs();        // universe imposing clock
-
-// http://www.sunrisesunset.com/usa/Colorado/Evergreen.asp - sunrise/sunset calendar
-
-if        (month == "January") {                                   // January [done]
-  if      (time >= 500  && time <=  559 ) { upEarly();           }  // 05:00 - 05:59 vector - sillouhette sunburst
-  else if (time >= 600  && time <=  654 ) { preMorning();        }  // 06:00 - 06:54 lavender field
-  else if (time >= 655  && time <=  745 ) { goodMorning();       }  // 06:55 - 07:45 orange sunrise (sunrise: 07:22|07:10)
-  else if (time >= 746  && time <=  1030) { goodLateMorning();   }  // 07:46 - 10:30 snow tracks
-  else if (time >= 1031 && time <=  1633) { goodAfternoon();     }  // 10:31 - 16:35 sun sky
-  else if (time >= 1634 && time <=  1745) { goodLateAfternoon(); }  // 16:36 - 17:45 mountain sunset (sunset: 16:47|17:19)
-  else if (time >= 1746 && time <=  2200) { goodEvening();       }  // 17:46 - 22:00 mountain moon
-  else if (time >= 2201 || time <=  144 ) { upLate();            }  // 22:01 - 01:44 universe
-                                     else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
-}
-if        (month == "February") {                                  // February [done]
-  if      (time >= 500 && time <=  559 ) { upEarly();           }  // 05:00 - 05:59 vector - sillouhette sunburst
-  else if (time >= 600 && time <=  657 ) { preMorning();        }  // 06:00 - 06:57 lavender field
-  else if (time >= 658 && time <=  735 ) { goodMorning();       }  // 06:58 - 07:35 orange sunrise (sunrise: 07:09|06:36)
-  else if (time >= 736 && time <=  1030) { goodLateMorning();   }  // 07:36 - 10:30 snow tracks
-  else if (time >= 1031 && time <= 1709) { goodAfternoon();     }  // 10:31 - 17:09 sun sky
-  else if (time >= 1710 && time <= 1810) { goodLateAfternoon(); }  // 17:10 - 18:10 mountain sunset (sunset: 17:21|17:52)
-  else if (time >= 1811 && time <= 2200) { goodEvening();       }  // 18:11 - 22:00 mountain moon
-  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe
-                                    else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
-}
+// document.getElementById("now").innerHTML = nowTime + " on a " + today;
+// }
 
 
-if        (month == "March" && day <= 11) {                        // March 12, 2017 (DST) [done]
-  if      (time >= 500 && time <=  555 ) { upEarly();           }  // 05:00 - 05:55 vector - sillouhette sunburst
-  else if (time >= 556 && time <=  619 ) { preMorning();        }  // 05:56 - 06:19 lavender field
-  else if (time >= 620 && time <=  715 ) { goodMorning();       }  // 06:20 - 07:15 orange sunrise (sunrise: 06:35 on 03.01.17)
-  else if (time >= 716 && time <=  1100) { goodLateMorning();   }  // 07:16 - 11:00 snow tracks    (     ^^: 06:19 on 03.11.17)
-  else if (time >= 1101 && time <= 1740) { goodAfternoon();     }  // 11:01 - 17:40 sun sky
-  else if (time >= 1741 && time <= 1841) { goodLateAfternoon(); }  // 17:41 - 18:41 mountain sunset (sunset: 17:53 on 03.01.17)
-  else if (time >= 1842 && time <= 2200) { goodEvening();       }  // 18:42 - 22:00 mountain moon   (    ^^: 18:03 on 03.11.17)
-  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe
-                                    else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
-}
-if        (month == "March" && day > 11) {
-  if      (time >= 500 && time <=  555 ) { upEarly();           }  // 05:00 - 05:55 vector - sillouhette sunburst
-  else if (time >= 556 && time <=  620 ) { preMorning();        }  // 05:56 - 06:20 lavender field
-  else if (time >= 621 && time <=  740 ) { goodMorning();       }  // 06:21 - 07:40 orange sunrise (sunrise: 07:18 on 03.12.17)
-  else if (time >= 741 && time <=  1100) { goodLateMorning();   }  // 07:41 - 11:00 snow tracks    (     ^^: 06:48 on 03.31.17)
-  else if (time >= 1101 && time <= 1850) { goodAfternoon();     }  // 11:01 - 18:50 sun sky
-  else if (time >= 1851 && time <= 2000) { goodLateAfternoon(); }  // 18:51 - 20:00 mountain sunset (sunset: 19:04 on 03.12.17)
-  else if (time >= 2001 && time <= 2200) { goodEvening();       }  // 20:01 - 22:00 mountain moon   (    ^^: 19:24 on 03.31.17)
-  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe
-                                    else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
-}
 
 
-if        (month == "April") {                                     // April [done]
-  if      (time >= 500 && time <=  545 ) { upEarly();           }  // 05:00 - 05:45 vector - sillouhette sunburst
-  else if (time >= 546 && time <=  600 ) { preMorning();        }  // 05:46 - 06:00 lavender field
-  else if (time >= 601 && time <=  700 ) { goodMorning();       }  // 06:01 - 07:00 orange sunrise (sunrise: 06:46|06:04)
-  else if (time >= 701 && time <=  1030) { goodLateMorning();   }  // 07:01 - 10:30 snow tracks
-  else if (time >= 1031 && time <= 1904) { goodAfternoon();     }  // 10:31 - 19:04 sun sky
-  else if (time >= 1905 && time <= 2005) { goodLateAfternoon(); }  // 19:05 - 20:05 mountain sunset (sunset: 19:25|19:54)
-  else if (time >= 2006 && time <= 2200) { goodEvening();       }  // 20:06 - 22:00 mountain moon
-  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe
-                                    else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
-}
-if        (month == "May") {                                       // May [done]
-  if      (time >= 430 && time <=  459 ) { upEarly();           }  // 04:30 - 04:59 vector - sillouhette sunburst
-  else if (time >= 500 && time <=  519 ) { preMorning();        }  // 05:00 - 05:19 lavender field
-  else if (time >= 520 && time <=  615 ) { goodMorning();       }  // 05:20 - 06:15 orange sunrise (sunrise: 06:02|05:36)
-  else if (time >= 616 && time <=  1030) { goodLateMorning();   }  // 06:16 - 10:30 snow tracks
-  else if (time >= 1031 && time <= 1939) { goodAfternoon();     }  // 10:31 - 19:39 sun sky
-  else if (time >= 1940 && time <= 2050) { goodLateAfternoon(); }  // 19:40 - 20:50 mountain sunset (sunset: 19:55|20:22)
-  else if (time >= 2051 && time <= 2200) { goodEvening();       }  // 20:51 - 22:00 mountain moon
-  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe
-                                    else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
-}
-if        (month == "June") {                                      // June [done]
-  if      (time >= 430 && time <=  459 ) { upEarly();           }  // 04:30 - 04:59 vector - sillouhette sunburst
-  else if (time >= 500 && time <=  522 ) { preMorning();        }  // 05:00 - 05:22 lavender field
-  else if (time >= 523 && time <=  555 ) { goodMorning();       }  // 05:23 - 05:55 orange sunrise (sunrise: 05:36|05:37)
-  else if (time >= 556 && time <=  1030) { goodLateMorning();   }  // 05:56 - 10:30 snow tracks
-  else if (time >= 1031 && time <= 2001) { goodAfternoon();     }  // 10:31 - 20:01 sun sky
-  else if (time >= 2002 && time <= 2055) { goodLateAfternoon(); }  // 20:02 - 20:55 mountain sunset (sunset: 20:23|20:33)
-  else if (time >= 2056 && time <= 2300) { goodEvening();       }  // 20:56 - 23:00 mountain moon
-  else if (time >= 2301 || time <= 144 ) { upLate();            }  // 23:01 - 01:44 universe
-                                    else { insomniacs();        }  // 01:45 - 04:29 universe imposing clock
-}
-if        (month == "July") {                                      // July [done]
-  if      (time >= 430 && time <=  459 ) { upEarly();           }  // 04:30 - 04:59 vector - sillouhette sunburst
-  else if (time >= 500 && time <=  511 ) { preMorning();        }  // 05:00 - 05:11 lavender field
-  else if (time >= 512 && time <=  620 ) { goodMorning();       }  // 05:12 - 06:20 orange sunrise (sunrise: 05:37|06:00)
-  else if (time >= 621 && time <=  1030) { goodLateMorning();   }  // 06:21 - 10:30 snow tracks
-  else if (time >= 1031 && time <= 2000) { goodAfternoon();     }  // 10:31 - 20:00 sun sky
-  else if (time >= 2001 && time <= 2101) { goodLateAfternoon(); }  // 20:01 - 21:01 mountain sunset (sunset: 20:37|20:16)
-  else if (time >= 2102 && time <= 2300) { goodEvening();       }  // 21:02 - 23:00 mountain moon
-  else if (time >= 2301 || time <= 144 ) { upLate();            }  // 23:01 - 01:44 universe
-                                    else { insomniacs();        }  // 01:45 - 04:29 universe imposing clock
-}
-if        (month == "August") {                                    // August [done]
-  if      (time >= 430 && time <=  501 ) { upEarly();           }  // 04:30 - 05:01 vector - sillouhette sunburst
-  else if (time >= 502 && time <=  549 ) { preMorning();        }  // 05:02 - 05:49 lavender field
-  else if (time >= 550 && time <=  650 ) { goodMorning();       }  // 05:50 - 06:50 orange sunrise (sunrise: 05:50 - 06:50)
-  else if (time >= 651 && time <=  1030) { goodLateMorning();   }  // 06:51 - 10:30 snow tracks
-  else if (time >= 1031 && time <= 1919) { goodAfternoon();     }  // 10:31 - 19:19 sun sky
-  else if (time >= 1920 && time <= 2030) { goodLateAfternoon(); }  // 19:20 - 20:30 mountain sunset (sunset: 19:20 - 20:30)
-  else if (time >= 2031 && time <= 2200) { goodEvening();       }  // 20:31 - 22:00 mountain moon
-  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe
-                                    else { insomniacs();        }  // 01:45 - 04:29 universe imposing clock
-}
-if        (month == "September") {                                 // September [done]
-  if      (time >= 440 && time <=  549 ) { upEarly();           }  // 04:40 - 05:49 vector - sillouhette sunburst
-  else if (time >= 550 && time <=  609 ) { preMorning();        }  // 05:50 - 06:09 lavender field
-  else if (time >= 610 && time <=  710 ) { goodMorning();       }  // 06:10 - 07:10 orange sunrise (sunrise: 06:10|07:10)
-  else if (time >= 711 && time <=  1030) { goodLateMorning();   }  // 07:11 - 10:30 snow tracks
-  else if (time >= 1031 && time <= 1824) { goodAfternoon();     }  // 10:31 - 18:24 sun sky
-  else if (time >= 1825 && time <= 1945) { goodLateAfternoon(); }  // 18:25 - 19:45 mountain sunset (sunset: 06:25|07:45)
-  else if (time >= 1946 && time <= 2200) { goodEvening();       }  // 19:46 - 22:00 mountain moon
-  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe
-                                    else { insomniacs();        }  // 01:45 - 04:39 universe imposing clock
-}
-if        (month == "October") {                                   // October [done]
-  if      (time >= 450 && time <=  546 ) { upEarly();           }  // 04:50 - 05:46 vector - sillouhette sunburst
-  else if (time >= 547 && time <=  629 ) { preMorning();        }  // 05:47 - 06:29 lavender field
-  else if (time >= 630 && time <=  745 ) { goodMorning();       }  // 06:30 - 07:45 orange sunrise (sunrise: 06:57|07:28)
-  else if (time >= 746 && time <=  1030) { goodLateMorning();   }  // 07:46 - 10:30 snow tracks
-  else if (time >= 1031 && time <= 1749) { goodAfternoon();     }  // 10:31 - 17:49 sun sky
-  else if (time >= 1750 && time <= 1905) { goodLateAfternoon(); }  // 17:50 - 19:05 mountain sunset (sunset: 18:45|18:02)
-  else if (time >= 1906 && time <= 2200) { goodEvening();       }  // 19:06 - 22:00 mountain moon
-  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe
-                                    else { insomniacs();        }  // 01:45 - 04:49 universe imposing clock
-}
-
-
-if        (month == "November" && day <= 4) {                      // November 5, 2017 (DST) [done]
-  if      (time >= 500 && time <=  600 ) { upEarly();           }  // 05:00 - 06:00 vector - sillouhette sunburst
-  else if (time >= 601 && time <=  715 ) { preMorning();        }  // 06:01 - 07:15 lavender field
-  else if (time >= 716 && time <=  845 ) { goodMorning();       }  // 07:16 - 08:45 orange sunrise (sunrise: 07:30 on 11.01.17)
-  else if (time >= 846 && time <=  1100) { goodLateMorning();   }  // 08:46 - 11:00 snow tracks    (     ^^: 07:33 on 11.04.17)
-  else if (time >= 1101 && time <= 1740) { goodAfternoon();     }  // 11:01 - 17:40 sun sky
-  else if (time >= 1741 && time <= 1841) { goodLateAfternoon(); }  // 17:41 - 18:41 mountain sunset (sunset: 18:00 on 11.01.17)
-  else if (time >= 1842 && time <= 2200) { goodEvening();       }  // 18:42 - 22:00 mountain moon   (    ^^: 17:57 on 11.04.17)
-  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe
-                                    else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
-}
-if        (month == "November" && day > 4) {
-  if      (time >= 500 && time <=  600 ) { upEarly();           }  // 05:00 - 06:00 vector - sillouhette sunburst
-  else if (time >= 601 && time <=  628 ) { preMorning();        }  // 06:01 - 06:28 lavender field
-  else if (time >= 629 && time <=  805 ) { goodMorning();       }  // 06:29 - 08:05 orange sunrise (sunrise: 06:34 on 11.05.17)
-  else if (time >= 806 && time <=  1100) { goodLateMorning();   }  // 08:06 - 11:00 snow tracks    (     ^^: 07:02 on 11.30.17)
-  else if (time >= 1101 && time <= 1559) { goodAfternoon();     }  // 11:01 - 15:59 sun sky
-  else if (time >= 1600 && time <= 1715) { goodLateAfternoon(); }  // 16:00 - 17:15 mountain sunset (sunset: 16:56 on 11.05.17)
-  else if (time >= 1716 && time <= 2200) { goodEvening();       }  // 17:16 - 22:00 mountain moon   (    ^^: 16:38 on 11.30.17)
-  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe
-                                    else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
-}
-
-
-if        (month == "December") {                                  // December [done]
-  if      (time >= 500 && time <=  558 ) { upEarly();           }  // 05:00 - 05:58 vector - sillouhette sunburst
-  else if (time >= 559 && time <=  705 ) { preMorning();        }  // 05:59 - 07:05 lavender field
-  else if (time >= 706 && time <=  750 ) { goodMorning();       }  // 07:06 - 07:50 orange sunrise (sunrise: 07:03|07:22)
-  else if (time >= 751 && time <=  1030) { goodLateMorning();   }  // 07:581 - 10:30 snow tracks
-  else if (time >= 1031 && time <= 1605) { goodAfternoon();     }  // 10:31 - 16:19 sun sky
-  else if (time >= 1606 && time <= 1715) { goodLateAfternoon(); }  // 16:20 - 17:15 mountain sunset (sunset: 04:38|16:46)
-  else if (time >= 1716 && time <= 2200) { goodEvening();       }  // 17:16 - 22:00 mountain moon
-  else if (time >= 2201 || time <= 144 ) { upLate();            }  // 22:01 - 01:44 universe
-                                    else { insomniacs();        }  // 01:45 - 04:59 universe imposing clock
-}
-
-
-// --------------------  End Greeting & Background  ---------------------------------- //
 
 
 
@@ -2110,29 +1867,26 @@ if (!isTouch) {
 
 
 // begin - animate navigation down from top
-/*
-$(document).ready(function() {
-  setTimeout(function() {
-    $('#mainNav').animate({
-      "top": 0+'px'
-    },1200, "easeOutBounce")
-  }, 1000);
-});
-*/
+
+// $(document).ready(function() {
+//   setTimeout(function() {
+//     $('#mainNav').animate({
+//       "top": 0+'px'
+//     },1200, "easeOutBounce")
+//   }, 1000);
+// });
+
 //temporary until finished developing...
 
-$(document).ready(function() {
-  setTimeout(function() {
-    $('#mainNav').animate({
-      "top": 0+'px'
-    },200) // how long animation will take
-  }, 1000); // how long after page loads b4 animation starts
-});
+// $(document).ready(function() {
+//   setTimeout(function() {
+//     $('#mainNav').animate({
+//       "top": 0+'px'
+//     },200) // how long animation will take
+//   }, 1000); // how long after page loads b4 animation starts
+// });
 
 // end - animate navigation down from top
-
-
-
 
 
 
@@ -2230,17 +1984,17 @@ if(windowSize == 'small') {
 function showScrollDownSprite() {
     $('#scrollDownSprite').show();
 }
-setTimeout(showScrollDownSprite, 6000);
+setTimeout(showScrollDownSprite, 100);
 
-function showScrollDownSprite2() {
-    $('#scrollDownSprite').hide();
-}
-setTimeout(showScrollDownSprite2, 8500);
+// function showScrollDownSprite2() {
+//     $('#scrollDownSprite').hide();
+// }
+// setTimeout(showScrollDownSprite2, 8500);
 
-function showScrollDownSprite3() {
-    $('#scrollDownSprite').show();
-}
-setTimeout(showScrollDownSprite, 13500);
+// function showScrollDownSprite3() {
+//     $('#scrollDownSprite').show();
+// }
+// setTimeout(showScrollDownSprite, 13500);
 
 // function showScrollDownSprite2() {
 //     $('#scrollDownSprite').hide();

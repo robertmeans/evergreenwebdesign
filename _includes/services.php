@@ -10,7 +10,8 @@
 
         <div id="tab1" class="tab active cf"><!-- Overview tab -->
           <h2 class="mobile">Overview</h2>
-            <p>Located in beautiful Evergreen, Colorado Evergreen Web Design is a full-service Internet marketing firm offering custom solutions to virtually any Web related project. We've partnered with some of the brightest talent in the industry in order to bring you the most competitive rates available from domain registration to hosting to website concept, design and development.</p>
+            <p></p>
+            <p>Based in beautiful Evergreen, Colorado, Evergreen Web Design is a full-service Internet marketing firm offering custom solutions to virtually any Web related project. We've partnered with some of the brightest talent in the industry in order to bring you the most competitive rates available from domain registration to hosting to website concept, design and development.</p>
 
             <p>Products &amp; services include:</p>
             <div class="project-col">
@@ -45,6 +46,7 @@
               <p class="seo-strategies">Your Search Engine Optimization stragety starts with the big 3 social networking giants and continues all the way into the code of your website.</p>
               <p>Gone are the days when you could just plop a few keywords into a meta tag in the code of your website and let the search engines do the rest. Today the algorithms search engines use to index your site into their database rely on a number of facets pertaining to your website address and they all ignore the keyword meta tag.</p>
               <p>The playing field has changed and if you're not keeping up, you're quickly getting left beind. It's an aggressive campaign that needs to be viewed through the perspective of a long term endeavor and not a quick fix. Evergreen Web Design will draft a course for your business in order to navigate an efficient strategy best suited to draw attention to <em>your</em> site.</p>
+              <p><a href="seo.php">Read more...</a></p>
             </div><!-- .expand !-->
           </div><!-- #container -->
 
@@ -160,6 +162,7 @@
 
     <div id="tab3" class="tab cf"><!-- $? tab -->
       <h2 class="mobile"><i class="fa fa-wordpress"></i> WordPress</h2>
+      <p>Why WordPress?</p>
       <p>WordPress powers <a class="txt-a" href="https://www.inkthemes.com/why-use-wordpress/" target="_blank">25% of all sites</a> across the web. In the realm of Content Management Systems, WordPress accounts for over 65% of the global market. It features an easy to use interface, built in search engine compatiblity, it's secure and there are virtually endless options to customize. This is the solution both novice and professional turn to most often.</p>
 
       <p>Evergreen Web Design can harness the power of this framework for you. The result is a website that can be managed in-house without the need to hire a Webmaster everytime you need an update.</p>

@@ -1,94 +1,70 @@
 <?php require_once('_includes/popup-contactform.php'); ?>
-<!DOCTYPE html>
-<html lang="en">
-<!--
-  Author:       Robert Means
-                Evergreen Web Design
-  Contact:      robert@evergreenwebdesign.com
-                (720) 504.6323
-  Last Update:  November, 23, 2016
-  Comments:     You look very nice today! :)
--->
-<head>
-  <meta charset="UTF-8">
-  <title>Evergreen Web Design - Website Development Evergreen, Colorado</title>
-  <link rel="icon" type="image/ico" href="_images/favicon.ico">
-  <link rel="image_src" href="http://www.evergreenwebdesign.com/_images/thumbnails/EWD-thumb-01.png" />
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta name="description" content="Evergreen Web Design is a full-service Internet marketing firm offering custom solutions to virtually any marketing project.">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="_scripts/coolclock-breakpoints.js?<?php echo time(); ?>"></script>
-  <script src="_scripts/modernizr.js?<?php echo time(); ?>"></script>
-  <link rel="stylesheet" href="_css/style.css?<?php echo time(); ?>">
-
-<!-- Google Analytics code -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-80245426-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-<!-- end Google Analytics code -->
-</head>
-
+<?php $layout_context = "homepage"; ?>
+<?php require('_includes/head.php'); ?>
 <body onload="javascript:fg_hideform('fg_formContainer','fg_backgroundpopup');">
 <div id="top-of-page"></div>
-<div id="wrapper">
+
 
 <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+<a class="mobile-tel large-screen-gone" href="tel:(303)%20932-7483">Call: (303) WEB-SITE</a>
 
 <header id="intro">
 <a class="mobile_menu"></a>
-<nav id="mainNav">
-  <div id="center-nav">
-  <h2>Site Navigation</h2>
-  <ul>
-    <li><a href="#" class="first-nav-item no-active-nav back-to-top2"><i class="fa fa-angle-up"></i></a></li>
-    <li><a href="#div-two" class="placeholder">services</a></li>
-    <li><a href="#div-three" class="placeholder">about</a></li>
-    <li><a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="last-nav-item">contact</a></li>
-    <li><a class="first-nav-item no-active-nav large-screen-gone mobile_menu2"><i class="fa fa-times-circle"></i></a></li>
-  </ul>
+<?php require('_includes/nav.php'); ?>
+
+<section id="homepage-container">
+<div id="div-one">
+
+<div id="branding">
+  <div id="title">
+    <p class="business-title">Evergreen Web Design</p>
+    <p class="tagline">Internet Services &amp; Marketing Solutions</p>
+    <img class="ewd-logo" src="_images/Evergreen-Web-Design-Logo_bw.png" alt="Evergreen Web Design logo">
   </div>
-</nav>
+</div><!-- #branding -->
 
-<div id="bg-div-one">
-  <span id="greeting_bkg"></span>
-  <noscript><img src="_images/sky.jpg" alt="blue sky"></noscript>
-</div>
-<section id="div-one">
-
-<div id="clockScene">
-  <div id="text-box" class="text-box-default cf">
-  <canvas id="clockid" class="CoolClock clockid-default"></canvas>
-
-  <h3>
-    <span id="greeting"></span>
-      <noscript>Hello,</noscript>
-    </h3>
-
-    <p><span id="now"></span><noscript>Now</noscript> is the perfect time to <a class="hmpg-contact" href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");'>contact Evergreen Web Design</a> and consult a professional about your online goals.</p>
-    <p>With options to suit your vision, budget and deadline, we can start a tailored solution for you right now!</p>
-
+<div id="product-container">
+  <div class="product-box">
+    <a href="#div-two" class="product-item">Essentials</a>
+    <ul class="product-list">
+      <li>Domain Names</li>
+      <li>Hosting</li>
+      <li>SSL Certificates</li>
+    </ul>
+    <p class="product-desc">Evergreen Web Design is a Certified GoDaddy Reseller. Buy through us! We can match any deal + you get GoDaddy's hardware and their renowned 24/7 customer support.</p>
   </div>
 
-  <article id="nameScene">
-    <div id="EWD">
-      <span class="title-text">Evergreen Web<br class="gone"> Design</span>
-      <div id="website-solutions-badge" class="website-solutions-badge-default">
-        <h2>Website Solutions</h2>
-        <h4>Evergreen, Colorado</h4>
-        </div>
+  <div class="product-box">
+    <a href="#div-two" class="product-item">Websites</a>
+    <ul class="product-list">
+      <li>Concept</li>
+      <li>Design</li>
+      <li>Development</li>
+    </ul>
+    <p class="product-desc">Each project provides a unique opportunity to explore creative opportuinites and custom solutions. Find out how Evergreen Web Design can meet your specific online needs today!</p>
+  </div>    
+
+  <div class="product-box">
+    <a href="#div-two" class="product-item">Campaigns</a>
+    <ul class="product-list">
+      <li>SEO</li>
+      <li>Social Media</li>
+      <li>Content Management</li>
+    </ul>
+    <p class="product-desc">Competitive industries demand precision marketing efforts to compete for coveted keywords and keyphrases. We can identify opportunities and design a stratigic campaign tailored just for you.</p> 
+  </div>      
+</div><!-- #product-container -->
+
+    <div id="badge">
+      <span class="badge-box">
+        <a class="badge-tel" tabIndex="-1" href="tel:(303)%20932-7483"><h2>Call: (303) WEBSITE</h2></a>
+        <h4>That's (303) 932-7483</h4>
+      </span>
       <div id="scrollDownSprite"><a href="#div-two" class="no-active-nav"></a></div>
-    </div><!-- name -->
-  </article>
-
-</div><!-- #clockScene -->
-</section><!-- #div-one -->
+    </div><!-- badge -->
+    
+</div>
+</section><!-- #div-one-container -->
 </header>
 
 <?php require ("_includes/services.php"); ?>
@@ -97,7 +73,6 @@
 
 
 
-</div><!-- #wrapper -->
 <?php include "_includes/footer.php" ?>
 <?php require_once('_includes/contactform-code.php'); ?>
 

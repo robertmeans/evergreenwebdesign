@@ -33,6 +33,9 @@ function fg_hideform(formdiv_id,bg_div_id)
 }
 
 
+
+
+
 function FG_MoveablePopup(div_obj)
 {
     var _div_obj = div_obj;
