@@ -4874,6 +4874,10 @@ ul.list li {
   box-sizing: border-box;
 }
 
+.last-nav-item {
+  margin-right: 60px;
+}
+
 #center-nav li.ewd-nav-logo {
   display: none;
   border: none;
@@ -4882,11 +4886,10 @@ ul.list li {
 }
 #center-nav li.ewd-nav-logo img {
   width: 100%;
-  max-width: 90px;
+  max-width: 97px;
   position: fixed;
   top: 0px;
   z-index: 1999;
-  padding-left: 60px;
 }
 #center-nav li.ewd-nav-logo a {
   width: auto;
@@ -4951,23 +4954,38 @@ div#branding img.ewd-logo {
       -ms-flex-pack: center;
           justify-content: center;
 }
-#product-container div:nth-child(1) > h1 {
+#product-container div:nth-child(1) > a {
   background-color: #0c5f99;
   border-top: 1px solid #3dabf8;
   border-right: 1px solid #3dabf8;
   border-left: 1px solid #3dabf8;
+  -webkit-transition: background-color 0.75s ease, color 0.5s ease;
+          transition: background-color 0.75s ease, color 0.5s ease;
 }
-#product-container div:nth-child(2) > h1 {
+#product-container div:nth-child(1) > a:hover {
+  background-color: rgba(85, 183, 251, 0.3);
+}
+#product-container div:nth-child(2) > a {
   background-color: #27857d;
   border-top: 1px solid #79f3d2;
   border-right: 1px solid #79f3d2;
   border-left: 1px solid #79f3d2;
+  -webkit-transition: background-color 0.75s ease, color 0.5s ease;
+          transition: background-color 0.75s ease, color 0.5s ease;
 }
-#product-container div:nth-child(3) > h1 {
+#product-container div:nth-child(2) > a:hover {
+  background-color: rgba(69, 247, 232, 0.3);
+}
+#product-container div:nth-child(3) > a {
   background-color: #756e13;
   border-top: 1px solid #d6da2c;
   border-right: 1px solid #d6da2c;
   border-left: 1px solid #d6da2c;
+  -webkit-transition: background-color 0.75s ease, color 0.5s ease;
+          transition: background-color 0.75s ease, color 0.5s ease;
+}
+#product-container div:nth-child(3) > a:hover {
+  background-color: rgba(245, 233, 76, 0.3);
 }
 #product-container div:nth-child(1) > ul {
   border-right: 1px solid #3dabf8;
@@ -4990,12 +5008,18 @@ div#branding img.ewd-logo {
   max-width: 410px;
   overflow: hidden;
 }
-#product-container .product-box h1.product-item {
+#product-container .product-box a.product-item {
   font-size: 2em;
   color: #fff;
   text-align: center;
   padding: 15px;
   margin: 0;
+  display: block;
+  text-decoration: none;
+}
+#product-container .product-box a.product-item:hover {
+  text-decoration: none;
+  color: #333;
 }
 #product-container .product-box ul.product-list {
   list-style: none;

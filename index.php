@@ -6,7 +6,7 @@
 <div id="wrapper">
 
 <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
-<a class="mobile-tel large-screen-gone" href="tel:(303)%20932-7483">Call: (303) WEBSITE</a>
+<a class="mobile-tel large-screen-gone" href="tel:(303)%20932-7483">Call: (303) WEB-SITE</a>
 
 <header id="intro">
 <a class="mobile_menu"></a>
@@ -25,7 +25,7 @@
 
 <div id="product-container">
   <div class="product-box">
-    <h1 class="product-item">Essentials</h1>
+    <a href="#div-two" class="product-item">Essentials</a>
     <ul class="product-list">
       <li>Domain Names</li>
       <li>Hosting</li>
@@ -35,7 +35,7 @@
   </div>
 
   <div class="product-box">
-    <h1 class="product-item">Websites</h1>
+    <a href="#div-two" class="product-item">Websites</a>
     <ul class="product-list">
       <li>Concept</li>
       <li>Design</li>
@@ -45,7 +45,7 @@
   </div>    
 
   <div class="product-box">
-    <h1 class="product-item">Campaigns</h1>
+    <a href="#div-two" class="product-item">Campaigns</a>
     <ul class="product-list">
       <li>SEO</li>
       <li>Social Media</li>

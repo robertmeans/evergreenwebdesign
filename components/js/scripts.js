@@ -1867,15 +1867,15 @@ if (!isTouch) {
 
 
 // begin - animate navigation down from top
-/*
-$(document).ready(function() {
-  setTimeout(function() {
-    $('#mainNav').animate({
-      "top": 0+'px'
-    },1200, "easeOutBounce")
-  }, 1000);
-});
-*/
+
+// $(document).ready(function() {
+//   setTimeout(function() {
+//     $('#mainNav').animate({
+//       "top": 0+'px'
+//     },1200, "easeOutBounce")
+//   }, 1000);
+// });
+
 //temporary until finished developing...
 
 // $(document).ready(function() {
@@ -1887,9 +1887,6 @@ $(document).ready(function() {
 // });
 
 // end - animate navigation down from top
-
-
-
 
 
 

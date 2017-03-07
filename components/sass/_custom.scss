@@ -35,9 +35,9 @@ ul.list {
 	box-sizing: border-box;
 }
 
-
-
-
+.last-nav-item {
+	margin-right: 60px;
+}
 
 // EWD Logo on top of nav
 #center-nav {
@@ -48,11 +48,11 @@ ul.list {
 		margin: 0;
 		img {
 			width: 100%;
-			max-width: 90px;
+			max-width: 97px;
 			position: fixed;
 			top: 0px;
 			z-index: 1999;
-			padding-left: 60px;
+			// padding-left: 60px;
 		}
 		a {
 			width: auto;
@@ -110,33 +110,37 @@ div#branding {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-		div:nth-child(1) > h1 {
+		div:nth-child(1) > a {
 			background-color: rgba(12,95,153,1);
 			border-top: 1px solid #3dabf8;
 			border-right: 1px solid #3dabf8;
 			border-left: 1px solid #3dabf8;
+			transition: background-color 0.75s ease, color 0.5s ease;
+			&:hover {
+				background-color: rgba(85,183,251,0.3);
+			}
 		}
 		div:nth-child(2) {
-			// margin: 0px 1%;
-			& > h1 {
-				// background-color: rgba(76,181,172,1);
+			& > a {
 				background-color: rgba(39,133,125,1);
 				border-top: 1px solid #79f3d2;
 				border-right: 1px solid #79f3d2;
 				border-left: 1px solid #79f3d2;
-// fade across				
-// background: #0c5f99; 
-// background: -moz-linear-gradient(left, #0c5f99 0%, #0c5f99 12%, #756e13 85%, #756e13 100%); 
-// background: -webkit-linear-gradient(left, #0c5f99 0%,#0c5f99 12%,#756e13 85%,#756e13 100%); 
-// background: linear-gradient(to right, #0c5f99 0%,#0c5f99 12%,#756e13 85%,#756e13 100%); 
-// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c5f99', endColorstr='#756e13',GradientType=1 ); 
+				transition: background-color 0.75s ease, color 0.5s ease;
+				&:hover {
+					background-color: rgba(69,247,232,0.3);
+				} 
 			}
 		}
-		div:nth-child(3) > h1 {
+		div:nth-child(3) > a {
 			background-color: rgba(117,110,19,1);
 			border-top: 1px solid #d6da2c;
 			border-right: 1px solid #d6da2c;
 			border-left: 1px solid #d6da2c;
+			transition: background-color 0.75s ease, color 0.5s ease;
+			&:hover {
+				background-color: rgba(245,233,76,0.3);
+			}
 		}
 		// -------- dark box borders
 		div:nth-child(1) > ul {
@@ -152,20 +156,22 @@ div#branding {
 			border-left: 1px solid #d6da2c;
 		}	
 	.product-box {
-		// width: 33%;
 		flex: 1 1 300px;
 		margin: 1%;
 		max-width: 410px;
 		overflow: hidden;
-		&:nth-of-type(1) {
-			// margin: 0px;
-		}
-		h1.product-item {
+		a.product-item {
 			font-size: 2em;
 			color: #fff;
 			text-align: center;
 			padding: 15px;
 			margin: 0;
+			display: block;
+			text-decoration: none;
+			&:hover {
+				text-decoration: none;
+				color: #333;
+			}
 		}
 		ul.product-list {
 			list-style: none;

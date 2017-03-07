@@ -10,7 +10,8 @@
 
         <div id="tab1" class="tab active cf"><!-- Overview tab -->
           <h2 class="mobile">Overview</h2>
-            <p>Located in beautiful Evergreen, Colorado Evergreen Web Design is a full-service Internet marketing firm offering custom solutions to virtually any Web related project. We've partnered with some of the brightest talent in the industry in order to bring you the most competitive rates available from domain registration to hosting to website concept, design and development.</p>
+            <p></p>
+            <p>Based in beautiful Evergreen, Colorado, Evergreen Web Design is a full-service Internet marketing firm offering custom solutions to virtually any Web related project. We've partnered with some of the brightest talent in the industry in order to bring you the most competitive rates available from domain registration to hosting to website concept, design and development.</p>
 
             <p>Products &amp; services include:</p>
             <div class="project-col">

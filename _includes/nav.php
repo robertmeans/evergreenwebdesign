@@ -28,7 +28,7 @@
     
     <li class="full-height ewd-nav-logo">
       <a href="#" class="no-active-nav back-to-top2">
-        <img class="nav-logo" src="_images/Evergreen-Web-Design-Logo_bw.png" alt="Evergreen Web Design logo">
+        <img class="nav-logo" src="_images/Evergreen-Web-Design-nav-logo.png" alt="Evergreen Web Design logo">
       </a>
     </li>
     <li class="full-height"><a class="first-nav-item no-active-nav large-screen-gone mobile_menu2"><i class="fa fa-times-circle"></i></a></li>
