@@ -1846,7 +1846,7 @@ if (!isTouch) {
     // }
     if ( windowpos > $('#essentials').offset().top) {
         $('nav li a').removeClass('active-nav');
-        $('a[href$="#div-two"]').not('.no-active-nav').addClass('active-nav');
+        $('a[href$="#essentials"]').not('.no-active-nav').addClass('active-nav');
     }
     if ( windowpos > $('#div-two').offset().top) {
         $('nav li a').removeClass('active-nav');

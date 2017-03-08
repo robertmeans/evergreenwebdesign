@@ -1233,47 +1233,77 @@ max-width: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
   background: #6d94e1 url('_images/seo-bkg.jpg') no-repeat top left fixed;
   background-size: cover;
-  // padding: 100px 0px;
-  min-height: 1080px;
+  min-height: 100vh;
+  // padding: 80px 0px;
+  // min-height: 1080px;
   font-size: 1.1em;
     div.essentials-conatiner {
       display: flex;
-      width: 90%;
-      max-width: 1200px;
+      // width: 90%;
+      // max-width: 1200px;
+      width: 100%;
+
+      justify-content: center;
+      align-items: center;
+      margin: 90px 0;
       // background-color: rgba(255,255,255,1);
       background-color: #fcfcfc;
-      padding: 20px;
-    img.dont-panic {
-      // flex: 1;
-      align-item: left;
-      width: 100%;
-      max-width: 300px;
-      margin-right: 30px;
-      border-right: 2px solid #757575;
+      padding: 20px 0px;
+
+      div.essentials-image {
+        display: block;
+        margin-right: 30px;
+        width: 100%;
+        max-width: 200px;
+        img.dont-panic {
+          display: block;
+          width: 100%;
+          max-width: 200px;
+          margin: 20px 0 0 0;
+          border-right: 2px solid #757575;
+          box-sizing: border-box;
+        }
     }
+    
     .essentials-content {
       display: flex;
       flex-grow: 2;
       flex-direction: column;
-      h1 {
-        align-self: center;
+      padding-right: 20px;
+      max-width: 700px;
+      h4 {
+        // align-self: center;
         display: inline-block;
         font-size: 2em;
         color: #891d1d;
         font-weight: bold;
+        margin: 1em 0;
       }
       p {
-        align-self: left;
+        // align-self: left;
+        line-height: 1.2em;
+        margin: 0.5em 0;
       }
     }
   }
 }
 
-
-
+#essentials > div > div.essentials-image > p {
+  color: #333;
+  width: 100%;
+  max-width: 300px;
+  background-color: #ccc;;
+  color: #333;
+  margin: 0 0 20px 0;
+  font-size: 0.8em;
+  text-align: justify;
+  padding: 10px;
+  box-sizing: border-box;
+  border-right: 2px solid #757575;
+}
 
 
 
@@ -1285,6 +1315,7 @@ max-width: 60px;
 	min-height: 680px;
 	padding-bottom: 100px;
 	background: #6d94e1 url(_images/symphony.png) repeat fixed center;
+  min-height: 100vh;
 }
 #div-two.insomniac-background {
 	background: #6d94e1 url(_images/insomniacs.jpg) repeat fixed center;
@@ -1294,8 +1325,8 @@ max-width: 60px;
 	min-height: 700px;
 	padding-top: 10px;
 	padding-bottom: 30px;
-	// background: #6d94e1 url(_images/day-sky-01.jpg) no-repeat center center fixed;
-  background: #6d94e1 url(_images/bike.jpg) no-repeat center center fixed;
+	background: #6d94e1 url(_images/day-sky-01.jpg) no-repeat center center fixed;
+  // background: #6d94e1 url(_images/bike.jpg) no-repeat center center fixed;
 	background-size: cover;
     background-attachment: fixed;
 	.scene-content {
@@ -1731,6 +1762,8 @@ ul.list {
 
 
 .about {
+  font-family: Calibri, Arial, sans-serif;
+  font-size: 1.1em;
 	line-height: 1.5em;
     width: 90%;
     max-width: 1200px;
@@ -1740,9 +1773,6 @@ ul.list {
     display: block;
     background: rgba(255,255,255,.9);
     border-radius: 3px;
-	moz-border-radius: 3px;
-	webkit-border-radius: 3px;
-	o-border-radius: 3px;
     h1 {
     	font-size: 2.8em;
     	font-weight: bold;
@@ -2773,6 +2803,7 @@ div#branding {
 	z-index: 50;
 	width: 90%;
 	max-width: 1200px;
+  margin-top: 60px;
 	p.business-title {
 		font-family: 'Exo 2', Helvetica, Arial, sans-serif;
 		font-size: 3.5em;

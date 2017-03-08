@@ -3583,13 +3583,9 @@ html[xmlns] .slides {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background: #6d94e1 url("_images/seo-bkg.jpg") no-repeat top left fixed;
   background-size: cover;
-  min-height: 1080px;
+  min-height: 100vh;
   font-size: 1.1em;
 }
 #essentials div.essentials-conatiner {
@@ -3597,17 +3593,32 @@ html[xmlns] .slides {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 90%;
-  max-width: 1200px;
-  background-color: #fcfcfc;
-  padding: 20px;
-}
-#essentials div.essentials-conatiner img.dont-panic {
-  align-item: left;
   width: 100%;
-  max-width: 300px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 90px 0;
+  background-color: #fcfcfc;
+  padding: 20px 0px;
+}
+#essentials div.essentials-conatiner div.essentials-image {
+  display: block;
   margin-right: 30px;
+  width: 100%;
+  max-width: 200px;
+}
+#essentials div.essentials-conatiner div.essentials-image img.dont-panic {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 20px 0 0 0;
   border-right: 2px solid #757575;
+  box-sizing: border-box;
 }
 #essentials div.essentials-conatiner .essentials-content {
   display: -webkit-box;
@@ -3623,20 +3634,33 @@ html[xmlns] .slides {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-right: 20px;
+  max-width: 700px;
 }
-#essentials div.essentials-conatiner .essentials-content h1 {
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
+#essentials div.essentials-conatiner .essentials-content h4 {
   display: inline-block;
   font-size: 2em;
   color: #891d1d;
   font-weight: bold;
+  margin: 1em 0;
 }
 #essentials div.essentials-conatiner .essentials-content p {
-  -webkit-align-self: left;
-      -ms-flex-item-align: left;
-          align-self: left;
+  line-height: 1.2em;
+  margin: 0.5em 0;
+}
+
+#essentials > div > div.essentials-image > p {
+  color: #333;
+  width: 100%;
+  max-width: 300px;
+  background-color: #ccc;
+  color: #333;
+  margin: 0 0 20px 0;
+  font-size: 0.8em;
+  text-align: justify;
+  padding: 10px;
+  box-sizing: border-box;
+  border-right: 2px solid #757575;
 }
 
 #div-two {
@@ -3644,6 +3668,7 @@ html[xmlns] .slides {
   min-height: 680px;
   padding-bottom: 100px;
   background: #6d94e1 url(_images/symphony.png) repeat fixed center;
+  min-height: 100vh;
 }
 
 #div-two.insomniac-background {
@@ -3655,7 +3680,7 @@ html[xmlns] .slides {
   min-height: 700px;
   padding-top: 10px;
   padding-bottom: 30px;
-  background: #6d94e1 url(_images/bike.jpg) no-repeat center center fixed;
+  background: #6d94e1 url(_images/day-sky-01.jpg) no-repeat center center fixed;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -4053,6 +4078,8 @@ ul.list li h3:hover {
 }
 
 .about {
+  font-family: Calibri, Arial, sans-serif;
+  font-size: 1.1em;
   line-height: 1.5em;
   width: 90%;
   max-width: 1200px;
@@ -4062,9 +4089,6 @@ ul.list li h3:hover {
   display: block;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 3px;
-  moz-border-radius: 3px;
-  webkit-border-radius: 3px;
-  o-border-radius: 3px;
 }
 .about h1 {
   font-size: 2.8em;
@@ -4991,6 +5015,7 @@ div#branding {
   z-index: 50;
   width: 90%;
   max-width: 1200px;
+  margin-top: 60px;
 }
 div#branding p.business-title {
   font-family: 'Exo 2', Helvetica, Arial, sans-serif;
