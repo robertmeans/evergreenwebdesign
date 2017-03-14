@@ -1234,7 +1234,7 @@ max-width: 60px;
   flex-direction: column;
   align-items: center;
   // justify-content: center;
-  background: #6d94e1 url('_images/seo-bkg.jpg') no-repeat top left fixed;
+  background: #6d94e1 url('_images/world-bkg.jpg') no-repeat top left fixed;
   background-size: cover;
   min-height: 100vh;
   // padding: 80px 0px;
@@ -1255,7 +1255,7 @@ max-width: 60px;
 
       div.essentials-image {
         display: block;
-        margin-right: 30px;
+        margin: 0px 30px;
         width: 100%;
         max-width: 200px;
         img.dont-panic {
@@ -1305,7 +1305,19 @@ max-width: 60px;
   border-right: 2px solid #757575;
 }
 
+@media screen and (max-width: 600px) {
+  #essentials div.essentials-conatiner div.essentials-image,
+  #essentials>div>div.essentials-image>p {
+    display: none;
+    width: 0;
+    margin: 0;
+   }
+  #essentials div.essentials-conatiner .essentials-content {
+    flex-grow: 1;
+    padding: 30px 20px;
+  }
 
+}
 
 
 
@@ -2843,6 +2855,7 @@ div#branding {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+  align-items: flex-end;
 		div:nth-child(1) > a {
 			background-color: rgba(12,95,153,1);
 			border-top: 1px solid #3dabf8;
@@ -2895,8 +2908,8 @@ div#branding {
 		flex: 1;
     flex-flow: column;
 		margin: 1%;
-		max-width: 410px;
-		// overflow: hidden;
+    align-self: flex-start;
+		// max-width: 410px;
 		a.product-item {
 			font-size: 2em;
 			color: #fff;
@@ -2938,7 +2951,7 @@ div#branding {
 			color: #fff;
 			font-size: 1em;
 			padding: 20px;
-			margin: 0;
+      margin: 0 0 auto 0;
       border-top: 1px solid #266902;
 			border-right: 1px solid #fff;
 			border-bottom: 1px solid #fff;
@@ -2982,6 +2995,7 @@ div#branding {
 			font-size: .9em;
 			line-height: 1em;
 			margin-top: 8px;
+      letter-spacing: 1px;
 		}
 	}
 }
@@ -3176,4 +3190,10 @@ div#branding {
 		}
 	}
 }
-
+a.storefront-link {
+  color: #0000ff;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}

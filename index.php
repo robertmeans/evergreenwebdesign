@@ -18,7 +18,7 @@
 <div id="branding">
   <div id="title">
     <p class="business-title">Evergreen Web Design</p>
-    <p class="tagline">Internet Services &amp; Marketing Solutions</p>
+    <p class="tagline">Internet Services | Marketing Solutions</p>
     <img class="ewd-logo" src="_images/Evergreen-Web-Design-Logo_bw.png" alt="Evergreen Web Design logo">
   </div>
 </div><!-- #branding -->

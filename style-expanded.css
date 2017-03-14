@@ -3583,7 +3583,7 @@ html[xmlns] .slides {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #6d94e1 url("_images/seo-bkg.jpg") no-repeat top left fixed;
+  background: #6d94e1 url("_images/world-bkg.jpg") no-repeat top left fixed;
   background-size: cover;
   min-height: 100vh;
   font-size: 1.1em;
@@ -3608,7 +3608,7 @@ html[xmlns] .slides {
 }
 #essentials div.essentials-conatiner div.essentials-image {
   display: block;
-  margin-right: 30px;
+  margin: 0px 30px;
   width: 100%;
   max-width: 200px;
 }
@@ -3663,6 +3663,22 @@ html[xmlns] .slides {
   border-right: 2px solid #757575;
 }
 
+@media screen and (max-width: 600px) {
+  #essentials div.essentials-conatiner div.essentials-image,
+  #essentials > div > div.essentials-image > p {
+    display: none;
+    width: 0;
+    margin: 0;
+  }
+
+  #essentials div.essentials-conatiner .essentials-content {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding: 30px 20px;
+  }
+}
 #div-two {
   height: auto;
   min-height: 680px;
@@ -5066,6 +5082,10 @@ div#branding img.ewd-logo {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 #product-container div:nth-child(1) > a {
   background-color: #0c5f99;
@@ -5124,7 +5144,9 @@ div#branding img.ewd-logo {
       -ms-flex-flow: column;
           flex-flow: column;
   margin: 1%;
-  max-width: 410px;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
 }
 #product-container .product-box a.product-item {
   font-size: 2em;
@@ -5163,7 +5185,7 @@ div#branding img.ewd-logo {
   color: #fff;
   font-size: 1em;
   padding: 20px;
-  margin: 0;
+  margin: 0 0 auto 0;
   border-top: 1px solid #266902;
   border-right: 1px solid #fff;
   border-bottom: 1px solid #fff;
@@ -5207,6 +5229,7 @@ div#branding img.ewd-logo {
   font-size: .9em;
   line-height: 1em;
   margin-top: 8px;
+  letter-spacing: 1px;
 }
 
 #seo-container {
@@ -5393,4 +5416,11 @@ div#branding img.ewd-logo {
   div#branding img.ewd-logo {
     display: none;
   }
+}
+a.storefront-link {
+  color: #0000ff;
+  text-decoration: underline;
+}
+a.storefront-link:hover {
+  text-decoration: none;
 }
