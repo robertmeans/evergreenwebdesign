@@ -1202,6 +1202,123 @@ max-width: 60px;
 // see new hero layout 02.28.17 below for
 // all CSS pertaining to #div-one
 // ----------------------------------------
+#homepage-container {
+  display: flex;
+  height: 1080px;
+  // background: #6d94e1 url('_images/day-sky-01.jpg') no-repeat center center fixed;
+  background: #6d94e1 url('_images/server-cloud-bkg.jpg') no-repeat center center fixed;
+  background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+}
+#div-one {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+#essentials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: center;
+  background: #6d94e1 url('_images/world-bkg.jpg') no-repeat top left fixed;
+  background-size: cover;
+  min-height: 100vh;
+  // padding: 80px 0px;
+  // min-height: 1080px;
+  font-size: 1.1em;
+    div.essentials-conatiner {
+      display: flex;
+      // width: 90%;
+      // max-width: 1200px;
+      width: 100%;
+
+      justify-content: center;
+      align-items: center;
+      margin: 90px 0;
+      // background-color: rgba(255,255,255,1);
+      background-color: #fcfcfc;
+      padding: 20px 0px;
+
+      div.essentials-image {
+        display: block;
+        margin: 0px 30px;
+        width: 100%;
+        max-width: 200px;
+        img.dont-panic {
+          display: block;
+          width: 100%;
+          max-width: 200px;
+          margin: 20px 0 0 0;
+          border-right: 2px solid #757575;
+          box-sizing: border-box;
+        }
+    }
+    
+    .essentials-content {
+      display: flex;
+      flex-grow: 2;
+      flex-direction: column;
+      padding-right: 20px;
+      max-width: 700px;
+      h4 {
+        // align-self: center;
+        display: inline-block;
+        font-size: 2em;
+        color: #891d1d;
+        font-weight: bold;
+        margin: 1em 0;
+      }
+      p {
+        // align-self: left;
+        line-height: 1.2em;
+        margin: 0.5em 0;
+      }
+    }
+  }
+}
+
+#essentials > div > div.essentials-image > p {
+  color: #333;
+  width: 100%;
+  max-width: 300px;
+  background-color: #ccc;;
+  color: #333;
+  margin: 0 0 20px 0;
+  font-size: 0.8em;
+  text-align: justify;
+  padding: 10px;
+  box-sizing: border-box;
+  border-right: 2px solid #757575;
+}
+
+@media screen and (max-width: 600px) {
+  #essentials div.essentials-conatiner div.essentials-image,
+  #essentials>div>div.essentials-image>p {
+    display: none;
+    width: 0;
+    margin: 0;
+   }
+  #essentials div.essentials-conatiner .essentials-content {
+    flex-grow: 1;
+    padding: 30px 20px;
+  }
+
+}
+
 
 
 #div-two {
@@ -1210,15 +1327,8 @@ max-width: 60px;
 	min-height: 680px;
 	padding-bottom: 100px;
 	background: #6d94e1 url(_images/symphony.png) repeat fixed center;
-	// background-size: cover;
+  min-height: 100vh;
 }
-// .fixed-bkg {
-// 	min-height: 100%;
-// 	background-size: cover;
-// 	background-attachment: fixed;
-// 	background-repeat: no-repeat;
-// 	background-position: center center;
-// }
 #div-two.insomniac-background {
 	background: #6d94e1 url(_images/insomniacs.jpg) repeat fixed center;
 }
@@ -1228,6 +1338,7 @@ max-width: 60px;
 	padding-top: 10px;
 	padding-bottom: 30px;
 	background: #6d94e1 url(_images/day-sky-01.jpg) no-repeat center center fixed;
+  // background: #6d94e1 url(_images/bike.jpg) no-repeat center center fixed;
 	background-size: cover;
     background-attachment: fixed;
 	.scene-content {
@@ -1340,7 +1451,7 @@ max-width: 60px;
 		// contained w/in this class
 	// z-index: 333;
     width: 90%;
-    max-width: 1115px;
+    max-width: 1200px;
     margin: 0px auto;
     padding: 20px 0px;
     display: block;
@@ -1663,18 +1774,17 @@ ul.list {
 
 
 .about {
+  font-family: Calibri, Arial, sans-serif;
+  font-size: 1.1em;
 	line-height: 1.5em;
     width: 90%;
-    max-width: 1115px;
+    max-width: 1200px;
     border: 1px solid #ccc;
     margin: 90px auto;
     padding: 20px 0px;
     display: block;
     background: rgba(255,255,255,.9);
     border-radius: 3px;
-	moz-border-radius: 3px;
-	webkit-border-radius: 3px;
-	o-border-radius: 3px;
     h1 {
     	font-size: 2.8em;
     	font-weight: bold;
@@ -1733,6 +1843,7 @@ a.env > i.fa {
 	float: left;
 	img {
 		width: 100%;
+    max-width: 250px;
 		border: 1px solid #757575;
 		border-radius: 50%;
 		moz-border-radius: 50%;
@@ -2666,25 +2777,6 @@ ul.list {
 
 
 
-#homepage-container {
-	display: flex;
-	height: 1080px;
-	background: #6d94e1 url('_images/day-sky-01.jpg') no-repeat center center fixed;
-	// background: #6d94e1 url('_images/seo-bkg.jpg') no-repeat center center fixed;
-	background-size: cover;
-    background-attachment: fixed;
-    z-index: 1;
-}
-#div-one {
-	display: flex;
-	flex-direction: column;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	align-items: center;
-	justify-content: center;
-	box-sizing: border-box;
-}
 
 .last-nav-item {
 	margin-right: 60px;
@@ -2723,6 +2815,7 @@ div#branding {
 	z-index: 50;
 	width: 90%;
 	max-width: 1200px;
+  margin-top: 60px;
 	p.business-title {
 		font-family: 'Exo 2', Helvetica, Arial, sans-serif;
 		font-size: 3.5em;
@@ -2734,8 +2827,9 @@ div#branding {
 	}
 	p.tagline {
 		font-family: 'Ubuntu', Helvetica, sans-serif;
-		font-weight: 700;;
-		color: #4c4c4c;
+		font-weight: 700;
+		color: #fff;
+    text-shadow: -2px 3px 5px rgba(0,0,0,0.6);
 		font-size: 1.4em;
 		line-height: 0em;
 		margin-top: -10px;
@@ -2761,10 +2855,12 @@ div#branding {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+  align-items: flex-end;
 		div:nth-child(1) > a {
 			background-color: rgba(12,95,153,1);
 			border-top: 1px solid #3dabf8;
 			border-right: 1px solid #3dabf8;
+      border-bottom: 1px solid #4bd300;
 			border-left: 1px solid #3dabf8;
 			transition: background-color 0.75s ease, color 0.5s ease;
 			&:hover {
@@ -2776,6 +2872,7 @@ div#branding {
 				background-color: rgba(39,133,125,1);
 				border-top: 1px solid #79f3d2;
 				border-right: 1px solid #79f3d2;
+        border-bottom: 1px solid #4bd300;
 				border-left: 1px solid #79f3d2;
 				transition: background-color 0.75s ease, color 0.5s ease;
 				&:hover {
@@ -2787,6 +2884,7 @@ div#branding {
 			background-color: rgba(117,110,19,1);
 			border-top: 1px solid #d6da2c;
 			border-right: 1px solid #d6da2c;
+      border-bottom: 1px solid #4bd300;
 			border-left: 1px solid #d6da2c;
 			transition: background-color 0.75s ease, color 0.5s ease;
 			&:hover {
@@ -2810,8 +2908,8 @@ div#branding {
 		flex: 1;
     flex-flow: column;
 		margin: 1%;
-		max-width: 410px;
-		// overflow: hidden;
+    align-self: flex-start;
+		// max-width: 410px;
 		a.product-item {
 			font-size: 2em;
 			color: #fff;
@@ -2849,14 +2947,15 @@ div#branding {
 			}
 		}
 		p.product-desc {
-			background-color: rgba(255,255,255,0.35);
-			color: #333;
+			background-color: rgba(0,0,0,0.8);
+			color: #fff;
 			font-size: 1em;
 			padding: 20px;
-			margin: 0;
-			border-right: 1px solid transparent;
-			border-bottom: 1px solid transparent;
-			border-left: 1px solid transparent;
+      margin: 0 0 auto 0;
+      border-top: 1px solid #266902;
+			border-right: 1px solid #fff;
+			border-bottom: 1px solid #fff;
+			border-left: 1px solid #fff;
 			padding-bottom: 20px;
 		}
 	}
@@ -2871,12 +2970,12 @@ div#branding {
 		display: block;
 		text-align: center;
 		margin: 20px auto 0px auto;
-		background-color: rgba(12,95,153,0.5);
+    color: #fff;
+		background-color: rgba(166,31,30,0.9); // red'ish
 		max-width: 300px;
-		color: #fff;
 		padding: 15px 35px;
-		border: 2px solid #fff;
-		border-radius: 12px;
+		border: 1px solid #fff;
+		border-radius: 8px;
 		transition: all .75s ease;
 		a.badge-tel {
 			text-decoration: none;
@@ -2896,6 +2995,7 @@ div#branding {
 			font-size: .9em;
 			line-height: 1em;
 			margin-top: 8px;
+      letter-spacing: 1px;
 		}
 	}
 }
@@ -3003,8 +3103,8 @@ div#branding {
 				}
 			}
 			p.product-desc {
-				margin-bottom: -40px;
-				padding-bottom: 60px;
+				margin-bottom: 0px;
+				padding-bottom: 20px;
 				// display: none;
 			}
 		}
@@ -3090,4 +3190,10 @@ div#branding {
 		}
 	}
 }
-
+a.storefront-link {
+  color: #0000ff;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}

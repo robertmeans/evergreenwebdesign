@@ -18,14 +18,14 @@
 <div id="branding">
   <div id="title">
     <p class="business-title">Evergreen Web Design</p>
-    <p class="tagline">Internet Services &amp; Marketing Solutions</p>
+    <p class="tagline">Internet Services | Marketing Solutions</p>
     <img class="ewd-logo" src="_images/Evergreen-Web-Design-Logo_bw.png" alt="Evergreen Web Design logo">
   </div>
 </div><!-- #branding -->
 
 <div id="product-container">
   <div class="product-box">
-    <a href="#div-two" class="product-item">Essentials</a>
+    <a href="#essentials" class="product-item">Essentials</a>
     <ul class="product-list">
       <li>Domain Names</li>
       <li>Hosting</li>
@@ -67,6 +67,7 @@
 </section><!-- #div-one-container -->
 </header>
 
+<?php require ("_includes/essentials.php"); ?>
 <?php require ("_includes/services.php"); ?>
 <?php require ("_includes/about.php"); ?>
 <?php require ("_includes/backstretch.php"); ?>
