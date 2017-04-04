@@ -70,6 +70,11 @@
     <ul class="list moresites cf">
 
       <li>
+        <a href="http://www.evergreenwebdesign.com/offline-sites/sattvamassage" target="_blank"><img src="_images/sattva-massage-website.jpg" alt="Sattva Massage"></a>
+        <h3>Sattva Massage</h3>
+        <p>Cutsom WordPress site that owner can update and modify.</p>
+      </li>
+      <li>
         <a href="http://www.evergreentaphouse.com" target="_blank"><img src="_images/evergreen-tap-house-website.jpg" alt="Evergren Tap House"></a>
         <h3>Evergreen Tap House</h3>
         <p>Full-featured WordPress website with robust array of customized options.</p>
