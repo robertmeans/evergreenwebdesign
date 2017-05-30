@@ -95,7 +95,7 @@
         <p>Advertising in various mediums. With a mobile-optimized website they are now reaching more customers than ever.</p>
       </li>
       <li>
-        <a href="http://www.wildflowerevergreen.com" target="_blank"><img src="_images/wildflower-website.jpg" alt="Wildflower Café"></a>
+        <a href="http://www.evergreenwebdesign.com/offline-sites/wildflowerevergreen" target="_blank"><img src="_images/wildflower-website.jpg" alt="Wildflower Café"></a>
         <h3>The Wildflower Café</h3>
         <p>Located in historic downtown Evergreen, Colorado with a menu that brings folks in from miles around.</p>
       </li>
