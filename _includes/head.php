@@ -15,7 +15,7 @@
   <link rel="icon" type="image/ico" href="_images/favicon.ico">
   <link rel="image_src" href="http://www.evergreenwebdesign.com/_images/thumbnails/EWD-thumb-01.png" />
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta name="description" content="Evergreen Web Design is a full-service Internet marketing firm offering custom solutions to virtually any marketing project.">
+  <meta name="description" content="Evergreen Web Design is a full-service Internet marketing firm offering custom solutions to virtually any marketing project. Call (303) WEBSITE>
   <meta name="format-detection" content="telephone=no">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="_scripts/modernizr.js?<?php echo time(); ?>"></script>
