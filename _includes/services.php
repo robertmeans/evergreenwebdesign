@@ -70,6 +70,11 @@
     <ul class="list moresites cf">
 
       <li>
+        <a href="http://www.evergreenbrewery.com" target="_blank"><img src="_images/evergreen-brewery-website.jpg" alt="Evergren Tap House"></a>
+        <h3>Evergreen Brewery</h3>
+        <p>Elegant. Minimilistic. This &quot;pet project&quot; is destined to evolve over time.</p>
+      </li>
+      <li>
         <a href="http://www.ledererinc.com" target="_blank"><img src="_images/ledererinc-website.jpg" alt="Sattva Massage"></a>
         <h3>Lederer, Inc</h3>
         <p>Great example of integrating complex functionality with creative freedom.</p>
@@ -98,16 +103,6 @@
         <a href="http://www.evergreenwebdesign.com/offline-sites/wildflowerevergreen" target="_blank"><img src="_images/wildflower-website.jpg" alt="Wildflower Café"></a>
         <h3>The Wildflower Café</h3>
         <p>Located in historic downtown Evergreen, Colorado with a menu that brings folks in from miles around.</p>
-      </li>
-      <li>
-        <a href="http://www.mbeachlegal.com" target="_blank"><img src="_images/mbeachlegal-website.jpg" alt="Matthew Beach ESQ, LLC"></a>
-        <h3>Matthew Beach ESQ, LLC</h3>
-        <p>Trial attorney practicing along the Front Range of Colorado.</p>
-      </li>
-      <li>
-        <a href="http://www.evergreentaphouse.com" target="_blank"><img src="_images/evergreen-tap-house-website.jpg" alt="Evergren Tap House"></a>
-        <h3>Evergreen Tap House</h3>
-        <p>Full-featured WordPress website with robust array of customized options.</p>
       </li>
       <li>
         <a href="http://www.myscreenscene.com" target="_blank"><img src="_images/myscreenscene-website.jpg" alt="MyScreenScene.com"></a>
