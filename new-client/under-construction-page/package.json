@@ -1,7 +1,7 @@
 {
-  "name": "Under-Construction",
+  "name": "ProjectName-no-spaces",
   "version": "1.0.0",
-  "description": "Under Construction Page",
+  "description": "Description of project",
   "main": "index.php",
   "author": "Robert Means",
   "devDependencies": {

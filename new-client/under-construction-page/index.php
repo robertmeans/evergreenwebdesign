@@ -1,85 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+<!--
+  Author:       Robert Means
+                Evergreen Web Design
+  Contact:      robert@evergreenwebdesign.com
+                (303) WEBSITE
+                that's (303) 932.7483
+  Last Update:  September 27, 2017
+  Comments:     You look very nice today! :)
+-->
 <head>
 	<meta charset="UTF-8">
-	<title>Elevated Aerial Yoga</title>
-	<!-- <link rel="icon" type="image/ico" href="_images/favicon.ico"> -->
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script type="text/javascript" src="_scripts/custom-modernizr.js?<?php echo time(); ?>"></script>
-	<link rel="stylesheet" href="styles.css?<?php echo time(); ?>">	
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	
+	<title>Mekenita Cantina - Tampa, Florida</title>
+	<link rel="icon" type="image/ico" href="_images/favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Courgette|Lato' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css?<?php echo time(); ?>" type="text/css">
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcS8gagJkuoY6gB3utE1iyZnWk4JG5Suw&callback=initMap"></script>
+	<script src="js/google-map.js"></script>
+	
 </head>
-<body onload="document.forms[0].name.focus();">
-<div id="bg-div-one">
-  <img src="_images/under-construction-opacity.png" alt="Under Construction">
-</div>
-<div id="wrapper">
-<header>
-	<h1>Elevated Aerial Yoga</h1>
-	<img src="_images/under-construction.png" alt="Under Construction">
-  <script src='https://www.google.com/recaptcha/api.js'></script>
-  <script>
-    function recaptchaCallback() {
-        $('#confirm').addClass('display');
-        $('#send').removeAttr('disabled');
-        $('#send').removeClass('display');
-    };
-  </script>
-</header>
-<section id="left-side">
+<body>
+<?php include_once("_includes/analyticstracking.php") ?>
 
-<h2>Activate feelings of strength and synchronicity</h2>
+<div id="top-of-page"></div>
+<a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+<nav>
 	<ul>
-	<li>Aerial Yoga Class</li>
-	<li>Aerial Barre Class</li>
-	<li>Flying Tots</li>
-	<li>Yoga Class</li>
-  <li>Barre Class</li>
-  <li>Aerial Foundation Class</li>
-	<li>Facility Rental: Birthdays, Team Building, Bachelorette Parties, etc.</li>
-  <li>Infrared Sauna</li>
+		<li><a href="#menu" class="main-nav no-active-nav">Cusine</a></li>
+		<li><a href="#contact" class="main-nav">New Location</a></li>
 	</ul>
 
-</section>
-<section id="right-side">
-	<p>While our Website is under construction please feel free to contact us for more information.</p>
-    <form action="mail-to-me.php" method="post" id="contactForm">
-        
-    <ul>
-        <li>
-          <label class="text" for="name">Name</label>
-          <input name="name" type="text" id="name" required tabindex="10" />
-        </li>
-        <li>
-          <label class="text" for="email">Email</label>
-          <input name="email" type="email" id="email" required tabindex="20" />
-        </li>
-        <li>
-          <label class="text" for="comments">Comments</label>
-          <textarea name="comments" id="comments" required tabindex="30"></textarea>
-        </li>
-        <li>
-          <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LeFDCEUAAAAAM_wtfecx9ysVUZp618q_sMbD1Ej"></div>
-        </li>
-        <li>
-            <button id="confirm" disabled>Check Captcha above to enable Send</button>
-            <button id="send" class="display" disabled>Send</button>
-            <!-- <input id="send" type="submit" value="Send" tabindex="40" disabled /> -->
-        </li>
-        
-    </ul> 
-    
-    </form>
+</nav>
 
-</section>
+<section id="intro">
+	<div class="uc">
+		<img src="_images/under-construction.png">
+		<div class="uc-dark">
+				<h2>Mekenita Cantina</h2>
+				<p>Come see us at our new location in Seminole Heights</p>
+				<p>&nbsp;</p>
+				<h3>We are scheduled to open before the holidays!</h3>
+				<p>&nbsp;</p>
+				<p>Visit our <a class="reg-link" href="http://www.mekenitamexicangrill.com" target="_blank">old site</a> for a gilmpse of our humble beginnings.</p>
+		</div>
+	</div>
+</section><!-- #intro -->
 
-<?php include '_includes/footer.php' ?>
+<article id="menu">
+	<h2>Click for larger image</h2><br />
+<div class="menu-wrap cf">
 
-</div><!-- #wrapper -->
+	<a class="reset" href="_images/menu.jpg" target="_blank"><img src="_images/menu-sm.jpg" alt="Appetizers"></a>
 
-<script type="text/javascript" src="js/scripts.js?<?php echo time(); ?>"></script>
-<script src="http://localhost:35729/livereload.js"></script>	
+</div><!-- .instruction-wrap -->
+
+</article><!-- #instructions -->
+
+<footer id="contact" class="cf">
+	<div class="overlay" onClick="style.pointerEvents='none'"><!-- prevent wheel zoom over map --></div>
+	<div id="map"></div>
+
+	<div class="location">
+		<p><span class="sm-gone"><i class="fa fa-map-marker"></i></span><a class="loc" tabIndex="-1" href="https://www.google.com/maps/place/39%C2%B038'02.1%22N+105%C2%B019'00.4%22W/@39.633908,-105.3173192,19z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d39.633907!4d-105.316772?hl=en-US" target="_blank">6707 N Florida Ave<span class="sm-gone">, </span><br class="lg-gone">Tampa, FL 33604</a></p>
+	</div>
+
+
+	<?php
+		function ewd_copyright($startYear) {
+			$currentYear = date('Y');
+			if ($startYear < $currentYear) {
+				$currentYear = date('y');
+				return "&copy; $startYear&ndash;$currentYear";
+			} else {
+				return "&copy; $startYear";
+			}
+		}
+	 ?>	
+	<div class="copyright cf">
+		<p><?= ewd_copyright(2017); ?> Mekenita Cantina | <a href="http://www.evergreenwebdesign.com" target="_blank">Evergreen Web Design</a></p>
+	</div>
+</footer>
+
+<section id="h-space"></section>
+
+
+<script src="js/scripts.js?<?php echo time(); ?>"></script>
+<script src="js/flexslider.js"></script>
+<script src="http://localhost:35729/livereload.js"></script>
 </body>
 </html>

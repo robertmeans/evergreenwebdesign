@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 		uglify: {
 			my_target: {
 				files: {
-					'js/scripts.js': ['javascript-to-compile/_scripts-staging.js']
+					'js/scripts.js': ['components/javascript-to-compile/_scripts-staging.js']
 				} //files
 			} //my_target
 		}, //uglify		
@@ -16,17 +16,19 @@ module.exports = function(grunt) {
 		  dev: {
 		    options: {
 		      style: 'expanded',
+		      sourcemap: 'none'
 		    },
 		    files: {
-		      'styles-expanded.css': 'components/sass/under-construction-styles.scss'
+		      'style-expanded.css': 'components/sass/style.scss'
 		    }
 		  },
 		  dist: {
 		  	options: {
 		  		style: 'compressed',
+		  		sourcemap: 'none'
 		  	},
 		  	files: {
-		  		'styles.css': 'components/sass/under-construction-styles.scss'
+		  		'style.css': 'components/sass/style.scss'
 		  	}
 		  }
 		},
@@ -48,7 +50,7 @@ module.exports = function(grunt) {
 		watch: {
 			options: { livereload: true },
 			scripts: {
-				files: ['javascript-to-compile/_scripts-staging.js'],
+				files: ['components/javascript-to-compile/_scripts-staging.js'],
 				tasks: ['uglify']
 			}, //scripts			
 			css: {
@@ -56,7 +58,7 @@ module.exports = function(grunt) {
 				tasks: ['sass','autoprefixer']
 			}, // css
 			hypertext: {
-				files: ['*.php','*.htm', '_includes/*.php']
+				files: ['*.php','*.htm']
 			} //hypertext
 		}, //watch
 
