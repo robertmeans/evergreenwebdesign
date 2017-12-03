@@ -80,6 +80,7 @@ input#send, input#clear {
 	border: 1px solid #233851;
 	background: #ccc;
 	color: #000;
+	cursor: pointer;
 	&:hover {
 		background: #565656;
 		color: #fff;
@@ -101,6 +102,7 @@ footer {
 	width: 100%;
 	border-top: 15px solid #767676;
 	margin-top: 30px;
+	margin-bottom: 80px;
 	padding-top: 20px;
 	padding-bottom: 60px;
 	background: #eeeeee;
@@ -142,10 +144,9 @@ footer {
 		padding-right: 5px;
 	}
 	.copyright {
+		float: right;
+		margin: 2em 60px 1em;
 		font-size: .6em;
-		position: absolute;
-		bottom: 5px;
-		right: 30px;
 		color: #7a7a7a;
 	}
 	a {

@@ -15,8 +15,8 @@
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="expires" content="0">
 	
-	<title>Mekenita Cantina - Tampa, Florida</title>
-	<link rel="icon" type="image/ico" href="_images/favicon.ico">
+	<title>ABC Company - Your Town</title>
+	<!-- <link rel="icon" type="image/ico" href="_images/favicon.ico"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css">
@@ -36,22 +36,24 @@
 
 <nav>
 	<ul>
-		<li><a href="#menu" class="main-nav no-active-nav">Cusine</a></li>
-		<li><a href="#contact" class="main-nav">New Location</a></li>
+		<li><a href="#menu" class="main-nav no-active-nav">Menu</a></li>
+		<li><a href="#contact" class="main-nav">Location</a></li>
 	</ul>
-
+	<div class="phone large-gone">
+		<a class="phone-nav" tabIndex="-1" href="tel:(555)%20123-4567">(555) 123-4567</a>
+	</div>
 </nav>
 
 <section id="intro">
 	<div class="uc">
 		<img src="_images/under-construction.png">
 		<div class="uc-dark">
-				<h2>Mekenita Cantina</h2>
-				<p>Come see us at our new location in Seminole Heights</p>
-				<p>&nbsp;</p>
-				<h3>We are scheduled to open before the holidays!</h3>
-				<p>&nbsp;</p>
-				<p>Visit our <a class="reg-link" href="http://www.mekenitamexicangrill.com" target="_blank">old site</a> for a gilmpse of our humble beginnings.</p>
+			<h2>ABC Company</h2>
+			<p>Come see us at our new location</p>
+			<p>&nbsp;</p>
+			<h3>Emphasize important message here!</h3>
+			<p>&nbsp;</p>
+			<p>Put a <a class="reg-link" href="http://www.evergreenwebdesign.com" target="_blank">link to somewhere</a> here if you want.</p>
 		</div>
 	</div>
 </section><!-- #intro -->
@@ -60,18 +62,23 @@
 	<h2>Click for larger image</h2><br />
 <div class="menu-wrap cf">
 
-	<a class="reset" href="_images/menu.jpg" target="_blank"><img src="_images/menu-sm.jpg" alt="Appetizers"></a>
+	<a class="reset" href="_images/murphys-apps-03.gif" target="_blank"><img src="_images/murphys-apps-thumbnail-03.gif" alt="Appetizers"></a>
 
-</div><!-- .instruction-wrap -->
+	<a class="reset" href="_images/murphys-drinks-03.gif" target="_blank"><img src="_images/murphys-drinks-thumbnail-03.gif" alt="Drinks"></a>
 
-</article><!-- #instructions -->
+	<a class="reset" href="_images/murphys-entrees-03.gif" target="_blank"><img src="_images/murphys-entrees-thumbnail-03.gif" alt="Entreés"></a>
+
+</div><!-- .menu-wrap -->
+
+</article><!-- #menu -->
 
 <footer id="contact" class="cf">
 	<div class="overlay" onClick="style.pointerEvents='none'"><!-- prevent wheel zoom over map --></div>
 	<div id="map"></div>
 
 	<div class="location">
-		<p><span class="sm-gone"><i class="fa fa-map-marker"></i></span><a class="loc" tabIndex="-1" href="https://www.google.com/maps/place/39%C2%B038'02.1%22N+105%C2%B019'00.4%22W/@39.633908,-105.3173192,19z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d39.633907!4d-105.316772?hl=en-US" target="_blank">6707 N Florida Ave<span class="sm-gone">, </span><br class="lg-gone">Tampa, FL 33604</a></p>
+		<p><span class="sm-gone"><i class="fa fa-map-marker"></i></span><a class="loc" tabIndex="-1" href="https://www.google.com/maps/place/Piazza+del+Colosseo,+1,+00184+Roma+RM,+Italy/@41.8901125,12.4919604,17z/data=!3m1!4b1!4m5!3m4!1s0x132f61b7724fa84d:0xf1ed82ddf9044463!8m2!3d41.8901125!4d12.4941491" target="_blank">Piazza del Colosseo, 1<span class="sm-gone">, </span><br class="lg-gone">00184 Roma RM, Italy</a></p>
+		<span class="sm-gone"><p><i class="fa fa-phone-square"></i><a class="loc" href="tel:(555)%20123-4567">555.123.4567</a></p></span>
 	</div>
 
 
@@ -87,14 +94,13 @@
 		}
 	 ?>	
 	<div class="copyright cf">
-		<p><?= ewd_copyright(2017); ?> Mekenita Cantina | <a href="http://www.evergreenwebdesign.com" target="_blank">Evergreen Web Design</a></p>
+		<p><?= ewd_copyright(2017); ?> ABC Company | <a href="http://www.evergreenwebdesign.com" target="_blank">Evergreen Web Design</a></p>
 	</div>
 </footer>
 
 <section id="h-space"></section>
 
-
-<script src="js/scripts.js?<?php echo time(); ?>"></script>
+<script src="js/scripts.js?<?= time(); ?>"></script>
 <script src="js/flexslider.js"></script>
 <script src="http://localhost:35729/livereload.js"></script>
 </body>
