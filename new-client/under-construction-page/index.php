@@ -62,11 +62,11 @@
 	<h2>Click for larger image</h2><br />
 <div class="menu-wrap cf">
 
-	<a class="reset" href="_images/murphys-apps-03.gif" target="_blank"><img src="_images/murphys-apps-thumbnail-03.gif" alt="Appetizers"></a>
+	<a class="reset" href="_images/menu-large-01.jpg" target="_blank"><img src="_images/menu-thumbnail-01.jpg" alt="Appetizers"></a>
 
-	<a class="reset" href="_images/murphys-drinks-03.gif" target="_blank"><img src="_images/murphys-drinks-thumbnail-03.gif" alt="Drinks"></a>
+	<a class="reset" href="_images/menu-large-02.jpg" target="_blank"><img src="_images/menu-thumbnail-02.jpg" alt="Drinks"></a>
 
-	<a class="reset" href="_images/murphys-entrees-03.gif" target="_blank"><img src="_images/murphys-entrees-thumbnail-03.gif" alt="Entreés"></a>
+	<a class="reset" href="_images/menu-large-03.jpg" target="_blank"><img src="_images/menu-thumbnail-03.jpg" alt="Entreés"></a>
 
 </div><!-- .menu-wrap -->
 
@@ -94,7 +94,7 @@
 		}
 	 ?>	
 	<div class="copyright cf">
-		<p><?= ewd_copyright(2017); ?> ABC Company | <a href="http://www.evergreenwebdesign.com" target="_blank">Evergreen Web Design</a></p>
+		<p><?= ewd_copyright(2015); ?> ABC Company | <a href="http://www.evergreenwebdesign.com" target="_blank">Evergreen Web Design</a></p>
 	</div>
 </footer>
 

@@ -1,3 +1,14 @@
+<?php
+	function ewd_copyright($startYear) {
+		$currentYear = date('Y');
+		if ($startYear < $currentYear) {
+			$currentYear = date('y');
+			return "&copy; $startYear&ndash;$currentYear";
+		} else {
+			return "&copy; $startYear";
+		}
+	}
+?>
 <footer>
 	<div id="left">
 		<p>Elevated Aerial Barre</p>
@@ -9,6 +20,6 @@
 		<p><a class="emailus" href="mailto:johneyquest@comcast.net"><i class="fa fa-envelope-o"></i> Email Us</a></p>
 	</div>
 	<div class="copyright">
-		<p>&copy; 2017 Elevated Aerial Barre | <a href="http://www.evergreenwebdesign.com" target="_blank">Evergreen Web Design</a></p>
+		<p><?= ewd_copyright(2015); ?> ABC Company | <a href="http://www.evergreenwebdesign.com" target="_blank">Evergreen Web Design</a></p>
 	</div>
 </footer>

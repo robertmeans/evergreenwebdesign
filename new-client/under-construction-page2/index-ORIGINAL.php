@@ -30,17 +30,14 @@
 </header>
 <section id="left-side">
 
-<h2>Activate feelings of strength and synchronicity</h2>
-	<ul>
-	<li>Aerial Yoga Class</li>
-	<li>Aerial Barre Class</li>
-	<li>Flying Tots</li>
-	<li>Yoga Class</li>
-  <li>Barre Class</li>
-  <li>Aerial Foundation Class</li>
-	<li>Facility Rental: Birthdays, Team Building, Bachelorette Parties, etc.</li>
-  <li>Infrared Sauna</li>
-	</ul>
+<h2>Tag line attention grabber slogan jingle</h2>
+  <ul>
+  <li>Add some basic information about your company here.</li>
+  <li>Services, Grand Opening date, etc.</li>
+  <li>Use this area for whatever information you want to display while your site is being built.</li>
+  <li>You don't have to use bullet points.</li>
+  <li>They do convey information quickly and concisely though.</li>
+  </ul>
 
 </section>
 <section id="right-side">

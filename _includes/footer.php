@@ -9,8 +9,7 @@ function ewd_copyright($startYear) {
 		return "&copy; $startYear";
 	}
 }
-
- ?>
+?>
 
 <footer>
 	<div id="footer-info">
