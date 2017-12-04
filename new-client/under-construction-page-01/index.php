@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--
+  Author:       Robert Means
+                Evergreen Web Design
+                
+  Contact:      robert@evergreenwebdesign.com
+                (303) WEBSITE
+                that's (303) 932.7483
+
+  Comments:     You look very nice today! :)
+-->
 <head>
 	<meta charset="UTF-8">
 	<title>ABC Company</title>
@@ -8,7 +18,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="_scripts/custom-modernizr.js?<?php echo time(); ?>"></script>
 	<link rel="stylesheet" href="styles.css?<?php echo time(); ?>">	
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css">
 
 </head>
 <body onload="document.forms[0].name.focus();">
@@ -41,8 +51,8 @@
 
 </section>
 <section id="right-side">
-	<p class="right-center">While our Website is under construction please feel free to <a class="email-text" href="mailto:johneyquest@comcast.net">email us</a> for more information.</p>
-    <!-- <form action="mail-to-me.php" method="post" id="contactForm">
+	<p>While our Website is under construction please feel free to contact us for more information.</p>
+    <form action="mail-to-me.php" method="post" id="contactForm">
         
     <ul>
         <li>
@@ -58,18 +68,17 @@
           <textarea name="comments" id="comments" required tabindex="30"></textarea>
         </li>
         <li>
-          <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LeFDCEUAAAAAM_wtfecx9ysVUZp618q_sMbD1Ej"></div>
+          <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LfN9SgUAAAAAOX_A0_akc32rH9egF6oe4KEYx9Q"></div>
         </li>
         <li>
             <button id="confirm" disabled>Check Captcha above to enable Send</button>
             <button id="send" class="display" disabled>Send</button>
-            -->
             <!-- <input id="send" type="submit" value="Send" tabindex="40" disabled /> -->
-      <!--   </li>
+        </li>
         
     </ul> 
     
-    </form> --> 
+    </form>
 
 </section>
 

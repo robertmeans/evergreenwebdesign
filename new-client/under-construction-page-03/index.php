@@ -3,10 +3,11 @@
 <!--
   Author:       Robert Means
                 Evergreen Web Design
+                
   Contact:      robert@evergreenwebdesign.com
                 (303) WEBSITE
                 that's (303) 932.7483
-  Last Update:  September 27, 2017
+
   Comments:     You look very nice today! :)
 -->
 <head>
@@ -19,7 +20,7 @@
 	<!-- <link rel="icon" type="image/ico" href="_images/favicon.ico"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css">
 	<link href='https://fonts.googleapis.com/css?family=Courgette|Lato' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style.css?<?php echo time(); ?>" type="text/css">
 
@@ -29,7 +30,7 @@
 	
 </head>
 <body>
-<?php include_once("_includes/analyticstracking.php") ?>
+<?php // include_once("_includes/analyticstracking.php") ?>
 
 <div id="top-of-page"></div>
 <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
