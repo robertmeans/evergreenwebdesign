@@ -2455,15 +2455,12 @@ a.txt-a:hover {
 }
 
 nav {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2471,8 +2468,6 @@ nav {
   z-index: 1002;
   position: fixed;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, rgba(255, 255, 255, 0.5)));
-  background: -webkit-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.5) 100%);
   background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0.5) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#38ffffff',GradientType=0 );
   border-bottom: 1px solid #000;
@@ -2488,17 +2483,13 @@ nav h2 {
 }
 
 nav ul {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   height: 55px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
@@ -2514,18 +2505,15 @@ nav ul li a {
   font-weight: normal;
   font-size: .9em;
   overflow: hidden;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-align-content: center;
       -ms-flex-line-pack: center;
           align-content: center;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2534,8 +2522,7 @@ nav ul li a {
   text-align: center;
   margin-right: 10px;
   padding: 0px 20px;
-  -webkit-transition: background-color .75s ease;
-          transition: background-color .75s ease;
+  transition: background-color .75s ease;
 }
 nav ul li a:visited {
   background-color: inherit;
@@ -2559,11 +2546,9 @@ nav ul li a:hover {
   border-left: 1px solid #BB5118;
   width: 210px;
   height: 55px;
-  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2619,8 +2604,6 @@ ul.staticsites li:last-child {
   padding: 50px 70px -50px 70px;
   border-radius: 60%;
   background: #3a516d;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3a516d), color-stop(47%, rgba(58, 81, 109, 0.74)), color-stop(100%, rgba(58, 81, 109, 0.44)));
-  background: -webkit-linear-gradient(top, #3a516d 0%, rgba(58, 81, 109, 0.74) 47%, rgba(58, 81, 109, 0.44) 100%);
   background: linear-gradient(to bottom, #3a516d 0%, rgba(58, 81, 109, 0.74) 47%, rgba(58, 81, 109, 0.44) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a516d', endColorstr='#703a516d',GradientType=0 );
   color: #fff;
@@ -2639,7 +2622,6 @@ button#toggleMoreSites {
   border-radius: 12px;
   webkit-border-radius: 12px;
   moz-border-radius: 12px;
-  -webkit-transition: background-color .75s ease;
   transition: background-color .75s ease;
 }
 button#toggleMoreSites:hover {
@@ -2721,7 +2703,6 @@ a.click {
   line-height: 1em;
   padding: 5px 15px;
   text-decoration: none;
-  -webkit-transition: background-color .3s ease;
   transition: background-color .3s ease;
 }
 a.click:hover {
@@ -2835,8 +2816,7 @@ stylesheet does not affect the other elements at all!
   background-color: #1f5588;
   border: 1px solid #1f5588;
   color: #fff;
-  -webkit-transition: background-color .3s ease;
-          transition: background-color .3s ease;
+  transition: background-color .3s ease;
 }
 #contactus input[type="submit"]:hover {
   background-color: #3ea94a;
@@ -3113,7 +3093,6 @@ html[xmlns] .slides {
 
 .flex-viewport {
   max-height: 2000px;
-  -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
 
@@ -3148,7 +3127,6 @@ html[xmlns] .slides {
   cursor: pointer;
   color: rgba(0, 0, 0, 0.8);
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
-  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
@@ -3381,7 +3359,6 @@ html[xmlns] .slides {
   display: block;
   opacity: 0.5;
   filter: alpha(opacity=50);
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -3534,7 +3511,6 @@ html[xmlns] .slides {
 }
 
 #homepage-container {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -3546,23 +3522,18 @@ html[xmlns] .slides {
 }
 
 #div-one {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -3570,16 +3541,12 @@ html[xmlns] .slides {
 }
 
 #essentials {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -3589,16 +3556,13 @@ html[xmlns] .slides {
   font-size: 1.1em;
 }
 #essentials div.essentials-conatiner {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -3621,16 +3585,12 @@ html[xmlns] .slides {
   box-sizing: border-box;
 }
 #essentials div.essentials-conatiner .essentials-content {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 2;
   -webkit-flex-grow: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
@@ -3672,7 +3632,6 @@ html[xmlns] .slides {
   }
 
   #essentials div.essentials-conatiner .essentials-content {
-    -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -3765,10 +3724,8 @@ html[xmlns] .slides {
   border-right: 1px solid #fff;
   border-left: 1px solid #fff;
   box-shadow: -4px 4px 3px 0px rgba(50, 50, 50, 0.44);
-  -webkit-transition: background-color .3s ease;
-          transition: background-color .3s ease;
-  -webkit-transition: height .2s ease;
-          transition: height .2s ease;
+  transition: background-color .3s ease;
+  transition: height .2s ease;
 }
 .back-to-top:hover {
   background-color: #505050;
@@ -3939,8 +3896,7 @@ li.active .wp-img-mo img:first-child {
   font-weight: 600;
   color: #4c4c4c;
   border: 1px solid #ccc;
-  -webkit-transition: all linear 0.15s;
-          transition: all linear 0.15s;
+  transition: all linear 0.15s;
   text-decoration: none;
 }
 
@@ -4060,7 +4016,6 @@ ul.list li img {
   position: relative;
   max-width: 300px;
   box-sizing: border-box;
-  -webkit-transition: all .25s ease;
   transition: all .25s ease;
 }
 ul.list li img:hover {
@@ -4282,7 +4237,6 @@ footer .copyright {
 
   #EWD .title-text {
     font-size: 3.5em;
-    -webkit-transition: font-size 1.75s ease;
     transition: font-size 1.75s ease;
   }
 
@@ -4332,8 +4286,7 @@ footer .copyright {
     font-weight: 600;
     color: #4c4c4c;
     border: 1px solid #ccc;
-    -webkit-transition: all linear 0.15s;
-            transition: all linear 0.15s;
+    transition: all linear 0.15s;
     text-decoration: none;
   }
 
@@ -4454,7 +4407,6 @@ footer .copyright {
     /* Firefox 1 - 28 */
     box-sizing: border-box;
     /* Safari 5.1+, Chrome 10+, Firefox 29+, Opera 7+, IE 8+, Android 4.0+, iOS any */
-    -webkit-transition: all .5s ease;
     transition: all .5s ease;
   }
   #accordion ul li img:hover {
@@ -4494,7 +4446,6 @@ footer .copyright {
 @media screen and (max-width: 720px) {
   #EWD .title-text {
     font-size: 2.5em;
-    -webkit-transition: font-size 1.75s ease;
     transition: font-size 1.75s ease;
   }
 }
@@ -4541,7 +4492,6 @@ footer .copyright {
   #EWD .title-text {
     font-family: 'Exo 2', Helvetica, Arial, sans-serif;
     font-size: 2.45em;
-    -webkit-transition: font-size 1.75s ease;
     transition: font-size 1.75s ease;
     font-weight: 800;
     text-transform: capitalize;
@@ -4549,7 +4499,6 @@ footer .copyright {
     text-shadow: -2px 3px 6px rgba(0, 0, 0, 0.5);
   }
   #EWD img {
-    -webkit-transition: all .5s ease;
     transition: all .5s ease;
   }
   #EWD img:hover {
@@ -4734,13 +4683,10 @@ footer .copyright {
   }
 
   nav {
-    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     margin-top: -10px;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, rgba(255, 255, 255, 0.22)));
-    background: -webkit-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.22) 100%);
     background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0.22) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#38ffffff',GradientType=0 );
     border-bottom: 1px solid #999;
@@ -4967,26 +4913,21 @@ footer .copyright {
   }
 }
 body {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
 ul.list {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -5040,8 +4981,7 @@ div#branding p.business-title {
   font-weight: 800;
   color: #fff;
   text-shadow: -2px 3px 6px rgba(0, 0, 0, 0.5);
-  -webkit-transition: all .75s ease;
-          transition: all .75s ease;
+  transition: all .75s ease;
 }
 div#branding p.tagline {
   font-family: 'Ubuntu', Helvetica, sans-serif;
@@ -5051,8 +4991,7 @@ div#branding p.tagline {
   font-size: 1.4em;
   line-height: 0em;
   margin-top: -10px;
-  -webkit-transition: all 0.75s ease;
-          transition: all 0.75s ease;
+  transition: all 0.75s ease;
 }
 div#branding img.ewd-logo {
   z-index: 52;
@@ -5061,8 +5000,7 @@ div#branding img.ewd-logo {
   top: -5px;
   width: 100%;
   max-width: 205px;
-  -webkit-transition: all 0.75s ease;
-          transition: all 0.75s ease;
+  transition: all 0.75s ease;
 }
 
 #product-container {
@@ -5071,18 +5009,15 @@ div#branding img.ewd-logo {
   width: 98%;
   max-width: 1220px;
   margin: 0px;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -5093,8 +5028,7 @@ div#branding img.ewd-logo {
   border-right: 1px solid #3dabf8;
   border-bottom: 1px solid #4bd300;
   border-left: 1px solid #3dabf8;
-  -webkit-transition: background-color 0.75s ease, color 0.5s ease;
-          transition: background-color 0.75s ease, color 0.5s ease;
+  transition: background-color 0.75s ease, color 0.5s ease;
 }
 #product-container div:nth-child(1) > a:hover {
   background-color: rgba(85, 183, 251, 0.3);
@@ -5105,8 +5039,7 @@ div#branding img.ewd-logo {
   border-right: 1px solid #79f3d2;
   border-bottom: 1px solid #4bd300;
   border-left: 1px solid #79f3d2;
-  -webkit-transition: background-color 0.75s ease, color 0.5s ease;
-          transition: background-color 0.75s ease, color 0.5s ease;
+  transition: background-color 0.75s ease, color 0.5s ease;
 }
 #product-container div:nth-child(2) > a:hover {
   background-color: rgba(69, 247, 232, 0.3);
@@ -5117,8 +5050,7 @@ div#branding img.ewd-logo {
   border-right: 1px solid #d6da2c;
   border-bottom: 1px solid #4bd300;
   border-left: 1px solid #d6da2c;
-  -webkit-transition: background-color 0.75s ease, color 0.5s ease;
-          transition: background-color 0.75s ease, color 0.5s ease;
+  transition: background-color 0.75s ease, color 0.5s ease;
 }
 #product-container div:nth-child(3) > a:hover {
   background-color: rgba(245, 233, 76, 0.3);
@@ -5136,7 +5068,6 @@ div#branding img.ewd-logo {
   border-left: 1px solid #d6da2c;
 }
 #product-container .product-box {
-  -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -5208,8 +5139,7 @@ div#branding img.ewd-logo {
   padding: 15px 35px;
   border: 1px solid #fff;
   border-radius: 8px;
-  -webkit-transition: all .75s ease;
-          transition: all .75s ease;
+  transition: all .75s ease;
 }
 #badge .badge-box a.badge-tel {
   text-decoration: none;
@@ -5274,8 +5204,6 @@ div#branding img.ewd-logo {
     box-sizing: border-box;
     width: 90%;
     margin: 0px auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
@@ -5302,7 +5230,6 @@ div#branding img.ewd-logo {
     width: 90%;
     max-width: 900px;
     margin: 10px auto;
-    -webkit-box-flex: 1;
     -webkit-flex: 1 1;
         -ms-flex: 1 1;
             flex: 1 1;
@@ -5347,7 +5274,6 @@ div#branding img.ewd-logo {
     height: 900px;
   }
   #homepage-container .product-box {
-    -webkit-box-flex: 1;
     -webkit-flex: 1 1;
         -ms-flex: 1 1;
             flex: 1 1;
@@ -5382,10 +5308,8 @@ div#branding img.ewd-logo {
     border-right: 1px solid #fff;
     border-left: 1px solid #fff;
     box-shadow: -4px 4px 3px 0px rgba(50, 50, 50, 0.44);
-    -webkit-transition: background-color .3s ease;
-            transition: background-color .3s ease;
-    -webkit-transition: height .2s ease;
-            transition: height .2s ease;
+    transition: background-color .3s ease;
+    transition: height .2s ease;
   }
 
   .last-nav-item {
