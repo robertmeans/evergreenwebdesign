@@ -1,4 +1,4 @@
-footer {
+section#location {
 	position: relative;
 	background: #0f2c52;
 	// background: url(_images/rookies-logo-bkg-03.png) repeat fixed;
@@ -23,7 +23,6 @@ footer {
 			height: auto;
 		}
 	}
-
 	a.loc {
 		padding: 0px;
 		margin: 0px;
@@ -63,60 +62,18 @@ footer {
 		margin: 10px auto;
 		font-size: 1em;
 	}
-	.contact-form {
-		display: block;
-		width: 100%;
-		max-width: 900px;
-		height: auto;
-		margin: 40px auto 0px auto;
-		box-sizing: border-box;
-		color: #fff;
-		form {
-			width: 100%;
-			max-width: 800px;
-			// padding: 0px 15px;
-		}
-		label {
-			display: block;
-			line-height: 1em;
-			margin-bottom: 5px;
-		}
-		input#name, input#email {
-			width: 200px;
-			margin-bottom: 10px;
-			height: 1.2em;
-		}
-		textarea#comments {
-			width: 90%;
-			max-width: 800px;
-			height: 180px;
-			margin-bottom: 15px;
-		}
-		input#send {
-			font-size: 1.6em;
-			padding: 10px 25px;
-			background: #858585;
-			border: 1px solid #fff;
-			margin-bottom: 30px;
-			color: #fff;
-			&:hover {
-				background: #565656;
-				cursor: pointer;
-			}
-		}
-	}
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 460px) {
 	.lg-gone {
 		display: none;
 	}
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 460px) {
 	.sm-gone {
 		display: none;
 	}
-	footer {
+	section#location {
 		a.loc {
 			display: block;
 			text-align: center;

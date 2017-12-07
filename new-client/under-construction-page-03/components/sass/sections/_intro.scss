@@ -8,14 +8,16 @@
   justify-content: center;
   color: #313131;
   font-size: 1em;
+  overflow: hidden;
   div.uc {
-    background-color: rgba(255,255,255,.85);
+    background-color: rgba(255,255,255,0.85);
     // padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     // margin-top: -20px;
     box-sizing: border-box;
+    box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.4); 
     img {
       padding: 20px 0px;
     }
@@ -23,6 +25,7 @@
       display: flex;
       align-items: center;
       flex-direction: column;
+      background-color: #759601;
       background: rgba(31,51,101,0.7);
       width: 100%;
       color: #fff;
@@ -169,22 +172,19 @@
       }
     }
 
-
-a.reset {
-  background-color: none;
-  background: none;
-  width: auto;
-  height: auto;
-  border: none;
-  &:hover {
+  a.reset {
     background-color: none;
     background: none;
     width: auto;
     height: auto;
+    border: none;
+    &:hover {
+      background-color: none;
+      background: none;
+      width: auto;
+      height: auto;
+    }
   }
-}
-
-
 
   img {
     width: 90%;

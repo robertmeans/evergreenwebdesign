@@ -27,7 +27,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcS8gagJkuoY6gB3utE1iyZnWk4JG5Suw&callback=initMap"></script>
 	<script src="js/google-map.js"></script>
-	
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+
 </head>
 <body>
 <?php // include_once("_includes/analyticstracking.php") ?>
@@ -38,7 +39,7 @@
 <nav>
 	<ul>
 		<li><a href="#menu" class="main-nav no-active-nav">Menu</a></li>
-		<li><a href="#contact" class="main-nav">Location</a></li>
+		<li><a href="#location" class="main-nav">Location</a></li>
 	</ul>
 	<div class="phone large-gone">
 		<a class="phone-nav" tabIndex="-1" href="tel:(555)%20123-4567">(555) 123-4567</a>
@@ -73,7 +74,8 @@
 
 </article><!-- #menu -->
 
-<footer id="contact" class="cf">
+<section id="location" class="cf">
+
 	<div class="overlay" onClick="style.pointerEvents='none'"><!-- prevent wheel zoom over map --></div>
 	<div id="map"></div>
 
@@ -82,6 +84,36 @@
 		<span class="sm-gone"><p><i class="fa fa-phone-square"></i><a class="loc" href="tel:(555)%20123-4567">555.123.4567</a></p></span>
 	</div>
 
+
+
+</section><!-- #location -->
+
+<section id="contact" class="cf">
+	
+  <script>
+    function recaptchaCallback() {
+        $('#confirm').addClass('display');
+        $('#send').removeAttr('disabled');
+        $('#send').removeClass('display');
+    };
+  </script>
+
+	<div id="contact-form">
+		<div class="left-side">
+			<p>Piazza del Colosseo, 1</p>
+			<p>00184 Roma Rm, Italy</p>
+			<p>&nbsp;</p>
+			<p>Phone: 555.123.4567</p>
+			<!-- <p>Fax: 303.973.9358</p> -->
+		</div>
+		<div class="right-side">
+			<?php require('_includes/contact-form-processing.php'); ?>  
+	    </div>
+	</div>
+
+</section><!-- #contact -->
+
+<footer class="cf">
 
 	<?php
 		function ewd_copyright($startYear) {
@@ -96,10 +128,10 @@
 	 ?>	
 	<div class="copyright cf">
 		<p><?= ewd_copyright(2015); ?> ABC Company | <a href="http://www.evergreenwebdesign.com" target="_blank">Evergreen Web Design</a></p>
-	</div>
+	</div>	
+
 </footer>
 
-<section id="h-space"></section>
 
 <script src="js/scripts.js?<?= time(); ?>"></script>
 <script src="js/flexslider.js"></script>
