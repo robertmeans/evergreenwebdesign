@@ -7,10 +7,10 @@ section#location {
 	padding-top: 80px;
 	#map {
 		height: 375px;
-		width: 100%;
+		width: 96%;
 		max-width: 1050px;
 		display: block;
-		margin: 0 auto 30px auto;
+		margin: 0 auto 0px auto;
 		a {
 			box-sizing: border-box;
 			background: inherit;
@@ -37,10 +37,10 @@ section#location {
 	   background: transparent; 
 	   z-index: 10;
 	   position: relative; 
-	   width: 100%;
+	   width: 96%;
 	   height: 375px; /* iframe height */
 	   top: 375px;  /* iframe height */
-	   margin-top: -375px;  /* iframe height */
+	   margin: -375px auto 0 auto;  /* iframe height */
 	}
 	i.fa {
 		display: inline-block;
@@ -51,16 +51,16 @@ section#location {
 		color: #fff;
 	}
 	div.location {
+		margin-top: 30px;
 		padding-bottom: 80px;
 	}
 	.location p {
-		// display: block;
-		// text-align: center;
 		color: #fff;
 		width: 100%;
 		max-width: 350px;
-		margin: 10px auto;
+		margin: 0 auto;
 		font-size: 1em;
+		line-height: 2em;
 	}
 }
 
@@ -74,12 +74,15 @@ section#location {
 		display: none;
 	}
 	section#location {
+		.location p {
+			max-width: 800px;
+		}
 		a.loc {
 			display: block;
 			text-align: center;
 			color: #fff;
 			width: 96%;
-			max-width: 450px;
+			// max-width: 450px;
 			margin: 10px auto;
 			font-size: 1em;
 			box-sizing: border-box;

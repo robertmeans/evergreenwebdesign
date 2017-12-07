@@ -100,6 +100,7 @@
 
 	<div id="contact-form">
 		<div class="left-side">
+			<h2>Contact</h2>
 			<p>Piazza del Colosseo, 1</p>
 			<p>00184 Roma Rm, Italy</p>
 			<p>&nbsp;</p>
