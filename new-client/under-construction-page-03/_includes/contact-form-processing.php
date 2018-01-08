@@ -171,7 +171,8 @@
 
         mail($my_email,$subject,$message,$headers);
     // must exit the else statement so it does not print the form again
-    break;
+    // return; If the current script file was included or required, then control is passed back to the calling file.
+    return;
     }
 ?>
 <form action="index.php#contact" method="post" id="contactForm" onSubmit="return validateEmail(document.forms[0].email.value);">

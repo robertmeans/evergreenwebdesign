@@ -29,14 +29,6 @@
 <header>
 	<h1>ABC Company</h1>
 	<img src="_images/under-construction.png" alt="Under Construction">
-  <script src='https://www.google.com/recaptcha/api.js'></script>
-  <script>
-    function recaptchaCallback() {
-        $('#confirm').addClass('display');
-        $('#send').removeAttr('disabled');
-        $('#send').removeClass('display');
-    };
-  </script>
 </header>
 <section id="left-side">
 

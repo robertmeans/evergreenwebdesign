@@ -28,7 +28,13 @@
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcS8gagJkuoY6gB3utE1iyZnWk4JG5Suw&callback=initMap"></script>
 	<script src="js/google-map.js"></script>
 	<script src='https://www.google.com/recaptcha/api.js'></script>
-
+	<script>
+	    function recaptchaCallback() {
+	        $('#confirm').addClass('display');
+	        $('#send').removeAttr('disabled');
+	        $('#send').removeClass('display');
+	    };
+    </script>
 </head>
 <body>
 <?php // include_once("_includes/analyticstracking.php") ?>
@@ -90,14 +96,6 @@
 
 <section id="contact" class="cf">
 	
-  <script>
-    function recaptchaCallback() {
-        $('#confirm').addClass('display');
-        $('#send').removeAttr('disabled');
-        $('#send').removeClass('display');
-    };
-  </script>
-
 	<div id="contact-form">
 		<div class="left-side">
 			<h2>Contact</h2>
