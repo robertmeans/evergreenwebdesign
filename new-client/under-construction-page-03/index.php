@@ -22,6 +22,8 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css">
 	<link href='https://fonts.googleapis.com/css?family=Courgette|Lato' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="aos.css" />
 	<link rel="stylesheet" href="style.css?<?php echo time(); ?>" type="text/css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -35,6 +37,7 @@
 	        $('#send').removeClass('display');
 	    };
     </script>
+    
 </head>
 <body>
 <?php // include_once("_includes/analyticstracking.php") ?>
@@ -70,11 +73,11 @@
 	<h2>Click for larger image</h2><br />
 <div class="menu-wrap cf">
 
-	<a class="reset" href="_images/menu-large-01.jpg" target="_blank"><img src="_images/menu-thumbnail-01.jpg" alt="Appetizers"></a>
+	<a class="reset" href="_images/menu-large-01.jpg" target="_blank"><img data-aos="flip-left" data-aos-offset="375" src="_images/menu-thumbnail-01.jpg" alt="Appetizers"></a>
 
-	<a class="reset" href="_images/menu-large-02.jpg" target="_blank"><img src="_images/menu-thumbnail-02.jpg" alt="Drinks"></a>
+	<a class="reset" href="_images/menu-large-02.jpg" target="_blank"><img data-aos="fade-up" data-aos-offset="375" src="_images/menu-thumbnail-02.jpg" alt="Drinks"></a>
 
-	<a class="reset" href="_images/menu-large-03.jpg" target="_blank"><img src="_images/menu-thumbnail-03.jpg" alt="Entreés"></a>
+	<a class="reset" href="_images/menu-large-03.jpg" target="_blank"><img data-aos="flip-right" data-aos-offset="375" src="_images/menu-thumbnail-03.jpg" alt="Entreés"></a>
 
 </div><!-- .menu-wrap -->
 
@@ -89,8 +92,6 @@
 		<p><span class="sm-gone"><i class="fa fa-map-marker"></i></span><a class="loc" tabIndex="-1" href="https://www.google.com/maps/place/Piazza+del+Colosseo,+1,+00184+Roma+RM,+Italy/@41.8901125,12.4919604,17z/data=!3m1!4b1!4m5!3m4!1s0x132f61b7724fa84d:0xf1ed82ddf9044463!8m2!3d41.8901125!4d12.4941491" target="_blank">Piazza del Colosseo, 1<span class="sm-gone">, </span><br class="lg-gone">00184 Roma RM, Italy</a></p>
 		<span class="sm-gone"><p><i class="fa fa-phone-square"></i><a class="loc" href="tel:(555)%20123-4567">555.123.4567</a></p></span>
 	</div>
-
-
 
 </section><!-- #location -->
 
@@ -131,6 +132,8 @@
 
 </footer>
 
+<script src="js/aos.js"></script>
+<script> AOS.init(); </script>
 
 <script src="js/scripts.js?<?= time(); ?>"></script>
 <script src="js/flexslider.js"></script>
