@@ -85,7 +85,7 @@
         <p>Cutsom WordPress site that owner can update and modify.</p>
       </li>
       <li>
-        <a href="http://www.fosterfamilydental.com" target="_blank"><img src="_images/foster-family-dental-website.jpg" alt="Foster Family Dental"></a>
+        <a href="http://www.evergreenwebdesign.com/offline-sites/fosterfamilydental" target="_blank"><img src="_images/foster-family-dental-website.jpg" alt="Foster Family Dental"></a>
         <h3>Foster Family Dental</h3>
         <p>Custom design with mobile first priority. Website adapts flawlessly to any viewport.</p>
       </li>

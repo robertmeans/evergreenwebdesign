@@ -1208,8 +1208,8 @@ max-width: 60px;
   // background: #6d94e1 url('_images/day-sky-01.jpg') no-repeat center center fixed;
   background: #6d94e1 url('_images/server-cloud-bkg.jpg') no-repeat center center fixed;
   background-size: cover;
-    background-attachment: fixed;
-    z-index: 1;
+  background-attachment: fixed;
+  z-index: 1;
 }
 #div-one {
   display: flex;
@@ -3123,6 +3123,11 @@ div#branding {
 @media screen and (max-width: 600px) {
 	#homepage-container {
 		height: 900px;
+    background-attachment: scroll;
+    width: 100%;
+    // background-position: center center;
+    // height: auto;
+    padding: 10px 0px 50px;
 		.product-box {
 			flex: 1 1;
 			margin: 5px auto;

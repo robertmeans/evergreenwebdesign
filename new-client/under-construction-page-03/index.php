@@ -70,14 +70,14 @@
 </section><!-- #intro -->
 
 <article id="menu">
-	<h2>Click for larger image</h2><br />
+	<h2 data-aos="fade-in" data-aos-offset="425">Click for larger image</h2><br />
 <div class="menu-wrap cf">
 
-	<a class="reset" href="_images/menu-large-01.jpg" target="_blank"><img data-aos="flip-left" data-aos-offset="375" src="_images/menu-thumbnail-01.jpg" alt="Appetizers"></a>
+	<a class="reset" href="_images/menu-large-01.jpg" target="_blank"><img data-aos="fade-right" data-aos-offset="375" src="_images/menu-thumbnail-01.jpg" alt="Appetizers"></a>
 
 	<a class="reset" href="_images/menu-large-02.jpg" target="_blank"><img data-aos="fade-up" data-aos-offset="375" src="_images/menu-thumbnail-02.jpg" alt="Drinks"></a>
 
-	<a class="reset" href="_images/menu-large-03.jpg" target="_blank"><img data-aos="flip-right" data-aos-offset="375" src="_images/menu-thumbnail-03.jpg" alt="Entreés"></a>
+	<a class="reset" href="_images/menu-large-03.jpg" target="_blank"><img data-aos="fade-left" data-aos-offset="375" src="_images/menu-thumbnail-03.jpg" alt="Entreés"></a>
 
 </div><!-- .menu-wrap -->
 
@@ -133,7 +133,12 @@
 </footer>
 
 <script src="js/aos.js"></script>
-<script> AOS.init(); </script>
+<script> 
+	AOS.init({
+		duration: 1200,
+		easing: 'ease-in-out-back'
+	}); 
+</script>
 
 <script src="js/scripts.js?<?= time(); ?>"></script>
 <script src="js/flexslider.js"></script>

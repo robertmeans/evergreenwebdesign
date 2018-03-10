@@ -5272,6 +5272,9 @@ div#branding img.ewd-logo {
 @media screen and (max-width: 600px) {
   #homepage-container {
     height: 900px;
+    background-attachment: scroll;
+    width: 100%;
+    padding: 10px 0px 50px;
   }
   #homepage-container .product-box {
     -webkit-flex: 1 1;

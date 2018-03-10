@@ -11,11 +11,6 @@
       Call: (303) WEBSITE
       <p>(303) 932.7483</p>
     </li>
-    <!-- <li class="full-height mobile-nav-phone-gone">
-      <a href="#" class="first-nav-item no-active-nav back-to-top2">
-        <i class="fa fa-angle-up"></i>
-      </a>
-    </li> -->
     <li class="full-height">
       <a href="#div-two" class="placeholder">services</a>
     </li>
