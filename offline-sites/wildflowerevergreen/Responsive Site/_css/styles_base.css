@@ -1,0 +1,30 @@
+@charset "utf-8";
+.homepage_h1 {
+	font-size: 2em;
+	display: inline-block;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+/* CSS Document */
+
+
+.homepage_h2 {
+	font-size: 1.6em;
+	display: inline-block;
+}
+.homepage_sushi_text {
+	line-height: 1.4em;
+	display: inline-block;
+	margin-top: -15px;
+}
+
+
+.homepage_h3 {
+	font-size: 1.4em;
+	display: inline-block;
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+.homepage_h4 {
+	font-size: 1.2em;
+}

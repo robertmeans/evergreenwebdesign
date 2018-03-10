@@ -1,0 +1,1078 @@
+/*
+Website Name: Wildflower Café
+Website URL: http://www.wildflowerevergreen.com
+Website Author: Robert Means
+Author Website: http://www.robertmeans.com
+Date: March 2014
+Copyright 2014. All Rights Reserved
+*/
+@import url('http://fonts.googleapis.com/css?family=Shadows+Into+Light|Maven+Pro');
+$font-original: Tahoma, Arial, sans-serif;
+$font-primary: Shadows Into Light, sans-serif;
+$font-secondary: Maven Pro, sans-serif;
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 2em;
+	color: #636363;
+	background: white;
+}
+/*micro-clearfix by Nichoas Gallagher */
+.cf:before,
+.cf:after {
+	content: "";
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+/* for ie 6/7 (trigger hasLayout) */
+.cf {
+	zoom: 1;
+}
+/*end micro-clearfix*/
+.clear-fix { 
+	clear: both; 
+	line-height: 1px;
+}
+p {
+	line-height: 1.2em;
+}
+h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+h1 {
+	display: block;	
+	font-size: 1.8em;
+	color: #dc5c00;	
+	margin: 0;
+}
+h2 {
+	display: block;
+	font-size: 1.6em;
+	color: #dc5c00;	
+	margin: 0;
+}
+h3 {
+	display: block;	
+	font-size: 1.2em;
+	margin: 0 auto;
+}
+h4 {
+	display: block;	
+	font-size: 1.2em;
+	color: #863608;
+	line-height: 1em;
+	margin: 15px 0;	
+}
+.red-text {
+	color: red;
+}
+#wrapper #text_container p a {
+	text-decoration: none;
+	color: #0000ff;
+}
+#wrapper #text_container p a:hover {
+	text-decoration: underline;
+	color: #0000ff;
+}
+.sushi {
+	color: #000;	
+}
+a.printable {
+	display: inline-block;
+	text-decoration: none;
+	color: #0000ff;
+	margin-bottom: 1em;
+}
+a.printable:hover {
+	text-decoration: underline;
+}
+#wrapper {
+	position: relative;
+	width: 100%;
+	max-width: 1000px;
+	margin: 0px auto;
+	background-color: #fff;
+}
+#menu_header {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0px auto;
+	background-color: #fff;
+}
+#text_container {
+	position: relative;
+	float: left;
+	width: 91%;
+	margin: 40px 4.5% 20px 4.5%;
+} 
+#wrapper {
+	#text_container {
+		.tel {
+			line-height: 2em;
+			color: inherit;
+			text-decoration: none;
+			&:hover {
+				color: inherit;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+#contact_container {
+	position: relative;
+	width: 100%;
+	margin: 40px 0px 40px 0px;
+	text-align: center;
+}
+#mobile_info {
+	display: none;
+}
+#menu_large_rt_info {
+	display: block;
+	position: absolute;	
+	z-index: 30;
+	width: 40%;
+	margin-top: 20px;
+	left: 380px;
+}
+#menu_large_rt_info a {
+	line-height: 1em;
+	display: block;
+	padding: 1em 0px .5em 0px;
+	margin: 0;
+}
+.menu_large_rt_content {
+	display: block;
+	position: relative;	
+	color: #000;
+	margin: 10px 0px;
+	padding: 10px;
+
+}
+.plus {
+	display: inline-block;
+    background: url(../_images/plus.gif) no-repeat left center;
+	padding-right: 10px;
+    width: 10px;
+    height: 10px;
+}
+.minus {
+    display: inline-block;	
+    background: url(../_images/minus2.gif) no-repeat left center;
+	padding-right: 10px;
+    width: 10px;
+    height: 10px;
+}
+#item-1, #item-2, #item-3, #item-4, #item-5, #item-6, #item-7, #item-8, #item-9, #item-10 {
+	float: left;
+	clear: both;
+	margin-left: 10px;
+	z-index: 100;
+	line-height: 1.2em;
+	cursor: pointer;
+	background: #930;
+	color: white;
+	width: 300px;
+	border: 1px solid #900;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-top-right-radius: 8px;
+	border-top-right-radius: 8px;
+	-webkit-border-top-left-radius: 8px;
+	-moz-border-top-left-radius: 8px;
+	border-top-left-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	-moz-border-bottom-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-bottom-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	margin-bottom: 2px;	
+}
+#item-1:hover, #item-2:hover, #item-3:hover, #item-4:hover, #item-5:hover, #item-6:hover, #item-7:hover, #item-8:hover, #item-9:hover, #item-10:hover {
+    background: #c4541c;
+}
+#item-1 {
+	margin-top: 25px;
+}
+.contents {
+	display: none;
+	position: relative;
+	float: left;
+	clear: right;	
+	z-index: 150;
+
+
+background-image: url(../_images/woodPaperBackgroundPattern.gif);
+  // background-repeat: repeat-x;
+
+	background-color: #fffff5;
+	margin-top: -8px;
+	margin-bottom: 15px;
+	width: 100%;
+	max-width: 1000px;
+	border: 1px solid #900;
+	-webkit-border-bottom-right-radius: 15px;
+	-moz-border-bottom-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	-webkit-border-bottom-left-radius: 15px;
+	-moz-border-bottom-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	-webkit-border-top-left-radius: 15px;
+	-moz-border-top-left-radius: 15px;
+	border-top-left-radius: 15px;	
+	/*	this puts the border inside the flexible container w/o messing with the overall width*/
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;	
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+.contents_last {
+	display: none;
+	position: relative;
+	float: left;
+	clear: right;	
+	z-index: 150;
+	background-image: url(../_images/woodPaperBackgroundPattern.gif);
+	background-color: #fffff5;
+	float: left;
+	clear: right;
+	margin-top: -8px;
+	margin-bottom: 75px;
+	width: 100%;
+	max-width: 1000px;
+	border: 1px solid #900;
+	-webkit-border-bottom-right-radius: 15px;
+	-moz-border-bottom-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	-webkit-border-bottom-left-radius: 15px;
+	-moz-border-bottom-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	-webkit-border-top-left-radius: 15px;
+	-moz-border-top-left-radius: 15px;
+	border-top-left-radius: 15px;		
+	padding-top: 10px;
+	padding-bottom: 10px;
+	/*	this puts the border inside the flexible container w/o messing with the overall width*/
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.category_includes {
+	display: block;
+	float: left;
+	clear: right;	
+	width: 90%;
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+.category_description {
+	display: block;
+	float: left;
+	width: 75%;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.category_description_price {
+	display: block;
+	float: left;
+	clear: right;
+	width: 20%;
+	color: #000;
+	margin-top: 10px;
+}
+.substitute {
+	display: block;
+	float: left;
+	width: 60%;
+	margin-left: 10px;
+}
+.substitute_price {
+	display: block;
+	float: left;
+	clear: right;	
+	width: 30%;	
+	color: #000;
+	padding-left: 5px;
+}
+.item_first {
+	display: block;
+	float: left;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #900;
+	width: 80%;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	padding-top: 5px;
+}
+.item {
+	display: block;	
+	float: left;
+	clear: right;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #900;
+	width: 80%;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	padding-top: 5px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #a2a2a2;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;		
+}
+.item_price {
+	display: block;
+	float: left;
+	clear: right;	
+	width: 10%;
+	text-align: right;
+	margin-right: 5px;
+	margin-top: 10px;
+	color: #000;
+	padding-top: 8px;
+}
+.item_description {
+	display: block;
+	float: left;
+	clear: right;	
+	line-height: 1.4em;
+	width: 80%;
+	margin-left: 10px;
+	padding-right: 5px;
+}
+.add_item {
+	display: inline-block;
+	float: left;	
+	line-height: 1.2em;
+	width: 65%;
+	margin-left: 10px;
+	margin-top: 12px;
+}
+.add_item_price {
+	display: inline-block;
+	float: left;
+	clear: right;		
+	color: #000;
+	line-height: 1.2em;	
+	width: 30%;
+	margin-top: 12px;
+}
+.be_own_chef {
+	display: inline-block;
+	float: left;
+	clear: right;
+	width: 80%;
+	padding-left: 10px;
+	font-size: 1em;
+	line-height: 1.4em;
+	color: #900;
+	margin-top: 15px;
+	padding-top: 10px;
+	border-top: 1px solid #a2a2a2;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;		
+	margin-bottom: 6px;
+	font-weight: bold;
+}
+.own_chef_col1 {
+	display: block;
+	float: left;
+	margin-top: 15px;
+	margin-left: 5%;
+	text-align: left;
+	line-height: 1.5em;
+	width: 40%;
+}
+.own_chef_col2 {
+	display: block;
+	float: left;
+	clear: right;
+	margin-top: 15px;
+	text-align: left;
+	line-height: 1.5em;
+	width: 40%;
+	padding-left: 5px;
+}
+.sides_n_such_left {
+	display: block;	
+	float: left;	
+	text-align: left;
+	line-height: 1.2em;
+	width: 30%;
+	margin-left: 10px;
+	margin-bottom: 6px;
+}
+.sides_n_such_left_price {
+	display: block;
+	float: left;	
+	clear: right;
+	text-align: left;
+	width: 15%;
+	line-height: 1.2em;
+	margin-left: 2%;
+	margin-bottom: 6px;
+}
+.sides_n_such_right {
+	display: block;
+	float: left;	
+	text-align: left;
+	line-height: 1.2em;
+	width: 30%;
+	margin-bottom: 6px;
+}
+.sides_n_such_right_price {
+	text-align: left;
+	display: block;
+	float: left;
+	clear: right;
+	width: 15%;
+	line-height: 1.5em;
+	margin-left: 2%;
+	margin-bottom: 6px;
+}
+.red_warning {
+	display: block;	
+	float: left;
+	clear: right;	
+	position: relative;
+	background: #fff;
+	font-size: .9em;
+	line-height: 1.2em;
+	padding: 10px 20px 10px 20px;
+	width: 96%;
+	margin: 14px 10px 5px 5px;
+	border: 1px solid red;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;	
+}
+.blt {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #900;
+	display: block;
+	width: 85%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	float: left;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #a2a2a2;
+	padding-top: 5px;
+}
+.vga {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #900;
+	display: block;
+	width: 85%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	float: left;
+	padding-top: 5px;
+}
+.blt_price {
+	display: block;
+	width: 10%;
+	float: left;
+	clear: right;
+	text-align: right;
+	margin-right: 5px;
+	margin-top: 5px;
+	color: #000;
+	padding-top: 5px;
+}
+.no_side {
+	font-size: 1em;
+	font-style: italic;
+	color: #666;
+	display: block;
+	float: left;
+	width: 95%;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.soft_drinks {
+	display: block;
+	float: left;
+	width: 74%;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.soft_drink_price {
+	display: block;
+	float: left;
+	clear: right;
+	width: 15%;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+.beverages_top {
+	text-align: left;
+	display: block;
+	float: left;
+	width: 56%;
+	line-height: 1.2em;
+	margin-left: 10px;
+	margin-top: 15px;
+	margin-bottom: 8px;	
+}
+.beverages {
+	text-align: left;
+	display: block;
+	float: left;
+	width: 56%;
+	line-height: 1.2em;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 8px;
+}
+.beverages_price_top {
+	text-align: left;
+	display: block;
+	float: left;
+	clear: right;
+	width: 33%;
+	line-height: 1.2em;
+	margin-top: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.beverages_price {
+	display: block;
+	float: left;
+	clear: right;
+	width: 33%;
+	line-height: 1.2em;
+	text-align: left;
+	margin-top: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.split_charge {
+	background: #fff;
+	font-size: .9em;
+	line-height: 1.2em;
+	text-align: center;
+	padding: 10px;
+	width: 96%;
+	position: relative;
+	margin: 14px 5px 5px 5px;
+	display: block;
+	float: left;
+	border: 1px solid #757575;	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.sushi_menu_link {
+	display: block;
+	float: left;
+	clear: both;
+	margin: 12px 0px 5px 0px;	
+}
+.sushi_homepage_text {
+	display: block;
+	float: left;
+	clear: both;
+	line-height: 1.4em;
+	margin: 0;
+	padding: 0;
+}
+footer {
+	display: block;
+	position: relative;
+	float: none;
+	clear: both;
+	border-top: 1px solid #ccc;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;	
+	width: 90%;
+	max-width: 1000px;
+	padding-top: 20px;
+	padding-bottom: 60px;
+	margin: 30px auto 30px auto;	
+	text-align: center;
+	color: #a5a5a5;
+	font-size: .8em;
+	line-height: 1.4em; 
+	a {
+		color: inherit;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+/* 							   #menu navigation
+================================================ */
+.mobile {
+	display: none;
+}
+.large_screen {
+	display: block;
+	position: absolute;
+	margin-top: -1.9em;
+	float: left;
+	clear: right;
+	width: 100%;
+	max-width: 1000px;
+
+	border-bottom: 1px solid #900;
+}
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+}
+.large_screen ul a {
+	display: block;
+	line-height: 1.4em;
+	background-color: #fff;	
+	color: #757575;
+	text-transform: none;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: .9em;
+	width: 70px;
+	text-align: center; 
+	padding: 4px 10px 4px 5px;
+	margin-top: 0px;
+	margin-bottom: -1px;
+	margin-right: 5px;
+	border-top: 1px solid #900;
+	border-right: 1px solid #900;
+	border-bottom: 1px solid #900;
+	border-left: 1px solid #900;
+	-moz-border-top-left-radius: 12px;
+	-webkit-border-top-left-radius: 12px;
+	border-top-left-radius: 12px;
+	-moz-border-top-right-radius: 12px;
+	-webkit-border-top-right-radius: 12px;
+	border-top-right-radius: 12px;
+	-webkit-box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.4);
+}
+.large_screen ul a:hover {
+	background-color: #900;
+	color: #fff;
+	text-decoration: none;
+}
+.large_screen li.current a {
+	text-decoration: none;
+	background-color: #fff;
+	color: #757575;
+	border-bottom: 1px solid #fff;
+	cursor: default;
+}
+.top a {
+	display: block;
+	float: right;
+	z-index: 151;
+	clear: both;
+	margin-bottom: -27px;
+	margin-right: 40px;
+}
+
+
+.no_menu {
+	margin-left: 223px;
+}
+.large_screen .all {  /* toggle switch for menu */
+	float: left;
+	width: 180px;
+	margin-right: 15px;
+	margin-left: 10px;	
+	padding: 4px 8px 4px 8px;
+	color: #fff;
+	background-color: #c4541c;
+}
+.large_screen .all:hover {
+	background: #f5905e;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.all i {
+	display: none;
+}
+.all br {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 					          #sushi navigation
+================================================ */
+.sushi_menu {
+	display: block;
+	position: absolute;
+	margin-top: -1.9em;	
+	float: left;
+	clear: right;
+	width: 100%;
+	max-width: 1000px;
+
+	border-bottom: 1px solid #000;
+}
+.sushi_menu a {
+	float: left;
+	line-height: 1.4em;
+	background-color: #fff;
+	color: #757575;
+	text-transform: none;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: .9em;	
+	display: inline-block;
+	width: 70px;
+	text-align: center; 
+	padding: 4px 10px 4px 5px;
+	margin-top: 0px;
+	margin-bottom: -1px;
+	margin-right: 5px;
+	border-top: 1px solid #000;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	border-left: 1px solid #000;
+	-moz-border-top-left-radius: 12px;
+	-webkit-border-top-left-radius: 12px;
+	border-top-left-radius: 12px;
+	-moz-border-top-right-radius: 12px;
+	-webkit-border-top-right-radius: 12px;
+	border-top-right-radius: 12px;
+	-webkit-box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.3);
+}
+.sushi_menu a:hover { 
+	color: #fff;
+	background-color: #757575;
+}
+.sushi_menu .all {  /* toggle switch for menu */
+	float: left;
+	width: 180px;
+	margin-right: 15px;
+	margin-left: 10px;		
+	padding: 4px 8px 4px 8px;
+	color: #fff;
+	background-color: #757575;
+}
+.sushi_menu .all:hover {
+	background: #ccc;
+	color: #000;
+}
+.sushi_menu ul .current a {
+	border-bottom: 1px solid #fff;
+	color: #757575;
+	background-color: #fff;
+	cursor: default;
+}
+.sushi_menu ul .current a:hover { 
+	border-bottom: 1px solid #fff;
+	color: #757575;
+	background-color: #fff;
+	cursor: default;
+}
+/* 									     #sushi
+================================================ */
+#item-1_sushi, #item-2_sushi, #item-3_sushi, #item-4_sushi, #item-5_sushi, #item-6_sushi, #item-7_sushi, #item-8_sushi, #item-9_sushi, #item-10_sushi {
+	float: left;
+	clear: both;
+	margin-left: 10px;
+	z-index: 100;
+	line-height: 1.2em;
+	cursor: pointer;
+	background: #000;
+	color: white;
+	width: 300px;
+	border: 1px solid #000;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-top-right-radius: 8px;
+	border-top-right-radius: 8px;
+	-webkit-border-top-left-radius: 8px;
+	-moz-border-top-left-radius: 8px;
+	border-top-left-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	-moz-border-bottom-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-bottom-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	margin-bottom: 2px;	
+}
+#item-1_sushi:hover, #item-2_sushi:hover, #item-3_sushi:hover, #item-4_sushi:hover, #item-5_sushi:hover, #item-6_sushi:hover, #item-7_sushi:hover, #item-8_sushi:hover, #item-9_sushi:hover, #item-10_sushi:hover {
+    background: #757575;
+}
+#item-1_sushi {
+	margin-top: 25px;
+}
+.contents_sushi {
+	display: none;
+	position: relative;
+	float: left;
+	clear: right;	
+	z-index: 150;
+	background-color: #fff;
+	margin-top: -8px;
+	margin-bottom: 15px;
+	width: 100%;
+	max-width: 1000px;
+	border: 1px solid #000;
+	-webkit-border-bottom-right-radius: 15px;
+	-moz-border-bottom-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	-webkit-border-bottom-left-radius: 15px;
+	-moz-border-bottom-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	-webkit-border-top-left-radius: 15px;
+	-moz-border-top-left-radius: 15px;
+	border-top-left-radius: 15px;	
+	/*	this puts the border inside the flexible container w/o messing with the overall width*/
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;	
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+.contents_last_sushi {
+	display: none;
+	position: relative;
+	float: left;
+	clear: right;	
+	z-index: 150;
+	background-color: #fff;
+	float: left;
+	clear: right;
+	margin-top: -8px;
+	margin-bottom: 15px;
+	width: 100%;
+	max-width: 1000px;
+	border: 1px solid #000;
+	-webkit-border-bottom-right-radius: 15px;
+	-moz-border-bottom-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	-webkit-border-bottom-left-radius: 15px;
+	-moz-border-bottom-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	-webkit-border-top-left-radius: 15px;
+	-moz-border-top-left-radius: 15px;
+	border-top-left-radius: 15px;		
+	padding-top: 10px;
+	padding-bottom: 10px;
+	/*	this puts the border inside the flexible container w/o messing with the overall width*/
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.category_description_sushi {
+	display: block;
+	float: left;
+	clear: right;
+	text-align: right;
+	padding-right: 10px;	
+	width: 85%;
+	max-width: 615px;
+	margin-top: 15px;
+}
+.item_odd_first_sushi {
+	line-height: 1em;
+	background-color: #ebebeb;
+	display: block;
+	float: left;
+	width: 70%;
+	max-width: 500px;
+	margin-left: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin-top: 10px;
+	padding-left: 5px;
+	-webkit-border-top-left-radius: 4px;
+	-moz-border-top-left-radius: 4px;
+	border-top-left-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-moz-border-bottom-left-radius: 4px;
+	border-bottom-left-radius: 4px;		
+}
+.item_odd_price_first_sushi {
+	display: block;
+	float: left;
+	clear: right;	
+	line-height: 1em;
+	background-color: #ebebeb;	
+	width: 15%;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin-top: 10px;
+	padding-right: 5px;
+	-webkit-border-top-right-radius: 4px;
+	-moz-border-top-right-radius: 4px;
+	border-top-right-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-moz-border-bottom-right-radius: 4px;
+	border-bottom-right-radius: 4px;	
+}
+.item_odd_sushi {
+	line-height: 1em;
+	background-color: #ebebeb;
+	display: block;
+	float: left;
+	width: 70%;
+	max-width: 500px;
+	margin-left: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 5px;
+	-webkit-border-top-left-radius: 4px;
+	-moz-border-top-left-radius: 4px;
+	border-top-left-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-moz-border-bottom-left-radius: 4px;
+	border-bottom-left-radius: 4px;	
+}
+.item_odd_price_sushi {
+	display: block;
+	float: left;
+	clear: right;	
+	line-height: 1em;
+	background-color: #ebebeb;	
+	width: 15%;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-right: 5px;
+	-webkit-border-top-right-radius: 4px;
+	-moz-border-top-right-radius: 4px;
+	border-top-right-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-moz-border-bottom-right-radius: 4px;
+	border-bottom-right-radius: 4px;	
+}
+.item_even_sushi {
+	display: block;
+	float: left;	
+	line-height: 1em;
+	background-color: #fff;
+	width: 70%;
+	max-width: 500px;
+	margin-left: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+}
+.item_even_price_sushi {
+	display: block;
+	float: left;
+	clear: right;	
+	line-height: 1em;
+	background-color: #fff;	
+	width: 15%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 5px;
+}
+.sushi_drinks_left_first_sushi {
+	display: block;
+	float: left;
+	width: 40%;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	line-height: 1.2em;
+}
+.sushi_drinks_left_sushi {
+	display: block;
+	float: left;
+	width: 40%;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	line-height: 1.2em;
+}
+.sushi_drinks_right_first_sushi {
+	display: block;
+	float: left;
+	clear: right;
+	width: 40%;
+	margin-top: 15px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	line-height: 1.2em;
+}
+.sushi_drinks_right_sushi {
+	display: block;
+	float: left;
+	clear: right;
+	width: 40%;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	line-height: 1.2em;
+}
