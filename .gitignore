@@ -1,5 +1,6 @@
 *.sass-cache*
 node_modules/
+offline-sites/
 .gitattributes
 sftp-config.json
 new_client_setup.docx
