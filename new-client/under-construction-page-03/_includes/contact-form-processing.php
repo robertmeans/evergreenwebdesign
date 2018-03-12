@@ -41,8 +41,7 @@
         $captcha = $_POST['g-recaptcha-response'];
     }
 
-    // $my_email = "craig@ledererinc.com";
-    // $my_email = "craigandsuranne@gmail.com";
+    // $my_email = "abc@yourdomain.com";
     // for testing
     $my_email = "robert@robertmeans.com";
 
