@@ -1232,9 +1232,10 @@ max-width: 60px;
 #essentials {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   // justify-content: center;
-  background: #6d94e1 url('_images/world-bkg.jpg') no-repeat top left fixed;
+  background: #6d94e1 url('_images/online-store.jpg') no-repeat top left fixed;
   background-size: cover;
   min-height: 100vh;
   // padding: 80px 0px;
@@ -1248,9 +1249,12 @@ max-width: 60px;
 
       justify-content: center;
       align-items: center;
-      margin: 90px 0;
+      // margin: 90px 0;
       // background-color: rgba(255,255,255,1);
       background-color: #fcfcfc;
+      background-color: rgba(252,252,252,0.9);
+      border-top: 1px solid #1d2c42;
+      border-bottom: 1px solid #1d2c42;
       padding: 20px 0px;
 
       div.essentials-image {
@@ -1258,12 +1262,13 @@ max-width: 60px;
         margin: 0px 30px;
         width: 100%;
         max-width: 200px;
+        border-radius: 50%;
         img.dont-panic {
           display: block;
           width: 100%;
           max-width: 200px;
           margin: 20px 0 0 0;
-          border-right: 2px solid #757575;
+          // border-right: 1px solid #909090;
           box-sizing: border-box;
         }
     }
@@ -1295,14 +1300,14 @@ max-width: 60px;
   color: #333;
   width: 100%;
   max-width: 300px;
-  background-color: #ccc;;
-  color: #333;
+  background-color: #1d2c42;;
+  color: #fff;
   margin: 0 0 20px 0;
   font-size: 0.8em;
   text-align: justify;
   padding: 10px;
   box-sizing: border-box;
-  border-right: 2px solid #757575;
+  // border-right: 1px solid #909090;
 }
 
 @media screen and (max-width: 600px) {
@@ -1326,7 +1331,7 @@ max-width: 60px;
 	height: auto;
 	min-height: 680px;
 	padding-bottom: 100px;
-	background: #6d94e1 url(_images/symphony.png) repeat fixed center;
+	background: #6d94e1 url(_images/bkg-05.jpg) repeat fixed center;
   min-height: 100vh;
 }
 #div-two.insomniac-background {

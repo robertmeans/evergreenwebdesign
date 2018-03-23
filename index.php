@@ -60,7 +60,7 @@
         <a class="badge-tel" tabIndex="-1" href="tel:(303)%20932-7483"><h2>Call: (303) WEBSITE</h2></a>
         <h4>That's (303) 932-7483</h4>
       </span>
-      <div id="scrollDownSprite"><a href="#div-two" class="no-active-nav"></a></div>
+      <div id="scrollDownSprite"><a href="#essentials" class="no-active-nav"></a></div>
     </div><!-- badge -->
     
 </div>
