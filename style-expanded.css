@@ -3540,6 +3540,13 @@ html[xmlns] .slides {
   box-sizing: border-box;
 }
 
+#google-reviews {
+  min-height: 100vh;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #essentials {
   display: -webkit-flex;
   display: -ms-flexbox;
