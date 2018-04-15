@@ -67,143 +67,72 @@ table {
   clear: both;
 }
 
-#some-nav {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  position: fixed;
-  top: 0;
-  font-family: Calibri;
-  width: 100%;
-  height: 60px;
-  background-color: #6ba1dd;
-  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.4);
-  color: #fff;
-}
-#some-nav ul {
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -ms-flex-pack: center;
-      justify-content: center;
-}
-#some-nav ul li {
-  position: relative;
-}
-#some-nav ul li a {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  height: 60px;
-  padding: 0px 20px;
-  color: #fff;
-  text-decoration: none;
-  transition: all 0.5s ease;
-}
-#some-nav ul li a:hover {
-  background-color: #fff;
-  color: blue;
-}
-#some-nav ul li ul {
-  display: none;
-  position: absolute;
-  background-color: green;
-}
-#some-nav ul li ul li {
-  position: relative;
-}
-#some-nav ul li ul li ul {
-  display: none;
-  position: absolute;
-  background-color: gray;
-}
-#some-nav ul li ul li a {
-  background-color: red;
-}
-#some-nav ul li ul li a:hover {
-  background-color: green;
-  color: #fff;
-}
-#some-nav ul li ul li:hover ul {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-}
-#some-nav ul li:hover ul {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-}
+@media screen and (min-width: 681px) {
+  /* begin large navigation */
+  nav {
+    width: 100%;
+    background-color: #444;
+    position: fixed;
+    top: 0;
+  }
+  nav ul {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: Calibri;
+    background-color: #444;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  nav ul li {
+    list-style-type: none;
+  }
+  nav ul li a {
+    padding: .8em 1em;
+    display: block;
+    text-decoration: none;
+    color: #f9f9f9;
+  }
+  nav ul li a:hover {
+    background: rgba(0, 0, 0, 0.25);
+  }
 
-nav {
-  width: 100%;
-  background-color: #444;
-}
+  .arrow {
+    font-family: FontAwesome;
+    float: right;
+  }
 
-nav ul {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  font-family: Calibri;
-  background-color: #444;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-}
+  .arrow-down::after {
+    content: "\f107";
+  }
 
-nav ul li {
-  list-style-type: none;
-}
+  .arrow-right::after {
+    content: "\f105";
+  }
 
-nav ul li a {
-  padding: .8rem 1rem;
-  display: block;
-  text-decoration: none;
-  color: #f9f9f9;
+  .closebtn {
+    display: none;
+  }
 }
-
-nav ul li:hover {
-  background: rgba(0, 0, 0, 0.25);
-}
-
-.arrow {
-  font-family: FontAwesome;
-  float: right;
-}
-
-.arrow-down::after {
-  content: "\f107";
-}
-
-.arrow-right::after {
-  content: "\f105";
-}
-
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 680px) {
   .has-children ul li a {
-    padding-left: 2rem;
+    padding-left: 2em;
   }
 
   .has-children ul .has-children ul a {
-    padding-left: 3rem;
+    padding-left: 2em;
   }
 
   .arrow-down::after {
     content: "\f107";
   }
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 680px) {
   nav ul {
     -ms-flex-direction: row;
         flex-direction: row;
-    /*     justify-content: flex-end; */
   }
 
   nav ul li {
@@ -229,5 +158,108 @@ nav ul li:hover {
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
+  }
+}
+/* ^^ concludes large navigation */
+/* begin mobile navigation */
+@media screen and (min-width: 681px) {
+  span.mobile-toggle img {
+    display: none;
+  }
+}
+@media screen and (max-width: 680px) {
+  /* The side navigation menu */
+  nav {
+    font-family: Calibri;
+  }
+  nav ul ul {
+    margin-left: 1em;
+  }
+  nav #sidenav-wrapper {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    width: 300px;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+  }
+
+  .arrow {
+    font-family: FontAwesome;
+    float: right;
+  }
+
+  .arrow-down::after {
+    content: "\f107";
+  }
+
+  .arrow-right::after {
+    content: "\f107";
+  }
+
+  span.mobile-toggle {
+    display: inline-block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9998;
+    cursor: pointer;
+  }
+  span.mobile-toggle img {
+    width: 100%;
+    max-width: 50px;
+  }
+
+  .sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 9999;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+  }
+
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: -40px;
+    right: 10px;
+    font-size: 36px;
+    padding: 0px 10px;
+  }
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
   }
 }

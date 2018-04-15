@@ -79,33 +79,3 @@
 		}
 	}
 } )();
-
-
-
-// start mobile navigation -----------------------------------------
-/* Set the width of the side navigation to 250px */
-
-// original function...
-// function openNav() {
-//     document.getElementById("mySidenav").style.width = "250px";
-// }
-
-//improved function...
-function openNav() {
-    // document.getElementById("mySidenav").style.width = "250px";
-    var e = document.getElementById("mySidenav");
-    if (e.style.width == '250px')
-    {
-        e.style.width = '0px';
-    }
-    else 
-    {
-        e.style.width = '250px';
-    }
-}
-
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-// end mobile navigation ----------------------------------------------
