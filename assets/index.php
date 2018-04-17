@@ -19,7 +19,7 @@
 <body>
 	
 	<div id="links">
-		<a href="navigation-01/">Navigation</a>
+		<a href="navigation-01/">Navigation 01</a>
 	</div>
 
 
