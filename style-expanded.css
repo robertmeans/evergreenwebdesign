@@ -3995,11 +3995,9 @@ ul.past-projects li {
 
 .column {
   -webkit-column-count: 2;
-  -moz-column-count: 2;
   column-count: 2;
   -webkit-column-gap: 40px;
   /* Chrome, Safari, Opera */
-  -moz-column-gap: 40px;
   /* Firefox */
   column-gap: 40px;
 }
@@ -4339,11 +4337,9 @@ footer .copyright {
 
   .column {
     -webkit-column-count: 2;
-    -moz-column-count: 2;
     column-count: 2;
     -webkit-column-gap: 40px;
     /* Chrome, Safari, Opera */
-    -moz-column-gap: 40px;
     /* Firefox */
     column-gap: 40px;
   }
