@@ -2471,7 +2471,7 @@ nav {
   background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0.5) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#38ffffff',GradientType=0 );
   border-bottom: 1px solid #000;
-  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 nav h2 {
@@ -2648,6 +2648,15 @@ li.active a, li.active a:hover {
 
 #tab1 div a i.fa {
   margin-right: 10px;
+}
+
+div#tab1 img.overview-banner {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .container {
@@ -3653,7 +3662,7 @@ html[xmlns] .slides {
   height: auto;
   min-height: 680px;
   padding-bottom: 100px;
-  background: #6d94e1 url(_images/bkg-05.jpg) repeat fixed center;
+  background: #6d94e1 url(_images/bkg-14.jpg) repeat fixed center;
   min-height: 100vh;
 }
 
@@ -3995,9 +4004,11 @@ ul.past-projects li {
 
 .column {
   -webkit-column-count: 2;
+  -moz-column-count: 2;
   column-count: 2;
   -webkit-column-gap: 40px;
   /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px;
   /* Firefox */
   column-gap: 40px;
 }
@@ -4337,9 +4348,11 @@ footer .copyright {
 
   .column {
     -webkit-column-count: 2;
+    -moz-column-count: 2;
     column-count: 2;
     -webkit-column-gap: 40px;
     /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px;
     /* Firefox */
     column-gap: 40px;
   }

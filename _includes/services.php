@@ -1,14 +1,15 @@
 <section id="div-two">
   <div class="tabs">
       <ul class="tab-links">
-          <li class="active"><a href="#tab1" class="static"><i class="fa fa-eye"></i> <span class="mobile-gone">Overview</span></a></li>
-          <li><a href="#tab2" class="static"><i class="fa fa-desktop desktop-only"></i> <span class="mobile-gone">Websites</span></a></li>
-          <li><a href="#tab3" class="static"><i class="fa fa-wordpress desktop-only"></i> <span class="mobile-gone">WordPress</span></a></li>
+          <li class="active"><a href="#tab1" class="static"><i class="far fa-eye"></i> <span class="mobile-gone">Overview</span></a></li>
+          <li><a href="#tab2" class="static"><i class="fas fa-desktop desktop-only"></i> <span class="mobile-gone">Websites</span></a></li>
+          <li><a href="#tab3" class="static"><i class="fab fa-squarespace desktop-only"></i> <span class="mobile-gone">Squarespace</span></a></li>
       </ul>
 
   <div class="tab-content">
 
         <div id="tab1" class="tab active cf"><!-- Overview tab -->
+          <img class="overview-banner" src="_images/mt-evans-range.jpg">
           <h2 class="mobile">Overview</h2>
             <p></p>
             <p>Based in beautiful Evergreen, Colorado, Evergreen Web Design is a full-service Internet marketing firm offering custom solutions to virtually any Web related project. We've partnered with some of the brightest talent in the industry in order to bring you the most competitive rates available from domain registration to hosting to website concept, design and development.</p>
@@ -53,7 +54,7 @@
           <div class="container2">
              <a href="#" class="click no-default"><i class="fa fa-angle-down"></i> Pricing</a>
             <div class="expand">
-              <p>Pricing options are available to suit virtually every budget and project. Let's discuss your idea and outline a plan that works for you.</p>
+              <p>The first question everyone asks, &quot;How much?&quot; A similar question would be, &quot;How much is a car?&quot; With all of the options and details to outline it is impossible to set generic pricing. That said, pricing options are available to suit virtually every budget and project. Let's discuss your idea and outline a plan that works for you.</p>
 
               <p>Discounted pricing for domain names, hosting, etc. can be found through our <a href="http://store.evergreenwebdesign.com">GoDaddy Reseller portal</a>.</p>
             </div><!-- .expand !-->
