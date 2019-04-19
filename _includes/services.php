@@ -1,68 +1,14 @@
 <section id="div-two">
   <div class="tabs">
       <ul class="tab-links">
-          <li class="active"><a href="#tab1" class="static"><i class="far fa-eye"></i> <span class="mobile-gone">Overview</span></a></li>
-          <li><a href="#tab2" class="static"><i class="fas fa-desktop desktop-only"></i> <span class="mobile-gone">Websites</span></a></li>
-          <li><a href="#tab3" class="static"><i class="fab fa-squarespace desktop-only"></i> <span class="mobile-gone">Squarespace</span></a></li>
+          <li class="active"><a href="#tab2" class="static"><i class="fas fa-desktop desktop-only"></i> <span class="mobile-gone">Websites</span></a></li>
+          <li><a href="#tab1" class="static"><i class="far fa-eye"></i> <span class="mobile-gone">Overview</span></a></li>
+          <li><a href="#tab3" class="static"><i class="far fa-lightbulb desktop-only"></i> <span class="mobile-gone">Options</span></a></li>
       </ul>
 
   <div class="tab-content">
 
-        <div id="tab1" class="tab active cf"><!-- Overview tab -->
-          <img class="overview-banner" src="_images/mt-evans-range.jpg">
-          <h2 class="mobile">Overview</h2>
-            <p></p>
-            <p>Based in beautiful Evergreen, Colorado, Evergreen Web Design is a full-service Internet marketing firm offering custom solutions to virtually any Web related project. We've partnered with some of the brightest talent in the industry in order to bring you the most competitive rates available from domain registration to hosting to website concept, design and development.</p>
-
-            <p>Products &amp; services include:</p>
-            <div class="project-col">
-              <ul class="past-projects">
-                <li>Website Development</li>
-                <li>SEO Services</li>
-                <li>Social Media Campaigns</li>
-                <li>WordPress Recovery &amp; Migration</li>
-                <li>Custom Solutions</li>
-              </ul>
-              </div>
-
-              <div class="project-col">
-              <ul class="past-projects second-column">
-                <li>Domain Registration<span class="reseller">*</span></li>
-                <li>Hosting<span class="reseller">*</span></li>
-                <li>SSL Certificates<span class="reseller">*</span></li>
-                <li>Email<span class="reseller">*</span></li>
-                <li>24/7/365 Support<span class="reseller">*</span></li>
-              </ul>
-              </div>
-
-              <p>Visit our <a class="storefront-link" href="http://store.evergreenwebdesign.com">Storefront</a> for a complete selection of all our discounted domain products. </p>
-              <p><span class="reseller">*</span> Evergreen Web Design is an authorized GoDaddy Reseller. You can buy GoDaddy products through us for less. Exact same products, same support, same dependability, less money.</p>
-
-          <div class="container">
-            <p class="social-network-icons"><a href="https://www.facebook.com/evergreenwebdesign01" target="_blank"><img class="facebook-square" src="_images/facebook-icon.jpg" alt="Facebook"></a> <a href="https://twitter.com/EWDLLC" target="_blank"><img class="twitter-square" src="_images/twitter-icon.jpg" alt="Twitter"></a> <a href="https://plus.google.com/+Evergreenwebdesignllc" target="_blank"><img class="google-plus-square" src="_images/google-plus-icon.jpg" alt="Google+"></a> please share</p>
-
-            <a href="#" class="click no-default"><i class="fa fa-angle-down"></i> SEO Strategies</a>
-
-            <div class="expand">
-              <p class="seo-strategies">Your Search Engine Optimization stragety starts with the big 3 social networking giants and continues all the way into the code of your website.</p>
-              <p>Gone are the days when you could just plop a few keywords into a meta tag in the code of your website and let the search engines do the rest. Today the algorithms search engines use to index your site into their database rely on a number of facets pertaining to your website address and they all ignore the keyword meta tag.</p>
-              <p>The playing field has changed and if you're not keeping up, you're quickly getting left beind. It's an aggressive campaign that needs to be viewed through the perspective of a long term endeavor and not a quick fix. Evergreen Web Design will draft a course for your business in order to navigate an efficient strategy best suited to draw attention to <em>your</em> site.</p>
-              <!-- <p><a href="seo.php">Read more...</a></p> -->
-            </div><!-- .expand !-->
-          </div><!-- #container -->
-
-          <div class="container2">
-             <a href="#" class="click no-default"><i class="fa fa-angle-down"></i> Pricing</a>
-            <div class="expand">
-              <p>The first question everyone asks, &quot;How much?&quot; A similar question would be, &quot;How much is a car?&quot; With all of the options and details to outline it is impossible to set generic pricing. That said, pricing options are available to suit virtually every budget and project. Let's discuss your idea and outline a plan that works for you.</p>
-
-              <p>Discounted pricing for domain names, hosting, etc. can be found through our <a href="http://store.evergreenwebdesign.com">GoDaddy Reseller portal</a>.</p>
-            </div><!-- .expand !-->
-          </div><!-- #container2 -->
-
-        </div><!-- #tab1 .tab .active .cf -->
-
-      <div id="tab2" class="tab cf"><!-- Websites tab -->
+      <div id="tab2" class="tab active cf"><!-- Websites tab -->
       <h2 class="mobile">Websites</h2>
         <p>A custom website can help rediscover your business image in the Internet marketplace.</p>
         <p>Mobile devices now account for <a class="txt-a" href="http://techcrunch.com/2014/08/21/majority-of-digital-media-consumption-now-takes-place-in-mobile-apps/" target="_blank">more Internet traffic</a> than desktop computers. You can't afford to have an online presence without a strong mobile interface. If you're customers have to zoom, pinch and pan in order to navigate your website it quickly becomes an ineffective, cumbersome experience.</p>
@@ -71,12 +17,32 @@
     <ul class="list moresites cf">
 
       <li>
-        <a href="http://www.evergreenbrewery.com" target="_blank"><img src="_images/evergreen-brewery-website.jpg" alt="Evergren Tap House"></a>
+        <a href="http://www.mainstrestaurant.com" target="_blank"><img src="_images/mainstrestaurant-website.jpg" alt="Main Street Restaurant"></a>
+        <h3>Main Street Restaurant</h3>
+        <p>Squarespace website with custom conditional logic that dynamically embeds content. Neat!</p>
+      </li>
+      <li>
+        <a href="http://www.evergreenbrewery.com" target="_blank"><img src="_images/evergreen-brewery-website.jpg" alt="Evergren Brewery"></a>
         <h3>Evergreen Brewery</h3>
         <p>Elegant. Minimilistic. This &quot;pet project&quot; is destined to evolve over time.</p>
       </li>
       <li>
-        <a href="http://www.ledererinc.com" target="_blank"><img src="_images/ledererinc-website.jpg" alt="Sattva Massage"></a>
+        <a href="http://www.mountainliving.fun" target="_blank"><img src="_images/mountainliving-website.jpg" alt="Lisa Smith Realtor"></a>
+        <h3>Real Estate Agent</h3>
+        <p>WordPress website for Realtor with IDX &amp; CRM integration to search MLS listings and manage visitor retention.</p>
+      </li>
+      <li>
+        <a href="http://www.cabinetsofdenver.com" target="_blank"><img src="_images/cabinetsofdenver-website.jpg" alt="Cabinets of Denver"></a>
+        <h3>Cabinets of Denver</h3>
+        <p>Squarespace website driven by imagery. Galleries and slideshows highlight the story.</p>
+      </li>
+      <li>
+        <a href="http://www.best-nutrition.net" target="_blank"><img src="_images/best-nutrition-website.jpg" alt="Best Nutrition"></a>
+        <h3>Best Nutrition</h3>
+        <p>WordPress ecommerce (WooCommerce) site with product options and variations.</p>
+      </li>
+      <li>
+        <a href="http://www.ledererinc.com" target="_blank"><img src="_images/ledererinc-website.jpg" alt="Lederer, Inc."></a>
         <h3>Lederer, Inc</h3>
         <p>Great example of integrating complex functionality with creative freedom.</p>
       </li>
@@ -166,12 +132,62 @@
 
     </div><!-- #tab2 .tab .cf --><!-- Websites tab -->
 
-    <div id="tab3" class="tab cf"><!-- $? tab -->
-      <h2 class="mobile"><i class="fa fa-wordpress"></i> WordPress</h2>
-      <p>Why WordPress?</p>
-      <p>WordPress powers <a class="txt-a" href="https://www.inkthemes.com/why-use-wordpress/" target="_blank">25% of all sites</a> across the web. In the realm of Content Management Systems, WordPress accounts for over 65% of the global market. It features an easy to use interface, built in search engine compatiblity, it's secure and there are virtually endless options to customize. This is the solution both novice and professional turn to most often.</p>
 
-      <p>Evergreen Web Design can harness the power of this framework for you. The result is a website that can be managed in-house without the need to hire a Webmaster everytime you need an update.</p>
+    <div id="tab1" class="tab cf"><!-- Overview tab -->
+        <h2 class="mobile">Overview</h2>
+          <p></p>
+          <p>Based in beautiful Evergreen, Colorado, Evergreen Web Design is a full-service Internet marketing firm offering custom solutions to virtually any Web related project. We've partnered with some of the brightest talent in the industry in order to bring you the most competitive rates available from domain registration to hosting to website concept, design and development.</p>
+
+          <p>Products &amp; services include:</p>
+          <div class="project-col">
+            <ul class="past-projects">
+              <li>Website Development</li>
+              <li>SEO Services</li>
+              <li>Social Media Campaigns</li>
+              <li>WordPress Recovery &amp; Migration</li>
+              <li>Custom Solutions</li>
+            </ul>
+            </div>
+
+            <div class="project-col">
+            <ul class="past-projects second-column">
+              <li>Domain Registration<span class="reseller">*</span></li>
+              <li>Hosting<span class="reseller">*</span></li>
+              <li>SSL Certificates<span class="reseller">*</span></li>
+              <li>Email<span class="reseller">*</span></li>
+              <li>24/7/365 Support<span class="reseller">*</span></li>
+            </ul>
+            </div>
+
+            <p>Visit our <a class="storefront-link" href="http://store.evergreenwebdesign.com">Storefront</a> for a complete selection of all our discounted domain products. </p>
+            <p><span class="reseller">*</span> Evergreen Web Design is an authorized GoDaddy Reseller. You can buy GoDaddy products through us for less. Exact same products, same support, same dependability, less money.</p>
+
+          <div class="container">
+            <p class="social-network-icons"><a href="https://www.facebook.com/evergreenwebdesign01" target="_blank"><img class="facebook-square" src="https://www.evergreenwebdesign.com/_images/facebook-icon.jpg" alt="Facebook"></a> <a href="https://twitter.com/EWDLLC" target="_blank"><img class="twitter-square" src="_images/twitter-icon.jpg" alt="Twitter"></a> <a href="https://plus.google.com/+Evergreenwebdesignllc" target="_blank"><img class="google-plus-square" src="_images/google-plus-icon.jpg" alt="Google+"></a> please share</p>
+
+            <a href="#" class="click no-default"><i class="fa fa-angle-down"></i> Creative Solutions</a>
+
+            <div class="expand">
+              <p class="seo-strategies">This website you are looking at right now was built 100% by hand coded acuity. There is no prefabricated, template-driven framework to restrict complete creative freedom which, as a developer, represents unbriadled joy!</p>
+              <p>How can this help you? Well, to start this means that no matter what project you have, whether it exists already or it is a future concept, the sky's the limit! Nothing's getting farmed out here. You want answers? We've got 'em.</p>
+            </div><!-- .expand !-->
+          </div><!-- #container -->
+
+          <div class="container2">
+             <a href="#" class="click no-default"><i class="fa fa-angle-down"></i> Pricing</a>
+            <div class="expand">
+              <p>The first question everyone asks, &quot;How much?&quot; A similar question would be, &quot;How much is a car?&quot; With all of the options and details to outline it is impossible to set generic pricing. That said, pricing options are available to suit virtually every budget and project. Let's discuss your idea and outline a plan that works for you.</p>
+
+              <p>Discounted pricing for domain names, hosting, etc. can be found through our <a href="http://store.evergreenwebdesign.com">GoDaddy Reseller portal</a>.</p>
+            </div><!-- .expand !-->
+          </div><!-- #container2 -->
+
+        </div><!-- #tab1 .tab .active .cf -->
+
+    <div id="tab3" class="tab cf"><!-- $? tab -->
+      <h2 class="mobile">Options</h2>
+      <p>The sky's the limit!</p>
+      <p>At the risk of oversimplifying it I always tell people, &quot;The short answer is 'Yes'.&quot; In other words, if you can think it I can do it.</p>
     </div><!-- #tab3 .tab cf -->
 
   </div><!-- .tab-content -->

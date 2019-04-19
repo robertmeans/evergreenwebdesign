@@ -15,7 +15,7 @@
     <input type='hidden' name='<?php echo $formproc->GetFormIDInputName(); ?>' value='<?php echo $formproc->GetFormIDInputValue(); ?>'/>
     <input type='text'  class='spmhidip' name='<?php echo $formproc->GetSpamTrapInputName(); ?>' />
     <div class='short_explanation'><i class="fa fa-phone-square"></i> <a class="tel" tabIndex="-1" href="tel:(303)%20932-7483">(303) WEBSITE</a> - (303) 932-7483<br>
-    <i class="fa fa-envelope-o"></i> <a href="mailto:robert@evergreenwebdesign.com">robert@evergreenwebdesign.com</a></div>
+    <i class="far fa-envelope"></i> <a href="mailto:robert@evergreenwebdesign.com">robert@evergreenwebdesign.com</a></div>
     <div id='fg_server_errors' class='error'></div>
     <div class='container'>
         <label for='name' >Name<span class="red">*</span>: </label><br/>
