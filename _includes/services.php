@@ -24,7 +24,7 @@
       <li>
         <a href="http://www.evergreenbrewery.com" target="_blank"><img src="_images/evergreen-brewery-website.jpg" alt="Evergren Brewery"></a>
         <h3>Evergreen Brewery</h3>
-        <p>Elegant. Minimilistic. This &quot;pet project&quot; is destined to evolve over time.</p>
+        <p>Hand coded. Elegant. Minimilistic. This &quot;pet project&quot; is destined to evolve over time.</p>
       </li>
       <li>
         <a href="http://www.mountainliving.fun" target="_blank"><img src="_images/mountainliving-website.jpg" alt="Lisa Smith Realtor"></a>
@@ -44,7 +44,7 @@
       <li>
         <a href="http://www.ledererinc.com" target="_blank"><img src="_images/ledererinc-website.jpg" alt="Lederer, Inc."></a>
         <h3>Lederer, Inc</h3>
-        <p>Great example of integrating complex functionality with creative freedom.</p>
+        <p>Hand coded. Great example of integrating complex functionality with creative freedom.</p>
       </li>
       <li>
         <a href="http://www.evergreenwebdesign.com/offline-sites/sattvamassage" target="_blank"><img src="_images/sattva-massage-website.jpg" alt="Sattva Massage"></a>
@@ -54,37 +54,37 @@
       <li>
         <a href="http://www.evergreenwebdesign.com/offline-sites/fosterfamilydental" target="_blank"><img src="_images/foster-family-dental-website.jpg" alt="Foster Family Dental"></a>
         <h3>Foster Family Dental</h3>
-        <p>Custom design with mobile first priority. Website adapts flawlessly to any viewport.</p>
+        <p>Hand coded custom design with mobile first priority. Website adapts flawlessly to any viewport.</p>
       </li>
       <li>
         <a href="http://www.rookiesevergreen.com" target="_blank"><img src="_images/rookiesevergreen-website.jpg" alt="Rookies - Batting Cages Evergreen, Colorado"></a>
         <h3>Rookies</h3>
-        <p>Evergreen, Colorado's premiere batting cages with online managed booking system.</p>
+        <p>Hand coded. Evergreen, Colorado's premiere batting cages with online managed booking system.</p>
       </li>
       <li>
         <a href="http://www.evergreensigns.com" target="_blank"><img src="_images/evergreen-signs-website.jpg" alt="Evergreen Signs Website"></a>
         <h3>Evergreen Signs</h3>
-        <p>Advertising in various mediums. With a mobile-optimized website they are now reaching more customers than ever.</p>
+        <p>Hand coded. Advertising in various mediums. With a mobile-optimized website they are now reaching more customers than ever.</p>
       </li>
       <li>
         <a href="http://www.evergreenwebdesign.com/offline-sites/wildflowerevergreen" target="_blank"><img src="_images/wildflower-website.jpg" alt="Wildflower Café"></a>
         <h3>The Wildflower Café</h3>
-        <p>Located in historic downtown Evergreen, Colorado with a menu that brings folks in from miles around.</p>
+        <p>Hand coded. Located in historic downtown Evergreen, Colorado with a menu that brings folks in from miles around.</p>
       </li>
       <li>
         <a href="http://www.myscreenscene.com" target="_blank"><img src="_images/myscreenscene-website.jpg" alt="MyScreenScene.com"></a>
         <h3>MyScreenScene</h3>
-        <p>An incredibly useful browser utility built in PHP &amp; mySQL.</p>
+        <p>Hand coded. An incredibly useful browser utility built in PHP &amp; mySQL.</p>
       </li>
       <li>
         <a href="http://www.evergreenwildernessguides.com" target="_blank"><img src="_images/evergreen-wilderness-guides-website.jpg" alt="Evergreen Wilderness Guides"></a>
         <h3>Evergreen Wilderness Guides</h3>
-        <p>Outdoor instruction with courses ranging from rock climbing to mountain biking to survival skills.</p>
+        <p>WordPress. Outdoor instruction with courses ranging from rock climbing to mountain biking to survival skills.</p>
       </li>
       <li>
         <a href="http://www.evergreenwebdesign.com/offline-sites/colt-green" target="_blank"><img src="_images/colt-green-website.jpg" alt="Colt Green Construction"></a>
         <h3>Colt Green Construction</h3>
-        <p>Construction and project management company, Jacksonville, Florida</p>
+        <p>Hand coded. Construction and project management company, Jacksonville, Florida</p>
       </li>
 
     </ul><!-- .list .moresites .cf -->

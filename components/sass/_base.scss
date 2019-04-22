@@ -100,7 +100,7 @@ nav ul li {
 		margin-right: 10px;
 		padding: 0px 20px;
 		// border-radius: 12px;
-		transition: background-color .75s ease;
+		transition: background-color 0.3s ease;
 		&:visited {
 			background-color: inherit;
 		}
@@ -111,9 +111,6 @@ nav ul li {
 		}
 	}
 }
-
-
-
 
 // green phone number in nav
 .header-phone {
@@ -154,19 +151,6 @@ nav ul li {
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .first-nav-item {
@@ -452,13 +436,23 @@ border-radius: 10px;
 
 #contactus input[type="text"]
 {
-  height:18px;
-  width:220px;
+  // height:18px;
+  // width:220px;
+  height: 2em;
+  width: 96%;
 }
 #contactus input[type="email"]
 {
-  height:18px;
-  width:220px;
+  font-family : Arial, Verdana, sans-serif;
+  font-size: 0.8em;
+  line-height:140%;
+  color : #000;
+  padding : 3px;
+  height: 2em;
+  // width:220px;
+  width: 96%;
+  border-radius: 5px;
+  border: 1px solid #999;
 }
 #contactus #scaptcha
 {
@@ -1449,7 +1443,7 @@ max-width: 60px;
 	height: 30px;
 	bottom: 10px;
 	right: 50%;
-  margin-left: -15px;
+  margin-right: -26px;
 	text-align: center;
 	background-color: rgba(18,152,31,0.85);
 	padding: 10px 10px 0px 10px;
@@ -1469,6 +1463,13 @@ max-width: 60px;
     //padding: 9px 9px 0px 9px;
     transform: scale(0.96);
 	}
+}
+@media screen and (max-width: 600px) {
+  .back-to-top {
+    right: 10px;
+    bottom: 5px;
+    margin-right: 0px;
+  }
 }
 
 
@@ -1646,6 +1647,11 @@ li.active .wp-img-mo img:first-child {
     border: 1px solid #ccc;
     transition: all linear 0.15s;
     text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+  ul.tab-links a.static {
+    padding: 20px 25px 15px 25px;
+  }
 }
 .tab-links a:hover {
     background: #435162;
@@ -2403,11 +2409,11 @@ div.expand p.seo-strategies {
 a.mobile_menu {
 	z-index: 1003;
 	display: block;
-	width: 46px;
-	height: 46px;	
+	width: 55px;
+	height: 55px;	
 	position: fixed; 
-	top: 0px; 
-	right: 0px;
+	top: 5px; 
+	right: 5px;
 	cursor: pointer;
 
 	// you have to animate the .class off screen so
@@ -2415,7 +2421,7 @@ a.mobile_menu {
 	// covering any of the dropdown nav that opens
 	// when you click this. - that's why you can't
 	// use a sprite here.
-	background: url(_images/mobile_link_menu2.png) no-repeat 0px 0px;
+	background: url(_images/mobile-link-03.png) no-repeat 0px 0px;
 	-webkit-animation: menuToggle 600ms;
 	-moz-animation: menuToggle 600ms;
 	-ms-animation: menuToggle 600ms;
@@ -2433,24 +2439,24 @@ a.mobile_menu {
  //    animation: play 2.5s steps(40) infinite;
 }
 @-webkit-keyframes menuToggle {
-    from 	{ right: -46px; top: -46px; }
-    to 		{ right: 0px; 	top: 0px; 	}
+    from 	{ right: -60px; top: -60px; }
+    to 		{ right: 5px; 	top: 5px; 	}
 }
 @-moz-keyframes menuToggle {
-    from 	{ right: -46px; top: -46px; }
-    to 		{ right: 0px; 	top: 0px; 	}
+    from 	{ right: -60px; top: -60px; }
+    to 		{ right: 5px; 	top: 5px; 	}
 }
 @-ms-keyframes menuToggle {
-    from 	{ right: -46px; top: -46px; }
-    to 		{ right: 0px; 	top: 0px; 	}
+    from 	{ right: -60px; top: -60px; }
+    to 		{ right: 5px; 	top: 5px; 	}
 }
 @-o-keyframes menuToggle {
-    from 	{ right: -46px; top: -46px; }
-    to 		{ right: 0px; 	top: 0px; 	}
+    from 	{ right: -60px; top: -60px; }
+    to 		{ right: 5px; 	top: 5px; 	}
 }
 @keyframes menuToggle {
-    from 	{ right: -46px; top: -46px; }
-    to 		{ right: 0px; 	top: 0px; 	}
+    from 	{ right: -60px; top: -60px; }
+    to 		{ right: 5px; 	top: 5px; 	}
 }
 a.mobile_menu:hover {
 	opacity: 0.4;
@@ -2459,21 +2465,21 @@ a.mobile_menu:hover {
 
 
 a.mobile_menu.selected {
-	z-index: 1004;
-	display: block;
-	width: 46px;
-	height: 46px;	
-	position: fixed; 
-	top: -46px; 
-	right: -46px;
-	cursor: pointer;
+	// z-index: 1004;
+	// display: block;
+	// width: 46px;
+	// height: 46px;	
+	// position: fixed; 
+	top: -60px; 
+	right: -60px;
+	// cursor: pointer;
 
 	// you have to animate the .class off screen so
 	// the div does not remain onscreen potentially
 	// covering any of the dropdown nav that opens
 	// when you click this. - that's why you can't
 	// use a sprite here.
-	background: url(_images/mobile_link_menu2.png) no-repeat 0px 0px;
+	//background: url(_images/mobile-link.png) no-repeat 0px 0px;
 	-webkit-animation: menuToggleUp 900ms;
 	-moz-animation: menuToggleUp 900ms;
 	-ms-animation: menuToggleUp 900ms;
@@ -2491,24 +2497,24 @@ a.mobile_menu.selected {
  //    animation: play 2.5s steps(40) infinite;
 }
 @-webkit-keyframes menuToggleUp {
-    from 	{ right: 0px; 	top: 0px; 	}
-    to 		{ right: -46px; top: -46px; }
+    from 	{ right: 5px; 	top: 5px; 	}
+    to 		{ right: -60px; top: -60px; }
 }
 @-moz-keyframes menuToggleUp {
-    from 	{ right: 0px; 	top: 0px; 	}
-    to 		{ right: -46px; top: -46px; }
+    from 	{ right: 5px; 	top: 5px; 	}
+    to 		{ right: -60px; top: -60px; }
 }
 @-ms-keyframes menuToggleUp {
-    from 	{ right: 0px; 	top: 0px; 	}
-    to 		{ right: -46px; top: -46px; }
+    from 	{ right: 5px; 	top: 5px; 	}
+    to 		{ right: -60px; top: -60px; }
 }
 @-o-keyframes menuToggleUp {
-    from 	{ right: 0px; 	top: 0px; 	}
-    to 		{ right: -46px; top: -46px; }
+    from 	{ right: 5px; 	top: 5px; 	}
+    to 		{ right: -60px; top: -60px; }
 }
 @keyframes menuToggleUp {
-    from 	{ right: 0px; 	top: 0px; 	}
-    to 		{ right: -46px; top: -46px; }
+    from 	{ right: 5px; 	top: 5px; 	}
+    to 		{ right: -60px; top: -60px; }
 }
 
 
@@ -2519,29 +2525,35 @@ a.mobile_menu.selected {
 	display: inline-block;
 }
 nav {
-	display: flex;
+	// display: flex;
 	margin-top: -10px;	
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0.22)));
-	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.22) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#38ffffff',GradientType=0 );
-	border-bottom: 1px solid #999;
+	// background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0.22)));
+	// background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.22) 100%);
+	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#38ffffff',GradientType=0 );
+  background: transparent;
+	// border-bottom: 1px solid #999;
+  border-bottom: none;
+  box-shadow: none;
+  box-sizing: border-box;
 	overflow: hidden;
 }
 nav ul {
 	width: 100%;
 	text-align: center;	
-	height: 62px;
+	height: 63px;
 	// margin-top: -62px;
 	li {
 		overflow: hidden;
 	}
 	i.fa-times-circle {
-	padding-top: 1em;
-	line-height: 2.5em;
+	// padding-top: 1em;
+	line-height: 2em;
+  font-size: 2.2em;
+  color: #a6b5c6;
 	}
 }
 nav ul li a {		
-	color: #fff;;
+	color: #fff;
 	text-align: center;
 	margin: 0px 2px;
 	height: 62px;
@@ -2549,13 +2561,19 @@ nav ul li a {
 	// padding: 2em 12px;	
 	border-radius: 0px;
 	background: rgba(0,0,0,.6);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #fff;
+  background-color: rgba(20,61,106,0.9);
 	&:visited {
 		background-color: inherit;
 		}
 	&:hover {
 		color: #fff;
 		text-decoration: none;	
-		background: rgba(0,0,0,.2);	
+		background: rgba(0,83,175,1);	
 		cursor: pointer;	
 		}
 	&:active {
@@ -2566,12 +2584,15 @@ nav ul li a {
 .first-nav-item {
 	width: auto;
 	margin-left: 4px;
-	padding: 0.5em 1.5em;
+	//padding: 0.3em 1.5em;
+  padding-top: 1px;
 }
 .active-nav {
 	color: #fff;
 	text-decoration: none;	
-	background: rgba(0,0,0,.2);			
+	background: rgba(0,0,0,.2);	
+  // background-color: rgba(62,169,74,0.9);
+  background-color: rgba(30,143,15,0.9);		
 }
 .last-nav-item {
 	margin-right: 0;
@@ -2602,24 +2623,27 @@ nav ul li a {
 }
 #contactus input[type="text"]
 {
-  height:18px;
+  height: 2em;
   width:200px;
+  width: 96%;
 }
 #contactus input[type="email"]
 {
-  height:18px;
+  height: 2em;
   width:200px;
+  width: 96%;
 }
 #contactus textarea
 {
   height:120px;
   width:200px;
+  width: 96%;
 }
 #contactus input[type="submit"]
 {
    width: 80px;
-   height: 30px;
-   padding-left: 0px;
+   // height: 30px;
+   // padding-left: 0px;
    margin-bottom: 15px;
 }
 footer {
@@ -2711,6 +2735,7 @@ ul.staticsites li:last-child {
 .about {
 	h1 {
 		font-size: 2em;
+    line-height: 1em;
 	}
 }
 } // end (max-width: 400px) closing tag

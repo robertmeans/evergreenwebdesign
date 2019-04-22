@@ -2522,7 +2522,7 @@ nav ul li a {
   text-align: center;
   margin-right: 10px;
   padding: 0px 20px;
-  transition: background-color .75s ease;
+  transition: background-color 0.3s ease;
 }
 nav ul li a:visited {
   background-color: inherit;
@@ -2803,13 +2803,20 @@ stylesheet does not affect the other elements at all!
 }
 
 #contactus input[type="text"] {
-  height: 18px;
-  width: 220px;
+  height: 2em;
+  width: 96%;
 }
 
 #contactus input[type="email"] {
-  height: 18px;
-  width: 220px;
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 0.8em;
+  line-height: 140%;
+  color: #000;
+  padding: 3px;
+  height: 2em;
+  width: 96%;
+  border-radius: 5px;
+  border: 1px solid #999;
 }
 
 #contactus #scaptcha {
@@ -3733,7 +3740,7 @@ html[xmlns] .slides {
   height: 30px;
   bottom: 10px;
   right: 50%;
-  margin-left: -15px;
+  margin-right: -26px;
   text-align: center;
   background-color: rgba(18, 152, 31, 0.85);
   padding: 10px 10px 0px 10px;
@@ -3753,6 +3760,13 @@ html[xmlns] .slides {
           transform: scale(0.96);
 }
 
+@media screen and (max-width: 600px) {
+  .back-to-top {
+    right: 10px;
+    bottom: 5px;
+    margin-right: 0px;
+  }
+}
 .tabs {
   width: 90%;
   max-width: 1200px;
@@ -3916,6 +3930,11 @@ li.active .wp-img-mo img:first-child {
   text-decoration: none;
 }
 
+@media screen and (max-width: 600px) {
+  ul.tab-links a.static {
+    padding: 20px 25px 15px 25px;
+  }
+}
 .tab-links a:hover {
   background: #435162;
   color: #fff;
@@ -4625,35 +4644,35 @@ footer .copyright {
   a.mobile_menu {
     z-index: 1003;
     display: block;
-    width: 46px;
-    height: 46px;
+    width: 55px;
+    height: 55px;
     position: fixed;
-    top: 0px;
-    right: 0px;
+    top: 5px;
+    right: 5px;
     cursor: pointer;
-    background: url(_images/mobile_link_menu2.png) no-repeat 0px 0px;
+    background: url(_images/mobile-link-03.png) no-repeat 0px 0px;
     -webkit-animation: menuToggle 600ms;
     animation: menuToggle 600ms;
   }
 
   @-webkit-keyframes menuToggle {
     from {
-      right: -46px;
-      top: -46px;
+      right: -60px;
+      top: -60px;
     }
     to {
-      right: 0px;
-      top: 0px;
+      right: 5px;
+      top: 5px;
     }
   }
   @keyframes menuToggle {
     from {
-      right: -46px;
-      top: -46px;
+      right: -60px;
+      top: -60px;
     }
     to {
-      right: 0px;
-      top: 0px;
+      right: 5px;
+      top: 5px;
     }
   }
   a.mobile_menu:hover {
@@ -4661,37 +4680,30 @@ footer .copyright {
   }
 
   a.mobile_menu.selected {
-    z-index: 1004;
-    display: block;
-    width: 46px;
-    height: 46px;
-    position: fixed;
-    top: -46px;
-    right: -46px;
-    cursor: pointer;
-    background: url(_images/mobile_link_menu2.png) no-repeat 0px 0px;
+    top: -60px;
+    right: -60px;
     -webkit-animation: menuToggleUp 900ms;
     animation: menuToggleUp 900ms;
   }
 
   @-webkit-keyframes menuToggleUp {
     from {
-      right: 0px;
-      top: 0px;
+      right: 5px;
+      top: 5px;
     }
     to {
-      right: -46px;
-      top: -46px;
+      right: -60px;
+      top: -60px;
     }
   }
   @keyframes menuToggleUp {
     from {
-      right: 0px;
-      top: 0px;
+      right: 5px;
+      top: 5px;
     }
     to {
-      right: -46px;
-      top: -46px;
+      right: -60px;
+      top: -60px;
     }
   }
   .large-screen-gone {
@@ -4699,27 +4711,26 @@ footer .copyright {
   }
 
   nav {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
     margin-top: -10px;
-    background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0.22) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#38ffffff',GradientType=0 );
-    border-bottom: 1px solid #999;
+    background: transparent;
+    border-bottom: none;
+    box-shadow: none;
+    box-sizing: border-box;
     overflow: hidden;
   }
 
   nav ul {
     width: 100%;
     text-align: center;
-    height: 62px;
+    height: 63px;
   }
   nav ul li {
     overflow: hidden;
   }
   nav ul i.fa-times-circle {
-    padding-top: 1em;
-    line-height: 2.5em;
+    line-height: 2em;
+    font-size: 2.2em;
+    color: #a6b5c6;
   }
 
   nav ul li a {
@@ -4730,6 +4741,12 @@ footer .copyright {
     line-height: 2.5em;
     border-radius: 0px;
     background: rgba(0, 0, 0, 0.6);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+    background-color: rgba(20, 61, 106, 0.9);
   }
   nav ul li a:visited {
     background-color: inherit;
@@ -4737,7 +4754,7 @@ footer .copyright {
   nav ul li a:hover {
     color: #fff;
     text-decoration: none;
-    background: rgba(0, 0, 0, 0.2);
+    background: #0053af;
     cursor: pointer;
   }
   nav ul li a:active {
@@ -4747,13 +4764,14 @@ footer .copyright {
   .first-nav-item {
     width: auto;
     margin-left: 4px;
-    padding: 0.5em 1.5em;
+    padding-top: 1px;
   }
 
   .active-nav {
     color: #fff;
     text-decoration: none;
     background: rgba(0, 0, 0, 0.2);
+    background-color: rgba(30, 143, 15, 0.9);
   }
 
   .last-nav-item {
@@ -4780,24 +4798,25 @@ footer .copyright {
   }
 
   #contactus input[type="text"] {
-    height: 18px;
+    height: 2em;
     width: 200px;
+    width: 96%;
   }
 
   #contactus input[type="email"] {
-    height: 18px;
+    height: 2em;
     width: 200px;
+    width: 96%;
   }
 
   #contactus textarea {
     height: 120px;
     width: 200px;
+    width: 96%;
   }
 
   #contactus input[type="submit"] {
     width: 80px;
-    height: 30px;
-    padding-left: 0px;
     margin-bottom: 15px;
   }
 
@@ -4875,6 +4894,7 @@ footer .copyright {
 
   .about h1 {
     font-size: 2em;
+    line-height: 1em;
   }
 }
 @media screen and (max-width: 365px) {
