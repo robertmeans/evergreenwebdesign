@@ -65,7 +65,7 @@
     </ul><!-- .list .moresites .cf -->
     
     <div id="thank-you">
-    <button id="toggleMoreSites">Show more websites</button>
+    <button id="toggleMoreSites">* Pats self on back *</button>
     </div><!-- .centerDisplay -->
 
     <div id="addSites01">
@@ -340,7 +340,7 @@
     break;
     }
 ?>
-          <form action="thank-you.php#thank-you" method="post" id="contactForm">
+          <form action="index.php#thank-you" method="post" id="contactForm">
               <ul>
                   <li>
                     <label class="text top-text" for="name">Name</label>

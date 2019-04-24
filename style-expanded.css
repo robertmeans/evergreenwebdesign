@@ -2581,10 +2581,10 @@ nav ul li a:hover {
   background-color: #1f5588;
 }
 
-.centerDisplay {
+#thank-you {
   width: 100%;
   text-align: center;
-  height: 50px;
+  padding-top: 65px;
 }
 
 #addSites01 h2 {
@@ -2647,6 +2647,19 @@ li.active a, li.active a:hover {
   margin-right: 10px;
 }
 
+i.fa,
+i.fas,
+i.far {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  i.fa,
+  i.fas,
+  i.far {
+    margin-right: 0;
+  }
+}
 div#tab1 img.overview-banner {
   width: 90%;
   max-width: 1200px;
@@ -3670,6 +3683,159 @@ html[xmlns] .slides {
   min-height: 100vh;
 }
 
+#contact {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  box-sizing: border-box;
+}
+#contact h2 {
+  line-height: 1em;
+  padding-top: 1em;
+  padding-bottom: .5em;
+  width: 90%;
+  display: block;
+  margin: 2em auto 0 auto;
+  border-bottom: 1px solid #757575;
+}
+#contact div#contact-form {
+  width: 100%;
+  box-sizing: border-box;
+}
+#contact div#contact-form .left-side,
+#contact div#contact-form .right-side {
+  width: 50%;
+  text-align: left;
+  float: left;
+  padding: 35px 0px;
+  box-sizing: border-box;
+}
+#contact div#contact-form .left-side p,
+#contact div#contact-form .right-side p {
+  line-height: 1.6em;
+}
+#contact div#contact-form .left-side label,
+#contact div#contact-form .right-side label {
+  width: 100%;
+  display: block;
+}
+#contact div#contact-form .left-side label.text,
+#contact div#contact-form .right-side label.text {
+  line-height: 1em;
+}
+#contact div#contact-form .left-side label.top-text,
+#contact div#contact-form .right-side label.top-text {
+  padding-top: 15px;
+}
+#contact div#contact-form .left-side input#name,
+#contact div#contact-form .left-side input#email,
+#contact div#contact-form .right-side input#name,
+#contact div#contact-form .right-side input#email {
+  width: 96%;
+  max-width: 350px;
+  height: 1.5em;
+  margin-bottom: 10px;
+}
+#contact div#contact-form .left-side textarea,
+#contact div#contact-form .right-side textarea {
+  width: 96%;
+  max-width: 350px;
+  height: 150px;
+  resize: none;
+  margin-bottom: .5em;
+}
+#contact div#contact-form .left-side input#send,
+#contact div#contact-form .right-side input#send {
+  padding: 10px 20px;
+  background-color: blue;
+  color: #fff;
+  border: 1px solid transparent;
+  transition: all .3s ease;
+}
+#contact div#contact-form .left-side input#send:hover,
+#contact div#contact-form .right-side input#send:hover {
+  background-color: rgba(0, 0, 255, 0.7);
+  border: 1px solid blue;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 760px) {
+  #contact {
+    width: 96%;
+  }
+  #contact div#contact-form {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  #contact div#contact-form .left-side,
+  #contact div#contact-form .right-side {
+    width: 100%;
+  }
+  #contact div#contact-form .right-side {
+    padding: 35px;
+  }
+  #contact div#contact-form .right-side input#name,
+  #contact div#contact-form .right-side input#email {
+    max-width: 700px;
+    height: 2em;
+  }
+  #contact div#contact-form .right-side label.top-text {
+    padding-top: 0px;
+  }
+  #contact div#contact-form .right-side textarea {
+    max-width: 700px;
+  }
+}
+button#confirm {
+  float: left;
+  margin-top: 10px;
+  max-width: 300px;
+  padding: 10px 12px;
+  border: 1px solid #950808;
+  background: #ba2222;
+  color: #fff;
+  cursor: default;
+}
+button#confirm:active, button#confirm:focus {
+  outline: 0;
+  outline-style: 0;
+}
+
+button.enable-submit {
+  display: none;
+}
+
+button#send {
+  float: left;
+  margin-top: 10px;
+  max-width: 300px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #206311;
+  background: #2cb20c;
+  color: #fff;
+  cursor: pointer;
+}
+button#send:hover {
+  background: #278111;
+  color: #fff;
+}
+button#send:active, button#send:focus {
+  outline: 0;
+  outline-style: 0;
+}
+
+.display {
+  display: none;
+}
+
+span.success-msg {
+  color: red;
+  line-height: 1.6em;
+  padding-top: 35px;
+}
+
 #div-two.insomniac-background {
   background: #6d94e1 url(_images/insomniacs.jpg) repeat fixed center;
 }
@@ -3755,6 +3921,9 @@ html[xmlns] .slides {
   -webkit-transform: scale(0.96);
       -ms-transform: scale(0.96);
           transform: scale(0.96);
+}
+.back-to-top i.fa {
+  margin: 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -4270,10 +4439,6 @@ footer .copyright {
   #EWD .title-text {
     font-size: 3.5em;
     transition: font-size 1.75s ease;
-  }
-
-  #name {
-    margin: 35px auto 0px auto;
   }
 
   #website-solutions-badge {
@@ -4967,10 +5132,6 @@ ul.list {
 ul.list li {
   margin-right: 0;
   margin: 1%;
-}
-
-.tab-content {
-  padding-right: 0;
 }
 
 .last-nav-item {

@@ -1642,12 +1642,8 @@ $(window).on('scroll', function () {
 
 // });
 // -----------------------------------
-
-// See scripts-02.js in /_scripts folder for the modified version of this in order to accommodate
-// *after* the form is submitted in the Services section - so that it will be open once
-// the page refreshes
 $(document).ready(function(){
-$("#addSites01").hide();
+$("#addSites01").show();
 $("button#toggleMoreSites").click(function(){
     $(this).toggleClass("active").next().slideToggle(400);
 

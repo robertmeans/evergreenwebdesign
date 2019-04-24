@@ -41,4 +41,5 @@
     ga('create', 'UA-80245426-1', 'auto');
     ga('send', 'pageview');
   </script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>

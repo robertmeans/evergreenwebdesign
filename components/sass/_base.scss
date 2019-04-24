@@ -163,10 +163,11 @@ nav ul li {
 	color: #fff;
 	background-color: #1f5588;
 }
-.centerDisplay {
+#thank-you {
 	width: 100%;
 	text-align: center;
-	height: 50px;
+	// height: 50px;
+  padding-top: 65px;
 }
 #addSites01 h2 {
 	margin: 10px 0px 10px 30px;
@@ -248,6 +249,18 @@ li.active a, li.active a:hover {
 // #container h4:hover{cursor:pointer;}
 #tab1 div a i.fa {
 	margin-right: 10px;
+}
+i.fa,
+i.fas,
+i.far {
+  margin-right: 10px;
+}
+@media screen and (max-width: 600px) {
+  i.fa,
+  i.fas,
+  i.far {
+    margin-right: 0;
+  }
 }
 div#tab1 img.overview-banner {
   width: 90%;
@@ -1345,6 +1358,8 @@ max-width: 60px;
   }
 
 }
+
+
 #div-two {
 // tabs - services - websites - video
 	height: auto;
@@ -1355,6 +1370,149 @@ max-width: 60px;
   // background-size: cover;
   min-height: 100vh;
 }
+
+#contact {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  box-sizing: border-box;
+  h2 {
+    line-height: 1em;
+    padding-top: 1em;
+    padding-bottom: .5em;
+    width: 90%;
+    display: block;
+    margin: 2em auto 0 auto;
+    border-bottom: 1px solid #757575;
+  }
+  div#contact-form {
+    width: 100%;
+    // border: 1px solid #757575;
+    box-sizing: border-box;
+    .left-side,
+    .right-side {
+      width: 50%;
+      text-align: left;
+      float: left;
+      padding: 35px 0px;
+      box-sizing: border-box;
+      p {
+        line-height: 1.6em;
+      }
+      label {
+        width: 100%;
+        display: block;
+      }
+      label.text {
+        line-height: 1em;
+      }
+      label.top-text {
+        padding-top: 15px;
+      }
+      input#name,
+      input#email {
+        width: 96%;
+        max-width: 350px;
+        height: 1.5em;
+        margin-bottom: 10px;
+      }
+      textarea {
+        width: 96%;
+        max-width: 350px;
+        height: 150px;
+        resize: none;
+        margin-bottom: .5em;
+      }
+      input#send {
+        padding: 10px 20px;
+        background-color: rgba(0,0,255,1);
+        color: #fff;
+        border: 1px solid transparent;
+        transition: all .3s ease;
+        &:hover {
+          background-color: rgba(0,0,255,0.7); 
+          border: 1px solid blue;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 760px) {
+  #contact {
+    width: 96%;
+    div#contact-form {
+      width: 100%;
+      box-sizing: border-box;
+      .left-side,
+      .right-side {
+        width: 100%;
+      }
+      .right-side {
+        padding: 35px;
+        input#name,
+      input#email {
+        max-width: 700px;
+        height: 2em;
+      }
+      label.top-text {
+        padding-top: 0px;
+      }
+      textarea {
+        max-width: 700px;
+        // resize: none;
+        }
+      } 
+    }
+  }
+}
+button#confirm {
+  float: left;
+  margin-top: 10px;
+  max-width: 300px;
+  padding: 10px 12px;
+  // border-radius: 8px;
+  border: 1px solid #950808;
+  background: #ba2222;
+  color: #fff;
+  cursor: default;
+  &:active, &:focus {
+    outline: 0;
+    outline-style: 0;
+  }  
+}
+button.enable-submit {
+  display: none;
+}
+button#send {
+  float: left;
+  margin-top: 10px;
+  max-width: 300px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #206311;
+  background: #2cb20c;
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+    background: #278111;
+    color: #fff;
+  }
+  &:active, &:focus {
+    outline: 0;
+    outline-style: 0;
+  }
+}
+.display {
+  display: none;
+}
+span.success-msg {
+  color: red;
+  line-height: 1.6em;
+  padding-top: 35px;
+}
+
 #div-two.insomniac-background {
 	background: #6d94e1 url(_images/insomniacs.jpg) repeat fixed center;
 }
@@ -1462,6 +1620,9 @@ max-width: 60px;
     //padding: 9px 9px 0px 9px;
     transform: scale(0.96);
 	}
+  i.fa {
+    margin: 0;
+  }
 }
 @media screen and (max-width: 600px) {
   .back-to-top {
@@ -2004,9 +2165,9 @@ footer {
 		transition: font-size 1.75s ease;
 	}
 }
-#name {
-	margin: 35px auto 0px auto; 	
-}
+// #name {
+// 	margin: 35px auto 0px auto; 	
+// }
 #website-solutions-badge {
 	margin: 25px auto 0px auto;
 }
@@ -2820,9 +2981,9 @@ ul.list {
 		// padding: 0 1%;
 	}
 }
-.tab-content {
-	padding-right: 0;
-}
+// .tab-content {
+// 	padding-right: 0;
+// }
 
 
 
