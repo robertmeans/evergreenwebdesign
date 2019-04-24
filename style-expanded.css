@@ -2618,8 +2618,7 @@ button#toggleMoreSites {
   padding: 10px 20px;
   border: 1px solid #757575;
   border-radius: 12px;
-  webkit-border-radius: 12px;
-  moz-border-radius: 12px;
+  cursor: pointer;
   transition: background-color .75s ease;
 }
 button#toggleMoreSites:hover {

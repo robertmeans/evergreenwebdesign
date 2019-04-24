@@ -17,14 +17,14 @@
     <ul class="list moresites cf">
 
       <li>
-        <a href="http://www.mainstrestaurant.com" target="_blank"><img src="_images/mainstrestaurant-website.jpg" alt="Main Street Restaurant"></a>
-        <h3>Main Street Restaurant</h3>
-        <p>Squarespace website with custom conditional logic that dynamically embeds content. Neat!</p>
-      </li>
-      <li>
         <a href="http://www.evergreenbrewery.com" target="_blank"><img src="_images/evergreen-brewery-website.jpg" alt="Evergren Brewery"></a>
         <h3>Evergreen Brewery</h3>
         <p>Hand coded. Elegant. Minimilistic. This &quot;pet project&quot; is destined to evolve over time.</p>
+      </li>
+      <li>
+        <a href="http://www.mainstrestaurant.com" target="_blank"><img src="_images/mainstrestaurant-website.jpg" alt="Main Street Restaurant"></a>
+        <h3>Main Street Restaurant</h3>
+        <p>Squarespace website with custom conditional logic that dynamically embeds content. Neat!</p>
       </li>
       <li>
         <a href="http://www.mountainliving.fun" target="_blank"><img src="_images/mountainliving-website.jpg" alt="Lisa Smith Realtor"></a>
@@ -75,16 +75,6 @@
         <a href="http://www.myscreenscene.com" target="_blank"><img src="_images/myscreenscene-website.jpg" alt="MyScreenScene.com"></a>
         <h3>MyScreenScene</h3>
         <p>Hand coded. An incredibly useful browser utility built in PHP &amp; mySQL.</p>
-      </li>
-      <li>
-        <a href="http://www.evergreenwildernessguides.com" target="_blank"><img src="_images/evergreen-wilderness-guides-website.jpg" alt="Evergreen Wilderness Guides"></a>
-        <h3>Evergreen Wilderness Guides</h3>
-        <p>WordPress. Outdoor instruction with courses ranging from rock climbing to mountain biking to survival skills.</p>
-      </li>
-      <li>
-        <a href="http://www.evergreenwebdesign.com/offline-sites/colt-green" target="_blank"><img src="_images/colt-green-website.jpg" alt="Colt Green Construction"></a>
-        <h3>Colt Green Construction</h3>
-        <p>Hand coded. Construction and project management company, Jacksonville, Florida</p>
       </li>
 
     </ul><!-- .list .moresites .cf -->
