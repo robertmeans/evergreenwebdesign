@@ -63,8 +63,7 @@
       </li>
 
     </ul><!-- .list .moresites .cf -->
-    
-    <div id="thank-you">
+
     <button id="toggleMoreSites">Show more websites</button>
     </div><!-- .centerDisplay -->
 
@@ -78,16 +77,16 @@
             $('#send').removeClass('display');
         };
       </script>
-      <h2>Are you seeing this?!</h2>
       <div id="contact-form" class="cf">
 
         <div class="left-side">
+          <h2>Are you seeing this?!</h2>
           <p>At this point I am just showing off. Have you noticed the profusion of custom features packed into this website? Everything you are seeing here is 100% hand coded from scratch.</p>
           <p>The point here is to showcase skills that demonstrate a comprehensive knowledge of Web Development. I'm not slapping together big pretty pictures and selling fool's gold. Evergreen Web Design is the Real McCoy!</p>
           <p>If there is anything specific I can show you please make a request. I am happy to explain why Evergreen Web Design is a cut above the rest.</p>
         </div>
-        <div class="right-side">
-
+        <div id="thank-you" class="right-side">
+        
         <?php
             function post_captcha($user_response) {
             $fields_string = '';
@@ -121,7 +120,6 @@
 
 
     </div><!-- #addSites01 -->
-
     </div><!-- #tab2 .tab .cf --><!-- Websites tab -->
 
 
@@ -183,7 +181,6 @@
     </div><!-- #tab3 .tab cf -->
 
   </div><!-- .tab-content -->
-
   </div><!-- .tabs -->
 
 </section><!-- #div-two -->
@@ -369,7 +366,7 @@
 
     </div><!-- #addSites01 -->
 
-    </div><!-- #tab2 .tab .cf --><!-- Websites tab -->
+   <!--  </div> --><!-- #tab2 .tab .cf --><!-- Websites tab -->
 
 
     <div id="tab1" class="tab cf"><!-- Overview tab -->
@@ -432,5 +429,5 @@
   </div><!-- .tab-content -->
 
   </div><!-- .tabs -->
-
+  
 </section><!-- #div-two -->

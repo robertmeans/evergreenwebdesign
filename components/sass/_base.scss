@@ -169,10 +169,10 @@ nav ul li {
 	// height: 50px;
   padding-top: 65px;
 }
-#addSites01 h2 {
-	margin: 10px 0px 10px 30px;
-	color: #757575;
-}
+// #addSites01 h2 {
+// 	margin: 10px 0px 10px 30px;
+// 	color: #757575;
+// }
 .moresites { // gives ul entire width of div otherwise it only uses a portion of it and the individual sites will only stretch to 2 columns instead of 3 like the ones above.
 	width: 100%;
 }
@@ -198,6 +198,8 @@ ul.staticsites li:last-child {
 	}
 }
 button#toggleMoreSites {
+  display: block;
+  margin: 35px auto 20px auto;
 	line-height: 1em;
 	background-color: #ccc;
 	color: #363636;
@@ -1377,25 +1379,32 @@ max-width: 60px;
   margin: 0 auto;
   display: block;
   box-sizing: border-box;
+  // h2 {
+  //   line-height: 1em;
+  //   padding-top: 1em;
+  //   padding-bottom: .5em;
+  //   width: 90%;
+  //   display: block;
+  //   margin: 2em auto 0 auto;
+  //   border-bottom: 1px solid #757575;
+  // }
   h2 {
-    line-height: 1em;
-    padding-top: 1em;
-    padding-bottom: .5em;
-    width: 90%;
-    display: block;
-    margin: 2em auto 0 auto;
-    border-bottom: 1px solid #757575;
-  }
+        font-size: 1.2em;
+        line-height: 1em;
+        padding-left: 35px;
+        color: #333;
+      }
   div#contact-form {
     width: 100%;
     // border: 1px solid #757575;
     box-sizing: border-box;
+    // padding-top: 65px;
     .left-side,
     .right-side {
       width: 50%;
       text-align: left;
       float: left;
-      padding: 35px 0px;
+      padding: 70px 0px 35px 0px;
       box-sizing: border-box;
       p {
         line-height: 1.6em;
@@ -1450,7 +1459,7 @@ max-width: 60px;
         width: 100%;
       }
       .right-side {
-        padding: 35px;
+        padding: 10px 35px 35px 35px;
         input#name,
       input#email {
         max-width: 700px;
@@ -2486,6 +2495,9 @@ li.active a, li.active a:hover {
 		padding: 0px 20px;
 	}
 }
+#contact h2 {
+  padding-left: 20px;
+}
 .tab-links li {
     margin: 0px 2px -1px 2px;
     float: left;
@@ -2501,11 +2513,11 @@ li.active a, li.active a:hover {
 .tab-links a {
     padding: 9px 8px;
 }
-#addSites01 h2 {
-	margin: 10px 0px 10px 15px;
-	color: #757575;
-	line-height: 1em;
-}
+// #addSites01 h2 {
+// 	margin: 10px 0px 10px 15px;
+// 	color: #757575;
+// 	line-height: 1em;
+// }
 .moresites {
 	width: auto;
 }
@@ -3170,7 +3182,36 @@ div#branding {
 		}
 	}
 }
-
+@media screen and (max-width: 931px) {
+  div#mobile-header {
+    display: block;
+    h1 {
+      font-size: 3.1em;
+      color: #fff;
+      padding: 10px 20px;
+      font-weight: bold;
+      line-height: 1.2em;
+      // text-shadow: 0px  3px 3px rgba(0,0,0,0.55);
+    }
+  }
+  #homepage-container {
+    height: 100%;
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 932px) {
+  div#product-container {
+    display: none;
+  }
+  div#branding {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 931px) {
+  #mobile-header {
+    display: none;
+  }
+}
 
 #badge {
 	position: relative;
@@ -3332,9 +3373,10 @@ div#branding {
 } // end media query 930px
 @media screen and (max-width: 600px) {
 	#homepage-container {
-		height: 900px;
-    background-attachment: scroll;
+		// height: 900px;
+    // background-attachment: scroll;
     width: 100%;
+    background: rgba(87,147,184,1);
     // background-position: center center;
     // height: auto;
     padding: 10px 0px 50px;
@@ -3345,6 +3387,16 @@ div#branding {
 	}
 	div#branding {
 		margin-top: 0px;
+    p.business-title {
+      //margin-bottom: 1em;
+      line-height: 1em;
+      margin-bottom: .5em;
+      text-shadow: none;
+    }
+    p.tagline {
+      line-height: 1em;
+      text-shadow: none;
+    }
 	}
 	#badge {
 		// top: 35px;
@@ -3389,17 +3441,22 @@ div#branding {
 		width: 100%;
 		min-width: 0px;
 		text-align: center;
+    text-align: left;
 		p.business-title {
-			font-size: 1.5em;
-			line-height: 0.1;
+			font-size: 2em;
+			//line-height: 0.1;
 		}
 		p.tagline {
-			font-size: 1em;
+			font-size: 1.5em;
 			line-height: 1em;
 			margin-top: 0;
-			padding: 0px 8px;
+			// padding: 0px 8px;
 			color: #fff;
 		}
+    p.business-title,
+    p.tagline {
+      margin-left: 20px;
+    }
 		img.ewd-logo {
 			display: none;
 		}

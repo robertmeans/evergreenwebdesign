@@ -16,7 +16,7 @@
   <link rel="icon" type="image/ico" href="_images/favicon.ico">
   <link rel="image_src" href="https://www.evergreenwebdesign.com/_images/thumbnails/EWD-thumb-01.png" />
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta name="description" content="Evergreen Web Design is a full-service Internet marketing firm offering custom solutions to virtually any marketing project. Call (303) WEBSITE">
+  <meta name="description" content="Evergreen Web Design specializes in detail-oriented custom web development with a focus on intuitive experience. Call (303) WEBSITE">
   <meta name="format-detection" content="telephone=no">
 
   <meta property="og:url" content="https://www.evergreenwebdesign.com" />
@@ -24,8 +24,8 @@
   <meta property="og:title" content="Evergreen Web Design | Functional Design Developed Creatively" />
   <meta property="og:image" content="https://www.evergreenwebdesign.com/_images/thumbnails/Evergreen-Web-Design-meta-image.png" />
   <meta property="og:image:alt" content="https://www.evergreenwebdesign.com/_images/thumbnails/robert-means-og-meta-image.png" />
-  <meta property="og:image:alt" content="Attention-grabbing happy image because you're beautiful! " />
-  <meta property="og:description" content="Evergreen Web Design is a full-service Internet marketing firm offering custom solutions to virtually any marketing project. Call (303) WEBSITE" />
+  <meta property="og:image:alt" content="Evergreen Web Design - Evergreen, Colorado" />
+  <meta property="og:description" content="Evergreen Web Design specializes in detail-oriented custom web development with a focus on intuitive experience. Call (303) WEBSITE" />
   <meta property="fb:app_id" content="295283581394466" />
 
 

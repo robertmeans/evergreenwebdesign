@@ -2587,11 +2587,6 @@ nav ul li a:hover {
   padding-top: 65px;
 }
 
-#addSites01 h2 {
-  margin: 10px 0px 10px 30px;
-  color: #757575;
-}
-
 .moresites {
   width: 100%;
 }
@@ -2612,6 +2607,8 @@ ul.staticsites li:last-child p {
 }
 
 button#toggleMoreSites {
+  display: block;
+  margin: 35px auto 20px auto;
   line-height: 1em;
   background-color: #ccc;
   color: #363636;
@@ -3691,13 +3688,10 @@ html[xmlns] .slides {
   box-sizing: border-box;
 }
 #contact h2 {
+  font-size: 1.2em;
   line-height: 1em;
-  padding-top: 1em;
-  padding-bottom: .5em;
-  width: 90%;
-  display: block;
-  margin: 2em auto 0 auto;
-  border-bottom: 1px solid #757575;
+  padding-left: 35px;
+  color: #333;
 }
 #contact div#contact-form {
   width: 100%;
@@ -3708,7 +3702,7 @@ html[xmlns] .slides {
   width: 50%;
   text-align: left;
   float: left;
-  padding: 35px 0px;
+  padding: 70px 0px 35px 0px;
   box-sizing: border-box;
 }
 #contact div#contact-form .left-side p,
@@ -3773,7 +3767,7 @@ html[xmlns] .slides {
     width: 100%;
   }
   #contact div#contact-form .right-side {
-    padding: 35px;
+    padding: 10px 35px 35px 35px;
   }
   #contact div#contact-form .right-side input#name,
   #contact div#contact-form .right-side input#email {
@@ -4712,6 +4706,10 @@ footer .copyright {
     padding: 0px 20px;
   }
 
+  #contact h2 {
+    padding-left: 20px;
+  }
+
   .tab-links li {
     margin: 0px 2px -1px 2px;
     float: left;
@@ -4726,12 +4724,6 @@ footer .copyright {
 
   .tab-links a {
     padding: 9px 8px;
-  }
-
-  #addSites01 h2 {
-    margin: 10px 0px 10px 15px;
-    color: #757575;
-    line-height: 1em;
   }
 
   .moresites {
@@ -5316,6 +5308,37 @@ div#branding img.ewd-logo {
   padding-bottom: 20px;
 }
 
+@media screen and (max-width: 931px) {
+  div#mobile-header {
+    display: block;
+  }
+  div#mobile-header h1 {
+    font-size: 3.1em;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    line-height: 1.2em;
+  }
+
+  #homepage-container {
+    height: 100%;
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 932px) {
+  div#product-container {
+    display: none;
+  }
+
+  div#branding {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 931px) {
+  #mobile-header {
+    display: none;
+  }
+}
 #badge {
   position: relative;
 }
@@ -5463,9 +5486,8 @@ div#branding img.ewd-logo {
 }
 @media screen and (max-width: 600px) {
   #homepage-container {
-    height: 900px;
-    background-attachment: scroll;
     width: 100%;
+    background: #5793b8;
     padding: 10px 0px 50px;
   }
   #homepage-container .product-box {
@@ -5477,6 +5499,15 @@ div#branding img.ewd-logo {
 
   div#branding {
     margin-top: 0px;
+  }
+  div#branding p.business-title {
+    line-height: 1em;
+    margin-bottom: .5em;
+    text-shadow: none;
+  }
+  div#branding p.tagline {
+    line-height: 1em;
+    text-shadow: none;
   }
 
   #badge {
@@ -5520,17 +5551,20 @@ div#branding img.ewd-logo {
     width: 100%;
     min-width: 0px;
     text-align: center;
+    text-align: left;
   }
   div#branding p.business-title {
-    font-size: 1.5em;
-    line-height: 0.1;
+    font-size: 2em;
   }
   div#branding p.tagline {
-    font-size: 1em;
+    font-size: 1.5em;
     line-height: 1em;
     margin-top: 0;
-    padding: 0px 8px;
     color: #fff;
+  }
+  div#branding p.business-title,
+  div#branding p.tagline {
+    margin-left: 20px;
   }
   div#branding img.ewd-logo {
     display: none;

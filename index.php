@@ -40,7 +40,9 @@
     <img class="ewd-logo" src="_images/Evergreen-Web-Design-Logo_bw.png" alt="Evergreen Web Design logo">
   </div>
 </div><!-- #branding -->
-
+<div id="mobile-header">
+  <h1>Functional Design Developed Creatively</h1>
+</div>
 <div id="product-container">
   <div class="product-box">
     <a href="#essentials" class="product-item">Essentials</a>
