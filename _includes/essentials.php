@@ -1,7 +1,7 @@
 <article id="essentials">
     <div class="essentials-conatiner">
       <div class="essentials-image">
-       <img class="dont-panic" src="_images/yay-Evergreen-Web-Design.png" alt="Do Not Panic!">
+       <img class="dont-panic" src="_images/happy-Evergreen-Web-Design.png" alt="Do Not Panic!">
        <caption class="caption"><p>Trust all your hosted products to an industry leader with over 20 years of service and legendary 24/7 customer support.</p></caption>
       </div><!-- .essentials-image -->
      <div class="essentials-content">

@@ -11,8 +11,8 @@
       <div id="tab2" class="tab active cf"><!-- Websites tab -->
       <h2 class="mobile">Websites</h2>
         <p>A custom website can help rediscover your business image in the Internet marketplace.</p>
-        <p>Mobile devices now account for <a class="txt-a" href="http://techcrunch.com/2014/08/21/majority-of-digital-media-consumption-now-takes-place-in-mobile-apps/" target="_blank">more Internet traffic</a> than desktop computers. You can't afford to have an online presence without a strong mobile interface. If you're customers have to zoom, pinch and pan in order to navigate your website it quickly becomes an ineffective, cumbersome experience.</p>
-        <p>Utilizing the latest specifications in HTML5, CSS3 and jQuery with a focus on viewport-independent, fluid design, you can rest assured your your site looks great and functions flawlessly no matter how your visitors get there.</p>
+        <p>Mobile devices now account for <a class="txt-a" href="http://techcrunch.com/2014/08/21/majority-of-digital-media-consumption-now-takes-place-in-mobile-apps/" target="_blank">more Internet traffic</a> than desktop computers. You can't afford to have an online presence without a strong mobile interface. [Are you still reading this? Holy mackrel, this is boring. If you want to skip to the meat and potatoes please feel free to drop this reading business and call me - <a class="txt-a" href="tel:(303)%20932-7483">(303) WEBSITE</a>.] If you're customers have to zoom, pinch and pan in order to navigate your website it quickly becomes an ineffective, cumbersome experience.</p>
+        <p>Utilizing the latest specifications in HTML5, CSS3 and jQuery with a focus on viewport-independent, fluid design, you can rest assured your your site looks great and functions flawlessly no matter how your visitors get there. [yawn]</p>
 
     <ul class="list moresites cf">
 
@@ -59,7 +59,7 @@
       <li>
         <a href="http://www.myscreenscene.com" target="_blank"><img src="_images/myscreenscene-website.jpg" alt="MyScreenScene.com"></a>
         <h3>MyScreenScene</h3>
-        <p>Hand coded. An incredibly useful browser utility built in PHP &amp; mySQL.</p>
+        <p>Hand coded. An incredibly useful browser utility built in PHP &amp; MySQL.</p>
       </li>
 
     </ul><!-- .list .moresites .cf -->
@@ -126,7 +126,7 @@
     <div id="tab1" class="tab cf"><!-- Overview tab -->
         <h2 class="mobile">Overview</h2>
           <p></p>
-          <p>Based in beautiful Evergreen, Colorado, Evergreen Web Design is a full-service Internet marketing firm offering custom solutions to virtually any Web related project. We've partnered with some of the brightest talent in the industry in order to bring you the most competitive rates available from domain registration to hosting to website concept, design and development.</p>
+          <p>Based in beautiful Evergreen, Colorado, Evergreen Web Design is a full-service Internet marketing firm offering custom solutions to virtually any Web related project. [This is no joke, we're hostage. Creative hostages and only your project might set us both free. <a class="txt-link" href="tel:(303)%20934-7483">Call</a>, let's fix this.] to bring you the most competitive rates available from domain registration to hosting to website concept, design and development.</p>
 
           <p>Products &amp; services include:</p>
           <div class="project-col">
@@ -177,7 +177,9 @@
     <div id="tab3" class="tab cf"><!-- $? tab -->
       <h2 class="mobile">Options</h2>
       <p>The sky's the limit!</p>
-      <p>At the risk of oversimplifying it I always tell people, &quot;The short answer is 'Yes'.&quot; In other words, if you can think it I can do it.</p>
+      <p>At the risk of oversimplifying it I always tell people, &quot;The short answer is 'Yes'.&quot; In other words, if you can think it I can do it. Truth is, you have a lot of options depending on what your specific needs are. In the realm of content management systems you can weigh the pros and cons of a framework like WordPress against Squarespace. WordPress is wildly popular but comes with its burdens in the form of long-term overhead maitenance. Squarespace solves that problem with a tradeoff in creative freedom.</p>
+      <p>And then there's hand coded which offeres the greatest of both worlds but comes with a front end price tag. Sometimes, depending on the functionality you need from your website, a hand coded site makes the most sense. There are so many variables in this equation that I could write several pages on the topic, all of which you would never read.</p>
+      <p>In the name of practicality and brevity - and for a free consultation call <a class="txt-link" href="tel:(303)%20932-7483">(303) 932-7483</a></p>
     </div><!-- #tab3 .tab cf -->
 
   </div><!-- .tab-content -->
@@ -372,7 +374,7 @@
     <div id="tab1" class="tab cf"><!-- Overview tab -->
         <h2 class="mobile">Overview</h2>
           <p></p>
-          <p>Based in beautiful Evergreen, Colorado, Evergreen Web Design is a full-service Internet marketing firm offering custom solutions to virtually any Web related project. We've partnered with some of the brightest talent in the industry in order to bring you the most competitive rates available from domain registration to hosting to website concept, design and development.</p>
+          <p>Based in beautiful Evergreen, Colorado, Evergreen Web Design is a full-service Internet marketing firm offering custom solutions to virtually any Web related project. [This is no joke, we're hostage. Creative hostages and only your project might set us both free. <a class="txt-link" href="tel:(303)%20934-7483">Call</a>, let's fix this.] to bring you the most competitive rates available from domain registration to hosting to website concept, design and development.</p>
 
           <p>Products &amp; services include:</p>
           <div class="project-col">
@@ -423,7 +425,9 @@
     <div id="tab3" class="tab cf"><!-- $? tab -->
       <h2 class="mobile">Options</h2>
       <p>The sky's the limit!</p>
-      <p>At the risk of oversimplifying it I always tell people, &quot;The short answer is 'Yes'.&quot; In other words, if you can think it I can do it.</p>
+      <p>At the risk of oversimplifying it I always tell people, &quot;The short answer is 'Yes'.&quot; In other words, if you can think it I can do it. Truth is, you have a lot of options depending on what your specific needs are. In the realm of content management systems you can weigh the pros and cons of a framework like WordPress against Squarespace. WordPress is wildly popular but comes with its burdens in the form of long-term overhead maitenance. Squarespace solves that problem with a tradeoff in creative freedom.</p>
+      <p>And then there's hand coded which offeres the greatest of both worlds but comes with a front end price tag. Sometimes, depending on the functionality you need from your website, a hand coded site makes the most sense. There are so many variables in this equation that I could write several pages on the topic, all of which you would never read.</p>
+      <p>In the name of practicality and brevity - and for a free consultation call <a class="txt-link" href="tel:(303)%20932-7483">(303) 932-7483</a></p>
     </div><!-- #tab3 .tab cf -->
 
   </div><!-- .tab-content -->

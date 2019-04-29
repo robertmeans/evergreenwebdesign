@@ -35,8 +35,8 @@
 
 <div id="branding">
   <div id="title">
-    <p class="business-title">Evergreen Web Design</p>
-    <p class="tagline">Internet Services | Creative Solutions</p>
+    <p class="business-title"><span class="evergreen-spacing">EVERGREEN</span> WEB DESIGN</p>
+    <p class="tagline">Creative Solutions | Website Mechanic</p>
     <img class="ewd-logo" src="_images/Evergreen-Web-Design-Logo_bw.png" alt="Evergreen Web Design logo">
   </div>
 </div><!-- #branding -->
@@ -44,16 +44,6 @@
   <h1>Functional Design Developed Creatively</h1>
 </div>
 <div id="product-container">
-  <div class="product-box">
-    <a href="#essentials" class="product-item">Essentials</a>
-    <ul class="product-list">
-      <li>Hosting</li>
-      <li>Domain Names</li>
-      <li>SSL Certificates</li>
-    </ul>
-    <p class="product-desc">Evergreen Web Design is a Certified GoDaddy Reseller. Buy through us! We can match any deal + you get GoDaddy's hardware and their renowned 24/7 customer support.</p>
-  </div>
-
   <div class="product-box">
     <a href="#div-two" class="product-item">Websites</a>
     <ul class="product-list">
@@ -71,8 +61,19 @@
       <li>Squarespace</li>
       <li>Custom Coding</li>
     </ul>
-    <p class="product-desc">No matter what framework or platform your project currently resides or what your future vision demands, Evergreen Web Design has you covered. Full stack development at your service!</p> 
-  </div>      
+    <p class="product-desc">No matter what framework or platform your project currently resides or what your future vision demands, Evergreen Web Design has you covered. Full stack development at your service.</p> 
+  </div>
+
+  <div class="product-box">
+    <a href="#essentials" class="product-item">Essentials</a>
+    <ul class="product-list">
+      <li>Hosting</li>
+      <li>Domain Names</li>
+      <li>SSL Certificates</li>
+    </ul>
+    <p class="product-desc">Evergreen Web Design is a Certified GoDaddy Reseller. Buy through us! We can match any deal + you get GoDaddy's hardware and their renowned 24/7 customer support.</p>
+  </div>
+      
 </div><!-- #product-container -->
 
     <div id="badge">

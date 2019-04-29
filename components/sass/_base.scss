@@ -1,8 +1,8 @@
 // @import url("http://fonts.googleapis.com/css?family=Exo+2:200,400,600,800|Ubuntu:700|Prosto+One");
-* {
+// * {
 	// box-sizing: border-box;
-}
-@import url("https://fonts.googleapis.com/css?family=Exo+2:200,400,600,800|Ubuntu:700|PT+Sans:400,700");
+// }
+@import url("https://fonts.googleapis.com/css?family=Exo+2:200,400,600,800|Ubuntu:700|PT+Sans:400,700|Montserrat:300");
 html {
     -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
 }
@@ -201,11 +201,12 @@ button#toggleMoreSites {
   display: block;
   margin: 35px auto 20px auto;
 	line-height: 1em;
-	background-color: #ccc;
-	color: #363636;
-	padding: 10px 20px;
-	border: 1px solid #757575;
-	border-radius: 12px;
+	background-color: #5793b8;
+  font-size: 1em;
+	color: #fff;
+	padding: 20px;
+	border: 1px solid #0060ff;
+	// border-radius: 12px;
   cursor: pointer;
 	-webkit-transition: background-color .75s ease;
 	-moz-transition: background-color .75s ease;
@@ -1460,16 +1461,21 @@ max-width: 60px;
       }
       .right-side {
         padding: 10px 35px 35px 35px;
-        input#name,
+      input#name,
       input#email {
         max-width: 700px;
-        height: 2em;
+        height: 1.5em;
+        font-size: 1.2em;
       }
       label.top-text {
         padding-top: 0px;
       }
+      label.text {
+        margin-bottom: 0.2em;
+      }
       textarea {
         max-width: 700px;
+        font-size: 1.2em;
         // resize: none;
         }
       } 
@@ -1834,26 +1840,6 @@ li.active a, li.active a:hover {
     cursor: default;
 }
 
-
-
-/*
-// had this to handle ios hover problem
-// but solved it with jQuery instead
-// see: if (!$('html').hasClass('no-touch')) {
-// in scripts.js
-
-.no-touch.tab-links a:hover {
-    background: #ececec;
-    color: #fff;
-    text-decoration: none;
-}
-.no-touch li.active a, li.active a:hover {
-    background: #fff;
-    color: #4c4c4c;
-    border-bottom: 1px solid white;
-    cursor: default;
-}
-*/
 
 .gone {
 	display: none;
@@ -2409,466 +2395,457 @@ li.active a, li.active a:hover {
 }
 
 @media screen and (max-width: 600px){
-.mobile-nav-phone-gone {
-	display: none;
-}
-#div-one {
-	// background-image: url(_images/sky-small.jpg);
-	height: 800px;
-}
-#div-two {
-// tabs - services - websites - video
-	height: auto;
-	min-height: 480px;
-}
-#div-four {
-	height: 800px;
-}
-#clockScene {
-	// z-index: 100;
-	height: 250px;
-	position: relative;
-}
+  .mobile-nav-phone-gone {
+  	display: none;
+  }
+  #div-one {
+  	// background-image: url(_images/sky-small.jpg);
+  	height: 800px;
+  }
+  #div-two {
+  // tabs - services - websites - video
+  	height: auto;
+  	min-height: 480px;
+  }
+  #div-four {
+  	height: 800px;
+  }
+  #clockScene {
+  	// z-index: 100;
+  	height: 250px;
+  	position: relative;
+  }
 
-#bubbles1 {
-// background-image: url(_images/bubbles1_small.png);
-}
- 
-#bubbles2 {
-// background-image: url(_images/bubbles3_small.png);
-}
- 
-#fish {
-	background-image: url(_images/fish_small.png);
-}
-#clockid {	
-	border-radius: 50%;
-	display: block;
-	float: left;
-	clear: both;
-	// position: fixed;
-	margin: -90px 0 0 -20px;
-}
-
-
-
-
-
-
-#EWD {
-	position: relative;
-	margin: -15px auto;
-	text-align: center;
-	.title-text {
-		font-family: 'Exo 2', Helvetica, Arial, sans-serif;
-		font-size: 2.45em;
-
-		-webkit-transition: font-size 1.75s ease;
-		-moz-transition: font-size 1.75s ease;
-		-o-transition: font-size 1.75s ease;
-		transition: font-size 1.75s ease;
-		font-weight: 800;
-		// line-height: .8em;
-		text-transform: capitalize;
-		color: #fff;
-		text-shadow: -2px 3px 6px rgba(0, 0, 0, 0.5);
-	} 
-	img {
-		-webkit-transition: all .5s ease;
-		-moz-transition: all .5s ease;
-		-o-transition: all .5s ease;
-		transition: all .5s ease; 
-		&:hover {
-			-webkit-transform: scale(.9);
-			-moz-transform: scale(.9);
-			-ms-transform: scale(.9);
-			-o-transform: scale(.9);
-			transform: scale(.9);
-		}
-	}	
-}
-.tab-content {
-    // font-size: 1em;
-    padding: 1.5em 0;
-	p {
-		line-height: 1.5em;
-		padding: 0px 20px;
-	}
-}
-#contact h2 {
-  padding-left: 20px;
-}
-.tab-links li {
-    margin: 0px 2px -1px 2px;
-    float: left;
-    list-style: none;
-    .fa {
-    	margin: 0px 10px;
-    }
-    .pad {
-	padding: 0px 10px;
-	}
-}
-
-.tab-links a {
-    padding: 9px 8px;
-}
-// #addSites01 h2 {
-// 	margin: 10px 0px 10px 15px;
-// 	color: #757575;
-// 	line-height: 1em;
-// }
-.moresites {
-	width: auto;
-}
-.project-col {
-	position: relative;
-	float: left;
-	clear: both;
-	width: 96%;
-}
-ul.second-column {
-	margin-top: -.9em;
-	margin-bottom: 3em;
-}
-.tab-content p.social-network-icons {
-	margin: -45px 0 3px 0;
-	vertical-align: bottom;
-}
-a.click {
-	display: block;
-	margin: 0px auto -30px auto;
-	padding: 15px;
-	float: none;
-}
-div.expand p.seo-strategies {
-	margin-top: 50px;
-}
-.container2 {
-	margin: 30px 5% 50px 5%;
-}
-.about {
-	h1 {
-		font-size: 2.2em;
-		margin: 30px 10% 30px 10%;
-	}
-}
-.about-content {
-	margin: 25px 10% 10px 5%;
-	h3 {
-		text-align: center;
-	}
-	a.about-contact {
-		right: 20px;
-	}
-}
-.about-profile-img {
-	width: 100%;
-	max-width: 150px;
-	float: none;
-	margin: 0 auto;
-}
-.about-profile {
-	width: 80%;
-	float: none;
-	margin: 0 auto;
-}
-.about-gone {
-	display: none;
-}
-
-/* --- end original nav */
-a.mobile_menu {
-	z-index: 1003;
-	display: block;
-	width: 55px;
-	height: 55px;	
-	position: fixed; 
-	top: 5px; 
-	right: 5px;
-	cursor: pointer;
-
-	// you have to animate the .class off screen so
-	// the div does not remain onscreen potentially
-	// covering any of the dropdown nav that opens
-	// when you click this. - that's why you can't
-	// use a sprite here.
-	background: url(_images/mobile-link-03.png) no-repeat 0px 0px;
-	-webkit-animation: menuToggle 600ms;
-	-moz-animation: menuToggle 600ms;
-	-ms-animation: menuToggle 600ms;
-	-o-animation: menuToggle 600ms;
-	animation: menuToggle 600ms;
-
-
-	// --- working sprite! ---
-	// can't use though - see notes above...
-// 		background-image: url("_images/scroll-down-sprite.png");
- //    -webkit-animation: play 2.5s steps(40) infinite;
- //    -moz-animation: play 2.5s steps(40) infinite;
- //    -ms-animation: play 2.5s steps(40) infinite;
- //    -o-animation: play 2.5s steps(40) infinite;
- //    animation: play 2.5s steps(40) infinite;
-}
-@-webkit-keyframes menuToggle {
-    from 	{ right: -60px; top: -60px; }
-    to 		{ right: 5px; 	top: 5px; 	}
-}
-@-moz-keyframes menuToggle {
-    from 	{ right: -60px; top: -60px; }
-    to 		{ right: 5px; 	top: 5px; 	}
-}
-@-ms-keyframes menuToggle {
-    from 	{ right: -60px; top: -60px; }
-    to 		{ right: 5px; 	top: 5px; 	}
-}
-@-o-keyframes menuToggle {
-    from 	{ right: -60px; top: -60px; }
-    to 		{ right: 5px; 	top: 5px; 	}
-}
-@keyframes menuToggle {
-    from 	{ right: -60px; top: -60px; }
-    to 		{ right: 5px; 	top: 5px; 	}
-}
-a.mobile_menu:hover {
-	opacity: 0.4;
-}
-
-
-
-a.mobile_menu.selected {
-	// z-index: 1004;
-	// display: block;
-	// width: 46px;
-	// height: 46px;	
-	// position: fixed; 
-	top: -60px; 
-	right: -60px;
-	// cursor: pointer;
-
-	// you have to animate the .class off screen so
-	// the div does not remain onscreen potentially
-	// covering any of the dropdown nav that opens
-	// when you click this. - that's why you can't
-	// use a sprite here.
-	//background: url(_images/mobile-link.png) no-repeat 0px 0px;
-	-webkit-animation: menuToggleUp 900ms;
-	-moz-animation: menuToggleUp 900ms;
-	-ms-animation: menuToggleUp 900ms;
-	-o-animation: menuToggleUp 900ms;
-	animation: menuToggleUp 900ms;
-
-
-	// --- working sprite! ---
-	// can't use though - see notes above...
-// 		background-image: url("_images/scroll-down-sprite.png");
- //    -webkit-animation: play 2.5s steps(40) infinite;
- //    -moz-animation: play 2.5s steps(40) infinite;
- //    -ms-animation: play 2.5s steps(40) infinite;
- //    -o-animation: play 2.5s steps(40) infinite;
- //    animation: play 2.5s steps(40) infinite;
-}
-@-webkit-keyframes menuToggleUp {
-    from 	{ right: 5px; 	top: 5px; 	}
-    to 		{ right: -60px; top: -60px; }
-}
-@-moz-keyframes menuToggleUp {
-    from 	{ right: 5px; 	top: 5px; 	}
-    to 		{ right: -60px; top: -60px; }
-}
-@-ms-keyframes menuToggleUp {
-    from 	{ right: 5px; 	top: 5px; 	}
-    to 		{ right: -60px; top: -60px; }
-}
-@-o-keyframes menuToggleUp {
-    from 	{ right: 5px; 	top: 5px; 	}
-    to 		{ right: -60px; top: -60px; }
-}
-@keyframes menuToggleUp {
-    from 	{ right: 5px; 	top: 5px; 	}
-    to 		{ right: -60px; top: -60px; }
-}
+  #bubbles1 {
+  // background-image: url(_images/bubbles1_small.png);
+  }
+   
+  #bubbles2 {
+  // background-image: url(_images/bubbles3_small.png);
+  }
+   
+  #fish {
+  	background-image: url(_images/fish_small.png);
+  }
+  #clockid {	
+  	border-radius: 50%;
+  	display: block;
+  	float: left;
+  	clear: both;
+  	// position: fixed;
+  	margin: -90px 0 0 -20px;
+  }
 
 
 
 
 
-.large-screen-gone {
-	display: inline-block;
-}
-nav {
-	// display: flex;
-	margin-top: -10px;	
-	// background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0.22)));
-	// background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.22) 100%);
-	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#38ffffff',GradientType=0 );
-  background: transparent;
-	// border-bottom: 1px solid #999;
-  border-bottom: none;
-  box-shadow: none;
-  box-sizing: border-box;
-	overflow: hidden;
-}
-nav ul {
-	width: 100%;
-	text-align: center;	
-	height: 63px;
-	// margin-top: -62px;
-	li {
-		overflow: hidden;
-	}
-	i.fa-times-circle {
-	// padding-top: 1em;
-	line-height: 2em;
-  font-size: 2.2em;
-  color: #a6b5c6;
-	}
-}
-nav ul li a {		
-	color: #fff;
-	text-align: center;
-	margin: 0px 2px;
-	height: 62px;
-	line-height: 2.5em;
-	// padding: 2em 12px;	
-	// border-radius: 0px;
-	background: rgba(0,0,0,.6);
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-right: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  border-left: 1px solid #fff;
-  background-color: rgba(20,61,106,0.9);
-	&:visited {
-		background-color: inherit;
-		}
-	&:hover {
-		color: #fff;
-		text-decoration: none;	
-		background: rgba(0,83,175,1);	
-		cursor: pointer;	
-		}
-	&:active {
-		background-color: inherit;
-		}
 
-}
-.first-nav-item {
-	width: auto;
-	margin-left: 4px;
-	//padding: 0.3em 1.5em;
-  // padding-top: 1px;
-}
-.active-nav {
-	color: #fff;
-	text-decoration: none;	
-	background: rgba(0,0,0,.2);	
-  // background-color: rgba(62,169,74,0.9);
-  background-color: rgba(30,143,15,0.9);		
-}
-.last-nav-item {
-	margin-right: 0;
-}
+  #EWD {
+  	position: relative;
+  	margin: -15px auto;
+  	text-align: center;
+  	.title-text {
+  		font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  		font-size: 2.45em;
 
-// contact form
-#fg_box_Title
-{
-   float:left;
-   width:auto;
-   // margin:5px;
-   padding: 15px 0px 15px 15px;
-   line-height: 1.2em;
-   color:#fff;
-   font-family:Verdana,Arial;
-   font-size:12pt;
-   // font-weight:bold;   
-}
-#contactus fieldset
-{
-   width:auto;  
-}
-#fg_formContainer
-{
-   height: auto;
-   width: 250px;
-   // left: 0;
-}
-#contactus input[type="text"]
-{
-  height: 2em;
-  width:200px;
-  width: 96%;
-}
-#contactus input[type="email"]
-{
-  height: 2em;
-  width:200px;
-  width: 96%;
-}
-#contactus textarea
-{
-  height:120px;
-  width:200px;
-  width: 96%;
-}
-#contactus input[type="submit"]
-{
-   width: 80px;
-   // height: 30px;
-   // padding-left: 0px;
-   margin-bottom: 15px;
-}
-footer {
-	text-align: center;
-	padding: 0;
-	#footer-info {
-		float: none;
-		margin: 2em auto 0 auto;
-	}
-} 
-#contactus .short_explanation {
-   font-family : Arial, sans-serif;
-   font-size: .8em;
-}
+  		-webkit-transition: font-size 1.75s ease;
+  		-moz-transition: font-size 1.75s ease;
+  		-o-transition: font-size 1.75s ease;
+  		transition: font-size 1.75s ease;
+  		font-weight: 800;
+  		// line-height: .8em;
+  		text-transform: capitalize;
+  		color: #fff;
+  		text-shadow: -2px 3px 6px rgba(0, 0, 0, 0.5);
+  	} 
+  	img {
+  		-webkit-transition: all .5s ease;
+  		-moz-transition: all .5s ease;
+  		-o-transition: all .5s ease;
+  		transition: all .5s ease; 
+  		&:hover {
+  			-webkit-transform: scale(.9);
+  			-moz-transform: scale(.9);
+  			-ms-transform: scale(.9);
+  			-o-transform: scale(.9);
+  			transform: scale(.9);
+  		}
+  	}	
+  }
+  .tab-content {
+      // font-size: 1em;
+      padding: 1.5em 0;
+  	p {
+  		line-height: 1.5em;
+  		padding: 0px 20px;
+  	}
+  }
+  #contact h2 {
+    padding-left: 20px;
+  }
+  .tab-links li {
+      margin: 0px 2px -1px 2px;
+      float: left;
+      list-style: none;
+      .fa {
+      	margin: 0px 10px;
+      }
+      .pad {
+  	padding: 0px 10px;
+  	}
+  }
+
+  .tab-links a {
+      padding: 9px 8px;
+  }
+  // #addSites01 h2 {
+  // 	margin: 10px 0px 10px 15px;
+  // 	color: #757575;
+  // 	line-height: 1em;
+  // }
+  .moresites {
+  	width: auto;
+  }
+  .project-col {
+  	position: relative;
+  	float: left;
+  	clear: both;
+  	width: 96%;
+  }
+  ul.second-column {
+  	margin-top: -.9em;
+  	margin-bottom: 3em;
+  }
+  .tab-content p.social-network-icons {
+  	margin: -45px 0 3px 0;
+  	vertical-align: bottom;
+  }
+  a.click {
+  	display: block;
+  	margin: 0px auto -30px auto;
+  	padding: 15px;
+  	float: none;
+  }
+  div.expand p.seo-strategies {
+  	margin-top: 50px;
+  }
+  .container2 {
+  	margin: 30px 5% 50px 5%;
+  }
+  .about {
+  	h1 {
+  		font-size: 2.2em;
+  		margin: 30px 10% 30px 10%;
+  	}
+  }
+  .about-content {
+  	margin: 25px 10% 10px 5%;
+  	h3 {
+  		text-align: center;
+  	}
+  	a.about-contact {
+  		right: 20px;
+  	}
+  }
+  .about-profile-img {
+  	width: 100%;
+  	max-width: 150px;
+  	float: none;
+  	margin: 0 auto;
+  }
+  .about-profile {
+  	width: 80%;
+  	float: none;
+  	margin: 0 auto;
+  }
+  .about-gone {
+  	display: none;
+  }
+
+  /* --- end original nav */
+  a.mobile_menu {
+  	z-index: 1003;
+  	display: block;
+  	width: 81px;
+  	height: 35px;	
+  	position: fixed; 
+  	top: 5px; 
+  	right: 5px;
+  	cursor: pointer;
+
+  	// you have to animate the .class off screen so
+  	// the div does not remain onscreen potentially
+  	// covering any of the dropdown nav that opens
+  	// when you click this. - that's why you can't
+  	// use a sprite here.
+  	background: url(_images/mobile-menu-image.png) no-repeat 0px 0px;
+  	-webkit-animation: menuToggle 600ms;
+  	-moz-animation: menuToggle 600ms;
+  	-ms-animation: menuToggle 600ms;
+  	-o-animation: menuToggle 600ms;
+  	animation: menuToggle 600ms;
+
+
+  	// --- working sprite! ---
+  	// can't use though - see notes above...
+  // 		background-image: url("_images/scroll-down-sprite.png");
+   //    -webkit-animation: play 2.5s steps(40) infinite;
+   //    -moz-animation: play 2.5s steps(40) infinite;
+   //    -ms-animation: play 2.5s steps(40) infinite;
+   //    -o-animation: play 2.5s steps(40) infinite;
+   //    animation: play 2.5s steps(40) infinite;
+  }
+  @-webkit-keyframes menuToggle {
+      from 	{ right: -60px; top: -60px; }
+      to 		{ right: 5px; 	top: 5px; 	}
+  }
+  @-moz-keyframes menuToggle {
+      from 	{ right: -60px; top: -60px; }
+      to 		{ right: 5px; 	top: 5px; 	}
+  }
+  @-ms-keyframes menuToggle {
+      from 	{ right: -60px; top: -60px; }
+      to 		{ right: 5px; 	top: 5px; 	}
+  }
+  @-o-keyframes menuToggle {
+      from 	{ right: -60px; top: -60px; }
+      to 		{ right: 5px; 	top: 5px; 	}
+  }
+  @keyframes menuToggle {
+      from 	{ right: -60px; top: -60px; }
+      to 		{ right: 5px; 	top: 5px; 	}
+  }
+  a.mobile_menu:hover {
+  	opacity: 0.4;
+  }
+
+
+
+  a.mobile_menu.selected {
+  	// z-index: 1004;
+  	// display: block;
+  	// width: 46px;
+  	// height: 46px;	
+  	// position: fixed; 
+  	top: -60px; 
+  	right: -60px;
+  	// cursor: pointer;
+
+  	// you have to animate the .class off screen so
+  	// the div does not remain onscreen potentially
+  	// covering any of the dropdown nav that opens
+  	// when you click this. - that's why you can't
+  	// use a sprite here.
+  	//background: url(_images/mobile-link.png) no-repeat 0px 0px;
+  	-webkit-animation: menuToggleUp 900ms;
+  	-moz-animation: menuToggleUp 900ms;
+  	-ms-animation: menuToggleUp 900ms;
+  	-o-animation: menuToggleUp 900ms;
+  	animation: menuToggleUp 900ms;
+
+
+  	// --- working sprite! ---
+  	// can't use though - see notes above...
+  // 		background-image: url("_images/scroll-down-sprite.png");
+   //    -webkit-animation: play 2.5s steps(40) infinite;
+   //    -moz-animation: play 2.5s steps(40) infinite;
+   //    -ms-animation: play 2.5s steps(40) infinite;
+   //    -o-animation: play 2.5s steps(40) infinite;
+   //    animation: play 2.5s steps(40) infinite;
+  }
+  @-webkit-keyframes menuToggleUp {
+      from 	{ right: 5px; 	top: 5px; 	}
+      to 		{ right: -60px; top: -60px; }
+  }
+  @-moz-keyframes menuToggleUp {
+      from 	{ right: 5px; 	top: 5px; 	}
+      to 		{ right: -60px; top: -60px; }
+  }
+  @-ms-keyframes menuToggleUp {
+      from 	{ right: 5px; 	top: 5px; 	}
+      to 		{ right: -60px; top: -60px; }
+  }
+  @-o-keyframes menuToggleUp {
+      from 	{ right: 5px; 	top: 5px; 	}
+      to 		{ right: -60px; top: -60px; }
+  }
+  @keyframes menuToggleUp {
+      from 	{ right: 5px; 	top: 5px; 	}
+      to 		{ right: -60px; top: -60px; }
+  }
+
+
+  .large-screen-gone {
+  	display: inline-block;
+  }
+  nav {
+  	// display: flex;
+  	margin-top: -10px;	
+  	// background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0.22)));
+  	// background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.22) 100%);
+  	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#38ffffff',GradientType=0 );
+    background: transparent;
+  	// border-bottom: 1px solid #999;
+    border-bottom: none;
+    box-shadow: none;
+    box-sizing: border-box;
+  	overflow: hidden;
+  }
+  nav ul {
+  	width: 100%;
+  	text-align: center;	
+  	height: 63px;
+  	// margin-top: -62px;
+  	li {
+  		overflow: hidden;
+  	}
+  	i.fa-times-circle {
+  	// padding-top: 1em;
+  	line-height: 2.2em;
+    font-size: 2em;
+    color: #fff;
+  	}
+  }
+  nav ul li a {		
+  	color: #fff;
+  	text-align: center;
+  	margin: 0px 2px;
+  	height: 62px;
+  	line-height: 2.5em;
+  	// padding: 2em 12px;	
+  	// border-radius: 0px;
+  	background: rgba(0,0,0,.6);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+    background-color: rgba(1,76,195,0.9);
+  	&:visited {
+  		background-color: inherit;
+  		}
+  	&:hover {
+  		color: #fff;
+  		text-decoration: none;	
+  		background: rgba(6,55,134,1);	
+  		cursor: pointer;	
+  		}
+  	&:active {
+  		background-color: inherit;
+  		}
+
+  }
+  .first-nav-item {
+  	width: auto;
+  	margin-left: 4px;
+  	//padding: 0.3em 1.5em;
+    // padding-top: 1px;
+  }
+  .active-nav {
+  	color: #fff;
+  	text-decoration: none;	
+  	background: rgba(0,0,0,.2);	
+    // background-color: rgba(62,169,74,0.9);
+    background-color: rgba(30,143,15,0.9);		
+  }
+  .last-nav-item {
+  	margin-right: 0;
+  }
+
+  // contact form
+  #fg_box_Title
+  {
+     float:left;
+     width:auto;
+     // margin:5px;
+     padding: 15px 0px 15px 15px;
+     line-height: 1.2em;
+     color:#fff;
+     font-family:Verdana,Arial;
+     font-size:12pt;
+     // font-weight:bold;   
+  }
+  #contactus fieldset
+  {
+     width:auto;  
+  }
+  #fg_formContainer
+  {
+     height: auto;
+     width: 250px;
+     // left: 0;
+  }
+  #contactus input[type="text"]
+  {
+    height: 2em;
+    width:200px;
+    width: 96%;
+  }
+  #contactus input[type="email"]
+  {
+    height: 2em;
+    width:200px;
+    width: 96%;
+  }
+  #contactus textarea
+  {
+    height:120px;
+    width:200px;
+    width: 96%;
+  }
+  #contactus input[type="submit"]
+  {
+     width: 80px;
+     // height: 30px;
+     // padding-left: 0px;
+     margin-bottom: 15px;
+  }
+  footer {
+  	text-align: center;
+  	padding: 0;
+  	#footer-info {
+  		float: none;
+  		margin: 2em auto 0 auto;
+  	}
+  } 
+  #contactus .short_explanation {
+     font-family : Arial, sans-serif;
+     font-size: .8em;
+  }
 
 } // end (max-width: 600px) closing tag
 
 
 
 @media screen and (max-width: 560px){
+  // old styling leaving here just because
+  // it holds an important lesson.
+  // target Safari exclusively --
+  _::-moz-svg-foreign-content, :root li.wp-tab a {
+  	padding: 5px 10px 4px 10px;
+  }
+  // Safari has some 1px problem on the 
+  // bottom that this addresses
 
-
-// old styling leaving here just because
-// it holds an important lesson.
-// target Safari exclusively --
-_::-moz-svg-foreign-content, :root li.wp-tab a {
-	padding: 5px 10px 4px 10px;
-}
-// Safari has some 1px problem on the 
-// bottom that this addresses
-
-
-.mobile-gone {
-	display: none;
-}
-.large-screen-gone {
-	display: inline-block;
-}
-.wp-logo-gone {
-	display: inline-block;
-}
-h2.mobile {
-	display: inline-block;
-	font-size: 1.1em;
-	font-weight: bold;
-	color: #757575;
-	margin: 20px 0px 0px 15px;
-}
-#tab4 {
-	h2 {
-		margin: 20px 0px 0px 15px;
-	}
-}
+  .mobile-gone {
+  	display: none;
+  }
+  .wp-logo-gone {
+  	display: inline-block;
+  }
+  h2.mobile {
+  	display: inline-block;
+  	font-size: 1.1em;
+  	font-weight: bold;
+  	color: #757575;
+  	margin: 20px 0px 0px 15px;
+  }
+  #tab4 {
+  	h2 {
+  		margin: 20px 0px 0px 15px;
+  	}
+  }
 } // end (max-width: 560px) closing tag
 
 
@@ -3039,8 +3016,8 @@ div#branding {
 	max-width: 1200px;
   margin-top: 60px;
 	p.business-title {
-		font-family: 'Exo 2', Helvetica, Arial, sans-serif;
-		font-size: 3.5em;
+		font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+		font-size: 2.5em;
 		line-height: 0em;
 		font-weight: 800;
 		color: #fff;
@@ -3048,12 +3025,12 @@ div#branding {
 		transition: all .75s ease;
 	}
 	p.tagline {
-		font-family: 'Ubuntu', Helvetica, sans-serif;
+		font-family: 'Montserrat', Helvetica, sans-serif;
 		font-weight: 700;
 		color: #fff;
-    text-shadow: -2px 3px 5px rgba(0,0,0,0.6);
+    text-shadow: -2px 3px 3px rgba(0,0,0,0.3);
 		font-size: 1.4em;
-		line-height: 0em;
+		line-height: 0.5em;
 		margin-top: -10px;
 		transition: all 0.75s ease;
 	}
@@ -3075,11 +3052,21 @@ div#branding {
 	max-width: 1220px;
 	margin: 0px;
 	display: flex;
-	flex-wrap: wrap;
+	// flex-wrap: wrap;
 	justify-content: center;
-  align-items: flex-end;
+  align-content: center;
+  // align-items: flex-end;
 		div:nth-child(1) > a {
 			background-color: rgba(12,95,153,1);
+      // background-color: rgba(255,169,34,1);
+
+
+
+// background: url('_images/light-tunnel-desktop.jpg') no-repeat center center fixed; 
+//       background-attachment: fixed;
+
+
+
 			border-top: 1px solid #3dabf8;
 			border-right: 1px solid #3dabf8;
       border-bottom: 1px solid #4bd300;
@@ -3092,6 +3079,13 @@ div#branding {
 		div:nth-child(2) {
 			& > a {
 				background-color: rgba(39,133,125,1);
+        // background-color: rgba(186,244,76,1);
+
+
+// background: url('_images/light-tunnel-desktop.jpg') no-repeat center center fixed; 
+//       background-attachment: fixed;
+
+
 				border-top: 1px solid #79f3d2;
 				border-right: 1px solid #79f3d2;
         border-bottom: 1px solid #4bd300;
@@ -3104,6 +3098,14 @@ div#branding {
 		}
 		div:nth-child(3) > a {
 			background-color: rgba(117,110,19,1);
+      // background-color: rgba(43,162,242,1);
+
+
+// background: url('_images/light-tunnel-desktop.jpg') no-repeat center center fixed; 
+//       background-attachment: fixed;
+
+
+
 			border-top: 1px solid #d6da2c;
 			border-right: 1px solid #d6da2c;
       border-bottom: 1px solid #4bd300;
@@ -3130,7 +3132,7 @@ div#branding {
 		flex: 1;
     flex-flow: column;
 		margin: 1%;
-    align-self: flex-start;
+    align-self: center;
 		// max-width: 410px;
 		a.product-item {
 			font-size: 2em;
@@ -3186,11 +3188,13 @@ div#branding {
   div#mobile-header {
     display: block;
     h1 {
-      font-size: 3.1em;
+      font-size: 1.5em;
       color: #fff;
       padding: 10px 20px;
       font-weight: bold;
       line-height: 1.2em;
+      transition: all 0.3s ease;
+      font-family: 'Montserrat', Helvetica, Arial, sans-serif;
       // text-shadow: 0px  3px 3px rgba(0,0,0,0.55);
     }
   }
@@ -3199,12 +3203,16 @@ div#branding {
     height: 100vh;
   }
 }
-@media screen and (max-width: 932px) {
+@media screen and (max-width: 705px) {
+  div#mobile-header {
+    h1 {
+      font-size: 1.2em;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
   div#product-container {
     display: none;
-  }
-  div#branding {
-    text-align: left;
   }
 }
 @media screen and (min-width: 931px) {
@@ -3223,6 +3231,8 @@ div#branding {
 		margin: 20px auto 0px auto;
     color: #fff;
 		background-color: rgba(166,31,30,0.9); // red'ish
+    background-color: rgba(227,42,43,1);
+    background-color: rgba(118,182,44,1);
 		max-width: 300px;
 		padding: 15px 35px;
 		border: 1px solid #fff;
@@ -3273,7 +3283,7 @@ div#branding {
 		// align-items: flex-s;
 	}
 	div#branding {
-		width: 60%;
+		width: 80%;
 		min-width: 470px;
 		p.business-title {
 			font-size: 2em;
@@ -3284,7 +3294,7 @@ div#branding {
 		}
 		img.ewd-logo {
 			width: 110px;
-			top: 10px;
+			top: 0px;
 		}
 	}
 	
@@ -3371,33 +3381,60 @@ div#branding {
 		}
 	}
 } // end media query 930px
+@media screen and (max-width: 680px) {
+  div#branding {
+    p.business-title {
+      font-size: 1.8em;
+    }
+  }
+}
 @media screen and (max-width: 600px) {
 	#homepage-container {
-		// height: 900px;
-    // background-attachment: scroll;
     width: 100%;
     background: rgba(87,147,184,1);
-    // background-position: center center;
-    // height: auto;
-    padding: 10px 0px 50px;
-		.product-box {
-			flex: 1 1;
-			margin: 5px auto;
-		}
+
+
+background: #6d94e1 url('_images/blue-blast-background.jpg') no-repeat center center fixed; 
+
+background: #6d94e1 url('_images/light-tunnel.jpg');
+background-position: center;
+background-size: cover;
+  // background-size: contain;
+  // background-attachment: fixed;
+
+
+    padding: 10px 0px 100px;
 	}
 	div#branding {
-		margin-top: 0px;
+    width: 90%;
+		margin-top: 10px;
+    border-bottom: 1px solid #fff;
     p.business-title {
-      //margin-bottom: 1em;
-      line-height: 1em;
+      margin-left: 118px;
+      line-height: 1.2em;
       margin-bottom: .5em;
       text-shadow: none;
     }
     p.tagline {
-      line-height: 1em;
-      text-shadow: none;
+      // margin-left: 115px;
+      // line-height: 1.2em;
+      // text-shadow: none;
+      display: none;
     }
-	}
+    img.ewd-logo {
+      left: 0;
+      }
+	 }
+  div#mobile-header {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    h1 {
+      text-align: center;
+      font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+      font-size: 3.2em;
+    }
+  }
 	#badge {
 		// top: 35px;
 		display: none;
@@ -3408,59 +3445,85 @@ div#branding {
 	.mobile-tel {
 		z-index: 1001;
 		position: fixed; 
-		bottom: 0;
+		bottom: 5px;
 		left: 10px;
 		text-align: center;
-		// background-color: rgba(45,45,45,0.6);
-		background-color: #3ea94a;
-		padding: 11px 14px;
+    background-color: rgba(73,73,73,0.75);
+    background-color: rgba(18,152,31,0.85);
+		padding: 12px 14px;
 		color: #fff;
 		text-decoration: none;
-		border-top-left-radius: 8px;
-		border-top-right-radius: 8px;
-		border-top: 1px solid #fff;
-		border-right: 1px solid #fff;
-		border-left: 1px solid #fff;
-		box-shadow: -4px 4px 3px 0px rgba(50, 50, 50, 0.44);
+    border-radius: 8px;
+    border: 1px solid #06ff00;
+    box-shadow: 0px 0px 3px 2px rgba(12,255,0,0.3);
 		transition: background-color .3s ease;
 		transition: height .2s ease;
 	}
 	.last-nav-item {
 		margin-right: 0px;
 	}
-
-
-
+  div.g-recaptcha {
+    overflow-x: hidden;
+  }
 }
-
+@media screen and (max-width: 576px) {
+  div#branding {
+    p.business-title {
+      span.evergreen-spacing {
+        letter-spacing: 1.2px;
+      }
+    }
+    img.ewd-logo {
+      top: 24px;
+    }
+  }
+}
 @media screen and (max-width: 500px) {
   #product-container .product-box a.product-item {
     font-size: 1.5em;
   }
+  div#mobile-header {
+      h1 {
+        font-size: 2.6em;
+        margin-top: 0.6em;
+        text-align: center;
+        padding: 0px;
+        line-height: 1.4em;
+      }
+    }
 	div#branding {
-		width: 100%;
-		min-width: 0px;
+		width: 96%;
+		min-width: 220px;
 		text-align: center;
     text-align: left;
+    img.ewd-logo {
+      // top: 32px;
+    }
 		p.business-title {
-			font-size: 2em;
-			//line-height: 0.1;
+			margin-bottom: 0.3em;
 		}
 		p.tagline {
-			font-size: 1.5em;
-			line-height: 1em;
+			// font-size: 1.5em;
+			// line-height: 1em;
 			margin-top: 0;
 			// padding: 0px 8px;
 			color: #fff;
 		}
     p.business-title,
     p.tagline {
-      margin-left: 20px;
+      // margin-left: 20px;
     }
-		img.ewd-logo {
-			display: none;
-		}
 	}
+}
+@media screen and (max-width: 400px) {
+  div#branding {
+    img.ewd-logo {
+      top: 5px;
+    }
+    p.business-title {
+      font-size: 1.4em;
+    }
+  }
 }
 a.storefront-link {
   color: #0000ff;

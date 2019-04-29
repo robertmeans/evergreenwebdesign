@@ -2,7 +2,7 @@
  * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
  * http://cssreset.com
  */
-@import url("https://fonts.googleapis.com/css?family=Exo+2:200,400,600,800|Ubuntu:700|PT+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Exo+2:200,400,600,800|Ubuntu:700|PT+Sans:400,700|Montserrat:300");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -2610,11 +2610,11 @@ button#toggleMoreSites {
   display: block;
   margin: 35px auto 20px auto;
   line-height: 1em;
-  background-color: #ccc;
-  color: #363636;
-  padding: 10px 20px;
-  border: 1px solid #757575;
-  border-radius: 12px;
+  background-color: #5793b8;
+  font-size: 1em;
+  color: #fff;
+  padding: 20px;
+  border: 1px solid #0060ff;
   cursor: pointer;
   transition: background-color .75s ease;
 }
@@ -3772,13 +3772,18 @@ html[xmlns] .slides {
   #contact div#contact-form .right-side input#name,
   #contact div#contact-form .right-side input#email {
     max-width: 700px;
-    height: 2em;
+    height: 1.5em;
+    font-size: 1.2em;
   }
   #contact div#contact-form .right-side label.top-text {
     padding-top: 0px;
   }
+  #contact div#contact-form .right-side label.text {
+    margin-bottom: 0.2em;
+  }
   #contact div#contact-form .right-side textarea {
     max-width: 700px;
+    font-size: 1.2em;
   }
 }
 button#confirm {
@@ -4108,24 +4113,6 @@ li.active a, li.active a:hover {
   cursor: default;
 }
 
-/*
-// had this to handle ios hover problem
-// but solved it with jQuery instead
-// see: if (!$('html').hasClass('no-touch')) {
-// in scripts.js
-
-.no-touch.tab-links a:hover {
-    background: #ececec;
-    color: #fff;
-    text-decoration: none;
-}
-.no-touch li.active a, li.active a:hover {
-    background: #fff;
-    color: #4c4c4c;
-    border-bottom: 1px solid white;
-    cursor: default;
-}
-*/
 .gone {
   display: none;
 }
@@ -4681,7 +4668,7 @@ footer .copyright {
     text-align: center;
   }
   #EWD .title-text {
-    font-family: 'Exo 2', Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
     font-size: 2.45em;
     transition: font-size 1.75s ease;
     font-weight: 800;
@@ -4798,13 +4785,13 @@ footer .copyright {
   a.mobile_menu {
     z-index: 1003;
     display: block;
-    width: 55px;
-    height: 55px;
+    width: 81px;
+    height: 35px;
     position: fixed;
     top: 5px;
     right: 5px;
     cursor: pointer;
-    background: url(_images/mobile-link-03.png) no-repeat 0px 0px;
+    background: url(_images/mobile-menu-image.png) no-repeat 0px 0px;
     -webkit-animation: menuToggle 600ms;
     animation: menuToggle 600ms;
   }
@@ -4882,9 +4869,9 @@ footer .copyright {
     overflow: hidden;
   }
   nav ul i.fa-times-circle {
-    line-height: 2em;
-    font-size: 2.2em;
-    color: #a6b5c6;
+    line-height: 2.2em;
+    font-size: 2em;
+    color: #fff;
   }
 
   nav ul li a {
@@ -4899,7 +4886,7 @@ footer .copyright {
     border-right: 1px solid #fff;
     border-bottom: 1px solid #fff;
     border-left: 1px solid #fff;
-    background-color: rgba(20, 61, 106, 0.9);
+    background-color: rgba(1, 76, 195, 0.9);
   }
   nav ul li a:visited {
     background-color: inherit;
@@ -4907,7 +4894,7 @@ footer .copyright {
   nav ul li a:hover {
     color: #fff;
     text-decoration: none;
-    background: #0053af;
+    background: #063786;
     cursor: pointer;
   }
   nav ul li a:active {
@@ -4993,10 +4980,6 @@ footer .copyright {
 
   .mobile-gone {
     display: none;
-  }
-
-  .large-screen-gone {
-    display: inline-block;
   }
 
   .wp-logo-gone {
@@ -5159,8 +5142,8 @@ div#branding {
   margin-top: 60px;
 }
 div#branding p.business-title {
-  font-family: 'Exo 2', Helvetica, Arial, sans-serif;
-  font-size: 3.5em;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-size: 2.5em;
   line-height: 0em;
   font-weight: 800;
   color: #fff;
@@ -5168,12 +5151,12 @@ div#branding p.business-title {
   transition: all .75s ease;
 }
 div#branding p.tagline {
-  font-family: 'Ubuntu', Helvetica, sans-serif;
+  font-family: 'Montserrat', Helvetica, sans-serif;
   font-weight: 700;
   color: #fff;
-  text-shadow: -2px 3px 5px rgba(0, 0, 0, 0.6);
+  text-shadow: -2px 3px 3px rgba(0, 0, 0, 0.3);
   font-size: 1.4em;
-  line-height: 0em;
+  line-height: 0.5em;
   margin-top: -10px;
   transition: all 0.75s ease;
 }
@@ -5196,15 +5179,12 @@ div#branding img.ewd-logo {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
 }
 #product-container div:nth-child(1) > a {
   background-color: #0c5f99;
@@ -5259,9 +5239,9 @@ div#branding img.ewd-logo {
       -ms-flex-flow: column;
           flex-flow: column;
   margin: 1%;
-  -webkit-align-self: flex-start;
-      -ms-flex-item-align: start;
-          align-self: flex-start;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
 }
 #product-container .product-box a.product-item {
   font-size: 2em;
@@ -5313,11 +5293,13 @@ div#branding img.ewd-logo {
     display: block;
   }
   div#mobile-header h1 {
-    font-size: 3.1em;
+    font-size: 1.5em;
     color: #fff;
     padding: 10px 20px;
     font-weight: bold;
     line-height: 1.2em;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   }
 
   #homepage-container {
@@ -5325,13 +5307,14 @@ div#branding img.ewd-logo {
     height: 100vh;
   }
 }
-@media screen and (max-width: 932px) {
+@media screen and (max-width: 705px) {
+  div#mobile-header h1 {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 600px) {
   div#product-container {
     display: none;
-  }
-
-  div#branding {
-    text-align: left;
   }
 }
 @media screen and (min-width: 931px) {
@@ -5350,6 +5333,8 @@ div#branding img.ewd-logo {
   margin: 20px auto 0px auto;
   color: #fff;
   background-color: rgba(166, 31, 30, 0.9);
+  background-color: #e32a2b;
+  background-color: #76b62c;
   max-width: 300px;
   padding: 15px 35px;
   border: 1px solid #fff;
@@ -5399,7 +5384,7 @@ div#branding img.ewd-logo {
 }
 @media screen and (max-width: 930px) {
   div#branding {
-    width: 60%;
+    width: 80%;
     min-width: 470px;
   }
   div#branding p.business-title {
@@ -5411,7 +5396,7 @@ div#branding img.ewd-logo {
   }
   div#branding img.ewd-logo {
     width: 110px;
-    top: 10px;
+    top: 0px;
   }
 
   #product-container {
@@ -5484,30 +5469,49 @@ div#branding img.ewd-logo {
     line-height: 1em;
   }
 }
+@media screen and (max-width: 680px) {
+  div#branding p.business-title {
+    font-size: 1.8em;
+  }
+}
 @media screen and (max-width: 600px) {
   #homepage-container {
     width: 100%;
     background: #5793b8;
-    padding: 10px 0px 50px;
-  }
-  #homepage-container .product-box {
-    -webkit-flex: 1 1;
-        -ms-flex: 1 1;
-            flex: 1 1;
-    margin: 5px auto;
+    background: #6d94e1 url("_images/blue-blast-background.jpg") no-repeat center center fixed;
+    background: #6d94e1 url("_images/light-tunnel.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 10px 0px 100px;
   }
 
   div#branding {
-    margin-top: 0px;
+    width: 90%;
+    margin-top: 10px;
+    border-bottom: 1px solid #fff;
   }
   div#branding p.business-title {
-    line-height: 1em;
+    margin-left: 118px;
+    line-height: 1.2em;
     margin-bottom: .5em;
     text-shadow: none;
   }
   div#branding p.tagline {
-    line-height: 1em;
-    text-shadow: none;
+    display: none;
+  }
+  div#branding img.ewd-logo {
+    left: 0;
+  }
+
+  div#mobile-header {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  div#mobile-header h1 {
+    text-align: center;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 3.2em;
   }
 
   #badge {
@@ -5521,19 +5525,17 @@ div#branding img.ewd-logo {
   .mobile-tel {
     z-index: 1001;
     position: fixed;
-    bottom: 0;
+    bottom: 5px;
     left: 10px;
     text-align: center;
-    background-color: #3ea94a;
-    padding: 11px 14px;
+    background-color: rgba(73, 73, 73, 0.75);
+    background-color: rgba(18, 152, 31, 0.85);
+    padding: 12px 14px;
     color: #fff;
     text-decoration: none;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-top: 1px solid #fff;
-    border-right: 1px solid #fff;
-    border-left: 1px solid #fff;
-    box-shadow: -4px 4px 3px 0px rgba(50, 50, 50, 0.44);
+    border-radius: 8px;
+    border: 1px solid #06ff00;
+    box-shadow: 0px 0px 3px 2px rgba(12, 255, 0, 0.3);
     transition: background-color .3s ease;
     transition: height .2s ease;
   }
@@ -5541,33 +5543,52 @@ div#branding img.ewd-logo {
   .last-nav-item {
     margin-right: 0px;
   }
+
+  div.g-recaptcha {
+    overflow-x: hidden;
+  }
+}
+@media screen and (max-width: 576px) {
+  div#branding p.business-title span.evergreen-spacing {
+    letter-spacing: 1.2px;
+  }
+  div#branding img.ewd-logo {
+    top: 24px;
+  }
 }
 @media screen and (max-width: 500px) {
   #product-container .product-box a.product-item {
     font-size: 1.5em;
   }
 
+  div#mobile-header h1 {
+    font-size: 2.6em;
+    margin-top: 0.6em;
+    text-align: center;
+    padding: 0px;
+    line-height: 1.4em;
+  }
+
   div#branding {
-    width: 100%;
-    min-width: 0px;
+    width: 96%;
+    min-width: 220px;
     text-align: center;
     text-align: left;
   }
   div#branding p.business-title {
-    font-size: 2em;
+    margin-bottom: 0.3em;
   }
   div#branding p.tagline {
-    font-size: 1.5em;
-    line-height: 1em;
     margin-top: 0;
     color: #fff;
   }
-  div#branding p.business-title,
-  div#branding p.tagline {
-    margin-left: 20px;
-  }
+}
+@media screen and (max-width: 400px) {
   div#branding img.ewd-logo {
-    display: none;
+    top: 5px;
+  }
+  div#branding p.business-title {
+    font-size: 1.4em;
   }
 }
 a.storefront-link {
