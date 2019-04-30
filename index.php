@@ -36,7 +36,7 @@
 <div id="branding">
   <div id="title">
     <p class="business-title"><span class="evergreen-spacing">EVERGREEN</span> WEB DESIGN</p>
-    <p class="tagline">Creative Solutions | Website Mechanic</p>
+    <p class="tagline">Creative Solutions | Custom Development</p>
     <img class="ewd-logo" src="_images/Evergreen-Web-Design-Logo_bw.png" alt="Evergreen Web Design logo">
   </div>
 </div><!-- #branding -->

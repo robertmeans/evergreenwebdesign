@@ -126,13 +126,12 @@
     <div id="tab1" class="tab cf"><!-- Overview tab -->
         <h2 class="mobile">Overview</h2>
           <p></p>
-          <p>Based in beautiful Evergreen, Colorado, Evergreen Web Design is a full-service Internet marketing firm offering custom solutions to virtually any Web related project. [This is no joke, we're hostage. Creative hostages and only your project might set us both free. <a class="txt-link" href="tel:(303)%20934-7483">Call</a>, let's fix this.] to bring you the most competitive rates available from domain registration to hosting to website concept, design and development.</p>
+          <p>Based in beautiful Evergreen, Colorado, Evergreen Web Design is a full-service Internet marketing firm offering custom solutions to virtually any Web related project. [This is no joke, we're hostage. Creative hostages and only your project might set us both free. <a class="txt-a" href="tel:(303)%20932-7483">Call</a>, let's fix this. - We now join our previous discussion already in progress -] ...to bring you the most competitive rates available from domain registration to hosting to website concept, design and development.</p>
 
           <p>Products &amp; services include:</p>
           <div class="project-col">
             <ul class="past-projects">
               <li>Website Development</li>
-              <li>SEO Services</li>
               <li>Social Media Campaigns</li>
               <li>WordPress Recovery &amp; Migration</li>
               <li>Custom Solutions</li>
@@ -144,7 +143,6 @@
               <li>Domain Registration<span class="reseller">*</span></li>
               <li>Hosting<span class="reseller">*</span></li>
               <li>SSL Certificates<span class="reseller">*</span></li>
-              <li>Email<span class="reseller">*</span></li>
               <li>24/7/365 Support<span class="reseller">*</span></li>
             </ul>
             </div>
@@ -179,7 +177,7 @@
       <p>The sky's the limit!</p>
       <p>At the risk of oversimplifying it I always tell people, &quot;The short answer is 'Yes'.&quot; In other words, if you can think it I can do it. Truth is, you have a lot of options depending on what your specific needs are. In the realm of content management systems you can weigh the pros and cons of a framework like WordPress against Squarespace. WordPress is wildly popular but comes with its burdens in the form of long-term overhead maitenance. Squarespace solves that problem with a tradeoff in creative freedom.</p>
       <p>And then there's hand coded which offeres the greatest of both worlds but comes with a front end price tag. Sometimes, depending on the functionality you need from your website, a hand coded site makes the most sense. There are so many variables in this equation that I could write several pages on the topic, all of which you would never read.</p>
-      <p>In the name of practicality and brevity - and for a free consultation call <a class="txt-link" href="tel:(303)%20932-7483">(303) 932-7483</a></p>
+      <p>In the name of practicality and brevity - and for a free consultation call <a class="txt-a" href="tel:(303)%20932-7483">(303) WEBSITE</a></p>
     </div><!-- #tab3 .tab cf -->
 
   </div><!-- .tab-content -->
@@ -374,13 +372,12 @@
     <div id="tab1" class="tab cf"><!-- Overview tab -->
         <h2 class="mobile">Overview</h2>
           <p></p>
-          <p>Based in beautiful Evergreen, Colorado, Evergreen Web Design is a full-service Internet marketing firm offering custom solutions to virtually any Web related project. [This is no joke, we're hostage. Creative hostages and only your project might set us both free. <a class="txt-link" href="tel:(303)%20934-7483">Call</a>, let's fix this.] to bring you the most competitive rates available from domain registration to hosting to website concept, design and development.</p>
+          <p>Based in beautiful Evergreen, Colorado, Evergreen Web Design is a full-service Internet marketing firm offering custom solutions to virtually any Web related project. [This is no joke, we're hostage. Creative hostages and only your project might set us both free. <a class="txt-a" href="tel:(303)%20932-7483">Call</a>, let's fix this. - We now join our previous discussion already in progress -] ...to hosting to website concept, design and development.</p>
 
           <p>Products &amp; services include:</p>
           <div class="project-col">
             <ul class="past-projects">
               <li>Website Development</li>
-              <li>SEO Services</li>
               <li>Social Media Campaigns</li>
               <li>WordPress Recovery &amp; Migration</li>
               <li>Custom Solutions</li>
@@ -392,7 +389,6 @@
               <li>Domain Registration<span class="reseller">*</span></li>
               <li>Hosting<span class="reseller">*</span></li>
               <li>SSL Certificates<span class="reseller">*</span></li>
-              <li>Email<span class="reseller">*</span></li>
               <li>24/7/365 Support<span class="reseller">*</span></li>
             </ul>
             </div>
@@ -427,7 +423,7 @@
       <p>The sky's the limit!</p>
       <p>At the risk of oversimplifying it I always tell people, &quot;The short answer is 'Yes'.&quot; In other words, if you can think it I can do it. Truth is, you have a lot of options depending on what your specific needs are. In the realm of content management systems you can weigh the pros and cons of a framework like WordPress against Squarespace. WordPress is wildly popular but comes with its burdens in the form of long-term overhead maitenance. Squarespace solves that problem with a tradeoff in creative freedom.</p>
       <p>And then there's hand coded which offeres the greatest of both worlds but comes with a front end price tag. Sometimes, depending on the functionality you need from your website, a hand coded site makes the most sense. There are so many variables in this equation that I could write several pages on the topic, all of which you would never read.</p>
-      <p>In the name of practicality and brevity - and for a free consultation call <a class="txt-link" href="tel:(303)%20932-7483">(303) 932-7483</a></p>
+      <p>In the name of practicality and brevity - and for a free consultation call <a class="txt-a" href="tel:(303)%20932-7483">(303) WEBSITE</a></p>
     </div><!-- #tab3 .tab cf -->
 
   </div><!-- .tab-content -->

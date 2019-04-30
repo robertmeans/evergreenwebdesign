@@ -3583,8 +3583,9 @@ html[xmlns] .slides {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #6d94e1 url("_images/online-store.jpg") no-repeat top left fixed;
+  background: #6d94e1 url("_images/online-store.jpg") no-repeat center center fixed;
   background-size: cover;
+  background-attachment: fixed;
   min-height: 100vh;
   font-size: 1.1em;
 }
@@ -5147,17 +5148,17 @@ div#branding p.business-title {
   line-height: 0em;
   font-weight: 800;
   color: #fff;
-  text-shadow: -2px 3px 6px rgba(0, 0, 0, 0.5);
   transition: all .75s ease;
 }
 div#branding p.tagline {
   font-family: 'Montserrat', Helvetica, sans-serif;
-  font-weight: 700;
   color: #fff;
-  text-shadow: -2px 3px 3px rgba(0, 0, 0, 0.3);
   font-size: 1.4em;
-  line-height: 0.5em;
-  margin-top: -10px;
+  display: inline-block;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: -1em;
+  margin-bottom: 0;
   transition: all 0.75s ease;
 }
 div#branding img.ewd-logo {
@@ -5188,6 +5189,7 @@ div#branding img.ewd-logo {
 }
 #product-container div:nth-child(1) > a {
   background-color: #0c5f99;
+  background-color: #3578e5;
   border-top: 1px solid #3dabf8;
   border-right: 1px solid #3dabf8;
   border-bottom: 1px solid #4bd300;
@@ -5195,10 +5197,11 @@ div#branding img.ewd-logo {
   transition: background-color 0.75s ease, color 0.5s ease;
 }
 #product-container div:nth-child(1) > a:hover {
-  background-color: rgba(85, 183, 251, 0.3);
+  background-color: rgba(245, 233, 76, 0.3);
 }
 #product-container div:nth-child(2) > a {
   background-color: #27857d;
+  background-color: #39afd5;
   border-top: 1px solid #79f3d2;
   border-right: 1px solid #79f3d2;
   border-bottom: 1px solid #4bd300;
@@ -5206,10 +5209,11 @@ div#branding img.ewd-logo {
   transition: background-color 0.75s ease, color 0.5s ease;
 }
 #product-container div:nth-child(2) > a:hover {
-  background-color: rgba(69, 247, 232, 0.3);
+  background-color: rgba(245, 233, 76, 0.3);
 }
 #product-container div:nth-child(3) > a {
   background-color: #756e13;
+  background-color: #4dbba6;
   border-top: 1px solid #d6da2c;
   border-right: 1px solid #d6da2c;
   border-bottom: 1px solid #4bd300;
@@ -5390,6 +5394,7 @@ div#branding img.ewd-logo {
   div#branding p.business-title {
     font-size: 2em;
     line-height: .5em;
+    margin-bottom: 0.8em;
   }
   div#branding p.tagline {
     font-size: 1em;
