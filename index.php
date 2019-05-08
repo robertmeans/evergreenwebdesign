@@ -47,9 +47,9 @@
   <div class="product-box">
     <a href="#div-two" class="product-item">Websites</a>
     <ul class="product-list">
+      <li>Development</li>
       <li>Concept</li>
       <li>Design</li>
-      <li>Development</li>
     </ul>
     <p class="product-desc">Each project provides a unique opportunity to explore creative opportuinites and custom solutions. Find out how Evergreen Web Design can meet your specific online needs today!</p>
   </div>    
@@ -57,9 +57,9 @@
   <div class="product-box">
     <a href="#div-two" class="product-item">Solutions</a>
     <ul class="product-list">
-      <li>WordPress</li>
-      <li>Squarespace</li>
       <li>Custom Coding</li>
+      <li>Squarespace</li>
+      <li>WordPress</li>
     </ul>
     <p class="product-desc">No matter what framework or platform your project currently resides or what your future vision demands, Evergreen Web Design has you covered. Full stack development at your service.</p> 
   </div>

@@ -11,7 +11,7 @@
       <div id="tab2" class="tab active cf"><!-- Websites tab -->
       <h2 class="mobile">Websites</h2>
         <p>A custom website can help rediscover your business image in the Internet marketplace.</p>
-        <p>Mobile devices now account for <a class="txt-a" href="http://techcrunch.com/2014/08/21/majority-of-digital-media-consumption-now-takes-place-in-mobile-apps/" target="_blank">more Internet traffic</a> than desktop computers. You can't afford to have an online presence without a strong mobile interface. [Are you still reading this? Holy mackrel, this is boring. If you want to skip to the meat and potatoes please feel free to drop this reading business and call me - <a class="txt-a" href="tel:(303)%20932-7483">(303) WEBSITE</a>.] If you're customers have to zoom, pinch and pan in order to navigate your website it quickly becomes an ineffective, cumbersome experience.</p>
+        <p>Mobile devices now account for <a class="txt-a" href="http://techcrunch.com/2014/08/21/majority-of-digital-media-consumption-now-takes-place-in-mobile-apps/" target="_blank">more Internet traffic</a> than desktop computers. You can't afford to have an online presence without a strong mobile interface. [Are you still reading this? Holy mackrel, this is boring. If you want to skip to the meat and potatoes please feel free to drop this reading business and call me - <a class="txt-a" href="tel:(303)%20932-7483">(303) WEBSITE</a>.] If your customers have to zoom, pinch and pan in order to navigate your website it quickly becomes an ineffective, cumbersome experience.</p>
         <p>Utilizing the latest specifications in HTML5, CSS3 and jQuery with a focus on viewport-independent, fluid design, you can rest assured your your site looks great and functions flawlessly no matter how your visitors get there. [yawn]</p>
 
     <ul class="list moresites cf">
@@ -19,7 +19,17 @@
       <li>
         <a href="http://www.evergreenbrewery.com" target="_blank"><img src="_images/evergreen-brewery-website.jpg" alt="Evergren Brewery"></a>
         <h3>Evergreen Brewery</h3>
-        <p>Hand coded. Elegant. Minimilistic. This &quot;pet project&quot; is destined to evolve over time.</p>
+        <p>Hand coded. Elegant. Packed with information and designed for mobile viewport as #1 priority.</p>
+      </li>
+      <li>
+        <a href="http://www.seasonally-yours.com" target="_blank"><img src="_images/seasonally-yours-website.jpg" alt="Seasonally Yours"></a>
+        <h3>Seasonally Yours</h3>
+        <p>Squarespace ecommerce website. Focused on mobile delivery &amp; optimized for cell phone viewport.</p>
+      </li>
+      <li>
+        <a href="http://www.best-nutrition.net" target="_blank"><img src="_images/best-nutrition-website.jpg" alt="Best Nutrition"></a>
+        <h3>Best Nutrition</h3>
+        <p>WordPress ecommerce (WooCommerce) site with product options and variations.</p>
       </li>
       <li>
         <a href="http://www.mainstrestaurant.com" target="_blank"><img src="_images/mainstrestaurant-website.jpg" alt="Main Street Restaurant"></a>
@@ -32,29 +42,20 @@
         <p>WordPress website for Realtor with IDX &amp; CRM integration to search MLS listings and manage visitor retention.</p>
       </li>
       <li>
+        <a href="http://www.evergreensigns.com" target="_blank"><img src="_images/evergreen-signs-website.jpg" alt="Evergreen Signs Website"></a>
+        <h3>Evergreen Signs</h3>
+        <p>Hand coded. Oldie but goldie. Designed in 2014, highlights just how long fluid design has been a top priority.</p>
+      </li>
+      <li>
         <a href="http://www.cabinetsofdenver.com" target="_blank"><img src="_images/cabinetsofdenver-website.jpg" alt="Cabinets of Denver"></a>
         <h3>Cabinets of Denver</h3>
         <p>Squarespace website driven by imagery. Galleries and slideshows highlight the story.</p>
       </li>
-      <li>
-        <a href="http://www.best-nutrition.net" target="_blank"><img src="_images/best-nutrition-website.jpg" alt="Best Nutrition"></a>
-        <h3>Best Nutrition</h3>
-        <p>WordPress ecommerce (WooCommerce) site with product options and variations.</p>
-      </li>
+      
       <li>
         <a href="http://www.ledererinc.com" target="_blank"><img src="_images/ledererinc-website.jpg" alt="Lederer, Inc."></a>
         <h3>Lederer, Inc</h3>
         <p>Hand coded. Great example of integrating complex functionality with creative freedom.</p>
-      </li>
-      <li>
-        <a href="http://www.rookiesevergreen.com" target="_blank"><img src="_images/rookiesevergreen-website.jpg" alt="Rookies - Batting Cages Evergreen, Colorado"></a>
-        <h3>Rookies</h3>
-        <p>Hand coded. Evergreen, Colorado's premiere batting cages with online managed booking system.</p>
-      </li>
-      <li>
-        <a href="http://www.evergreensigns.com" target="_blank"><img src="_images/evergreen-signs-website.jpg" alt="Evergreen Signs Website"></a>
-        <h3>Evergreen Signs</h3>
-        <p>Hand coded. Advertising in various mediums. With a mobile-optimized website they are now reaching more customers than ever.</p>
       </li>
       <li>
         <a href="http://www.myscreenscene.com" target="_blank"><img src="_images/myscreenscene-website.jpg" alt="MyScreenScene.com"></a>
