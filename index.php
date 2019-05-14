@@ -36,8 +36,8 @@
 <div id="branding">
   <div id="title">
     <p class="business-title"><span class="evergreen-spacing">EVERGREEN</span> WEB DESIGN</p>
-    <p class="tagline">Creative Solutions | Custom Development</p>
-    <img class="ewd-logo" src="_images/Evergreen-Web-Design-Logo_bw.png" alt="Evergreen Web Design logo">
+    <p class="tagline">Fluid Design | Flawless Function</p>
+    <img class="ewd-logo" src="_images/monitor-iPhone-together.png" alt="Evergreen Web Design logo">
   </div>
 </div><!-- #branding -->
 <div id="mobile-header">
