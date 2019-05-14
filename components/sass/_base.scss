@@ -1622,20 +1622,19 @@ span.success-msg {
 	right: 50%;
   margin-right: -26px;
 	text-align: center;
-	background-color: rgba(18,152,31,0.85);
+	background-color: rgba(255,255,255,0.85);
 	padding: 10px 10px 0px 10px;
-	color: #fff;
+	color: #014cc3;
 	text-decoration: none;
-	border-radius: 8px;
-  border: solid 1px #06ff00;
-	box-shadow: 0px 0px 3px 2px rgba(12,255,0,0.3);
+	// border-radius: 8px;
+  border: solid 1px #014cc3;
+	// box-shadow: 0px 0px 3px 2px rgba(12,255,0,0.3);
   transition: all 0.1s ease;
 	//transition: background-color 0.3s ease;
   // transition: width 0.1s ease;
   // transition: height 0.1s ease;
 	&:hover {
-		background-color: rgba(10,122,20,0.9);
-		color: #fff;
+		background-color: rgba(255,255,255,0.9);
 		text-decoration: none;
     //padding: 9px 9px 0px 9px;
     transform: scale(0.96);
@@ -1866,6 +1865,7 @@ li.active a, li.active a:hover {
     border-radius:3px;
     border: 1px solid #ccc;
     background:#fff;
+    background: rgba(255,255,255,0.8);
     font-size: 1.1em;
     padding-right: 15px;
     p {
@@ -3226,18 +3226,17 @@ div#branding {
     color: #fff;
 		background-color: rgba(166,31,30,0.9); // red'ish
     background-color: rgba(227,42,43,1);
-    background-color: rgba(118,182,44,1);
+    background-color: rgba(35,74,121,1);
 		max-width: 300px;
 		padding: 15px 35px;
 		border: 1px solid #fff;
-		border-radius: 8px;
+		// border-radius: 8px;
 		transition: all .75s ease;
 		a.badge-tel {
 			text-decoration: none;
-			color: inherit;
+			color: #fff;
 			&:hover {
 				text-decoration: none;
-				color: inherit;
 				cursor: text;
 			}
 		}
@@ -3444,13 +3443,14 @@ background-size: cover;
 		left: 10px;
 		text-align: center;
     background-color: rgba(73,73,73,0.75);
-    background-color: rgba(18,152,31,0.85);
+    background-color: rgba(255,255,255,0.85);
 		padding: 12px 14px;
-		color: #fff;
+		color: #014cc3;
+    letter-spacing: 1px;
 		text-decoration: none;
-    border-radius: 8px;
-    border: 1px solid #06ff00;
-    box-shadow: 0px 0px 3px 2px rgba(12,255,0,0.3);
+    // border-radius: 8px;
+    border: 1px solid #014cc3;
+    // box-shadow: 0px 0px 3px 2px rgba(12,255,0,0.3);
 		transition: background-color .3s ease;
 		transition: height .2s ease;
 	}

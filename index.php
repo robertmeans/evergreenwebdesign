@@ -24,7 +24,7 @@
 
 
 <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
-<a class="mobile-tel large-screen-gone" href="tel:(303)%20932-7483">Call: (303) WEB-SITE</a>
+<a class="mobile-tel large-screen-gone" href="tel:(303)%20932-7483">Call: (303) WEBSITE</a>
 
 <header id="intro">
 <a class="mobile_menu"></a>
@@ -37,7 +37,7 @@
   <div id="title">
     <p class="business-title"><span class="evergreen-spacing">EVERGREEN</span> WEB DESIGN</p>
     <p class="tagline">Fluid Design | Flawless Function</p>
-    <img class="ewd-logo" src="_images/monitor-iPhone-together.png" alt="Evergreen Web Design logo">
+    <img class="ewd-logo" src="_images/Evergreen-Web-Design-Logo_bw.png" alt="Evergreen Web Design logo">
   </div>
 </div><!-- #branding -->
 <div id="mobile-header">
