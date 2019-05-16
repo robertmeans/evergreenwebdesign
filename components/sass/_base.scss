@@ -70,6 +70,7 @@ nav h2 {
 }
 #center-nav {
 	text-align: center;
+  transition: all 0.3s ease;
 }
 nav ul {
 	display: flex;
@@ -94,7 +95,7 @@ nav ul li {
 		justify-content: center;
 		align-content: center;
 		align-items: center;
-		width: 45px;
+		// width: 45px;
 		height: 55px;
 		text-align: center;
 		margin-right: 10px;
@@ -105,9 +106,10 @@ nav ul li {
 			background-color: inherit;
 		}
 		&:hover {
-			color: #fff;
-			background-color: #1f5588;
-			// padding: 10px;
+			color: #333;
+			background-color: #fff;
+			border-top: 3px solid green;
+      box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.08);
 		}
 	}
 }
@@ -160,8 +162,10 @@ nav ul li {
 	margin-left: 4px;
 }
 .active-nav {
-	color: #fff;
-	background-color: #1f5588;
+	color: #333;
+	background-color: #fff;
+  border-top: 3px solid green;
+  box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.08);
 }
 #thank-you {
 	width: 100%;
@@ -559,17 +563,12 @@ border-radius: 10px;
    height: auto;
    width: 385px;
    background: rgba(255,255,255,.85);
-
-   border:3px solid #fff;
-   padding:0;
-   position:absolute;
-   z-index:1004;
-   cursor:default;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -khtml-border-radius: 10px;
-  border-radius: 10px;
-  display:none;
+   border: 1px solid #fff;
+   padding: 0;
+   position: absolute;
+   z-index: 1004;
+   cursor: default;
+   display: none;
 }
 .red {
   color: red;
@@ -577,22 +576,9 @@ border-radius: 10px;
 #fg_container_header
 {
    height:50px;
-   // background:#2d2d2d;
-
-  background: rgba(187,81,24,1);
-
-
-
-
-   border-top-right-radius:10px;
-   -moz-border-radius-topright:10px;
-   -webkit-border-top-right-radius:10px;
-   -khtml-border-top-right-radius: 10px;
-
-   border-top-left-radius:10px;
-   -moz-border-radius-topleft:10px;
-   -webkit-border-top-left-radius:10px;
-   -khtml-border-top-left-radius: 10px;
+  background-color: #1f5588;
+   // border-top-right-radius:10px;
+   // border-top-left-radius:10px;
 }
 
 #fg_container_header a
@@ -603,7 +589,7 @@ border-radius: 10px;
    // padding: 15px;
    // font-weight:bold;
    &:hover {
-    color: #1f5588;
+    color: #fff;
    }
 }
 .form-anchor {
@@ -1149,9 +1135,9 @@ max-width: 110px;
 }
 
 @media screen and (max-width: 600px) {
-#process_slider .flex-control-thumbs img {
-max-width: 90px;
-}
+  #process_slider .flex-control-thumbs img {
+  max-width: 90px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -1584,24 +1570,6 @@ span.success-msg {
 }
 
 
-#clockid {
-	border-radius: 50%;
-	padding: 3px;
-	border: 1px solid white;
-	display: inline-block;
-	float: left;
-	position: relative;
-	clear: both;
-	margin: 0 auto;
-	display: block;
-}
-.clockid-default {
-// see _now-color-scheme.scss
-// clockid-default
-}
-
-
-
 .hmpg-contact {
 	color: #fff;
 	text-decoration: underline;
@@ -1611,13 +1579,13 @@ span.success-msg {
 	}
 }
 
-
 .back-to-top {
+  box-sizing: border-box;
 	display: none;
 	z-index: 1001;
 	position: fixed;
-	width: 30px;
-	height: 30px;
+	width: 48px;
+	height: 42px;
 	bottom: 10px;
 	right: 50%;
   margin-right: -26px;
@@ -1626,18 +1594,15 @@ span.success-msg {
 	padding: 10px 10px 0px 10px;
 	color: #014cc3;
 	text-decoration: none;
-	// border-radius: 8px;
   border: solid 1px #014cc3;
-	// box-shadow: 0px 0px 3px 2px rgba(12,255,0,0.3);
-  transition: all 0.1s ease;
-	//transition: background-color 0.3s ease;
-  // transition: width 0.1s ease;
-  // transition: height 0.1s ease;
+  transition: all 0.1s ease-in-out;
+  box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
 	&:hover {
 		background-color: rgba(255,255,255,0.9);
 		text-decoration: none;
-    //padding: 9px 9px 0px 9px;
-    transform: scale(0.96);
+    transform: scale(1.1);
+    box-shadow: 0px 36px 20px -20px rgba(0,0,0,0.2);
+    transform: translate(0px -10px);
 	}
   i.fa {
     margin: 0;
@@ -1867,7 +1832,7 @@ li.active a, li.active a:hover {
     background:#fff;
     background: rgba(255,255,255,0.8);
     font-size: 1.1em;
-    padding-right: 15px;
+    // padding-right: 15px;
     p {
     	padding: 0px 35px;
     }
@@ -2400,6 +2365,7 @@ li.active a, li.active a:hover {
 }
 
 @media screen and (max-width: 600px){
+
   .mobile-nav-phone-gone {
   	display: none;
   }
@@ -2415,36 +2381,6 @@ li.active a, li.active a:hover {
   #div-four {
   	height: 800px;
   }
-  #clockScene {
-  	// z-index: 100;
-  	height: 250px;
-  	position: relative;
-  }
-
-  #bubbles1 {
-  // background-image: url(_images/bubbles1_small.png);
-  }
-   
-  #bubbles2 {
-  // background-image: url(_images/bubbles3_small.png);
-  }
-   
-  #fish {
-  	background-image: url(_images/fish_small.png);
-  }
-  #clockid {	
-  	border-radius: 50%;
-  	display: block;
-  	float: left;
-  	clear: both;
-  	// position: fixed;
-  	margin: -90px 0 0 -20px;
-  }
-
-
-
-
-
 
   #EWD {
   	position: relative;
@@ -2572,58 +2508,23 @@ li.active a, li.active a:hover {
   a.mobile_menu {
   	z-index: 1003;
   	display: block;
-  	width: 81px;
-  	height: 35px;	
+  	width: 48px;
+  	height: 42px;	
   	position: fixed; 
   	top: 5px; 
-  	right: 5px;
+  	right: 10px;
   	cursor: pointer;
 
-  	// you have to animate the .class off screen so
-  	// the div does not remain onscreen potentially
-  	// covering any of the dropdown nav that opens
-  	// when you click this. - that's why you can't
-  	// use a sprite here.
-  	background: url(_images/mobile-menu-image.png) no-repeat 0px 0px;
-  	-webkit-animation: menuToggle 600ms;
-  	-moz-animation: menuToggle 600ms;
-  	-ms-animation: menuToggle 600ms;
-  	-o-animation: menuToggle 600ms;
+  	background: url(_images/mobile-menu-hamburger.png) no-repeat 0px 0px;
   	animation: menuToggle 600ms;
-
-
-  	// --- working sprite! ---
-  	// can't use though - see notes above...
-  // 		background-image: url("_images/scroll-down-sprite.png");
-   //    -webkit-animation: play 2.5s steps(40) infinite;
-   //    -moz-animation: play 2.5s steps(40) infinite;
-   //    -ms-animation: play 2.5s steps(40) infinite;
-   //    -o-animation: play 2.5s steps(40) infinite;
-   //    animation: play 2.5s steps(40) infinite;
-  }
-  @-webkit-keyframes menuToggle {
-      from 	{ right: -60px; top: -60px; }
-      to 		{ right: 5px; 	top: 5px; 	}
-  }
-  @-moz-keyframes menuToggle {
-      from 	{ right: -60px; top: -60px; }
-      to 		{ right: 5px; 	top: 5px; 	}
-  }
-  @-ms-keyframes menuToggle {
-      from 	{ right: -60px; top: -60px; }
-      to 		{ right: 5px; 	top: 5px; 	}
-  }
-  @-o-keyframes menuToggle {
-      from 	{ right: -60px; top: -60px; }
-      to 		{ right: 5px; 	top: 5px; 	}
   }
   @keyframes menuToggle {
       from 	{ right: -60px; top: -60px; }
-      to 		{ right: 5px; 	top: 5px; 	}
+      to 		{ right: 10px; 	top: 5px; 	}
   }
-  a.mobile_menu:hover {
-  	opacity: 0.4;
-  }
+  // a.mobile_menu:hover {
+  // 	opacity: 0.4;
+  // }
 
 
 
@@ -2659,22 +2560,22 @@ li.active a, li.active a:hover {
    //    -o-animation: play 2.5s steps(40) infinite;
    //    animation: play 2.5s steps(40) infinite;
   }
-  @-webkit-keyframes menuToggleUp {
-      from 	{ right: 5px; 	top: 5px; 	}
-      to 		{ right: -60px; top: -60px; }
-  }
-  @-moz-keyframes menuToggleUp {
-      from 	{ right: 5px; 	top: 5px; 	}
-      to 		{ right: -60px; top: -60px; }
-  }
-  @-ms-keyframes menuToggleUp {
-      from 	{ right: 5px; 	top: 5px; 	}
-      to 		{ right: -60px; top: -60px; }
-  }
-  @-o-keyframes menuToggleUp {
-      from 	{ right: 5px; 	top: 5px; 	}
-      to 		{ right: -60px; top: -60px; }
-  }
+  // @-webkit-keyframes menuToggleUp {
+  //     from 	{ right: 5px; 	top: 5px; 	}
+  //     to 		{ right: -60px; top: -60px; }
+  // }
+  // @-moz-keyframes menuToggleUp {
+  //     from 	{ right: 5px; 	top: 5px; 	}
+  //     to 		{ right: -60px; top: -60px; }
+  // }
+  // @-ms-keyframes menuToggleUp {
+  //     from 	{ right: 5px; 	top: 5px; 	}
+  //     to 		{ right: -60px; top: -60px; }
+  // }
+  // @-o-keyframes menuToggleUp {
+  //     from 	{ right: 5px; 	top: 5px; 	}
+  //     to 		{ right: -60px; top: -60px; }
+  // }
   @keyframes menuToggleUp {
       from 	{ right: 5px; 	top: 5px; 	}
       to 		{ right: -60px; top: -60px; }
@@ -2685,74 +2586,73 @@ li.active a, li.active a:hover {
   	display: inline-block;
   }
   nav {
-  	// display: flex;
   	margin-top: -10px;	
-  	// background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0.22)));
-  	// background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.22) 100%);
-  	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#38ffffff',GradientType=0 );
-    background: transparent;
-  	// border-bottom: 1px solid #999;
+    background-color: #fff;
     border-bottom: none;
-    box-shadow: none;
+    box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.2);
     box-sizing: border-box;
   	overflow: hidden;
   }
   nav ul {
   	width: 100%;
   	text-align: center;	
-  	height: 63px;
-  	// margin-top: -62px;
+  	// height: 63px;
+  	background-color: #fff;
   	li {
   		overflow: hidden;
   	}
-  	i.fa-times-circle {
-  	// padding-top: 1em;
-  	line-height: 2.2em;
-    font-size: 2em;
-    color: #fff;
+  	i.fa-chevron-up {
+    font-size: 1em;
+    line-height: 4.2em;
+    color: #333;
   	}
   }
+  // this is inside @media max-width: 600px
   nav ul li a {		
-  	color: #fff;
+  	color: #333;
   	text-align: center;
-  	margin: 0px 2px;
+  	margin: 0px 1px;
   	height: 62px;
   	line-height: 2.5em;
-  	// padding: 2em 12px;	
-  	// border-radius: 0px;
-  	background: rgba(0,0,0,.6);
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-right: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    border-left: 1px solid #fff;
-    background-color: rgba(1,76,195,0.9);
+    // border-right: 1px solid #5d77ab;
+    // border-bottom: 1px solid #5d77ab;
+    // border-left: 1px solid #5d77ab;
+    background-color: rgba(255,255,255,1);
+    transition: font-size 0.2s ease;
   	&:visited {
   		background-color: inherit;
   		}
   	&:hover {
-  		color: #fff;
+  		// color: #333;
   		text-decoration: none;	
-  		background: rgba(6,55,134,1);	
+      border-top: none;
+  		background-color: rgba(255,255,255,1);	
   		cursor: pointer;	
+      box-shadow: none;
   		}
   	&:active {
-  		background-color: inherit;
+  		background-color: #fff;
   		}
 
   }
   .first-nav-item {
   	width: auto;
-  	margin-left: 4px;
+  	margin-left: 2px;
   	//padding: 0.3em 1.5em;
     // padding-top: 1px;
   }
   .active-nav {
-  	color: #fff;
-  	text-decoration: none;	
-  	background: rgba(0,0,0,.2);	
-    // background-color: rgba(62,169,74,0.9);
-    background-color: rgba(30,143,15,0.9);		
+  	color: #ff6433;
+    font-weight: bold;
+  	text-decoration: none;
+    border-top: none;
+    box-shadow: none;
+    // border-right: 1px solid #ff6433;
+    // border-bottom: 1px solid #ff6433;
+    // border-left: 1px solid #ff6433;	
+    &:hover {
+      color: #ff6433;
+    }		
   }
   .last-nav-item {
   	margin-right: 0;
@@ -2821,6 +2721,15 @@ li.active a, li.active a:hover {
 
 } // end (max-width: 600px) closing tag
 
+@media screen and (max-width: 374px) {
+  nav ul li a {
+    font-size: 0.7em;
+  }
+  nav ul i.fa-chevron-up {
+    font-size: 1.5em;
+    line-height: 3.6em;
+  }
+}
 
 
 @media screen and (max-width: 560px){
@@ -2983,11 +2892,13 @@ ul.list {
 
 
 .last-nav-item {
-	margin-right: 60px;
+	// margin-right: 60px;
 }
 
 // EWD Logo on top of nav
 #center-nav {
+  // margin-left is to offset the logo image
+  margin-left: -23px;
 	li.ewd-nav-logo {
 		display: none;
 		border: none;	
@@ -2999,19 +2910,23 @@ ul.list {
 			position: fixed;
 			top: 0px;
 			z-index: 1999;
-			// padding-left: 60px;
+			margin-left: 25px;
 		}
 		a {
-			width: auto;
+			// width: auto;
 			&:hover {
 				background-color: inherit;
+        border-top: none;
+        box-shadow: none;
 			}
 		}
 	}
 }
-
-
-
+@media screen and (max-width: 700px) {
+   #center-nav {
+    margin: 0 auto;
+  } 
+}
 
 div#branding {
 	display: block;

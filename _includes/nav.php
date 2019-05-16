@@ -12,13 +12,13 @@
       <p>(303) 932.7483</p>
     </li>
     <li class="full-height">
-      <a href="#div-two" class="placeholder">services</a>
+      <a href="#div-two" class="placeholder">SERVICES</a>
     </li>
     <li class="full-height">
-      <a href="#div-three" class="placeholder">about</a>
+      <a href="#div-three" class="placeholder">ABOUT</a>
     </li>
     <li class="full-height">
-      <a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="last-nav-item">contact</a>
+      <a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="last-nav-item">CONTACT</a>
     </li>
     
     <li class="full-height ewd-nav-logo">
@@ -26,7 +26,7 @@
         <img class="nav-logo" src="_images/Evergreen-Web-Design-nav-logo.png" alt="Evergreen Web Design logo">
       </a>
     </li>
-    <li class="full-height"><a class="first-nav-item no-active-nav large-screen-gone mobile_menu2"><i class="fa fa-times-circle"></i></a></li>
+    <li class="full-height"><a class="first-nav-item no-active-nav large-screen-gone mobile_menu2"><i class="fa fa-chevron-up"></i></a></li>
   </ul>
   </div>
 </nav>

@@ -2479,6 +2479,7 @@ nav h2 {
 
 #center-nav {
   text-align: center;
+  transition: all 0.3s ease;
 }
 
 nav ul {
@@ -2515,7 +2516,6 @@ nav ul li a {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 45px;
   height: 55px;
   text-align: center;
   margin-right: 10px;
@@ -2526,8 +2526,10 @@ nav ul li a:visited {
   background-color: inherit;
 }
 nav ul li a:hover {
-  color: #fff;
-  background-color: #1f5588;
+  color: #333;
+  background-color: #fff;
+  border-top: 3px solid green;
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.08);
 }
 
 .header-phone {
@@ -2577,8 +2579,10 @@ nav ul li a:hover {
 }
 
 .active-nav {
-  color: #fff;
-  background-color: #1f5588;
+  color: #333;
+  background-color: #fff;
+  border-top: 3px solid green;
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.08);
 }
 
 #thank-you {
@@ -2907,13 +2911,11 @@ stylesheet does not affect the other elements at all!
   height: auto;
   width: 385px;
   background: rgba(255, 255, 255, 0.85);
-  border: 3px solid #fff;
+  border: 1px solid #fff;
   padding: 0;
   position: absolute;
   z-index: 1004;
   cursor: default;
-  -khtml-border-radius: 10px;
-  border-radius: 10px;
   display: none;
 }
 
@@ -2923,15 +2925,7 @@ stylesheet does not affect the other elements at all!
 
 #fg_container_header {
   height: 50px;
-  background: #bb5118;
-  border-top-right-radius: 10px;
-  -moz-border-radius-topright: 10px;
-  -webkit-border-top-right-radius: 10px;
-  -khtml-border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  -moz-border-radius-topleft: 10px;
-  -webkit-border-top-left-radius: 10px;
-  -khtml-border-top-left-radius: 10px;
+  background-color: #1f5588;
 }
 
 #fg_container_header a {
@@ -2940,7 +2934,7 @@ stylesheet does not affect the other elements at all!
   font-size: 20pt;
 }
 #fg_container_header a:hover {
-  color: #1f5588;
+  color: #fff;
 }
 
 .form-anchor {
@@ -3874,18 +3868,6 @@ span.success-msg {
     background: rgba(28, 119, 181, 0.6);
   }
 }
-#clockid {
-  border-radius: 50%;
-  padding: 3px;
-  border: 1px solid white;
-  display: inline-block;
-  float: left;
-  position: relative;
-  clear: both;
-  margin: 0 auto;
-  display: block;
-}
-
 .hmpg-contact {
   color: #fff;
   text-decoration: underline;
@@ -3896,11 +3878,12 @@ span.success-msg {
 }
 
 .back-to-top {
+  box-sizing: border-box;
   display: none;
   z-index: 1001;
   position: fixed;
-  width: 30px;
-  height: 30px;
+  width: 48px;
+  height: 42px;
   bottom: 10px;
   right: 50%;
   margin-right: -26px;
@@ -3910,14 +3893,19 @@ span.success-msg {
   color: #014cc3;
   text-decoration: none;
   border: solid 1px #014cc3;
-  transition: all 0.1s ease;
+  transition: all 0.1s ease-in-out;
+  box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
 }
 .back-to-top:hover {
   background-color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
-  -webkit-transform: scale(0.96);
-      -ms-transform: scale(0.96);
-          transform: scale(0.96);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  box-shadow: 0px 36px 20px -20px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translate(0px -10px);
+      -ms-transform: translate(0px -10px);
+          transform: translate(0px -10px);
 }
 .back-to-top i.fa {
   margin: 0;
@@ -4137,7 +4125,6 @@ li.active a, li.active a:hover {
   background: #fff;
   background: rgba(255, 255, 255, 0.8);
   font-size: 1.1em;
-  padding-right: 15px;
 }
 .tab-content p {
   padding: 0px 35px;
@@ -4644,23 +4631,6 @@ footer .copyright {
     height: 800px;
   }
 
-  #clockScene {
-    height: 250px;
-    position: relative;
-  }
-
-  #fish {
-    background-image: url(_images/fish_small.png);
-  }
-
-  #clockid {
-    border-radius: 50%;
-    display: block;
-    float: left;
-    clear: both;
-    margin: -90px 0 0 -20px;
-  }
-
   #EWD {
     position: relative;
     margin: -15px auto;
@@ -4784,15 +4754,15 @@ footer .copyright {
   a.mobile_menu {
     z-index: 1003;
     display: block;
-    width: 81px;
-    height: 35px;
+    width: 48px;
+    height: 42px;
     position: fixed;
     top: 5px;
-    right: 5px;
+    right: 10px;
     cursor: pointer;
-    background: url(_images/mobile-menu-image.png) no-repeat 0px 0px;
+    background: url(_images/mobile-menu-hamburger.png) no-repeat 0px 0px;
     -webkit-animation: menuToggle 600ms;
-    animation: menuToggle 600ms;
+            animation: menuToggle 600ms;
   }
 
   @-webkit-keyframes menuToggle {
@@ -4801,24 +4771,21 @@ footer .copyright {
       top: -60px;
     }
     to {
-      right: 5px;
+      right: 10px;
       top: 5px;
     }
   }
+
   @keyframes menuToggle {
     from {
       right: -60px;
       top: -60px;
     }
     to {
-      right: 5px;
+      right: 10px;
       top: 5px;
     }
   }
-  a.mobile_menu:hover {
-    opacity: 0.4;
-  }
-
   a.mobile_menu.selected {
     top: -60px;
     right: -60px;
@@ -4836,6 +4803,7 @@ footer .copyright {
       top: -60px;
     }
   }
+
   @keyframes menuToggleUp {
     from {
       right: 5px;
@@ -4852,9 +4820,9 @@ footer .copyright {
 
   nav {
     margin-top: -10px;
-    background: transparent;
+    background-color: #fff;
     border-bottom: none;
-    box-shadow: none;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
     overflow: hidden;
   }
@@ -4862,54 +4830,54 @@ footer .copyright {
   nav ul {
     width: 100%;
     text-align: center;
-    height: 63px;
+    background-color: #fff;
   }
   nav ul li {
     overflow: hidden;
   }
-  nav ul i.fa-times-circle {
-    line-height: 2.2em;
-    font-size: 2em;
-    color: #fff;
+  nav ul i.fa-chevron-up {
+    font-size: 1em;
+    line-height: 4.2em;
+    color: #333;
   }
 
   nav ul li a {
-    color: #fff;
+    color: #333;
     text-align: center;
-    margin: 0px 2px;
+    margin: 0px 1px;
     height: 62px;
     line-height: 2.5em;
-    background: rgba(0, 0, 0, 0.6);
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-right: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    border-left: 1px solid #fff;
-    background-color: rgba(1, 76, 195, 0.9);
+    background-color: white;
+    transition: font-size 0.2s ease;
   }
   nav ul li a:visited {
     background-color: inherit;
   }
   nav ul li a:hover {
-    color: #fff;
     text-decoration: none;
-    background: #063786;
+    border-top: none;
+    background-color: white;
     cursor: pointer;
+    box-shadow: none;
   }
   nav ul li a:active {
-    background-color: inherit;
+    background-color: #fff;
   }
 
   .first-nav-item {
     width: auto;
-    margin-left: 4px;
+    margin-left: 2px;
   }
 
   .active-nav {
-    color: #fff;
+    color: #ff6433;
+    font-weight: bold;
     text-decoration: none;
-    background: rgba(0, 0, 0, 0.2);
-    background-color: rgba(30, 143, 15, 0.9);
+    border-top: none;
+    box-shadow: none;
+  }
+  .active-nav:hover {
+    color: #ff6433;
   }
 
   .last-nav-item {
@@ -4970,6 +4938,16 @@ footer .copyright {
   #contactus .short_explanation {
     font-family: Arial, sans-serif;
     font-size: .8em;
+  }
+}
+@media screen and (max-width: 374px) {
+  nav ul li a {
+    font-size: 0.7em;
+  }
+
+  nav ul i.fa-chevron-up {
+    font-size: 1.5em;
+    line-height: 3.6em;
   }
 }
 @media screen and (max-width: 560px) {
@@ -5108,10 +5086,9 @@ ul.list li {
   margin: 1%;
 }
 
-.last-nav-item {
-  margin-right: 60px;
+#center-nav {
+  margin-left: -23px;
 }
-
 #center-nav li.ewd-nav-logo {
   display: none;
   border: none;
@@ -5124,14 +5101,19 @@ ul.list li {
   position: fixed;
   top: 0px;
   z-index: 1999;
-}
-#center-nav li.ewd-nav-logo a {
-  width: auto;
+  margin-left: 25px;
 }
 #center-nav li.ewd-nav-logo a:hover {
   background-color: inherit;
+  border-top: none;
+  box-shadow: none;
 }
 
+@media screen and (max-width: 700px) {
+  #center-nav {
+    margin: 0 auto;
+  }
+}
 div#branding {
   display: block;
   position: relative;

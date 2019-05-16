@@ -36,7 +36,7 @@
 <div id="branding">
   <div id="title">
     <p class="business-title"><span class="evergreen-spacing">EVERGREEN</span> WEB DESIGN</p>
-    <p class="tagline">Fluid Design | Flawless Function</p>
+    <p class="tagline">Fluid Form | Flawless Function</p>
     <img class="ewd-logo" src="_images/Evergreen-Web-Design-Logo_bw.png" alt="Evergreen Web Design logo">
   </div>
 </div><!-- #branding -->
@@ -45,13 +45,14 @@
 </div>
 <div id="product-container">
   <div class="product-box">
-    <a href="#div-two" class="product-item">Websites</a>
+    <a href="#div-two" class="product-item">Development</a>
     <ul class="product-list">
-      <li>Development</li>
-      <li>Concept</li>
-      <li>Design</li>
+      <li>Websites</li>
+      <li>Database</li>
+      <li>eCommerce</li>
     </ul>
-    <p class="product-desc">Each project provides a unique opportunity to explore creative opportuinites and custom solutions. Find out how Evergreen Web Design can meet your specific online needs today!</p>
+    <!-- <p class="product-desc">Each project provides a unique opportunity to explore creative opportuinites and custom solutions. Find out how Evergreen Web Design can meet your specific online needs today!</p> -->
+    <p class="product-desc">Where better to highlight development skills than right here?! This site was coded the old fashioned way - by hand in a text editor. Leave the &quot;Website in a box&quot; shortcuts to those who can't.</p>
   </div>    
 
   <div class="product-box">

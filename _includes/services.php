@@ -53,7 +53,7 @@
       </li>
       
       <li>
-        <a href="http://www.ledererinc.com" target="_blank"><img src="_images/ledererinc-website.jpg" alt="Lederer, Inc."></a>
+        <a href="http://www.evergreenwebdesign.com/offline-sites/ledererinc" target="_blank"><img src="_images/ledererinc-website.jpg" alt="Lederer, Inc."></a>
         <h3>Lederer, Inc</h3>
         <p>Hand coded. Great example of integrating complex functionality with creative freedom.</p>
       </li>
