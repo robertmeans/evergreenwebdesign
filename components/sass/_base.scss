@@ -2077,6 +2077,7 @@ footer {
 	i.fa {
 		font-size: 1.2em;
 		padding-right: 0.5em;
+    margin-right: 0;
 	}
 	.tel, .tel:visited, .tel:focus {
 		font-size: 1.4em;
@@ -2946,13 +2947,11 @@ div#branding {
 	}
 	p.tagline {
 		font-family: 'Montserrat', Helvetica, sans-serif;
-		// font-weight: 700;
 		color: #fff;
-    // text-shadow: -2px 3px 3px rgba(0,0,0,0.3);
 		font-size: 1.4em;
-		// line-height: 0.5em;
     display: inline-block;
-    padding: 8px;
+    padding: 8px 30px;
+    letter-spacing: 1px;
     background-color: rgba(25,80,135,0.7);
 		margin-top: -1em;
     margin-bottom: 0;
@@ -3301,17 +3300,10 @@ div#branding {
 	#homepage-container {
     width: 100%;
     background: rgba(87,147,184,1);
-
-
-background: #6d94e1 url('_images/blue-blast-background.jpg') no-repeat center center fixed; 
-
-background: #6d94e1 url('_images/light-tunnel.jpg');
-background-position: center;
-background-size: cover;
-  // background-size: contain;
-  // background-attachment: fixed;
-
-
+    background: #6d94e1 url('_images/blue-blast-background.jpg') no-repeat center center fixed; 
+    background: #6d94e1 url('_images/light-tunnel.jpg');
+    background-position: center;
+    background-size: cover;
     padding: 10px 0px 100px;
 	}
 	div#branding {
@@ -3325,10 +3317,13 @@ background-size: cover;
       text-shadow: none;
     }
     p.tagline {
-      // margin-left: 115px;
-      // line-height: 1.2em;
-      // text-shadow: none;
       display: none;
+      // padding: 0px;
+      // background-color: transparent;
+      // margin-left: 118px;
+      // margin-bottom: 1em;
+      // letter-spacing: 0px;
+      // font-size: 0.9em;
     }
     img.ewd-logo {
       left: 0;

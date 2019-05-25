@@ -4360,6 +4360,7 @@ footer p.phone-spelled {
 footer i.fa {
   font-size: 1.2em;
   padding-right: 0.5em;
+  margin-right: 0;
 }
 footer .tel, footer .tel:visited, footer .tel:focus {
   font-size: 1.4em;
@@ -5135,7 +5136,8 @@ div#branding p.tagline {
   color: #fff;
   font-size: 1.4em;
   display: inline-block;
-  padding: 8px;
+  padding: 8px 30px;
+  letter-spacing: 1px;
   background-color: rgba(25, 80, 135, 0.7);
   margin-top: -1em;
   margin-bottom: 0;
