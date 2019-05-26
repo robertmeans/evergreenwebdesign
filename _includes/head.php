@@ -16,7 +16,7 @@
   <link rel="icon" type="image/ico" href="_images/favicon.ico">
   <link rel="image_src" href="https://www.evergreenwebdesign.com/_images/thumbnails/EWD-thumb-01.png" />
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta name="description" content="Evergreen Web Design builds websites that work and fixes ones that don't. When details matter call (303) WEBSITE">
+  <meta name="description" content="Evergreen Web Design builds websites that work and fixes ones that don't. Development where form follows function. When details matter call (303) WEBSITE">
   <meta name="format-detection" content="telephone=no">
 
   <meta property="og:url" content="https://www.evergreenwebdesign.com" />
@@ -24,7 +24,7 @@
   <meta property="og:title" content="Evergreen Web Design - Fluid Form | Flawless Function" />
   <meta property="og:image" content="https://www.evergreenwebdesign.com/_images/thumbnails/Evergreen-Web-Design-meta-image.png" />
   <meta property="og:image:alt" content="Evergreen Web Design - Evergreen, Colorado" />
-  <meta property="og:description" content="Evergreen Web Design builds websites that work and fixes ones that don't. When details matter call (303) WEBSITE" />
+  <meta property="og:description" content="Evergreen Web Design builds websites that work and fixes ones that don't. Development where form follows function. When details matter call (303) WEBSITE" />
   <meta property="fb:app_id" content="966242223397117" />
 
 
