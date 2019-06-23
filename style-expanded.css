@@ -5243,11 +5243,12 @@ div#branding img.ewd-logo {
   color: #333;
 }
 #product-container .product-box ul.product-list {
+  min-height: 93px;
   list-style: none;
   text-align: left;
   font-size: 1.4em;
   color: #fff;
-  padding: 20px 0px;
+  padding: 20px 10px 20px 0px;
   background-color: rgba(0, 0, 0, 0.6);
   background: url("_images/circuit-board.jpg") no-repeat center center fixed;
   background-attachment: fixed;
@@ -5260,6 +5261,17 @@ div#branding img.ewd-logo {
   display: block;
   line-height: 1.4em;
   margin-left: 30px;
+}
+#product-container .product-box ul.product-list.first-list {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #product-container .product-box p.product-desc {
   background-color: rgba(0, 0, 0, 0.8);
@@ -5274,7 +5286,11 @@ div#branding img.ewd-logo {
   padding-bottom: 20px;
 }
 
-@media screen and (max-width: 931px) {
+@media screen and (max-width: 930px) {
+  .br-gone {
+    display: none;
+  }
+
   div#mobile-header {
     display: block;
   }
@@ -5430,7 +5446,6 @@ div#branding img.ewd-logo {
   #product-container .product-box ul.product-list {
     list-style: none;
     text-align: center;
-    font-size: 1em;
     color: #fff;
     padding: 10px 0px;
     background-color: rgba(0, 0, 0, 0.6);
@@ -5546,7 +5561,7 @@ div#branding img.ewd-logo {
   }
 
   div#mobile-header h1 {
-    font-size: 2.6em;
+    font-size: 2.3em;
     margin-top: 0.6em;
     text-align: center;
     padding: 0px;

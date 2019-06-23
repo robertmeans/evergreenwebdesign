@@ -152,7 +152,7 @@
             <p><span class="reseller">*</span> Evergreen Web Design is an authorized GoDaddy Reseller. You can buy GoDaddy products through us for less. Exact same products, same support, same dependability, less money.</p>
 
           <div class="container">
-            <p class="social-network-icons"><a href="https://www.facebook.com/evergreenwebdesign01" target="_blank"><img class="facebook-square" src="https://www.evergreenwebdesign.com/_images/facebook-icon.jpg" alt="Facebook"></a> <a href="https://twitter.com/EWDLLC" target="_blank"><img class="twitter-square" src="_images/twitter-icon.jpg" alt="Twitter"></a> <a href="https://plus.google.com/+Evergreenwebdesignllc" target="_blank"><img class="google-plus-square" src="_images/google-plus-icon.jpg" alt="Google+"></a> please share</p>
+            <p class="social-network-icons"><a href="https://www.facebook.com/evergreenbob" target="_blank"><img class="facebook-square" src="https://www.evergreenwebdesign.com/_images/facebook-icon.jpg" alt="Facebook"></a> <a href="https://twitter.com/EWDLLC" target="_blank"><img class="twitter-square" src="_images/twitter-icon.jpg" alt="Twitter"></a> <a href="https://plus.google.com/+Evergreenwebdesignllc" target="_blank"><img class="google-plus-square" src="_images/google-plus-icon.jpg" alt="Google+"></a> please share</p>
 
             <a href="#" class="click no-default"><i class="fa fa-angle-down"></i> Creative Solutions</a>
 
@@ -398,7 +398,7 @@
             <p><span class="reseller">*</span> Evergreen Web Design is an authorized GoDaddy Reseller. You can buy GoDaddy products through us for less. Exact same products, same support, same dependability, less money.</p>
 
           <div class="container">
-            <p class="social-network-icons"><a href="https://www.facebook.com/evergreenwebdesign01" target="_blank"><img class="facebook-square" src="https://www.evergreenwebdesign.com/_images/facebook-icon.jpg" alt="Facebook"></a> <a href="https://twitter.com/EWDLLC" target="_blank"><img class="twitter-square" src="_images/twitter-icon.jpg" alt="Twitter"></a> <a href="https://plus.google.com/+Evergreenwebdesignllc" target="_blank"><img class="google-plus-square" src="_images/google-plus-icon.jpg" alt="Google+"></a> please share</p>
+            <p class="social-network-icons"><a href="https://www.facebook.com/evergreenbob" target="_blank"><img class="facebook-square" src="https://www.evergreenwebdesign.com/_images/facebook-icon.jpg" alt="Facebook"></a> <a href="https://twitter.com/EWDLLC" target="_blank"><img class="twitter-square" src="_images/twitter-icon.jpg" alt="Twitter"></a> <a href="https://plus.google.com/+Evergreenwebdesignllc" target="_blank"><img class="google-plus-square" src="_images/google-plus-icon.jpg" alt="Google+"></a> please share</p>
 
             <a href="#" class="click no-default"><i class="fa fa-angle-down"></i> Creative Solutions</a>
 

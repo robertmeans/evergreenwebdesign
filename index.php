@@ -41,9 +41,21 @@
   </div>
 </div><!-- #branding -->
 <div id="mobile-header">
-  <h1>Functional Design Developed Creatively</h1>
+  <!-- <h1>Functional Design Developed Creatively</h1> -->
+  <h1>Building Websites That Work, <br class="br-gone" />
+  Fixing Ones That Don't.</h1>
 </div>
 <div id="product-container">
+  <div class="product-box">
+    <a href="#div-two" class="product-item">Services</a>
+    <ul class="product-list first-list">
+      <li>Building websites that work</li>
+      <li>Fixing ones that don't</li>
+      <!-- <li>&nbsp;</li> -->
+    </ul>
+    <p class="product-desc">No matter what framework or platform your project currently resides or what your future vision demands, Evergreen Web Design has you covered. Full stack development at your service.</p> 
+  </div>
+
   <div class="product-box">
     <a href="#div-two" class="product-item">Development</a>
     <ul class="product-list">
@@ -54,16 +66,6 @@
     <!-- <p class="product-desc">Each project provides a unique opportunity to explore creative opportuinites and custom solutions. Find out how Evergreen Web Design can meet your specific online needs today!</p> -->
     <p class="product-desc">Where better to highlight development skills than right here?! This site was built the old fashioned way - by hand in a text editor. Your one-stop answer factory awaits only a phone call away.</p>
   </div>    
-
-  <div class="product-box">
-    <a href="#div-two" class="product-item">Solutions</a>
-    <ul class="product-list">
-      <li>Custom Coding</li>
-      <li>Squarespace</li>
-      <li>WordPress</li>
-    </ul>
-    <p class="product-desc">No matter what framework or platform your project currently resides or what your future vision demands, Evergreen Web Design has you covered. Full stack development at your service.</p> 
-  </div>
 
   <div class="product-box">
     <a href="#essentials" class="product-item">Essentials</a>
