@@ -17,10 +17,20 @@
     <ul class="list moresites cf">
 
       <li>
+        <a href="http://www.allwaysautistic.com" target="_blank"><img src="_images/allwaysautistic-website.jpg" alt="Evergren Brewery"></a>
+        <h3>Spectrum of Opportunities</h3>
+        <p>Custom coded Squarespace. The freedom of a Squarespace design is only limited by the skillset of the developer.</p>
+      </li>
+      <li>
         <a href="http://www.evergreenbrewery.com" target="_blank"><img src="_images/evergreen-brewery-website.jpg" alt="Evergren Brewery"></a>
         <h3>Evergreen Brewery</h3>
         <p>Hand coded. Elegant. Packed with information and designed for mobile viewport as #1 priority.</p>
       </li>
+      <li>
+        <a href="https://www.taspenskitchen.com" target="_blank"><img src="_images/taspenskitchen-website.jpg" alt="Taspen's Kitchen"></a>
+        <h3>Taspen's Kitchen</h3>
+        <p>One of a kind Squarespace site built with custom code injection. You'll never see another site like it!</p>
+      </li>      
       <li>
         <a href="http://www.seasonally-yours.com" target="_blank"><img src="_images/seasonally-yours-website.jpg" alt="Seasonally Yours"></a>
         <h3>Seasonally Yours</h3>
@@ -45,18 +55,7 @@
         <a href="http://www.evergreensigns.com" target="_blank"><img src="_images/evergreen-signs-website.jpg" alt="Evergreen Signs Website"></a>
         <h3>Evergreen Signs</h3>
         <p>Hand coded. Oldie but goldie. Designed in 2014, highlights just how long fluid design has been a top priority.</p>
-      </li>
-      <li>
-        <a href="http://www.cabinetsofdenver.com" target="_blank"><img src="_images/cabinetsofdenver-website.jpg" alt="Cabinets of Denver"></a>
-        <h3>Cabinets of Denver</h3>
-        <p>Squarespace website driven by imagery. Galleries and slideshows highlight the story.</p>
-      </li>
-      
-      <li>
-        <a href="http://www.evergreenwebdesign.com/offline-sites/ledererinc" target="_blank"><img src="_images/ledererinc-website.jpg" alt="Lederer, Inc."></a>
-        <h3>Lederer, Inc</h3>
-        <p>Hand coded. Great example of integrating complex functionality with creative freedom.</p>
-      </li>
+      </li>      
       <li>
         <a href="http://www.myscreenscene.com" target="_blank"><img src="_images/myscreenscene-website.jpg" alt="MyScreenScene.com"></a>
         <h3>MyScreenScene</h3>
