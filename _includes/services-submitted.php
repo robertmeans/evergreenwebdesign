@@ -22,7 +22,7 @@
         <p>Custom coded Squarespace. The freedom of a Squarespace design is only limited by the skillset of the developer.</p>
       </li>
       <li>
-        <a href="http://www.evergreenbrewery.com" target="_blank"><img src="_images/evergreen-brewery-website.jpg" alt="Evergren Brewery"></a>
+        <a href="http://www.evergreenwebdesign.com/offline-sites/evergreenbrewery" target="_blank"><img src="_images/evergreen-brewery-website.jpg" alt="Evergren Brewery"></a>
         <h3>Evergreen Brewery</h3>
         <p>Hand coded. Elegant. Packed with information and designed for mobile viewport as #1 priority.</p>
       </li>

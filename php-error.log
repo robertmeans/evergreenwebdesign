@@ -1,0 +1,3 @@
+[16-Apr-2020 04:03:44 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; FGContactForm has a deprecated constructor in C:\wamp64\www\evergreenwebdesign\_includes\fgcontactform.php on line 30
+[16-Apr-2020 04:03:44 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\wamp64\www\evergreenwebdesign\_includes\services.php on line 339
+[16-Apr-2020 04:07:15 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; FGContactForm has a deprecated constructor in C:\wamp64\www\evergreenwebdesign\_includes\fgcontactform.php on line 30

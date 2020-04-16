@@ -1,0 +1,120 @@
+div#location { // named #contact so it shows as such in url
+	background-color: #100000;
+	position: relative;
+	padding: 110px 20px 80px;
+	color: #fff;
+	color: #313131;
+	background: url(_images/map-background.jpg) no-repeat fixed center;
+  	background-size: cover;
+  	width: 100%;
+	#location-wrapper {
+		width: 100%;
+		max-width: 1050px;
+		margin: 0 auto;	
+		display: flex;
+		flex-wrap: wrap;
+		.overlay {
+		   background: transparent; 
+		   z-index: 75;
+		   position: relative; 
+		   width: 100%;
+		   max-width: 1050px;
+		   height: 375px; /* iframe height */
+		   top: 375px;  /* iframe height */
+		   margin: -375px auto 0px auto;  /* iframe height */
+		}			
+		#map {
+			height: 375px;
+			width: 100%;
+			max-width: 1050px;
+			display: block;
+			margin: 0px auto;
+			a {
+				box-sizing: border-box;
+				background: inherit;
+				width: auto;
+				padding: 0;
+				margin: 0;
+				display: inline-block;
+				border: none;
+				line-height: 1.5em;
+				height: auto;
+				outline: none;
+			}
+		}
+		i.fa {
+			display: inline-block;
+			margin-right: 15px;
+			font-size: 1.4em;
+			width: 35px;
+			text-align: center;
+			color: #fff;
+			color: #313131;
+		}
+		i.fa-map-marker {
+			padding-bottom: 0.5em;
+		}
+		div.location-content {
+			display: block;
+			width: 50%;
+			padding: 60px 0px;
+			font-size: 1em;
+			line-height: 1.5em;	
+		}
+		div.location {	
+			a {
+				color: #fff;
+				color: #313131;
+				text-decoration: none;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+		div.hours {
+			padding-left: 20px;
+		}
+	}	
+}
+a.loc {
+	outline: none;
+	&:active {
+		outline: none;
+	}
+}
+@media screen and (max-width: 860px) {
+	div#location {
+		div#location-wrapper {
+			div.location {
+			padding: 25px 15px;
+				a {
+				  display: block;
+				  padding: 20px;
+				  text-align: center;
+				  background: #1c8c44;
+				  border: 1px solid #fff;
+				  color: #fff;
+				  margin: 10px auto;
+				}
+			}
+			div.hours {
+				padding-top: 30px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 700px) {
+	div#location {
+		div#location-wrapper {
+			div.location {
+				padding-bottom: 30px;
+			}
+			div.location-content {
+				width: 100%;
+			}
+			div.hours {
+				padding-top: 0px;
+			}
+		}
+	}
+}

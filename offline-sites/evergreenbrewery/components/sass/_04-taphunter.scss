@@ -1,0 +1,67 @@
+// cleaning up the unused navigation for Taphunter
+// getting rid of "Events" which is listed twice
+// but not used
+#menu-container > div > div > div.menu-nav.ut-row.divider-color > div > div.menu-list > div:nth-child(even) > a {
+  display: none;
+}
+#menu-container > div > div > div.menu-nav.ut-row.divider-color > div > div.menu-list > div:nth-child(odd) > a {
+  color: #fff;
+  background: #565759;
+  padding: 15px;
+  border: 1px solid #757575;
+  margin: 18px 0px;
+  &:hover {
+    background-color: #1b8c44;
+    color: #fff;
+    transition: all .25s ease;
+  }
+}
+#menu-container > div > div > div.menu-nav.ut-row.divider-color > div > div.menu-list > div:nth-child(odd) > a.active {
+  color: #fff;
+  background: #1b8c44;
+  padding: 15px;
+  border: 1px solid transparent;
+  margin: 18px 0px;
+}
+.ut-menu .h1 {
+  font-family: Dolce-Vita, 'Muli', sans-serif;
+  letter-spacing: 2px;
+  color: #1b8c44;
+}
+.ut-menu .menu-nav {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.ut-menu-standard .menu-items-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#menu-6463 > div:nth-child(3) > div.section-items-container > div.pagination-container {
+  display: none;
+}
+
+section#taphunter {
+  // height: 4000px;
+  background-color: #ccc;
+  position: relative;
+}
+section#menu-container {
+  background-color: #280000;
+  padding: 80px 0px;
+  overflow: hidden;
+  position: relative;
+}
+@media screen and (max-width: 520px) {
+  .ut-menu-standard .menu-nav div.pull-right {
+    text-align: center;
+    padding: 10px 0px;
+  }
+  div.header-bg-color { // empty space at top
+    display: none;
+  }
+  .ut-menu .menu-nav div.menu-list {
+    text-align: center;
+  }
+}

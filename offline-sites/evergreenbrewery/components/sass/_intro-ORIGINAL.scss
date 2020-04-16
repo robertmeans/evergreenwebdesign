@@ -1,0 +1,119 @@
+div#intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #031bcb;
+  background: url(_images/intro-background.jpg) no-repeat fixed center;
+  background-size: cover;
+  width: 100%;
+  color: #fff;
+  padding: 60px 15px;
+  // height: 100vh;
+  box-sizing: border-box;
+  h1 {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 2em;
+    font-family: Dolce-Vita, 'Muli', sans-serif;
+  }
+  h2 {
+    text-align: center;
+    font-size: 1.2em;
+
+  }
+  .fa-arrow-circle-left {
+    // color: #4267b2;
+    color: #fff;
+    font-size: 1.3em;
+    margin-right: 6px;
+    display: inline-block;
+  }
+  h3 {
+    font-size: 1.2em;
+    font-family: verdana;
+    color: #fff;
+    display: inline-block;
+  }
+  #intro-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 15px;
+    border: 1px solid #fff;
+    background: rgba(0,0,0,0.85);
+    h1 {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 2em;
+      font-family: Dolce-Vita, 'Muli', sans-serif;
+    }
+    h2 {
+      text-align: center;
+      font-size: 1.2em;
+      margin-bottom: 55px;
+    }    
+    p.small-gone {
+        height: 5px;
+        margin-bottom: 0px;
+      }
+    img {
+        float: left;
+        width: 100%;
+        max-width: 150px;
+        margin: 0 20px 10px 0;
+        border: 1px solid #fff;
+        box-shadow: -6px 6px 15px -6px rgba(0,0,0,0.75);
+      }
+    span.follow {
+        display: inline-block;
+        background: #4267b2;
+        color: #fff;
+        padding: 8px 20px;
+        margin: 0 0 1em 0;
+        border-radius: 3px;
+      }
+    #facebook-container {
+        float: left;
+        width: 100%;
+        max-width: 500px;
+        margin: 0px 20px 0px 0px;
+        border: 1px solid #fff;
+        box-shadow: -6px 6px 15px -6px rgba(0,0,0,0.75);
+      }
+    p {
+        margin-bottom: 1em;
+        line-height: 1.4em;
+      }
+  }
+}
+@media screen and (max-width: 840px) {
+  .small-gone {
+    display: none;
+  }
+  div#intro {
+    justify-content: flex-start;
+    height: auto;
+    padding: 110px 2px;
+    #intro-container {
+      span.follow {
+        padding: 8px 20px 8px 20px;
+      }
+    }
+    .follow-fb {
+      display: none;
+    }
+    h1 {
+      margin-top: 0px;
+    }
+    #intro-container {
+      width: 98%;
+      max-width: 530px;
+      #facebook-container {
+        float: none;
+        margin: 0 auto 20px auto;
+        display: block;
+      }
+    }
+  }
+}

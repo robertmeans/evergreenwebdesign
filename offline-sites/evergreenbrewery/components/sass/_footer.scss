@@ -1,0 +1,80 @@
+footer {
+	background: #100000 url(_images/cutting-board-menu-bkg.jpg) no-repeat fixed;
+	background-position: bottom;
+	bottom: 0px;
+	width: 100%;
+	height: 480px;
+	box-sizing: border-box;
+	margin-bottom: -20px; // to get rid of whitespace that taphunter #menu-container puts at btm of pg
+	position: relative;
+	padding-top: 30px;
+	p.copyright {
+		box-sizing: border-box;
+		width: 100%;
+		height: 200px;
+		padding: 150px 10% 0px;
+		text-align: right;
+		color: #fff;
+		color: rgba(255,255,255,0.6);
+		font-size: 0.9em;
+		line-height: 1.5em;
+		a {
+			color: inherit;
+			font-size: inherit;
+			text-decoration: none;
+			padding: 0;
+			background: inherit;
+			border: none;
+			margin: 0;
+			display: inline-block;
+			width: auto;
+			transition: color 0.3s ease;
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+
+	div#cc-invite {
+		position: relative;
+		width: 100%;
+		max-width: 400px;
+		margin-left: 10%;
+		background-color: rgba(255,255,255,0);
+		border-left: 1px dashed #fff;
+		border-right: 1px dashed #fff;
+		// border-radius: 8px;
+		box-sizing: border-box;
+		p.invite {
+			line-height: 1.5em;
+			padding: 20px;
+			color: #fff;
+			font-size: 1em;
+			letter-spacing: 1px;
+			text-align: justify;
+		}
+		a.show-cc {
+			display: block;
+			text-align: center;
+			position: relative;
+			padding: 20px;
+			text-decoration: none;
+			background-color: rgba(255,255,255,0.1);
+			color: #333;
+			color: #fff;
+			border-top: 1px dashed #5b2711;
+			transition: all 0.3s ease;
+			&:hover {
+				background-color: rgba(20,9,5,0.8);
+				color: #fff;
+			}
+		}
+	}	
+}
+@media screen and (max-width: 700px) {
+	footer div#cc-invite {
+		width: 96%;
+		display: block;
+		margin: 0 auto;
+	}
+}

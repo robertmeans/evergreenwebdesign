@@ -1,0 +1,125 @@
+@media screen and (min-width: 860px) {
+  .lg-gone {
+    display: none;
+  }
+}
+@media screen and (max-width: 860px) {
+  .sm-gone {
+    display: none;
+  }
+}
+.back-to-top {
+  display: none;
+  z-index: 85;
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  text-align: center;
+  background-color: rgba(0,0,0,0.6);
+  border: 1px solid #fff;
+  padding: 10px 18px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: rgba(0,0,0,0.9);
+    text-decoration: none;
+  }
+}
+
+a.oo-aos {
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.2em;
+  width: 100px;
+  padding: 15px 0px;
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  bottom: 10px;
+  color: #fff;
+  right: 50%;
+  margin-right: -50px;
+  z-index: 99999999;
+  text-decoration: none;
+  border: 1px solid #fff;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: rgba(0,0,0,0.9);
+  }
+}
+div#sign-up-first-visit {
+  // display: none;
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  top: 0;
+  z-index: 1234567;
+  width: 100%;
+  div#footer-sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+
+    div#ctr-cc {
+      width: 96%;
+      max-width: 500px;
+      height: 100%;
+      height: 100vh;
+      max-height: 485px;
+      overflow-y: auto;
+      a.cc-x {
+        text-decoration: none;
+        color: #000;
+        padding: 20px;
+        float: right;
+        display: block;
+        clear: both;
+        margin-bottom: 8px;
+      }
+      i.fa-window-close {
+        color: #333;
+        font-size: 2.5em;
+      }
+    }
+  } 
+}
+div#sign-up-hidden {
+  display: none;
+  background-color: rgba(0,0,0,0.8);
+  position: fixed;
+  top: 0;
+  z-index: 1234567;
+  width: 100%;
+  div#footer-sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+
+    div#ctr-cc {
+      width: 96%;
+      max-width: 500px;
+      height: 100%;
+      height: 100vh;
+      max-height: 485px;
+      overflow-y: auto;
+      a.cc-x {
+        text-decoration: none;
+        color: #000;
+        padding: 20px;
+        float: right;
+        display: block;
+        clear: both;
+        margin-bottom: 8px;
+      }
+      i.fa-window-close {
+        color: #333;
+        font-size: 2.5em;
+      }
+    }
+  } 
+}

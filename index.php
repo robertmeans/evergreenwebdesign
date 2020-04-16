@@ -1,3 +1,10 @@
+<?php 
+error_reporting(0);
+// error_reporting(-1); // reports all errors
+// ini_set("display_errors", "1"); // shows all errors
+// ini_set("log_errors", 1);
+// ini_set("error_log", "php-error.log");
+?>
 <?php require_once('_includes/popup-contactform.php'); ?>
 <?php $layout_context = "homepage"; ?>
 <?php require('_includes/head.php'); ?>

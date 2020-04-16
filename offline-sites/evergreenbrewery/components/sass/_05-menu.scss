@@ -1,0 +1,102 @@
+section div#food-warning {
+  width: 80%;
+  margin: 8em auto 0 auto;
+  padding: 12px 0px;
+  font-size: 0.6em;
+  text-align: center;
+  border-top: 1px dotted #ccc;
+  border-bottom: 1px dotted #ccc;
+}
+section.menu-section {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto 30px auto;
+  display: flex;
+  flex-direction: column;
+}
+div.section-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.section-title {
+  width: 100%;
+}
+div#food {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #e1e1e1;
+  background: url(_images/menu-chalkboard.jpg) repeat fixed center;
+  background-size: cover;
+  width: 100%;
+  color: #fff;
+  padding: 110px 0px;
+  h2 {
+    text-align: center;
+    font-size: 2em;
+    font-family: Dolce-Vita, 'Muli', sans-serif;
+  }
+  h2.no-sub {
+      margin-bottom: 1em;
+    }
+}
+p.section-sub {
+  text-align: center;
+  font-family: 'Lora', serif;
+  margin-bottom: 2em;
+  margin-top: 0.8em;
+}
+p.extra-line {
+  line-height: 1.2em;
+}
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  max-width: 555px;
+  margin: 10px 5%;
+}
+@media screen and (max-width: 800px) {
+  div.section-items {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .menu-item {
+    width: 96%;
+    max-width: 800px;
+    margin: 0 auto 15px auto;
+
+  }
+}
+.menu-price-row {
+  display: flex;
+  flex-direction: row;
+}
+div.item-name {
+  font-family: 'Lora', serif;
+  font-size: 1.2em;
+  font-style: italic;
+  color: #fff;
+  // flex-grow: 1;
+  align-self: flex-start;
+
+}
+div.dotted-line {
+  border-bottom: 1px dotted #757575;
+  border-bottom: 1px dotted #fff;
+  margin: 0px 8px;
+  flex-grow: 2;
+}
+div.item-price {
+  // flex-grow: 1;
+  align-self: flex-end;
+}
+.item-description {
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  margin-top: 0.4em;
+}

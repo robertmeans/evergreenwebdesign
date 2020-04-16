@@ -1,0 +1,42 @@
+// div#not-found {
+// 	background: #fff url(_images/404-lost.jpg) no-repeat fixed center;
+// 	background-size: cover;
+// 	display: flex;
+// 	flex-direction: column;
+// 	position: relative;
+// 	width: 100%;
+// 	height: 100%;
+// 	height: 100vh;
+// 	align-items: center;
+// 	justify-content: center;
+// 	box-sizing: border-box;
+// }
+div#lost {
+	img.lost-img {
+		width: 96%;
+		max-width: 1920px;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+p.pg-not-found {
+	position: fixed;
+	z-index: 3;
+	bottom: 30px;
+	width: 100%;
+	background-color: rgba(0,0,0,0.7);
+	padding: 1em;
+	line-height: 1.5em;
+	font-family: 'Muli', Arial, sans-serif;
+	font-size: 1.5em;
+	color: #fff;
+	text-align: center;
+	a {
+		color: #fff;
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
