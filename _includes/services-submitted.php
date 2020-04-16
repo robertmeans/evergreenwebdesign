@@ -336,8 +336,9 @@
 
         mail($my_email,$subject,$message,$headers);
     // must exit the else statement so it does not print the form again
-    break;
+    // break;
     }
+    exit;
 ?>
           <form action="index.php#thank-you" method="post" id="contactForm">
               <ul>

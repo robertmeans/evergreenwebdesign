@@ -87,7 +87,7 @@
 </section><!-- #div-one-container -->
 </header>
 
-<?php require ("_includes/essentials.php"); ?>
+<?php // require ("_includes/essentials.php"); ?>
 <?php require ("_includes/services-submitted.php"); ?>
 <?php require ("_includes/about.php"); ?>
 <?php require ("_includes/backstretch.php"); ?>

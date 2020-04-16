@@ -100,7 +100,7 @@ ini_set("error_log", "php-error.log");
 </section><!-- #div-one-container -->
 </header>
 
-<?php // require ("_includes/essentials.php"); ?>
+<?php require ("_includes/essentials.php"); ?>
 <?php require ("_includes/services.php"); ?>
 <?php require ("_includes/about.php"); ?>
 <?php require ("_includes/backstretch.php"); ?>

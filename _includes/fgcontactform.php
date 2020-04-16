@@ -44,8 +44,20 @@ class FGContactForm
 
     var $mailer;
 
-    function FGContactForm()
-    {
+    // function FGContactForm()
+    // {
+    //     $this->receipients = array();
+    //     $this->errors = array();
+    //     $this->form_random_key = 'HTgsjhartag';
+    //     $this->conditional_field='';
+    //     $this->arr_conditional_receipients=array();
+    //     $this->fileupload_fields=array();
+
+    //     $this->mailer = new PHPMailer();
+    //     $this->mailer->CharSet = 'utf-8';
+    // }
+
+   function __construct() {
         $this->receipients = array();
         $this->errors = array();
         $this->form_random_key = 'HTgsjhartag';
@@ -55,7 +67,9 @@ class FGContactForm
 
         $this->mailer = new PHPMailer();
         $this->mailer->CharSet = 'utf-8';
-    }
+   }
+
+    
 
     function EnableCaptcha($captcha_handler)
     {
