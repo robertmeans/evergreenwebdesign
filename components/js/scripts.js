@@ -2048,9 +2048,15 @@ $('.flexslider_process').flexslider({
 });
 });
 
+// toggle contact form
+$("#toggle-contact").click(function(e) {
+    e.preventDefault();
+    e.stopPropagation();
 
+  if ($('#msg-one').is(':hidden')) {
+      $("#msg-one").fadeIn(500);
+  } else {
+      $("#msg-one").fadeOut(500);
+  }
 
-// --------- playing 11.01.16
-// var salutation = document.getElementsByTagName("h3");
-// salutation[0].innerHTML = "Whaddup?!";
-
+});

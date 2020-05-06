@@ -7,6 +7,12 @@ _video
 _notes
 Thumbs.db
 head.php
+php-error.log
+constants.php
+vendor
+composer
+php-error.log
+*.sql
 
 /offline-sites/wildflowerevergreen/_email
 /offline-sites/wildflowerevergreen/_MENUS

@@ -89,8 +89,7 @@ nav ul li {
 		text-decoration: none;
 		font-weight: normal;
 		font-size: .9em;
-		// line-height: 9em;
-		// overflow: hidden; 
+		cursor: pointer; 
 		display: flex;
 		justify-content: center;
 		align-content: center;
@@ -302,8 +301,6 @@ div.expand {
     clear: both;
     margin-bottom: 0px;
     padding-bottom: 50px;
-    // padding: 0 20px 20px 20px;
-    // z-index:-4;
     p:first-child {
     	margin-top: 50px;
     }
@@ -1200,7 +1197,6 @@ max-width: 60px;
 	left: -50%;
 	width: 200%;
 	height: 200%;
-	// z-index: -1;
 	img {
 		position: absolute;
 		top: 0;
@@ -1618,8 +1614,6 @@ span.success-msg {
 
 
 .tabs { // entire div - everything
-		// contained w/in this class
-	// z-index: 333;
     width: 90%;
     max-width: 1200px;
     margin: 0px auto;
@@ -2529,12 +2523,7 @@ li.active a, li.active a:hover {
 
 
 
-  a.mobile_menu.selected {
-  	// z-index: 1004;
-  	// display: block;
-  	// width: 46px;
-  	// height: 46px;	
-  	// position: fixed; 
+  a.mobile_menu.selected { 
   	top: -60px; 
   	right: -60px;
   	// cursor: pointer;
@@ -2657,6 +2646,10 @@ li.active a, li.active a:hover {
   }
   .last-nav-item {
   	margin-right: 0;
+    cursor: pointer;
+  }
+  a.last-nav-item.pc {
+    cursor: pointer;
   }
 
   // contact form
@@ -2892,9 +2885,6 @@ ul.list {
 
 
 
-.last-nav-item {
-	// margin-right: 60px;
-}
 
 // EWD Logo on top of nav
 #center-nav {

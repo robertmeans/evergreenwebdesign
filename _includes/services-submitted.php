@@ -17,7 +17,7 @@
     <ul class="list moresites cf">
       
       <li>
-        <a href="http://www.allwaysautistic.com" target="_blank"><img src="_images/allwaysautistic-website.jpg" alt="Evergren Brewery"></a>
+        <a href="http://www.allwaysautistic.com" target="_blank"><img src="_images/allwaysautistic-website.jpg" alt="Spectrum of Opportunities"></a>
         <h3>Spectrum of Opportunities</h3>
         <p>Custom coded Squarespace. The freedom of a Squarespace design is only limited by the skillset of the developer.</p>
       </li>
@@ -205,6 +205,7 @@
 
     // set a variable to hold g-recaptcha-response so you can 
     // leave it out of the email body when message is composed
+    $_POST['g-recaptcha-response'] = '';
     if (isset($_POST['g-recaptcha-response'])) { 
         $captcha = $_POST['g-recaptcha-response'];
     }
