@@ -17,3 +17,42 @@
 [06-May-2020 11:50:29 America/Denver] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ';' in C:\wamp64\www\evergreenwebdesign\_includes\process_contact.php on line 39
 [06-May-2020 11:50:29 America/Denver] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ';' in C:\wamp64\www\evergreenwebdesign\_includes\process_contact.php on line 39
 [06-May-2020 11:50:29 America/Denver] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ';' in C:\wamp64\www\evergreenwebdesign\_includes\process_contact.php on line 39
+[15-Jun-2020 10:14:30 America/Denver] PHP Fatal error:  Uncaught Error: Class 'Swift_SmtpTransport' not found in C:\wamp64\www\evergreenwebdesign\controllers\emailController.php:11
+Stack trace:
+#0 C:\wamp64\www\evergreenwebdesign\popup-contact.php(3): require_once()
+#1 C:\wamp64\www\evergreenwebdesign\index.php(15): require_once('C:\\wamp64\\www\\e...')
+#2 {main}
+  thrown in C:\wamp64\www\evergreenwebdesign\controllers\emailController.php on line 11
+[15-Jun-2020 10:14:32 America/Denver] PHP Fatal error:  Uncaught Error: Class 'Swift_SmtpTransport' not found in C:\wamp64\www\evergreenwebdesign\controllers\emailController.php:11
+Stack trace:
+#0 C:\wamp64\www\evergreenwebdesign\popup-contact.php(3): require_once()
+#1 C:\wamp64\www\evergreenwebdesign\index.php(15): require_once('C:\\wamp64\\www\\e...')
+#2 {main}
+  thrown in C:\wamp64\www\evergreenwebdesign\controllers\emailController.php on line 11
+[15-Jun-2020 10:16:43 America/Denver] PHP Fatal error:  Uncaught Error: Class 'Swift_SmtpTransport' not found in C:\wamp64\www\evergreenwebdesign\controllers\emailController.php:11
+Stack trace:
+#0 C:\wamp64\www\evergreenwebdesign\popup-contact.php(3): require_once()
+#1 C:\wamp64\www\evergreenwebdesign\index.php(13): require_once('C:\\wamp64\\www\\e...')
+#2 {main}
+  thrown in C:\wamp64\www\evergreenwebdesign\controllers\emailController.php on line 11
+[08-Mar-2021 15:43:18 America/Denver] PHP Parse error:  syntax error, unexpected end of file in C:\wamp64\www\evergreenwebdesign\_includes\services.php on line 291
+[08-Mar-2021 15:47:08 America/Denver] PHP Parse error:  syntax error, unexpected end of file in C:\wamp64\www\evergreenwebdesign\_includes\services.php on line 297
+[08-Mar-2021 15:50:10 America/Denver] PHP Notice:  Undefined variable: formproc in C:\wamp64\www\evergreenwebdesign\_includes\contactform-code.php on line 15
+[08-Mar-2021 15:50:10 America/Denver] PHP Fatal error:  Uncaught Error: Call to a member function GetFormIDInputName() on null in C:\wamp64\www\evergreenwebdesign\_includes\contactform-code.php:15
+Stack trace:
+#0 C:\wamp64\www\evergreenwebdesign\_includes\services.php(160): require_once()
+#1 C:\wamp64\www\evergreenwebdesign\index.php(104): require('C:\\wamp64\\www\\e...')
+#2 {main}
+  thrown in C:\wamp64\www\evergreenwebdesign\_includes\contactform-code.php on line 15
+[08-Mar-2021 15:50:52 America/Denver] PHP Fatal error:  Uncaught Error: Call to undefined function post_captcha() in C:\wamp64\www\evergreenwebdesign\_includes\services.php:100
+Stack trace:
+#0 C:\wamp64\www\evergreenwebdesign\index.php(104): require()
+#1 {main}
+  thrown in C:\wamp64\www\evergreenwebdesign\_includes\services.php on line 100
+[08-Mar-2021 15:53:25 America/Denver] PHP Notice:  Undefined variable: formproc in C:\wamp64\www\evergreenwebdesign\_includes\contactform-code.php on line 15
+[08-Mar-2021 15:53:25 America/Denver] PHP Fatal error:  Uncaught Error: Call to a member function GetFormIDInputName() on null in C:\wamp64\www\evergreenwebdesign\_includes\contactform-code.php:15
+Stack trace:
+#0 C:\wamp64\www\evergreenwebdesign\_includes\services.php(196): require_once()
+#1 C:\wamp64\www\evergreenwebdesign\index.php(104): require('C:\\wamp64\\www\\e...')
+#2 {main}
+  thrown in C:\wamp64\www\evergreenwebdesign\_includes\contactform-code.php on line 15

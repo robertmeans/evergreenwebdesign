@@ -13,9 +13,16 @@ vendor
 composer
 php-error.log
 *.sql
+offline-sites/wildflowerevergreen
+_raw-images
+_ssl
+*config*
+assets
+beta
+fonts
+logs
+offline-sites
+*pinterest*
+*.json
+src
 
-/offline-sites/wildflowerevergreen/_email
-/offline-sites/wildflowerevergreen/_MENUS
-/offline-sites/wildflowerevergreen/_psd
-/offline-sites/wildflowerevergreen/Abbey Beach - Files
-/offline-sites/wildflowerevergreen/Bluehost - site

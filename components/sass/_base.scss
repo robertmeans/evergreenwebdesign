@@ -7,7 +7,6 @@ html {
     -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
 }
 body {
-	// height: 3200px;
 	font-size: 16px;
 	color: #757575;
 	font-family: Calibri, Tahoma, Arial;
@@ -1377,16 +1376,18 @@ background: #6d94e1 url('_images/online-store.jpg') no-repeat center center fixe
   //   border-bottom: 1px solid #757575;
   // }
   h2 {
-        font-size: 1.2em;
-        line-height: 1em;
-        padding-left: 35px;
-        color: #333;
-      }
+    font-size: 1.2em;
+    line-height: 1em;
+    padding-left: 35px;
+    color: #333;
+  }
   div#contact-form {
     width: 100%;
-    // border: 1px solid #757575;
     box-sizing: border-box;
-    // padding-top: 65px;
+    .right-side h2 {
+      padding-left: 0px;
+    }
+
     .left-side,
     .right-side {
       width: 50%;
@@ -1411,15 +1412,29 @@ background: #6d94e1 url('_images/online-store.jpg') no-repeat center center fixe
       input#email {
         width: 96%;
         max-width: 350px;
-        height: 1.5em;
+        // height: 1.5em;
         margin-bottom: 10px;
       }
       textarea {
         width: 96%;
         max-width: 350px;
-        height: 150px;
+        height: 5em;
+        // height: 150px;
         resize: none;
         margin-bottom: .5em;
+      }
+      input#name,
+      input#email,
+      textarea {
+        background-color: rgba(10,34,64,0.3);
+        border: none;
+        outline: none;
+        font-size: 1em;
+        padding: 0.5em;
+        color: #fff;
+        &:focus {
+          outline: none;
+        }
       }
       input#send {
         padding: 10px 20px;
@@ -1434,6 +1449,29 @@ background: #6d94e1 url('_images/online-store.jpg') no-repeat center center fixe
         }
       }
     }
+    #msgz {
+      .alert-warning {
+        width: 96%;
+        max-width: 340px;
+        margin-bottom: 0.5em;
+        border-radius: 5px;
+        padding: 0.75em;
+        font-size: 1em;
+        color: #313131;
+        background-color: #ffdddd;
+        border: 1px solid #ff5a5a;;
+      }
+    }
+  }
+}
+#internalContactForm {
+  & > span {
+    width: 100%;
+    background-color: #82c33a;
+    display: flex;
+    padding: 2em;
+    box-sizing: border-box;
+    color: white;
   }
 }
 @media screen and (max-width: 760px) {
@@ -1489,10 +1527,12 @@ button.enable-submit {
 }
 button#send {
   float: left;
-  margin-top: 10px;
-  max-width: 300px;
-  padding: 10px 20px;
-  border-radius: 8px;
+  margin-top: 0.5em;
+  // max-width: 300px;
+  // padding: 10px 20px;
+  // border-radius: 8px;
+  font-size: 1em;
+  padding: 0.75em 1em;
   border: 1px solid #206311;
   background: #2cb20c;
   color: #fff;
@@ -1506,9 +1546,9 @@ button#send {
     outline-style: 0;
   }
 }
-.display {
-  display: none;
-}
+// .display {
+//   display: none;
+// }
 span.success-msg {
   color: red;
   line-height: 1.6em;
@@ -2960,134 +3000,128 @@ div#branding {
 
 #product-container {
 	position: relative; //parallax
-	box-sizing: border-box;
 	width: 98%;
 	max-width: 1220px;
-	margin: 0px;
+	margin-top: 1em;
 	display: flex;
-	// flex-wrap: wrap;
 	justify-content: center;
-  align-content: center;
-  // align-items: flex-end;
-		div:nth-child(1) > a {
-			background-color: rgba(12,95,153,1);
-      background-color: rgba(53,120,229,1);
-
-
-			border-top: 1px solid #3dabf8;
-			border-right: 1px solid #3dabf8;
-      border-bottom: 1px solid #4bd300;
-			border-left: 1px solid #3dabf8;
-			transition: background-color 0.75s ease, color 0.5s ease;
-			&:hover {
-				background-color: rgba(245,233,76,0.3);
-			}
-		}
-		div:nth-child(2) {
-			& > a {
-				background-color: rgba(39,133,125,1);
-        background-color: rgba(57,175,213,1);
-
-
-				border-top: 1px solid #79f3d2;
-				border-right: 1px solid #79f3d2;
+  ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    // flex: 0 0 1px;
+    li {
+      ul {
+        border-right: 1px solid #79f3d2;
+        border-left: 1px solid #79f3d2; 
+      }
+      a {
+        background-color: #39afd5;
+        border-top: 1px solid #79f3d2;
+        border-right: 1px solid #79f3d2;
         border-bottom: 1px solid #4bd300;
-				border-left: 1px solid #79f3d2;
-				transition: background-color 0.75s ease, color 0.5s ease;
-				&:hover {
-					background-color: rgba(245,233,76,0.3);
-				} 
-			}
-		}
-		div:nth-child(3) > a {
-			background-color: rgba(117,110,19,1);
-      background-color: rgba(77,187,166,1);
-
-
-			border-top: 1px solid #d6da2c;
-			border-right: 1px solid #d6da2c;
-      border-bottom: 1px solid #4bd300;
-			border-left: 1px solid #d6da2c;
-			transition: background-color 0.75s ease, color 0.5s ease;
-			&:hover {
-				background-color: rgba(245,233,76,0.3);
-			}
-		}
-		// -------- dark box borders
-		div:nth-child(1) > ul {
-			border-right: 1px solid #3dabf8;
-			border-left: 1px solid #3dabf8;
-		}
-		div:nth-child(2) > ul {
-			border-right: 1px solid #79f3d2;
-			border-left: 1px solid #79f3d2;
-		}
-		div:nth-child(3) > ul {
-			border-right: 1px solid #d6da2c;
-			border-left: 1px solid #d6da2c;
-		}	
-	.product-box {
-		flex: 1;
-    flex-flow: column;
-		margin: 1%;
-    align-self: center;
-		// max-width: 410px;
-		a.product-item {
-			font-size: 2em;
-			color: #fff;
-			text-align: center;
-			padding: 15px;
-			margin: 0;
-			display: block;
-			text-decoration: none;
-			&:hover {
-				text-decoration: none;
-				color: #333;
-			}
-		}
-		ul.product-list {
-      min-height: 93px;
-			list-style: none;
-			text-align: left;
-			font-size: 1.4em;
-			color: #fff;
-			padding: 20px 10px 20px 0px;
-			background-color: rgba(0,0,0,0.6);
-
-
-			background: url('_images/circuit-board.jpg') no-repeat center center fixed; 
-      background-attachment: fixed;
-
-
-			&:nth-child(1) {
-				border-right: 1px solid #3dabf8;
-				border-left: 1px solid #3dabf8;
-			}
-			li {
-				display: block;
-				line-height: 1.4em;
-				margin-left: 30px;
-			}
-		}
-    ul.product-list.first-list {
+        border-left: 1px solid #79f3d2;
+        transition: background-color 0.75s ease, color 0.5s ease;
+        &:hover {
+          background-color: rgba(245,233,76,0.3);
+        }      
+      }
+    }
+    li:first-of-type {
+      ul {
+        border-right: 1px solid #3dabf8;
+        border-left: 1px solid #3dabf8;
+      }
+      a {
+        background-color: #3578e5;
+        border-top: 1px solid #3dabf8;
+        border-right: 1px solid #3dabf8;
+        border-bottom: 1px solid #4bd300;
+        border-left: 1px solid #3dabf8; 
+        transition: background-color 0.75s ease, color 0.5s ease;
+        &:hover {
+          background-color: rgba(245,233,76,0.3);
+        }     
+      }
+    }
+    li:last-of-type { 
+      ul {
+        border-right: 1px solid #d6da2c;
+        border-left: 1px solid #d6da2c;  
+      }
+      a {
+        background-color: #4dbba6;
+        border-top: 1px solid #d6da2c;
+        border-right: 1px solid #d6da2c;
+        border-bottom: 1px solid #4bd300;
+        border-left: 1px solid #d6da2c;
+        transition: background-color 0.75s ease, color 0.5s ease;
+        &:hover {
+          background-color: rgba(245,233,76,0.3);
+        }     
+      }
+    }
+    li {
+      width: 31.5%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      transition: background-color 0.75s ease, color 0.5s ease;
+      a {
+        font-size: 2em;
+        color: #fff;
+        text-align: center;
+        padding: 0.5em;
+        text-decoration: none;
+      }
+      ul {
+        display: flex;
+        // height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: url('_images/circuit-board.jpg') no-repeat center center fixed;
+        background-attachment: fixed;
+        padding: 1em 0em;
+        color: #fff;
+        li {
+          font-size: 1.25em;
+          width: 100%;
+          list-style: none;
+          line-height: 1.5em;
+          margin-left: 2em; 
+        }
+        li.dev-itm {
+          width: 80%;
+          border-bottom: 1px solid #4dbba6;
+        }
+      }
+      p {
+        height: 100%;
+        background-color: rgba(0,0,0,0.8);
+        color: #fff;
+        padding: 1.2em;
+        margin: 0;
+        border-top: 1px solid #266902;
+        border-right: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        border-left: 1px solid #fff;
+      }
     }
-		p.product-desc {
-			background-color: rgba(0,0,0,0.8);
-			color: #fff;
-			font-size: 1em;
-			padding: 20px;
-      margin: 0 0 auto 0;
-      border-top: 1px solid #266902;
-			border-right: 1px solid #fff;
-			border-bottom: 1px solid #fff;
-			border-left: 1px solid #fff;
-			padding-bottom: 20px;
-		}
-	}
+  }
 }
+
+@media screen and (max-width: 950px) {
+  #product-container ul {
+    flex-direction: column;
+    li {
+      width: 100%;
+      margin: 1em;
+      ul li {
+        margin: 0 0 0 2em;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 930px) {
   .br-gone {
     display: none;

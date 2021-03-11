@@ -18,8 +18,8 @@
       <a href="#div-three" class="placeholder">ABOUT</a>
     </li>
     <li class="full-height">
-      <a id="toggle-contact" class="last-nav-item pc">CONTACT</a>
-     <!--  <a class="last-nav-item" href="mailto:robert@evergreenwebdesign.com">CONTACT</a> -->
+     <!-- <a id="toggle-contact" class="last-nav-item pc">CONTACT</a> -->
+     <a class="last-nav-item myBtnEWD">CONTACT</a>
     </li>
     
     <li class="full-height ewd-nav-logo">

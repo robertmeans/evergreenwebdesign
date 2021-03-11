@@ -1482,9 +1482,9 @@ window.addEventListener('scroll', function(){ // on page scroll
 $(document).ready(function() { // see waaaay down for closing doc.ready fun()
 var maxHeight = 0;
 
-$('ul.list li').each(function() {
-   maxHeight = $(this).height() > maxHeight ? $(this).height() : maxHeight;
-}).height(maxHeight);
+// $('ul.list li').each(function() {
+//    maxHeight = $(this).height() > maxHeight ? $(this).height() : maxHeight;
+// }).height(maxHeight);
 
 
 
@@ -2048,15 +2048,175 @@ $('.flexslider_process').flexslider({
 });
 });
 
-// toggle contact form
-$("#toggle-contact").click(function(e) {
-    e.preventDefault();
-    e.stopPropagation();
 
-  if ($('#msg-one').is(':hidden')) {
-      $("#msg-one").fadeIn(500);
-  } else {
-      $("#msg-one").fadeOut(500);
+
+
+
+
+
+
+
+
+// contact modal
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+// var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+// var span = document.getElementsByClassName("close")[0];
+// var spanz = document.getElementsByClassName("cloze")[0];
+
+// var spanzz = document.getElementByID("clozer")[0];
+
+// When the user clicks on the button, open the modal
+// btn.onclick = function() {
+//   modal.style.display = "flex";
+// }
+
+// When the user clicks on <span> (x), close the modal
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
+// spanz.onclick = function() {
+//   modal.style.display = "none";
+// }
+
+
+// spanzz.onclick = function() {
+//   modal.style.display = "none";
+// }
+
+// When the user clicks anywhere outside of the modal, close it
+window.onmousedown = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
+}
+
+$(document).ready(function() {
+  $(document).on('click','.close',function() {
+    $('#myModal').css('display', 'none');
+  });
+  $(document).on('click','.cloze',function() {
+    $('#myModal').css('display', 'none');
+  });
+});
+
+$(document).ready(function() {
+  $(document).on('click','.myBtnEWD',function() {
+    $('#myModal').css('display', 'flex');
+    $('#modheader').html('<span class="close">&times;</span><h2>Evergreen Web Design | <a href="tel:(303)%20932-7483">(303) 932-7483</a></h2>');
+    $('#contact-title').html('Evergreen Web Design');
+    $('#contact-email').html('<a href="mailto:info@evergreenwebdesign.com"><i class="far fa-envelope fa-fw"></i> info@evergreenwebdesign.com</a>');
+  });
+
+  $(document).on('click','.myBtnRobert',function() {
+    $('#myModal').css('display', 'flex');
+    $('#modheader').html('<span class="close">&times;</span><h2>Robert Means | <a href="tel:(303)%20932-7483">(303) 932-7483</a></h2>');
+    $('#contact-title').html('Robert Means');
+    $('#contact-email').html('<a href="mailto:robert@evergreenwebdesign.com"><i class="far fa-envelope fa-fw"></i> robert@evergreenwebdesign.com</a>');
+  });
+
+  $(document).on('click','.myBtnBobby',function() {
+    $('#myModal').css('display', 'flex');
+    $('#modheader').html('<span class="close">&times;</span><h2>Bobby Means | <a href="tel:(303)%20932-7483">(303) 932-7483</a></h2>');
+    $('#contact-title').html('Bobby Means');
+    $('#contact-email').html('<a href="mailto:bobby@evergreenwebdesign.com"><i class="far fa-envelope fa-fw"></i> bobby@evergreenwebdesign.com</a>');
+  });
+
+  $(document).on('click','.myBtnBob',function() {
+    $('#myModal').css('display', 'flex');
+    $('#modheader').html('<span class="close">&times;</span><h2>Bob Means | <a href="tel:(303)%20932-7483">(303) 932-7483</a></h2>');
+    $('#contact-title').html('Bob Means');
+    $('#contact-email').html('<a href="mailto:bob@evergreenwebdesign.com"><i class="far fa-envelope fa-fw"></i> bob@evergreenwebdesign.com</a>');
+  });  
+
+  $(document).on('click','.myBtnRob',function() {
+    $('#myModal').css('display', 'flex');
+    $('#modheader').html('<span class="close">&times;</span><h2>Rob Means | <a href="tel:(303)%20932-7483">(303) 932-7483</a></h2>');
+    $('#contact-title').html('Rob Means');
+    $('#contact-email').html('<a href="mailto:rob@evergreenwebdesign.com"><i class="far fa-envelope fa-fw"></i> rob@evergreenwebdesign.com</a>');
+  });
+
+});
+
+// contact form
+$(document).ready(function() {
+  $('#cloze').click(function() {
+    event.preventDefault();
+  });
+
+
+  $('.sendaroo').click(function() {
+    event.preventDefault();
+    $.ajax({
+      dataType: "JSON",
+      url: "contact-process.php",
+      type: "POST",
+      data: $('#contactz').serialize(),
+      beforeSend: function(xhr) {
+        $('#msg').html('<span>Sending - one moment...</span>');
+      },
+      success: function(response) {
+        // console.log(response);
+        if(response) {
+          console.log(response);
+          if(response['signal'] == 'ok') {
+            $('#contactz').html('<span>Your message was sent successfully.</span>');
+            // $('#msg').html('<div class="alert alert-success">' + response['msg'] + '</div>');
+            // $('#send-success').html('<input name="clozer" id="clozer" class="clozer" value="Close">');
+          } else {
+            $('#msg').html('<div class="alert alert-warning">' + response['msg'] + '</div>');
+          }
+        } 
+      },
+      error: function() {
+        $('#msg').html('<div class="alert alert-warning">There was an error between your IP and the server. Please try again later.</div>');
+      }, 
+      complete: function() {
+        // $('#contact').html('<span>Your message was sent successfully.</span>');
+        // $('#send-success').html('<input name="clozer" id="clozer" class="clozer" value="Close">');
+      }
+    })
+  });
+
+
+
+
+  $('.sendit').click(function() {
+    event.preventDefault();
+    $.ajax({
+      dataType: "JSON",
+      url: "contact-process.php",
+      type: "POST",
+      data: $('#internalContactForm').serialize(),
+      beforeSend: function(xhr) {
+        $('#msgz').html('<span>Sending - one moment...</span>');
+      },
+      success: function(response) {
+        // console.log(response);
+        if(response) {
+          console.log(response);
+          if(response['signal'] == 'ok') {
+            $('#internalContactForm').html('<span>Your message was sent successfully.</span>');
+            $('#letstalk').html('You look nice today. :)<br><br>');
+            // $('#msg').html('<div class="alert alert-success">' + response['msg'] + '</div>');
+            // $('#send-success').html('<input name="clozer" id="clozer" class="clozer" value="Close">');
+          } else {
+            $('#msgz').html('<div class="alert alert-warning">' + response['msg'] + '</div>');
+          }
+        } 
+      },
+      error: function() {
+        $('#msgz').html('<div class="alert alert-warning">There was an error between your IP and the server. Please try again later.</div>');
+      }, 
+      complete: function() {
+        // $('#contact').html('<span>Your message was sent successfully.</span>');
+        // $('#send-success').html('<input name="clozer" id="clozer" class="clozer" value="Close">');
+      }
+    })
+  });
 
 });

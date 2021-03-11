@@ -12,7 +12,7 @@
         <p>I have been developing websites in Evergreen, Colorado since 1996 with a passion for integrating complex features within custom designs.</p>
         <p>The know-how I bring to your project includes full stack development: PHP 7, HTML5, CSS3, jQuery, JavaScript &amp; MySQL. A strong command of these skills is the very root of a professional, stable website that works. Look no further.</p>
 
-        <p class="mail"><a class="env myBtnRobert"><i class="fa fa-envelope"></i></a> <a class="about-contact myBtnRobert">Contact Robert</a></p>
+        <p class="mail"><a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="env"><i class="fa fa-envelope"></i></a> <a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="about-contact">Contact Robert</a></p>
       </div>
     </div><!-- .about-content -->
 
@@ -26,7 +26,7 @@
         <p>Basking in the RGB color spectrum and designing unique, beautiful websites has been a joy of mine since my first Windows 95 computer shortly after the GUI went mainstream.</p>
         <p>I wield Photoshop like a samuri ninja and Illustrator like a middleweight contender. ...I'm working on that.</p>
 
-        <p class="mail"><a class="env myBtnBobby"><i class="fa fa-envelope"></i></a> <a class="about-contact myBtnBobby">Contact Bobby</a></p>
+        <p class="mail"><a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="env"><i class="fa fa-envelope"></i></a> <a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="about-contact">Contact Bobby</a></p>
       </div>
     </div><!-- .about-content -->      
 
@@ -38,7 +38,7 @@
       <h3>Bob Means<span class="about-gone">,</span> <br class="large-screen-gone">Sales &amp; Support</h3>
         <p>My mission is to understand your goals and vision and convey that to Bobby, our designer. He's a bit of a flake sometimes as designers can be so you'll want someone focused and persistent to keep him on task. Together we can outline a plan that works for you.</p>
 
-        <p class="mail"><a class="env myBtnBob"><i class="fa fa-envelope"></i></a> <a class="about-contact myBtnBob">Contact Bob</a></p>
+        <p class="mail"><a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="env"><i class="fa fa-envelope"></i></a> <a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="about-contact">Contact Bob</a></p>
       </div>
     </div><!-- .about-content -->
 
@@ -50,7 +50,7 @@
       <h3>Rob Means<span class="about-gone">,</span> <br class="large-screen-gone">Internetual Webanaut</h3>
         <p>Don't let any of the others here fool you - I keep this circus in order and am The Pillar of resolute and steadfast integrity overseeing the entire operation and ensuring every last detail is maintained to immaculate perfection.</p>
 
-        <p class="mail"><a class="env myBtnRob"><i class="fa fa-envelope"></i></a> <a class="about-contact myBtnRob">Contact Rob</a></p>
+        <p class="mail"><a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="env"><i class="fa fa-envelope"></i></a> <a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");' class="about-contact">Contact Rob</a></p>
       </div>
     </div><!-- .about-content -->        
 

@@ -7,12 +7,10 @@ error_reporting(-1); // reports all errors
 ini_set("log_errors", 1);
 ini_set("error_log", "php-error.log");
 ?>
-
-
 <?php $layout_context = "homepage"; ?>
 <?php require('_includes/head.php'); ?>
 <body>
-<?php require_once 'popup-contact.php'; // new form 05.02.20 ?>
+<?php // require_once 'popup-contact.php'; // new form 05.02.20 ?>
 <script>
   window.fbAsyncInit = function() {
     FB.init({
@@ -52,42 +50,40 @@ ini_set("error_log", "php-error.log");
   </div>
 </div><!-- #branding -->
 <div id="mobile-header">
-  <!-- <h1>Functional Design Developed Creatively</h1> -->
   <h1>Building Websites That Work, <br class="br-gone" />
   Fixing Ones That Don't.</h1>
 </div>
+
 <div id="product-container">
-  <div class="product-box">
-    <a href="#div-two" class="product-item">Services</a>
-    <ul class="product-list first-list">
-      <li>Building websites that work</li>
-      <li>Fixing ones that don't</li>
-      <!-- <li>&nbsp;</li> -->
+<ul>
+  <li>
+    <a href="#div-two">Concept</a>
+    <ul>
+      <li>Research Industry Trends</li>
+      <li>Conceptualize Your Vision</li>
+      <li>Integrate Your Aesthetics</li>
     </ul>
-    <p class="product-desc">No matter what framework or platform your project currently resides or what your future vision demands, Evergreen Web Design has you covered. Full stack development at your service.</p> 
-  </div>
-
-  <div class="product-box">
-    <a href="#div-two" class="product-item">Development</a>
-    <ul class="product-list">
-      <li>Websites</li>
-      <li>Database</li>
-      <li>eCommerce</li>
+    <p>Every project starts with getting to know you, your unique tastes and how we might convey the spirit of your idea across the Internet.</p>
+  </li>
+  <li>
+    <a href="#div-two">Design</a>
+    <ul>
+      <li>UX (User Experience)</li>
+      <li>Intuitive Presentation</li>
+      <li>Fluid Design</li>
     </ul>
-    <!-- <p class="product-desc">Each project provides a unique opportunity to explore creative opportuinites and custom solutions. Find out how Evergreen Web Design can meet your specific online needs today!</p> -->
-    <p class="product-desc">Where better to highlight development skills than right here?! This site was built the old fashioned way - by hand in a text editor. Your one-stop answer factory awaits only a phone call away.</p>
-  </div>    
-
-  <div class="product-box">
-    <a href="#essentials" class="product-item">Essentials</a>
-    <ul class="product-list">
-      <li>Hosting</li>
-      <li>Domain Names</li>
-      <li>SSL Certificates</li>
+    <p>Working from a &quot;<i>form follows function</i>&quot; philosphy and a strong command of today's webspace environment, you can be confident your site will render beautifully across any device or viewport.</p>
+  </li>
+  <li>
+    <a href="#div-two">Develpoment</a>
+    <ul>
+      <li class="dev-itm">Services</li>
+      <li>1. Buiding Websites that Work</li>
+      <li>2. Fixing Ones that Don't</li>
     </ul>
-    <p class="product-desc">Evergreen Web Design is a Certified GoDaddy Reseller. Buy through us! We can match any deal + you get GoDaddy's hardware and their renowned 24/7 customer support.</p>
-  </div>
-      
+    <p>Anyone can build their own website just like anybody can be their own auto mechanic, realtor or attorney. When your goals exceed your time and patience, hire an expert.</p>
+  </li>
+</ul>
 </div><!-- #product-container -->
 
     <div id="badge">
@@ -95,7 +91,7 @@ ini_set("error_log", "php-error.log");
         <a class="badge-tel" tabIndex="-1" href="tel:(303)%20932-7483"><h2>Call: (303) WEBSITE</h2></a>
         <h4>That's (303) 932-7483</h4>
       </span>
-      <div id="scrollDownSprite"><a href="#essentials" class="no-active-nav"></a></div>
+      <div id="scrollDownSprite"><a href="#div-two" class="no-active-nav"></a></div>
     </div><!-- badge -->
     
 </div>
@@ -108,9 +104,11 @@ ini_set("error_log", "php-error.log");
 <?php require ("_includes/backstretch.php"); ?>
 
 <?php include "_includes/footer.php" ?>
+<?php require "contact-ewd.php" ?>
 
 <script type="text/javascript" src="_scripts/jquery.backstretch.min.js"></script>
 <script type="text/javascript" src="_scripts/scripts.js?<?php echo time(); ?>"></script>
 <script src="http://localhost:35729/livereload.js"></script>
+
 </body>
 </html>

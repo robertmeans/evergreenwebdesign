@@ -16,25 +16,15 @@
 
     <ul class="list moresites cf">
       
-      <li>
-        <a href="http://www.allwaysautistic.com" target="_blank"><img src="_images/allwaysautistic-website.jpg" alt="Spectrum of Opportunities"></a>
+      <!-- <li>
+        <a href="https://kangaroo-goldfish-exxx.squarespace.com/" target="_blank"><img src="_images/allwaysautistic-website.jpg" alt="Spectrum of Opportunities"></a>
         <h3>Spectrum of Opportunities</h3>
-        <p>Custom coded Squarespace. The freedom of a Squarespace design is only limited by the skillset of the developer.</p>
-      </li>
+        <p>Custom coded Squarespace. The freedom of a Squarespace design is only limited by the skillset of your developer.</p>
+      </li> -->
       <li>
-        <a href="http://www.evergreenwebdesign.com/offline-sites/evergreenbrewery" target="_blank"><img src="_images/evergreen-brewery-website.jpg" alt="Evergren Brewery"></a>
-        <h3>Evergreen Brewery</h3>
-        <p>Hand coded. Elegant. Packed with information and designed for mobile viewport as #1 priority.</p>
-      </li>
-      <li>
-        <a href="https://www.taspenskitchen.com" target="_blank"><img src="_images/taspenskitchen-website.jpg" alt="Taspen's Kitchen"></a>
-        <h3>Taspen's Kitchen</h3>
-        <p>One of a kind Squarespace site built with custom code injection. You'll never see another site like it!</p>
-      </li>       
-      <li>
-        <a href="http://www.seasonally-yours.com" target="_blank"><img src="_images/seasonally-yours-website.jpg" alt="Seasonally Yours"></a>
-        <h3>Seasonally Yours</h3>
-        <p>Squarespace ecommerce website. Focused on mobile delivery &amp; optimized for cell phone viewport.</p>
+        <a href="http://www.pinewood-properties.com" target="_blank"><img src="_images/pinewood-properties-website.jpg" alt="Pinewood Properties"></a>
+        <h3>Pinewood Properties</h3>
+        <p>WordPress with booking system integration for on-site management of rentals.</p>
       </li>
       <li>
         <a href="http://www.best-nutrition.net" target="_blank"><img src="_images/best-nutrition-website.jpg" alt="Best Nutrition"></a>
@@ -42,14 +32,29 @@
         <p>WordPress ecommerce (WooCommerce) site with product options and variations.</p>
       </li>
       <li>
-        <a href="http://www.mainstrestaurant.com" target="_blank"><img src="_images/mainstrestaurant-website.jpg" alt="Main Street Restaurant"></a>
+        <a href="http://www.evergreenbrewery.com" target="_blank"><img src="_images/evergreen-brewery-website.jpg" alt="Best Website Ever"></a>
+        <h3>Best Website Ever</h3>
+        <p>Hand coded. Elegant. Packed with information and designed for mobile viewport as #1 priority.</p>
+      </li>
+      <li>
+        <a href="https://www.mainstreetrest.com/" target="_blank"><img src="_images/mainstrestaurant-website.jpg" alt="Main Street Restaurant"></a>
         <h3>Main Street Restaurant</h3>
         <p>Squarespace website with custom conditional logic that dynamically embeds content. Neat!</p>
-      </li>
+      </li>      
+      <li>
+        <a href="https://www.taspenskitchen.com" target="_blank"><img src="_images/taspenskitchen-website.jpg" alt="Taspen's Kitchen"></a>
+        <h3>Taspen's Kitchen</h3>
+        <p>One of a kind Squarespace site built with custom code injection. You'll never see another site like it!</p>
+      </li> 
       <li>
         <a href="http://www.mountainliving.fun" target="_blank"><img src="_images/mountainliving-website.jpg" alt="Lisa Smith Realtor"></a>
         <h3>Real Estate Site</h3>
         <p>WordPress website for Realtor with IDX &amp; CRM integration to search MLS listings and manage visitor retention.</p>
+      </li>
+      <li>
+        <a href="http://www.bdiproperties.com" target="_blank"><img src="_images/bdi-properties-website.jpg" alt="BDI Properties"></a>
+        <h3>BDI Properties</h3>
+        <p>WordPress - Straightforward content delivery. If your needs are simple let's discuss a modest solution.</p>
       </li>
       <li>
         <a href="http://www.evergreensigns.com" target="_blank"><img src="_images/evergreen-signs-website.jpg" alt="Evergreen Signs Website"></a>
@@ -141,15 +146,12 @@
 
             <div class="project-col">
             <ul class="past-projects second-column">
-              <li>Domain Registration<span class="reseller">*</span></li>
-              <li>Hosting<span class="reseller">*</span></li>
-              <li>SSL Certificates<span class="reseller">*</span></li>
-              <li>24/7/365 Support<span class="reseller">*</span></li>
+              <li>Domain Registration</li>
+              <li>Hosting</li>
+              <li>SSL Certificates</li>
+              <li>24/7/365 Support</li>
             </ul>
             </div>
-
-            <p>Visit our <a class="storefront-link" href="http://store.evergreenwebdesign.com">Storefront</a> for a complete selection of all our discounted domain products. </p>
-            <p><span class="reseller">*</span> Evergreen Web Design is an authorized GoDaddy Reseller. You can buy GoDaddy products through us for less. Exact same products, same support, same dependability, less money.</p>
 
           <div class="container">
             <p class="social-network-icons"><a href="https://www.facebook.com/evergreenbob" target="_blank"><img class="facebook-square" src="https://www.evergreenwebdesign.com/_images/facebook-icon.jpg" alt="Facebook"></a> <a href="https://twitter.com/EWDLLC" target="_blank"><img class="twitter-square" src="_images/twitter-icon.jpg" alt="Twitter"></a> <a href="https://plus.google.com/+Evergreenwebdesignllc" target="_blank"><img class="google-plus-square" src="_images/google-plus-icon.jpg" alt="Google+"></a> please share</p>
@@ -167,7 +169,6 @@
             <div class="expand">
               <p>The first question everyone asks, &quot;How much?&quot; A similar question would be, &quot;How much is a car?&quot; With all of the options and details to outline it is impossible to set generic pricing. That said, pricing options are available to suit virtually every budget and project. Let's discuss your idea and outline a plan that works for you.</p>
 
-              <p>Discounted pricing for domain names, hosting, etc. can be found through our <a href="http://store.evergreenwebdesign.com">GoDaddy Reseller portal</a>.</p>
             </div><!-- .expand !-->
           </div><!-- #container2 -->
 
@@ -177,7 +178,7 @@
       <h2 class="mobile">Options</h2>
       <p>The sky's the limit!</p>
       <p>At the risk of oversimplifying it I always tell people, &quot;The short answer is 'Yes'.&quot; In other words, if you can think it I can do it. Truth is, you have a lot of options depending on what your specific needs are. In the realm of content management systems you can weigh the pros and cons of a framework like WordPress against Squarespace. WordPress is wildly popular but comes with its burdens in the form of long-term overhead maitenance. Squarespace solves that problem with a tradeoff in creative freedom.</p>
-      <p>And then there's hand coded which offeres the greatest of both worlds but comes with a front end price tag. Sometimes, depending on the functionality you need from your website, a hand coded site makes the most sense. There are so many variables in this equation that I could write several pages on the topic, all of which you would never read.</p>
+      <p>And then there's hand coded which offers the greatest of both worlds but comes with a front end price tag. Sometimes, depending on the functionality you need from your website, a hand coded site makes the most sense. There are so many variables in this equation that I could write several pages on the topic, all of which you would never read.</p>
       <p>In the name of practicality and brevity - and for a free consultation call <a class="txt-a" href="tel:(303)%20932-7483">(303) WEBSITE</a></p>
     </div><!-- #tab3 .tab cf -->
 
@@ -390,15 +391,12 @@
 
             <div class="project-col">
             <ul class="past-projects second-column">
-              <li>Domain Registration<span class="reseller">*</span></li>
-              <li>Hosting<span class="reseller">*</span></li>
-              <li>SSL Certificates<span class="reseller">*</span></li>
-              <li>24/7/365 Support<span class="reseller">*</span></li>
+              <li>Domain Registration</li>
+              <li>Hosting</li>
+              <li>SSL Certificates</li>
+              <li>24/7/365 Support</li>
             </ul>
             </div>
-
-            <p>Visit our <a class="storefront-link" href="http://store.evergreenwebdesign.com">Storefront</a> for a complete selection of all our discounted domain products. </p>
-            <p><span class="reseller">*</span> Evergreen Web Design is an authorized GoDaddy Reseller. You can buy GoDaddy products through us for less. Exact same products, same support, same dependability, less money.</p>
 
           <div class="container">
             <p class="social-network-icons"><a href="https://www.facebook.com/evergreenwebdesign01" target="_blank"><img class="facebook-square" src="https://www.evergreenbob.com/_images/facebook-icon.jpg" alt="Facebook"></a> <a href="https://twitter.com/EWDLLC" target="_blank"><img class="twitter-square" src="_images/twitter-icon.jpg" alt="Twitter"></a> <a href="https://plus.google.com/+Evergreenwebdesignllc" target="_blank"><img class="google-plus-square" src="_images/google-plus-icon.jpg" alt="Google+"></a> please share</p>
@@ -415,8 +413,6 @@
              <a href="#" class="click no-default"><i class="fa fa-angle-down"></i> Pricing</a>
             <div class="expand">
               <p>The first question everyone asks, &quot;How much?&quot; A similar question would be, &quot;How much is a car?&quot; With all of the options and details to outline it is impossible to set generic pricing. That said, pricing options are available to suit virtually every budget and project. Let's discuss your idea and outline a plan that works for you.</p>
-
-              <p>Discounted pricing for domain names, hosting, etc. can be found through our <a href="http://store.evergreenwebdesign.com">GoDaddy Reseller portal</a>.</p>
             </div><!-- .expand !-->
           </div><!-- #container2 -->
 
@@ -426,7 +422,7 @@
       <h2 class="mobile">Options</h2>
       <p>The sky's the limit!</p>
       <p>At the risk of oversimplifying it I always tell people, &quot;The short answer is 'Yes'.&quot; In other words, if you can think it I can do it. Truth is, you have a lot of options depending on what your specific needs are. In the realm of content management systems you can weigh the pros and cons of a framework like WordPress against Squarespace. WordPress is wildly popular but comes with its burdens in the form of long-term overhead maitenance. Squarespace solves that problem with a tradeoff in creative freedom.</p>
-      <p>And then there's hand coded which offeres the greatest of both worlds but comes with a front end price tag. Sometimes, depending on the functionality you need from your website, a hand coded site makes the most sense. There are so many variables in this equation that I could write several pages on the topic, all of which you would never read.</p>
+      <p>And then there's hand coded which offers the greatest of both worlds but comes with a front end price tag. Sometimes, depending on the functionality you need from your website, a hand coded site makes the most sense. There are so many variables in this equation that I could write several pages on the topic, all of which you would never read.</p>
       <p>In the name of practicality and brevity - and for a free consultation call <a class="txt-a" href="tel:(303)%20932-7483">(303) WEBSITE</a></p>
     </div><!-- #tab3 .tab cf -->
 
