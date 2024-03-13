@@ -1,0 +1,9 @@
+/* in Elementor > Custom Code so it shows up last in stack */
+html, * {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+}

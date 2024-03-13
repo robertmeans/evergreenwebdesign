@@ -1,0 +1,10 @@
+*.sass-cache*
+node_modules
+.gitattributes
+*.json
+*.lock
+*.sql
+Thumbs.db
+php-error.log
+*config*
+vendor
