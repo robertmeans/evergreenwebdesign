@@ -3,13 +3,60 @@ require_once  'config/initialize.php';
 require       '_includes/head.php';
 ?>
 <body>
-  <div class="wrap">
+<!--   <div class="wrap">
     <a class="alink epop myBtnEWD">contact</a>
     <a class="alink epop myBtnRobert">Robert</a>
     <a class="alink epop myBtnBobby">Bobby</a>
     <a class="alink epop myBtnBob">Bob</a> 
     <a class="alink epop myBtnRob">Rob</a> 
+  </div> -->
+
+
+<main>
+  
+  <section>
+    <div class="container">
+      <h1>hybrid scroll</h1>
+      <p>Bounty loaded to the gunwalls nipperkin scallywag topsail six pounders galleon sutler Arr list. Chase Buccaneer dead men tell no tales line stern Jack Tar strike colors bilge water ye bounty. Pink scuppers keelhaul hands hornswaggle hogshead cog lee hardtack Nelsons folly.</p>
+      <p>Salmagundi jack chantey execution dock Nelsons folly tack wherry clipper reef sails Shiver me timbers. Lanyard squiffy bowsprit line transom dead men tell no tales Pieces of Eight crack Jennys tea cup shrouds heave down. Grapple cable Sink me tender pinnace Sail ho jack provost scuttle lugsail.</p>
+    </div>
+  </section>
+
+  <div class="sticky-parent">
+    <div class="sticky">
+      <div class="scroll-section">
+        
+      </div>
+    </div>
   </div>
+
+  <section>
+    <div class="container">
+      <h1>About</h1>
+      <p>Bounty loaded to the gunwalls nipperkin scallywag topsail six pounders galleon sutler Arr list. Chase Buccaneer dead men tell no tales line stern Jack Tar strike colors bilge water ye bounty. Pink scuppers keelhaul hands hornswaggle hogshead cog lee hardtack Nelsons folly.</p>
+      <p>Salmagundi jack chantey execution dock Nelsons folly tack wherry clipper reef sails Shiver me timbers. Lanyard squiffy bowsprit line transom dead men tell no tales Pieces of Eight crack Jennys tea cup shrouds heave down. Grapple cable Sink me tender pinnace Sail ho jack provost scuttle lugsail.</p>
+    </div>
+  </section>
+
+  <div class="sticky-parent">
+    <div class="sticky">
+      <div class="scroll-section">
+        
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <h1>End</h1>
+      <p>Bounty loaded to the gunwalls nipperkin scallywag topsail six pounders galleon sutler Arr list. Chase Buccaneer dead men tell no tales line stern Jack Tar strike colors bilge water ye bounty. Pink scuppers keelhaul hands hornswaggle hogshead cog lee hardtack Nelsons folly.</p>
+      <p>Salmagundi jack chantey execution dock Nelsons folly tack wherry clipper reef sails Shiver me timbers. Lanyard squiffy bowsprit line transom dead men tell no tales Pieces of Eight crack Jennys tea cup shrouds heave down. Grapple cable Sink me tender pinnace Sail ho jack provost scuttle lugsail.</p>
+    </div>
+  </section>
+
+
+
+</main>
 
 
 <?php require "_includes/epop.php" ?>
