@@ -1,0 +1,330 @@
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9922; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4);
+  // turn on for testing ->
+  // display: flex;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative; /* so it will animate in/out */
+  color: #fff;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px; /* make consistent with header & footer */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.3s;
+  h2 {
+    font-size: 1.2em;
+    color: #fff;
+    padding: 0.5em;
+    margin: 0;
+  }
+}
+
+/* The Close Button */
+.close {
+  color: #fff;
+  padding: 5px 10px;
+  background-color: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 8px;
+  font-size: 1.2em;
+  font-weight: bold;
+  scale: 1;
+  transition: all 0.2s ease;
+  &:hover, {
+    background-color: rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.6);
+    color: #ccc;
+    text-decoration: none;
+    scale: 0.9;
+    cursor: pointer;    
+  }
+}
+
+/* Modal Header */
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: rgba(43,61,80,0.8);
+  color: white;
+  h2 a {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+/* Modal Body */
+.modal-body { 
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em;
+  background-color: rgba(53,120,229,0.8);
+  & > p {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #fff;
+    .hci {
+      padding: 0.25em 0.75em 0.25em 0.25em;
+      background-color: transparent;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      &:hover {
+        background-color: rgba(0,0,0,0.2);
+      }
+    }
+  }
+  form {
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    span { // success msg
+      text-align: center;
+      font-size: 2em;
+      line-height: 1.2em;
+      color: #fff;
+    }
+    .nande {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0px;
+      margin: 0;
+      transition: all 0.3s ease;
+    }
+    input,
+    textarea {
+      font-size: 1.1em;
+      padding: 0.5em;
+      background-color: rgba(255,255,255,0.6);
+      border: none;
+      outline: none;
+      &::placeholder {
+        color: #707070;
+        font-size: 1em;
+        font-family: Tahoma, sans-serif;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    input {
+      margin-bottom: 1em;
+      width: 45%;
+    }
+    textarea {
+      height: 6em;
+    }
+    .submit-links {
+
+      #msg {
+        display: none;
+      }
+      #msg.alert-warning {
+        display: flex;
+        width: 100%;
+        margin: 0.5em 0;
+        border-radius: 5px;
+        color: #e73030;
+        background-color: #ffdddd;
+        border: 1px solid #ff5a5a;
+        ul {
+          padding: 20px;
+          margin: 0 0 0 2em;
+          font-size: 1em; 
+          list-style-type: disc;
+          li {
+            line-height: 1.2em;
+            margin-bottom: 0.5em;
+          }
+          li:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+      }
+      #msg.alert-success {
+        display: flex;
+        padding: 20px;
+        width: 100%;
+        margin: 0.5em 0;
+        border-radius: 5px;
+        color: #e73030;
+        background-color: #82c33a;
+        border: 1px solid #45661f;  
+      }
+      #send-success {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        justify-content: space-around;
+        margin-top: 0.75em;
+
+        .cloze,
+        .send {
+          margin-bottom: 0;
+          width: 40%;
+          color: #fff;
+          font-size: 1.1em !important;
+          font-family: 'Tahoma', sans-serif;
+          -webkit-appearance: none;
+          border: none;
+          text-align: center;
+          text-decoration: none;
+          padding: 1em !important;
+          line-height: 1em !important;
+          border: none;
+          cursor: pointer;
+          border: 1px solid #fff;
+          scale: 1;
+          transition: all 0.2s ease;
+          &:hover {
+            scale: 0.9;
+          }
+        }
+        .send {
+          background-color: #82c33a;
+          &:hover {
+            background-color: #4c7022;
+          }
+        }
+        .cloze {
+          background-color: #313131;
+          &:hover {
+            background-color: #000;
+          }
+        }
+      }
+    }   
+  }
+}
+@media screen and (max-width: 640px) {
+  .modal-body form .nande {
+    flex-direction: column;
+    padding: 0.5em;
+    width: auto;
+    input {
+      width: 100%;
+      margin-bottom: 0.5em;
+    }
+  }
+  .modal-body form .submit-links #send-success {
+    flex-direction: column;
+    .cloze,
+    .send {
+      width: 86%;
+    }
+    .cloze {
+      margin-bottom: 0.5em;
+    }
+  }
+}
+#name,
+#email,
+#message {
+  &.fixdis {
+    background-color: #ffdddd;
+  }
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  // height: 80px;
+  height: 48px;
+  margin-top: -32px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+/* Modal Footer */
+.modal-footer {
+  background-color: rgba(35,74,121,0.8);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: white;
+}
+
+
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
