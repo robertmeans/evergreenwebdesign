@@ -22,7 +22,7 @@ section {
   padding: 5em;
 }
 .sticky-parent {
-  height: 500vh;
+  height: 300vh;
 }
 .sticky {
   overflow: hidden;
@@ -34,22 +34,31 @@ section {
   position: absolute;
   top: 0;
   height: 100%;
-  width: 500vw; /* has to be consistent with .sticky-parent height: https://youtu.be/yXnK8ND76z8?t=637 */
+  width: 300vw; /* has to be consistent with .sticky-parent height: https://youtu.be/yXnK8ND76z8?t=637 */
   will-change: transform;
   display: flex;
   justify-content: space-between;
   // align-items: center;
-  padding: 0 5vw;
+  padding: 0 3vw;
 }
 .concon {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: auto;
   display: flex;
   flex-direction: column;
   padding: 2em;
   // p {
   //   width: 100%;
   // }
+}
+.one {
+  background-color: #f6ffce;
+}
+.two {
+  background-color: #cfffce;
+}
+.three {
+  background-color: #cedfff;
 }
 img {
   width: 400px;
