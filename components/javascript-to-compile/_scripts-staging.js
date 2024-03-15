@@ -102,6 +102,20 @@ window.onmousedown = function(event) {
   }
 }
 
+/* random image */
+// Create an array of images
+const images = [
+  // "_images/sandbox-images/internet-vortex.jpeg", 
+  // "_images/sandbox-images/day-sky-01.jpeg", 
+  // "_images/sandbox-images/good-morning-late.jpeg",
+  // "_images/sandbox-images/night-sky.jpg",
+  // "_images/sandbox-images/universe-stars.jpg",
+  "_images/sandbox-images/cars.jpg"
+  ];
+const randomImage = images[Math.floor(Math.random() * images.length)];
+document.getElementById("randoimg").src = randomImage;
+
+
 /* sticky + horizontal scroll stuff begin */
 const stickySections = [...document.querySelectorAll('.sticky')]
 // console.log(stickySections);
@@ -133,6 +147,6 @@ function transform(section) {
   const scrollSection = section.querySelector('.scroll-section');
   // console.log(scrollSection);
   let percentage = ((window.scrollY - offsetTop) / window.innerHeight) * 100;
-  percentage = percentage < 0 ? 0 : percentage > 300 ? 300 : percentage;
+  percentage = percentage < 0 ? 0 : percentage > 200 ? 200 : percentage;
   scrollSection.style.transform = `translate3d(${-(percentage)}vw, 0, 0)`;
 }

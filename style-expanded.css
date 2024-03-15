@@ -393,11 +393,11 @@ html, body, main {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 2em;
+  line-height: 0.8em;
 }
 
 p {
-  width: 50%;
   margin: 1.5em 0;
 }
 
@@ -407,6 +407,14 @@ section {
 
 .container {
   padding: 5em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .sticky-parent {
@@ -431,12 +439,11 @@ section {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  padding: 0 3vw;
 }
 
 .concon {
   width: 80%;
-  height: auto;
+  height: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -454,6 +461,14 @@ section {
 
 .three {
   background-color: #cedfff;
+}
+
+img#randoimg {
+  margin-top: 30px;
+  width: 80%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
 }
 
 img {
@@ -485,6 +500,46 @@ img {
 }
 .alink.epop:hover {
   text-decoration: none;
+}
+.alink.yes, .alink.no {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  text-decoration: none;
+  padding: 1em;
+  text-align: center;
+  width: 150px;
+  scale: 1;
+  color: #fff;
+  box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  transition: all 0.2s ease;
+}
+.alink.yes {
+  background-color: #6fd654;
+}
+.alink.yes:hover {
+  scale: 0.92;
+  box-shadow: 0px 8px 5px -5px rgba(0, 0, 0, 0.8);
+}
+.alink.no {
+  background-color: #2d2d2d;
+}
+.alink.no:hover {
+  scale: 0.92;
+  box-shadow: 0px 8px 5px -5px rgba(0, 0, 0, 0.8);
+}
+
+.ynbtns {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 320px;
+  margin: 1em auto;
 }
 
 /* back to top - aos start */
