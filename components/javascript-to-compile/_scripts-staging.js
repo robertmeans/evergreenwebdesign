@@ -35,8 +35,13 @@ $(document).ready(function() { /* opening 1st doc ready */
     $('#contact-email').html('<a class="hci" href="mailto:rob@evergreenwebdesign.com"><i class="far fa-envelope fa-fw"></i> rob@evergreenwebdesign.com</a>');
   });
 
+  $(document).on('click','.nobtn',function() {
+    $('#myModal-nobtn').css('display', 'flex');
+  });
+
   $(document).on('click','.close',function() {
     $('#myModal').css('display', 'none');
+    $('#myModal-nobtn').css('display', 'none');
   });
   $(document).on('click','.cloze',function() {
     $('#myModal').css('display', 'none');

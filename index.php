@@ -18,7 +18,7 @@ require       '_includes/head.php';
     <div class="container">
       <h1>Can you spot the difference?</h1>
       <img id="randoimg">
-      <span class="ynbtns"><a class="alink yes" href="#ccone">YES</a> <a class="alink no">NO</a></span>
+      <span class="ynbtns"><a class="alink yes" href="#ccone">YES</a> <a class="alink no nobtn">NO</a></span>
     </div>
   </section>
 
@@ -111,6 +111,7 @@ require       '_includes/head.php';
 
 
 <?php require "_includes/epop.php" ?>
+<?php require "_includes/nobtn.php" ?>
 
 <script type="text/javascript" src="scripts/scripts.js?<?php echo time(); ?>"></script>
 <?php echo livereload(); ?>
