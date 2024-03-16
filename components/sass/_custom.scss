@@ -119,16 +119,25 @@ img {
     transition: all 0.2s ease;
   }
   &.yes {
-    background-color: #6fd654;
+    background-color: #0074d3;
+    background-image: url('_images/sandbox-images/yesbtn.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
     &:hover {
       scale: 0.92;
       box-shadow: 0px 8px 5px -5px rgba(0,0,0,0.8);
     }
   }
   &.no {
-    background-color: #2d2d2d;
+    background-color: #ba7c48;
+    background-image: url('_images/sandbox-images/rusty.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     &:hover {
       scale: 0.92;
+      background-color: #fff;
       box-shadow: 0px 8px 5px -5px rgba(0,0,0,0.8);
     }
   }
